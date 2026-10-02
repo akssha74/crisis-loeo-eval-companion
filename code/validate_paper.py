@@ -23,10 +23,16 @@ CAUSAL = [r"explains why", r"pinpoint", r"establishes a", r"\bconfirms?\b", r"\b
 
 
 def tex_sources():
-    files = [os.path.join(PAPER, "main.tex"), os.path.join(PAPER, "prose.tex")]
-    files += sorted(glob.glob(os.path.join(PAPER, "sections", "*.tex")))
-    files += sorted(glob.glob(os.path.join(PAPER, "generated", "tab_*.tex")))
-    return files
+    """The .tex files that main.tex and esm.tex \\input, transitively, without the generated value table."""
+    todo, seen = [os.path.join(PAPER, "main.tex"), os.path.join(PAPER, "esm.tex")], []
+    while todo:
+        f = todo.pop()
+        if f in seen or not os.path.exists(f):
+            continue
+        seen.append(f)
+        for name in re.findall(r"\\(?:input|InputIfFileExists)\{([^}]+)\}", open(f).read()):
+            todo.append(os.path.join(PAPER, name if name.endswith(".tex") else name + ".tex"))
+    return sorted(f for f in seen if not f.endswith(os.path.join("generated", "results.tex")))
 
 
 def main():

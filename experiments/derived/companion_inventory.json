@@ -1,0 +1,57 @@
+{
+ "groups": [
+  {
+   "name": "Event metadata",
+   "files": 2,
+   "bytes": 8177587
+  },
+  {
+   "name": "Duplicate lists",
+   "files": 4,
+   "bytes": 128611
+  },
+  {
+   "name": "Split manifests",
+   "files": 5,
+   "bytes": 1247324
+  },
+  {
+   "name": "System index",
+   "files": 1,
+   "bytes": 2789
+  },
+  {
+   "name": "Predictions",
+   "files": 782,
+   "bytes": 71236719
+  },
+  {
+   "name": "Run records",
+   "files": 783,
+   "bytes": 3463955
+  },
+  {
+   "name": "Code and tests",
+   "files": 53,
+   "bytes": 425488
+  },
+  {
+   "name": "Derived results",
+   "files": 30,
+   "bytes": 2227581
+  },
+  {
+   "name": "Analysis plan and literature reading",
+   "files": 5,
+   "bytes": 144494
+  },
+  {
+   "name": "Environments",
+   "files": 5,
+   "bytes": 3268
+  }
+ ],
+ "total_files": 1670,
+ "total_bytes": 87057816,
+ "prediction_files": 782
+}

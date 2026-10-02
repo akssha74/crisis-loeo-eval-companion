@@ -1,0 +1,14 @@
+system	corpus	description	seeds	preds	meta
+bart-mnli-zeroshot	crisislext26	BART-large-MNLI zero-shot entailment, trained on no event		experiments/runs/x10_zeroshot/crisislext26/bart-large-mnli/preds.tsv.gz	experiments/meta/corpus_crisislext26_meta.tsv
+distilbert-2ep	crisislext26	DistilBERT-base-uncased, 2 epochs, 6,000 messages	1,2,42	experiments/runs/confirm/crisislext26/distilbert-base-uncased/seed{seed}/loeo__*/preds.tsv.gz	experiments/meta/corpus_crisislext26_meta.tsv
+distilbert-4ep	crisislext26	DistilBERT-base-uncased, 4 epochs, 6,000 messages	42	experiments/runs/confirm_ep4/crisislext26/distilbert-base-uncased/seed{seed}/loeo__*/preds.tsv.gz	experiments/meta/corpus_crisislext26_meta.tsv
+distilbert-large	crisislext26	DistilBERT-base-uncased, 2 epochs, 80% of corpus	42	experiments/runs/confirm/crisislext26/distilbert-base-uncased/seed{seed}/loeo_full__*/preds.tsv.gz	experiments/meta/corpus_crisislext26_meta.tsv
+roberta-2ep	crisislext26	RoBERTa-base, 2 epochs, 6,000 messages	1,2,42	experiments/runs/confirm/crisislext26/roberta-base/seed{seed}/loeo__*/preds.tsv.gz	experiments/meta/corpus_crisislext26_meta.tsv
+tfidf-lr	crisislext26	TF-IDF word 1-2-grams + logistic regression, 6,000 messages	1,2,42	experiments/runs/x3_tfidf/crisislext26/tfidf-lr/seed{seed}/loeo__*/preds.tsv.gz	experiments/meta/corpus_crisislext26_meta.tsv
+bart-mnli-zeroshot	humaid19	BART-large-MNLI zero-shot entailment, trained on no event		experiments/runs/x10_zeroshot/humaid19/bart-large-mnli/preds.tsv.gz	experiments/meta/corpus_humaid19_meta.tsv
+distilbert-2ep	humaid19	DistilBERT-base-uncased, 2 epochs, 6,000 messages	1,2,3,4,42	experiments/runs/confirm/humaid19/distilbert-base-uncased/seed{seed}/loeo__*/preds.tsv.gz	experiments/meta/corpus_humaid19_meta.tsv
+distilbert-4ep	humaid19	DistilBERT-base-uncased, 4 epochs, 6,000 messages	1,2,3,4,42	experiments/runs/confirm_ep4/humaid19/distilbert-base-uncased/seed{seed}/loeo__*/preds.tsv.gz	experiments/meta/corpus_humaid19_meta.tsv
+distilbert-large	humaid19	DistilBERT-base-uncased, 2 epochs, 80% of corpus	42	experiments/runs/confirm/humaid19/distilbert-base-uncased/seed{seed}/loeo_full__*/preds.tsv.gz	experiments/meta/corpus_humaid19_meta.tsv
+roberta-2ep	humaid19	RoBERTa-base, 2 epochs, 6,000 messages	1,2,3,4,42	experiments/runs/confirm/humaid19/roberta-base/seed{seed}/loeo__*/preds.tsv.gz	experiments/meta/corpus_humaid19_meta.tsv
+roberta-4ep	humaid19	RoBERTa-base, 4 epochs, 6,000 messages	1,2,3,4,42	experiments/runs/confirm_ep4/humaid19/roberta-base/seed{seed}/loeo__*/preds.tsv.gz	experiments/meta/corpus_humaid19_meta.tsv
+tfidf-lr	humaid19	TF-IDF word 1-2-grams + logistic regression, 6,000 messages	1,2,3,4,42	experiments/runs/x3_tfidf/humaid19/tfidf-lr/seed{seed}/loeo__*/preds.tsv.gz	experiments/meta/corpus_humaid19_meta.tsv

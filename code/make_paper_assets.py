@@ -1757,7 +1757,8 @@ def main():
     x10 = json.load(open(args.x10)) if os.path.exists(args.x10) else None
     ids_check = json.load(open(args.ids_check)) if os.path.exists(args.ids_check) else None
     if x9:
-        kv.update(note_keys(x9, x10, ids_check))
+        import note_assets
+        kv.update(note_assets.main(args.out))
     kv.update(ls_concentration_keys(summary))
     rs = json.load(open(args.run_stats))
     kv["n-runs"] = f"{rs['n_runs']:,}".replace(",", "{,}")
@@ -1789,12 +1790,6 @@ def main():
     if x8:
         tabs["tab_arms"] = table_arms(x8)
         fig_instability(x8, os.path.join(figs, "fig_instability.pdf"))
-    if x9:
-        tabs["tab_note_results"] = table_note_results(x9, x10)
-        tabs["tab_note_fixtures"] = table_note_fixtures(x9)
-        tabs["tab_note_events"] = table_note_events(x9)
-        tabs["note_usage"] = usage_example()
-        fig_note_cells(x9, os.path.join(figs, "fig_note_cells.pdf"))
     for name, body in tabs.items():
         open(os.path.join(gen, name + ".tex"), "w").write(body + "\n")
     fig_decomposition(summary, os.path.join(figs, "fig_decomposition.pdf"))

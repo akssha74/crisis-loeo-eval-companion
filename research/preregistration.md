@@ -397,6 +397,10 @@ All added arms are reported whether or not they change a conclusion.
   the mean over seeds of the number of messages of that class in the run's training sample (rebuilt as in
   `code/verify_training_ids.py`) and in the training events.
   Reported as exploratory, whatever it shows.
+- X12 addendum (written on 2026-10-02 after X12(a)-(e) had been computed and read, before (f) was computed).
+  (f) Incomplete seeds. For every run of a seed that the analyses leave out because it lacks some held-out events
+  (`code/revision_x9.complete_seeds`), its present-class macro-F1 on its event, beside the mean, minimum and
+  maximum over the arm's complete seeds for the same event. Reported as exploratory, whatever it shows.
 
 ## Deviations log
 
@@ -459,3 +463,16 @@ All added arms are reported whether or not they change a conclusion.
   (commit 6eb95e3) at 2026-10-02T07:18:56Z, which is authoritative, and no X11 quantity was computed before it.
   In X11(f), Spearman's rho is undefined for a class whose seed-mean F1 is the same in every event containing it;
   such a class is reported as undefined and the median over classes is taken over the classes with a defined rho.
+- 2026-10-02, data completeness, found after the X11 and X12(a)-(e) outcomes had been read. This study directory,
+  created on 2026-10-01 at about 17:38Z, held copies of the parent study directory's run outputs
+  (`studies/disaster-crisis-text-matched-estimand`) written up to about 19:13Z. The X7(a) four-epoch HumAID seed-4
+  runs that finished later in the parent directory (12 DistilBERT, 15 RoBERTa) were therefore missing here, and
+  the complete-seed rule of `code/revision_x9.complete_seeds` left seed 4 out of both four-epoch HumAID arms. The 27
+  runs were copied from the parent directory after checking that the code, manifest and corpus hashes and the
+  training settings in their run records equal those of the seed-3 runs, that the 11 seed-4 runs already present
+  are byte-identical to the parent's, that the corpus metadata and split manifest are identical, and that the
+  parent ledger records each run as succeeded with matching artefact hashes; their 27 ledger lines were appended
+  verbatim. The truncated logs of the four runs that were in flight at the cut-off are kept under
+  `experiments/failed/truncated-copy-2026-10-01/`. Every analysis was rerun with the five seeds per four-epoch
+  HumAID arm that X7(a) specifies; A^P of the two arms moved by at most 0.0011, and no ranking or X12 count changed.
+  X12(f) is therefore empty.

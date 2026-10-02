@@ -1,0 +1,280 @@
+{
+ "humaid19": {
+  "sources": {
+   "set1": "d02ce1727ed75d467276b3c04792eb08bc5fd0b72c1502a2e873806a1f5b9671",
+   "set2": "1d45cc79de325b8a9c4d063e8fc3be5efbd23c94289e6d5ca6f024ba55d29064"
+  },
+  "n": 76484,
+  "events": 19,
+  "protected_events": [
+   "california_wildfires_2018",
+   "hurricane_dorian_2019",
+   "hurricane_florence_2018",
+   "kerala_floods_2018",
+   "midwestern_us_floods_2019",
+   "pakistan_earthquake_2019"
+  ],
+  "sha256": "b4c30b0b24ba9a773d510a11fd798fdf6fb87e014e7ce680b756e22ccad2e3d9"
+ },
+ "crisislext26": {
+  "source": {
+   "repo": "sajao/CrisisLex",
+   "commit": "d67cddd51131dbb28842209014f67cffe359ff42",
+   "fetch_manifest_sha256": "9c5f5b9504c4a7dd094697a9443f25149a3d801a21f5183eb7885497459fc03e"
+  },
+  "rows_read": 27933,
+  "dropped_by_label": {
+   "Not labeled": 3419,
+   "Not applicable": 1138
+  },
+  "duplicate_tweet_id_rows_dropped": 1,
+  "tweet_ids_with_conflicting_labels": 1,
+  "n": 23375,
+  "labels": {
+   "other_useful_information": 7626,
+   "affected_individuals": 4790,
+   "sympathy_and_support": 4650,
+   "donations_and_volunteering": 2404,
+   "caution_and_advice": 2306,
+   "infrastructure_and_utilities": 1599
+  },
+  "within_event_normalized_duplicate_rows": 3014,
+  "events": {
+   "2012_colorado_wildfires": {
+    "n": 943,
+    "hazard": "wildfire",
+    "first_post_utc": "2012-06-09T20:36:29.657000+00:00",
+    "last_post_utc": "2012-07-08T21:38:04.658000+00:00",
+    "retweet_share": 0.417,
+    "within_event_normalized_duplicate_rows": 42,
+    "n_label_classes": 6
+   },
+   "2012_costa_rica_earthquake": {
+    "n": 866,
+    "hazard": "earthquake",
+    "first_post_utc": "2012-09-05T14:45:52.660000+00:00",
+    "last_post_utc": "2012-09-20T00:53:13.662000+00:00",
+    "retweet_share": 0.522,
+    "within_event_normalized_duplicate_rows": 154,
+    "n_label_classes": 6
+   },
+   "2012_guatemala_earthquake": {
+    "n": 905,
+    "hazard": "earthquake",
+    "first_post_utc": "2012-11-06T20:20:44.666000+00:00",
+    "last_post_utc": "2012-11-25T17:30:13.660000+00:00",
+    "retweet_share": 0.578,
+    "within_event_normalized_duplicate_rows": 129,
+    "n_label_classes": 6
+   },
+   "2012_italy_earthquakes": {
+    "n": 912,
+    "hazard": "earthquake",
+    "first_post_utc": "2012-05-18T11:04:31.662000+00:00",
+    "last_post_utc": "2012-06-14T13:05:39.662000+00:00",
+    "retweet_share": 0.566,
+    "within_event_normalized_duplicate_rows": 73,
+    "n_label_classes": 6
+   },
+   "2012_philipinnes_floods": {
+    "n": 874,
+    "hazard": "floods",
+    "first_post_utc": "2012-08-01T12:02:53.657000+00:00",
+    "last_post_utc": "2012-08-15T03:26:02.663000+00:00",
+    "retweet_share": 0.604,
+    "within_event_normalized_duplicate_rows": 147,
+    "n_label_classes": 6
+   },
+   "2012_typhoon_pablo": {
+    "n": 871,
+    "hazard": "typhoon",
+    "first_post_utc": "2012-11-26T00:30:09.664000+00:00",
+    "last_post_utc": "2012-12-14T22:42:35.665000+00:00",
+    "retweet_share": 0.474,
+    "within_event_normalized_duplicate_rows": 60,
+    "n_label_classes": 6
+   },
+   "2012_venezuela_refinery": {
+    "n": 872,
+    "hazard": "explosion",
+    "first_post_utc": "2012-08-25T18:43:41.659000+00:00",
+    "last_post_utc": "2012-09-05T10:59:10.660000+00:00",
+    "retweet_share": 0.536,
+    "within_event_normalized_duplicate_rows": 66,
+    "n_label_classes": 6
+   },
+   "2013_alberta_floods": {
+    "n": 913,
+    "hazard": "floods",
+    "first_post_utc": "2013-06-20T12:05:25.658000+00:00",
+    "last_post_utc": "2013-07-16T02:10:25.659000+00:00",
+    "retweet_share": 0.591,
+    "within_event_normalized_duplicate_rows": 36,
+    "n_label_classes": 6
+   },
+   "2013_australia_bushfire": {
+    "n": 930,
+    "hazard": "wildfire",
+    "first_post_utc": "2013-10-12T07:28:06.665000+00:00",
+    "last_post_utc": "2013-11-01T10:54:27.666000+00:00",
+    "retweet_share": 0.523,
+    "within_event_normalized_duplicate_rows": 83,
+    "n_label_classes": 6
+   },
+   "2013_bohol_earthquake": {
+    "n": 943,
+    "hazard": "earthquake",
+    "first_post_utc": "2013-10-15T00:18:45.659000+00:00",
+    "last_post_utc": "2013-10-25T05:06:57.662000+00:00",
+    "retweet_share": 0.458,
+    "within_event_normalized_duplicate_rows": 182,
+    "n_label_classes": 6
+   },
+   "2013_boston_bombings": {
+    "n": 913,
+    "hazard": "bombings",
+    "first_post_utc": "2013-04-15T19:00:57.659000+00:00",
+    "last_post_utc": "2013-06-01T04:46:26.660000+00:00",
+    "retweet_share": 0.591,
+    "within_event_normalized_duplicate_rows": 55,
+    "n_label_classes": 6
+   },
+   "2013_brazil_nightclub_fire": {
+    "n": 922,
+    "hazard": "fire",
+    "first_post_utc": "2013-01-27T06:19:27.664000+00:00",
+    "last_post_utc": "2013-02-11T23:05:39.661000+00:00",
+    "retweet_share": 0.528,
+    "within_event_normalized_duplicate_rows": 211,
+    "n_label_classes": 6
+   },
+   "2013_colorado_floods": {
+    "n": 901,
+    "hazard": "floods",
+    "first_post_utc": "2013-09-12T04:24:20.665000+00:00",
+    "last_post_utc": "2013-10-01T05:32:05.661000+00:00",
+    "retweet_share": 0.471,
+    "within_event_normalized_duplicate_rows": 50,
+    "n_label_classes": 6
+   },
+   "2013_glasgow_helicopter_crash": {
+    "n": 885,
+    "hazard": "crash",
+    "first_post_utc": "2013-11-29T22:42:59.659000+00:00",
+    "last_post_utc": "2013-12-28T15:54:58.666000+00:00",
+    "retweet_share": 0.51,
+    "within_event_normalized_duplicate_rows": 155,
+    "n_label_classes": 6
+   },
+   "2013_la_airport_shootings": {
+    "n": 896,
+    "hazard": "shootings",
+    "first_post_utc": "2013-11-01T16:29:36.658000+00:00",
+    "last_post_utc": "2013-11-12T22:59:09.661000+00:00",
+    "retweet_share": 0.525,
+    "within_event_normalized_duplicate_rows": 105,
+    "n_label_classes": 5
+   },
+   "2013_lac_megantic_train_crash": {
+    "n": 872,
+    "hazard": "derailment",
+    "first_post_utc": "2013-07-06T07:37:10.666000+00:00",
+    "last_post_utc": "2013-07-26T01:36:59.659000+00:00",
+    "retweet_share": 0.515,
+    "within_event_normalized_duplicate_rows": 45,
+    "n_label_classes": 6
+   },
+   "2013_manila_floods": {
+    "n": 808,
+    "hazard": "floods",
+    "first_post_utc": "2013-08-17T09:03:06.657000+00:00",
+    "last_post_utc": "2013-08-27T13:54:12.662000+00:00",
+    "retweet_share": 0.582,
+    "within_event_normalized_duplicate_rows": 90,
+    "n_label_classes": 6
+   },
+   "2013_ny_train_crash": {
+    "n": 999,
+    "hazard": "derailment",
+    "first_post_utc": "2013-12-01T12:51:01.664000+00:00",
+    "last_post_utc": "2013-12-08T22:49:17.663000+00:00",
+    "retweet_share": 0.435,
+    "within_event_normalized_duplicate_rows": 265,
+    "n_label_classes": 6
+   },
+   "2013_queensland_floods": {
+    "n": 892,
+    "hazard": "floods",
+    "first_post_utc": "2013-01-17T10:23:27.665000+00:00",
+    "last_post_utc": "2013-02-05T05:54:54.664000+00:00",
+    "retweet_share": 0.414,
+    "within_event_normalized_duplicate_rows": 60,
+    "n_label_classes": 6
+   },
+   "2013_russia_meteor": {
+    "n": 949,
+    "hazard": "meteorite",
+    "first_post_utc": "2013-02-15T04:16:12.657000+00:00",
+    "last_post_utc": "2013-03-05T20:38:17.659000+00:00",
+    "retweet_share": 0.525,
+    "within_event_normalized_duplicate_rows": 222,
+    "n_label_classes": 6
+   },
+   "2013_sardinia_floods": {
+    "n": 910,
+    "hazard": "floods",
+    "first_post_utc": "2013-11-18T18:26:26.664000+00:00",
+    "last_post_utc": "2013-11-28T22:03:15.659000+00:00",
+    "retweet_share": 0.607,
+    "within_event_normalized_duplicate_rows": 123,
+    "n_label_classes": 6
+   },
+   "2013_savar_building_collapse": {
+    "n": 874,
+    "hazard": "collapse",
+    "first_post_utc": "2013-04-24T04:46:53.662000+00:00",
+    "last_post_utc": "2013-06-01T03:27:50.661000+00:00",
+    "retweet_share": 0.374,
+    "within_event_normalized_duplicate_rows": 110,
+    "n_label_classes": 6
+   },
+   "2013_singapore_haze": {
+    "n": 731,
+    "hazard": "haze",
+    "first_post_utc": "2013-06-15T17:51:46.657000+00:00",
+    "last_post_utc": "2013-07-04T23:54:40.665000+00:00",
+    "retweet_share": 0.735,
+    "within_event_normalized_duplicate_rows": 171,
+    "n_label_classes": 6
+   },
+   "2013_spain_train_crash": {
+    "n": 987,
+    "hazard": "derailment",
+    "first_post_utc": "2013-07-24T19:27:09.663000+00:00",
+    "last_post_utc": "2013-08-07T20:48:33.665000+00:00",
+    "retweet_share": 0.559,
+    "within_event_normalized_duplicate_rows": 175,
+    "n_label_classes": 6
+   },
+   "2013_typhoon_yolanda": {
+    "n": 924,
+    "hazard": "typhoon",
+    "first_post_utc": "2013-11-05T15:32:11.665000+00:00",
+    "last_post_utc": "2013-12-31T07:55:57.666000+00:00",
+    "retweet_share": 0.634,
+    "within_event_normalized_duplicate_rows": 118,
+    "n_label_classes": 6
+   },
+   "2013_west_texas_explosion": {
+    "n": 883,
+    "hazard": "explosion",
+    "first_post_utc": "2013-04-18T00:30:41.658000+00:00",
+    "last_post_utc": "2013-05-15T04:09:45.658000+00:00",
+    "retweet_share": 0.559,
+    "within_event_normalized_duplicate_rows": 87,
+    "n_label_classes": 6
+   }
+  },
+  "sha256": "83e4187f5333ab94a3987f8ba8e212f9b1d1f068bf6f693eb2435a8b8a0762fd"
+ }
+}

@@ -1,5 +1,5 @@
-"""Recompute every generated value of the Project Note (keys note-*, the result tables and the usage example) from
-experiments/derived and compare it with note_values.json, the values printed in the note.
+"""Recompute every generated value of the Project Note and Online Resource 1 (keys note-*, the tables and the usage
+example) from experiments/derived and compare it with note_values.json, the values printed in the documents.
 
     python code/check_note_values.py            # compare
     python code/check_note_values.py --write    # record the current values
@@ -10,20 +10,11 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import make_paper_assets as mpa  # noqa: E402
-
-DERIVED = "experiments/derived"
+import note_assets  # noqa: E402
 
 
 def current():
-    load = lambda name: json.load(open(os.path.join(DERIVED, name)))  # noqa: E731
-    x9, x10, ids = load("revision_x9.json"), load("x10_zeroshot.json"), load("training_ids_check.json")
-    out = mpa.note_keys(x9, x10, ids)
-    out["table:note-results"] = mpa.table_note_results(x9, x10)
-    out["table:note-fixtures"] = mpa.table_note_fixtures(x9)
-    out["table:note-events"] = mpa.table_note_events(x9)
-    out["usage-example"] = mpa.usage_example()
-    return out
+    return note_assets.current()
 
 
 def main():
