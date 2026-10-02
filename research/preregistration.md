@@ -401,6 +401,26 @@ All added arms are reported whether or not they change a conclusion.
   (f) Incomplete seeds. For every run of a seed that the analyses leave out because it lacks some held-out events
   (`code/revision_x9.complete_seeds`), its present-class macro-F1 on its event, beside the mean, minimum and
   maximum over the arm's complete seeds for the same event. Reported as exploratory, whatever it shows.
+- X13 (written at about 2026-10-02T11:50Z after reading LRE referee round 9 and before any X13 quantity was
+  computed; the push of this entry to the public companion repository is authoritative). Evaluation-time analyses
+  of the same predictions as X11 and X12; no model is trained (`code/revision_x13.py`). Bootstrap: the X11 crossed
+  draws (2,000, seed 20261001).
+  (a) Composition-first ordering. With w_ec = 1 / (|E| |C_e|) the weight of cell (e, c) in the per-event mean and
+  W_c the sum of w_ec over the events containing c: T4c = <S_c>_c - sum_c W_c S_c (class weights first) and
+  T3c = sum_c W_c S_c - per-event mean (within-class weights second), so that T3c + T4c = T3 + T4. Seed means and
+  intervals for every system (`code/companion_eval.split_terms`, evaluator v1.2.0).
+  (b) Fixed-rate null. For every system and seed, the pooled recall r_c = TP_c / s_c and false-positive rate
+  f_c = FP_c / (N - s_c) of each class over all events; 200 simulated replicates (seed 20261002) with
+  TP_ec ~ Binomial(s_ec, r_c), FP_ec ~ Binomial(n_e - s_ec, f_c) and FN_ec = s_ec - TP_ec, keeping every observed
+  support. Reported: the replicate mean of seed-mean A^P and of T1-T4, with the 2.5 and 97.5 percentiles over
+  replicates; the same after removing cells below 15 messages; and observed minus null A^P with a crossed-bootstrap
+  interval in which every draw recomputes the rates from the drawn events and uses 20 replicates.
+  (c) Mixed summaries. Under P, for every pair of systems whose pooled and per-event orders agree: whether comparing
+  the pooled score of one with the per-event mean of the other orders them the other way, counted over both
+  directions.
+  (d) Evaluator check. The v1.2.0 option `--min-cell 15` reproduces the X11(d) A^P at t = 15 for every system and
+  seed.
+  Reported as exploratory, whatever it shows.
 
 ## Deviations log
 
