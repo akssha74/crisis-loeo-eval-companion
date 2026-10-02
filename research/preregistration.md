@@ -376,6 +376,27 @@ All added arms are reported whether or not they change a conclusion.
   (h) Cross-event duplicates. Messages whose normalised text (`text_norm`) occurs in another event of the same
   corpus, counted per corpus; A^P of the two-epoch arms after removing those messages from the scored events.
   Reported as exploratory, whatever it shows.
+- X12 (written on 2026-10-02 after reading LRE referee round 8 and before any X12 quantity was computed; the commit
+  time is authoritative). Evaluation-time analyses of the same predictions as X11 (every X9 arm and X10); no model
+  is trained (`code/revision_x12.py`). Bootstrap: 2,000 draws, seed 20261001.
+  (a) Paired differences. Per corpus and convention (P, D, O), for every pair of systems i, j: the pooled gap, the
+  per-event gap and their difference A_i - A_j, with a 95% percentile interval from a bootstrap in which each draw
+  resamples events once for all systems and seeds independently per system; the share of draws in which the pooled
+  and per-event orders of i and j disagree; and the number of pairs whose absolute per-event gap is smaller than
+  |A_i - A_j|.
+  (b) Interval bias. For A^P of every system: the mean of the X11 bootstrap draws minus the point estimate, and a
+  BCa 95% interval from the same draws, with bias correction z0 from the share of draws below the estimate and
+  acceleration from the X11 event jackknife.
+  (c) Precision and recall. For the two-epoch arms, the X11(f) within-class Spearman correlation computed with
+  seed-mean per-cell precision (cells where the class is never predicted left out) and with seed-mean per-cell
+  recall in place of F1, with medians over classes.
+  (d) Within-event duplicates. A^P of every system after keeping one message (the smallest tweet identifier) of each
+  normalised text (`text_norm`) within each event, both corpora, with intervals.
+  (e) Large cells scored zero. For the two-epoch arms, every event-class cell with at least 50 messages and
+  seed-mean F1 below 0.05: event, class, support, seed-mean F1, the most frequent prediction for its messages, and
+  the mean over seeds of the number of messages of that class in the run's training sample (rebuilt as in
+  `code/verify_training_ids.py`) and in the training events.
+  Reported as exploratory, whatever it shows.
 
 ## Deviations log
 
@@ -433,3 +454,8 @@ All added arms are reported whether or not they change a conclusion.
   reduce padding. On the first 256 CrisisLexT26 messages (1,536 message-class pairs) the reordered logits equal
   the saved corpus-order logits exactly (`code/run_zeroshot.py check_order`: maximum absolute difference 0).
   Model, revision, hypotheses, truncation and prediction rule are unchanged.
+- Timestamp erratum and clarification for X11 (2026-10-02). The header time "2026-10-02T07:20Z" was a rounded
+  estimate written into the entry; GitHub records the push of the X11 entry to the public companion repository
+  (commit 6eb95e3) at 2026-10-02T07:18:56Z, which is authoritative, and no X11 quantity was computed before it.
+  In X11(f), Spearman's rho is undefined for a class whose seed-mean F1 is the same in every event containing it;
+  such a class is reported as undefined and the median over classes is taken over the classes with a defined rho.
