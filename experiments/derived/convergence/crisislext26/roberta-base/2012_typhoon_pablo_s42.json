@@ -1,0 +1,43 @@
+{
+ "corpus": "crisislext26",
+ "model": "data/models/roberta-base/e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+ "held_out_event_not_scored": "2012_typhoon_pablo",
+ "seed": 42,
+ "epochs": 5,
+ "n_train": 6000,
+ "n_source_val": 600,
+ "curve": [
+  {
+   "epoch": 1,
+   "train_loss": 1.22572,
+   "val_loss": 0.72519,
+   "val_macro_f1_present": 0.71239
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.69971,
+   "val_loss": 0.66401,
+   "val_macro_f1_present": 0.73198
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.52282,
+   "val_loss": 0.66951,
+   "val_macro_f1_present": 0.74877
+  },
+  {
+   "epoch": 4,
+   "train_loss": 0.41462,
+   "val_loss": 0.67761,
+   "val_macro_f1_present": 0.73518
+  },
+  {
+   "epoch": 5,
+   "train_loss": 0.33016,
+   "val_loss": 0.6955,
+   "val_macro_f1_present": 0.7417
+  }
+ ],
+ "elapsed_sec": 1448.7,
+ "code_sha256": "d794071319caf87e7151e8fe7f8c57520734533c35c0e13a2d455ae466d29649"
+}

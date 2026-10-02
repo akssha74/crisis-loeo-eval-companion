@@ -1,0 +1,4 @@
+# Python 3.12.13, Apple MPS backend. Training runs (code/run_protocol.py) and near-duplicate diagnostics.
+-r requirements-analysis.txt
+torch==2.13.0
+transformers==5.17.0

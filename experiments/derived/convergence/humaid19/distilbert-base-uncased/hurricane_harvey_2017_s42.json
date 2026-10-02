@@ -1,0 +1,43 @@
+{
+ "corpus": "humaid19",
+ "model": "data/models/distilbert-base-uncased/12040accade4e8a0f71eabdb258fecc2e7e948be",
+ "held_out_event_not_scored": "hurricane_harvey_2017",
+ "seed": 42,
+ "epochs": 5,
+ "n_train": 6000,
+ "n_source_val": 600,
+ "curve": [
+  {
+   "epoch": 1,
+   "train_loss": 1.58256,
+   "val_loss": 0.89251,
+   "val_macro_f1_present": 0.52546
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.7224,
+   "val_loss": 0.79297,
+   "val_macro_f1_present": 0.63676
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.54224,
+   "val_loss": 0.80902,
+   "val_macro_f1_present": 0.64415
+  },
+  {
+   "epoch": 4,
+   "train_loss": 0.4344,
+   "val_loss": 0.82279,
+   "val_macro_f1_present": 0.62609
+  },
+  {
+   "epoch": 5,
+   "train_loss": 0.36998,
+   "val_loss": 0.83209,
+   "val_macro_f1_present": 0.61127
+  }
+ ],
+ "elapsed_sec": 1099.3,
+ "code_sha256": "d794071319caf87e7151e8fe7f8c57520734533c35c0e13a2d455ae466d29649"
+}

@@ -1,0 +1,4000 @@
+{
+ "groups": [
+  {
+   "plan": "confirm",
+   "corpus": "humaid19",
+   "model": "distilbert-base-uncased",
+   "summary": {
+    "E1": {
+     "mean": -0.001678601383782108,
+     "min": -0.008395146504151407,
+     "max": 0.004227170405422642
+    },
+    "scoring": {
+     "mean": 0.039280273066009994,
+     "min": 0.031055712148090088,
+     "max": 0.04693080502688986
+    },
+    "reweighting": {
+     "mean": -0.0409588744497921,
+     "min": -0.04270363462146716,
+     "max": -0.03945085865224149
+    },
+    "loeo_aggregation_R": {
+     "mean": -0.01347075485645961,
+     "min": -0.017737718148150505,
+     "max": -0.011362759107433451
+    },
+    "loeo_aggregation_whole": {
+     "mean": -0.01880307035739346,
+     "min": -0.023270287193115635,
+     "max": -0.01559104262801958
+    },
+    "spearman_prev_f1": {
+     "mean": 0.5626350598505586,
+     "max_p": 1.9884595432360793e-14
+    },
+    "id_spearman_prev_f1_R": {
+     "mean": 0.5857054453688166,
+     "max_p": 1.3878682787060996e-15,
+     "within_class_mean": 0.499472824244698,
+     "within_class_max_p": 5.6910194693628887e-11
+    },
+    "rarest_class_learned_seeds": [],
+    "reweighting_by_rare_class": {
+     "learned": [],
+     "not_learned": [
+      -0.0409588744497921
+     ]
+    }
+   },
+   "seeds": [
+    {
+     "seed": 1,
+     "E1": 0.004227170405422642,
+     "scoring": 0.04693080502688986,
+     "reweighting": -0.04270363462146716,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.6003471605558363,
+      "p": 3.0756175137490873e-17,
+      "spearman_within_class": 0.4857258390340139,
+      "p_within_class": 5.6910194693628887e-11
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.0,
+      "n_pred": 0,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.6444987775061125,
+       "id_n_pred": 957,
+       "loeo_f1_R": 0.6061522945032779,
+       "loeo_n_pred_R": 895
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.8342785129174544,
+       "id_n_pred": 765,
+       "loeo_f1_R": 0.8500590318772137,
+       "loeo_n_pred_R": 872
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.783517467900866,
+       "id_n_pred": 1705,
+       "loeo_f1_R": 0.7799940458469783,
+       "loeo_n_pred_R": 1715
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.9114649681528663,
+       "id_n_pred": 1658,
+       "loeo_f1_R": 0.9116990755498884,
+       "loeo_n_pred_R": 1655
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.0,
+       "id_n_pred": 0,
+       "loeo_f1_R": 0.0,
+       "loeo_n_pred_R": 0
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.4560229445506692,
+       "id_n_pred": 843,
+       "loeo_f1_R": 0.43089809213587715,
+       "loeo_n_pred_R": 900
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.5142627561269586,
+       "id_n_pred": 2565,
+       "loeo_f1_R": 0.4805815160955348,
+       "loeo_n_pred_R": 2402
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.2344213649851632,
+       "id_n_pred": 151,
+       "loeo_f1_R": 0.10981697171381032,
+       "loeo_n_pred_R": 78
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.8380473954351862,
+       "id_n_pred": 4947,
+       "loeo_f1_R": 0.8314483364444932,
+       "loeo_n_pred_R": 4897
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.8097949886104784,
+       "id_n_pred": 1712,
+       "loeo_f1_R": 0.8007590132827325,
+       "loeo_n_pred_R": 1889
+      }
+     },
+     "loeo_aggregation_R": -0.011668367038342842,
+     "loeo_aggregation_whole": -0.018128463920534355,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.5596596422993039,
+      "p": 9.796020991462715e-15,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.38922979263647906,
+      "median_f1_prev_ge_5pct": 0.747102238953834,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    },
+    {
+     "seed": 2,
+     "E1": -0.0029408582224182966,
+     "scoring": 0.03828033627227358,
+     "reweighting": -0.04122119449469186,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.5828286750103926,
+      "p": 4.0594190696333467e-16,
+      "spearman_within_class": 0.500096323318558,
+      "p_within_class": 1.2384691378414689e-11
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.0,
+      "n_pred": 0,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.6501429933269781,
+       "id_n_pred": 1010,
+       "loeo_f1_R": 0.5934177215189873,
+       "loeo_n_pred_R": 887
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.8525754884547069,
+       "id_n_pred": 867,
+       "loeo_f1_R": 0.8522458628841607,
+       "loeo_n_pred_R": 870
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.788858939802336,
+       "id_n_pred": 1695,
+       "loeo_f1_R": 0.7822677925211098,
+       "loeo_n_pred_R": 1672
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.9115863389722311,
+       "id_n_pred": 1651,
+       "loeo_f1_R": 0.9068283343969368,
+       "loeo_n_pred_R": 1652
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.0,
+       "id_n_pred": 0,
+       "loeo_f1_R": 0.0,
+       "loeo_n_pred_R": 0
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.4626935710933834,
+       "id_n_pred": 882,
+       "loeo_f1_R": 0.3833580980683507,
+       "loeo_n_pred_R": 770
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.5014675052410902,
+       "id_n_pred": 2357,
+       "loeo_f1_R": 0.49190161967606477,
+       "loeo_n_pred_R": 2588
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.2886002886002886,
+       "id_n_pred": 170,
+       "loeo_f1_R": 0.13029315960912052,
+       "loeo_n_pred_R": 91
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.841733759788243,
+       "id_n_pred": 4857,
+       "loeo_f1_R": 0.8359187240550578,
+       "loeo_n_pred_R": 4944
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.8074156059767571,
+       "id_n_pred": 1814,
+       "loeo_f1_R": 0.8046293744833287,
+       "loeo_n_pred_R": 1829
+      }
+     },
+     "loeo_aggregation_R": -0.014889461551757632,
+     "loeo_aggregation_whole": -0.023270287193115635,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.5588853175850147,
+      "p": 1.0849683948030856e-14,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.4392033542976939,
+      "median_f1_prev_ge_5pct": 0.7498824923001132,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    },
+    {
+     "seed": 3,
+     "E1": -0.000395821556088638,
+     "scoring": 0.04058114142068202,
+     "reweighting": -0.04097696297677062,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.5835546359962709,
+      "p": 3.65897863669874e-16,
+      "spearman_within_class": 0.5063334912764248,
+      "p_within_class": 6.247256318285151e-12
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.0,
+      "n_pred": 0,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.6253256904637832,
+       "id_n_pred": 831,
+       "loeo_f1_R": 0.6135216952573158,
+       "loeo_n_pred_R": 894
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.846286701208981,
+       "id_n_pred": 915,
+       "loeo_f1_R": 0.8415492957746479,
+       "loeo_n_pred_R": 882
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.7894417475728155,
+       "id_n_pred": 1652,
+       "loeo_f1_R": 0.7847094801223241,
+       "loeo_n_pred_R": 1626
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.9082830847350047,
+       "id_n_pred": 1669,
+       "loeo_f1_R": 0.9073015873015873,
+       "loeo_n_pred_R": 1668
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.0,
+       "id_n_pred": 0,
+       "loeo_f1_R": 0.0,
+       "loeo_n_pred_R": 0
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.44906033630069236,
+       "id_n_pred": 773,
+       "loeo_f1_R": 0.39154504277805735,
+       "loeo_n_pred_R": 738
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.521900826446281,
+       "id_n_pred": 2427,
+       "loeo_f1_R": 0.5002929115407148,
+       "loeo_n_pred_R": 2708
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.2332814930015552,
+       "id_n_pred": 120,
+       "loeo_f1_R": 0.11764705882352941,
+       "loeo_n_pred_R": 72
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.836719337848006,
+       "id_n_pred": 5093,
+       "loeo_f1_R": 0.8337730870712401,
+       "loeo_n_pred_R": 4886
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.797129450731438,
+       "id_n_pred": 1823,
+       "loeo_f1_R": 0.8013226784238082,
+       "loeo_n_pred_R": 1829
+      }
+     },
+     "loeo_aggregation_R": -0.01169546843661362,
+     "loeo_aggregation_whole": -0.01559104262801958,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.5845690701726642,
+      "p": 3.163332582242654e-16,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.3853549415768306,
+      "median_f1_prev_ge_5pct": 0.7475059639991325,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    },
+    {
+     "seed": 4,
+     "E1": -0.0008883510416748397,
+     "scoring": 0.03955337046211445,
+     "reweighting": -0.04044172150378936,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.5877005950261316,
+      "p": 2.0119099442073585e-16,
+      "spearman_within_class": 0.5080122960923072,
+      "p_within_class": 5.183965698524945e-12
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.0,
+      "n_pred": 0,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.6602962255136168,
+       "id_n_pred": 1005,
+       "loeo_f1_R": 0.6018614270941055,
+       "loeo_n_pred_R": 846
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.8599151000606429,
+       "id_n_pred": 827,
+       "loeo_f1_R": 0.8527859237536657,
+       "loeo_n_pred_R": 883
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.7973462002412546,
+       "id_n_pred": 1672,
+       "loeo_f1_R": 0.7827398913699457,
+       "loeo_n_pred_R": 1670
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.9007537688442211,
+       "id_n_pred": 1702,
+       "loeo_f1_R": 0.9048381928868953,
+       "loeo_n_pred_R": 1639
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.0,
+       "id_n_pred": 0,
+       "loeo_f1_R": 0.0,
+       "loeo_n_pred_R": 0
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.4170337738619677,
+       "id_n_pred": 794,
+       "loeo_f1_R": 0.3546244251405212,
+       "loeo_n_pred_R": 708
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.520033044196613,
+       "id_n_pred": 2429,
+       "loeo_f1_R": 0.4942326490713588,
+       "loeo_n_pred_R": 2702
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.14950166112956811,
+       "id_n_pred": 79,
+       "loeo_f1_R": 0.04819277108433735,
+       "loeo_n_pred_R": 58
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.8390381282495667,
+       "id_n_pred": 5022,
+       "loeo_f1_R": 0.829998906745381,
+       "loeo_n_pred_R": 4937
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.8032465715085363,
+       "id_n_pred": 1773,
+       "loeo_f1_R": 0.7928961748633879,
+       "loeo_n_pred_R": 1860
+      }
+     },
+     "loeo_aggregation_R": -0.017737718148150505,
+     "loeo_aggregation_whole": -0.01837306103784586,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.5558093896565528,
+      "p": 1.623794529362704e-14,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.3610344827586207,
+      "median_f1_prev_ge_5pct": 0.7447946790052054,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    },
+    {
+     "seed": 42,
+     "E1": -0.008395146504151407,
+     "scoring": 0.031055712148090088,
+     "reweighting": -0.03945085865224149,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.5740961602554518,
+      "p": 1.3878682787060996e-15,
+      "spearman_within_class": 0.4971961715021866,
+      "p_within_class": 1.694495259037015e-11
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.0,
+      "n_pred": 0,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.6764013188883655,
+       "id_n_pred": 1035,
+       "loeo_f1_R": 0.6175609756097561,
+       "loeo_n_pred_R": 962
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.8679692125518058,
+       "id_n_pred": 867,
+       "loeo_f1_R": 0.8574850299401198,
+       "loeo_n_pred_R": 848
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.792156862745098,
+       "id_n_pred": 1671,
+       "loeo_f1_R": 0.7758049954860066,
+       "loeo_n_pred_R": 1679
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.9091482649842272,
+       "id_n_pred": 1688,
+       "loeo_f1_R": 0.9060808659662528,
+       "loeo_n_pred_R": 1659
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.0,
+       "id_n_pred": 0,
+       "loeo_f1_R": 0.0,
+       "loeo_n_pred_R": 0
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.472910927456382,
+       "id_n_pred": 929,
+       "loeo_f1_R": 0.3843137254901961,
+       "loeo_n_pred_R": 791
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.5162662130554965,
+       "id_n_pred": 2290,
+       "loeo_f1_R": 0.4897631473303894,
+       "loeo_n_pred_R": 2569
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.06159420289855073,
+       "id_n_pred": 29,
+       "loeo_f1_R": 0.039783001808318265,
+       "loeo_n_pred_R": 30
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.845519516217702,
+       "id_n_pred": 4885,
+       "loeo_f1_R": 0.8297686599738106,
+       "loeo_n_pred_R": 4954
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.7975195470477218,
+       "id_n_pred": 1909,
+       "loeo_f1_R": 0.8014400443090557,
+       "loeo_n_pred_R": 1811
+      }
+     },
+     "loeo_aggregation_R": -0.011362759107433451,
+     "loeo_aggregation_whole": -0.018652497007451863,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.5542518795392573,
+      "p": 1.9884595432360793e-14,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.42590175197526625,
+      "median_f1_prev_ge_5pct": 0.7507417369381248,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    }
+   ]
+  },
+  {
+   "plan": "confirm",
+   "corpus": "humaid19",
+   "model": "roberta-base",
+   "summary": {
+    "E1": {
+     "mean": 0.014366387147665827,
+     "min": -0.010562926157494545,
+     "max": 0.03483346966360168
+    },
+    "scoring": {
+     "mean": 0.03923388431491079,
+     "min": 0.03772003303545443,
+     "max": 0.043239196579072346
+    },
+    "reweighting": {
+     "mean": -0.02486749716724495,
+     "min": -0.04861645186203772,
+     "max": -0.006588013224446694
+    },
+    "loeo_aggregation_R": {
+     "mean": -0.009109933400170633,
+     "min": -0.01632125325473266,
+     "max": -0.0024345266175412883
+    },
+    "loeo_aggregation_whole": {
+     "mean": -0.022245212700665908,
+     "min": -0.02540593530191415,
+     "max": -0.0192869312614391
+    },
+    "spearman_prev_f1": {
+     "mean": 0.5228224009096026,
+     "max_p": 3.0681812141882036e-12
+    },
+    "id_spearman_prev_f1_R": {
+     "mean": 0.5573591767031502,
+     "max_p": 4.1769621334133157e-14,
+     "within_class_mean": 0.4929388745186055,
+     "within_class_max_p": 9.706532562738878e-10
+    },
+    "rarest_class_learned_seeds": [
+     2,
+     4,
+     42
+    ],
+    "reweighting_by_rare_class": {
+     "learned": [
+      -0.009259172152754422
+     ],
+     "not_learned": [
+      -0.048279984688980745
+     ]
+    }
+   },
+   "seeds": [
+    {
+     "seed": 1,
+     "E1": -0.010562926157494545,
+     "scoring": 0.03805352570454316,
+     "reweighting": -0.04861645186203772,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.5484757177284812,
+      "p": 4.1769621334133157e-14,
+      "spearman_within_class": 0.480909006253057,
+      "p_within_class": 9.340897558839195e-11
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.0,
+      "n_pred": 0,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.7107952021323856,
+       "id_n_pred": 1163,
+       "loeo_f1_R": 0.6889089269612263,
+       "loeo_n_pred_R": 1130
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.8698795180722891,
+       "id_n_pred": 838,
+       "loeo_f1_R": 0.8614146060954572,
+       "loeo_n_pred_R": 917
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.808158439255099,
+       "id_n_pred": 1739,
+       "loeo_f1_R": 0.8018979833926453,
+       "loeo_n_pred_R": 1728
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.9206349206349206,
+       "id_n_pred": 1605,
+       "loeo_f1_R": 0.9171521035598705,
+       "loeo_n_pred_R": 1608
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.0,
+       "id_n_pred": 0,
+       "loeo_f1_R": 0.10126582278481013,
+       "loeo_n_pred_R": 7
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.5279142474318892,
+       "id_n_pred": 990,
+       "loeo_f1_R": 0.5164444444444445,
+       "loeo_n_pred_R": 1001
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.5120495246517798,
+       "id_n_pred": 2110,
+       "loeo_f1_R": 0.492077863286555,
+       "loeo_n_pred_R": 2005
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.5735992402659069,
+       "id_n_pred": 530,
+       "loeo_f1_R": 0.5075268817204301,
+       "loeo_n_pred_R": 407
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.8533602602939526,
+       "id_n_pred": 4703,
+       "loeo_f1_R": 0.8486680098500112,
+       "loeo_n_pred_R": 4724
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.8315328467153285,
+       "id_n_pred": 1625,
+       "loeo_f1_R": 0.8249440715883669,
+       "loeo_n_pred_R": 1776
+      }
+     },
+     "loeo_aggregation_R": -0.011000640683883511,
+     "loeo_aggregation_whole": -0.02278631627303196,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.526184091679422,
+      "p": 6.436435847966105e-13,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.54858934169279,
+      "median_f1_prev_ge_5pct": 0.7750075684332854,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    },
+    {
+     "seed": 2,
+     "E1": 0.032374278292687686,
+     "scoring": 0.03896229151713433,
+     "reweighting": -0.006588013224446694,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.5528074966867886,
+      "p": 2.397199330759819e-14,
+      "spearman_within_class": 0.5248395507838628,
+      "p_within_class": 7.542932812261944e-13
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.4948453608247423,
+      "n_pred": 25,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.7148014440433214,
+       "id_n_pred": 1128,
+       "loeo_f1_R": 0.6753731343283582,
+       "loeo_n_pred_R": 1056
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.8669778296382731,
+       "id_n_pred": 892,
+       "loeo_f1_R": 0.8656891495601173,
+       "loeo_n_pred_R": 883
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.8025851938895417,
+       "id_n_pred": 1760,
+       "loeo_f1_R": 0.8037937166567872,
+       "loeo_n_pred_R": 1730
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.9231762427372499,
+       "id_n_pred": 1616,
+       "loeo_f1_R": 0.9194435457780653,
+       "loeo_n_pred_R": 1609
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.4948453608247423,
+       "id_n_pred": 25,
+       "loeo_f1_R": 0.05405405405405406,
+       "loeo_n_pred_R": 2
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.5359712230215827,
+       "id_n_pred": 975,
+       "loeo_f1_R": 0.48534798534798534,
+       "loeo_n_pred_R": 935
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.5202108963093146,
+       "id_n_pred": 2139,
+       "loeo_f1_R": 0.4989144594007816,
+       "loeo_n_pred_R": 2193
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.5476673427991886,
+       "id_n_pred": 463,
+       "loeo_f1_R": 0.4823008849557522,
+       "loeo_n_pred_R": 381
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.8568856885688569,
+       "id_n_pred": 4678,
+       "loeo_f1_R": 0.8486739469578783,
+       "loeo_n_pred_R": 4764
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.8322147651006712,
+       "id_n_pred": 1627,
+       "loeo_f1_R": 0.8315492957746479,
+       "loeo_n_pred_R": 1750
+      }
+     },
+     "loeo_aggregation_R": -0.01632125325473266,
+     "loeo_aggregation_whole": -0.02540593530191415,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.530875008912237,
+      "p": 3.680345468133316e-13,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.5339519710510445,
+      "median_f1_prev_ge_5pct": 0.784710168835081,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    },
+    {
+     "seed": 3,
+     "E1": -0.009749142777573994,
+     "scoring": 0.038194374738349676,
+     "reweighting": -0.04794351751592377,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.5563682650695254,
+      "p": 1.5095509438851075e-14,
+      "spearman_within_class": 0.4570814845291895,
+      "p_within_class": 9.706532562738878e-10
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.0,
+      "n_pred": 0,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.7105136821891502,
+       "id_n_pred": 995,
+       "loeo_f1_R": 0.7036535859269283,
+       "loeo_n_pred_R": 1129
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.8674839462930531,
+       "id_n_pred": 891,
+       "loeo_f1_R": 0.8656195462478184,
+       "loeo_n_pred_R": 897
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.8110005851375073,
+       "id_n_pred": 1774,
+       "loeo_f1_R": 0.8038277511961722,
+       "loeo_n_pred_R": 1700
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.9152542372881356,
+       "id_n_pred": 1645,
+       "loeo_f1_R": 0.9195106245975532,
+       "loeo_n_pred_R": 1624
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.0,
+       "id_n_pred": 0,
+       "loeo_f1_R": 0.10526315789473684,
+       "loeo_n_pred_R": 4
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.5524475524475524,
+       "id_n_pred": 1039,
+       "loeo_f1_R": 0.4806985294117647,
+       "loeo_n_pred_R": 927
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.5275428571428571,
+       "id_n_pred": 1962,
+       "loeo_f1_R": 0.5021872265966754,
+       "loeo_n_pred_R": 2159
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.5540796963946869,
+       "id_n_pred": 531,
+       "loeo_f1_R": 0.509090909090909,
+       "loeo_n_pred_R": 412
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.8567280848687884,
+       "id_n_pred": 4745,
+       "loeo_f1_R": 0.8468711380743736,
+       "loeo_n_pred_R": 4691
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.8281738142573133,
+       "id_n_pred": 1721,
+       "loeo_f1_R": 0.8331460674157304,
+       "loeo_n_pred_R": 1760
+      }
+     },
+     "loeo_aggregation_R": -0.0024345266175412883,
+     "loeo_aggregation_whole": -0.0192869312614391,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.5224801956736002,
+      "p": 9.94726864771839e-13,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.538391861761427,
+      "median_f1_prev_ge_5pct": 0.7830629189019032,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    },
+    {
+     "seed": 4,
+     "E1": 0.03483346966360168,
+     "scoring": 0.043239196579072346,
+     "reweighting": -0.008405726915470542,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.5646033937043566,
+      "p": 5.070479543120061e-15,
+      "spearman_within_class": 0.5066698656434989,
+      "p_within_class": 6.018519520530971e-12
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.5306122448979592,
+      "n_pred": 26,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.7129830655666521,
+       "id_n_pred": 1215,
+       "loeo_f1_R": 0.6974595842956121,
+       "loeo_n_pred_R": 1077
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.8711006474396704,
+       "id_n_pred": 877,
+       "loeo_f1_R": 0.8652073732718893,
+       "loeo_n_pred_R": 914
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.8022399056881816,
+       "id_n_pred": 1749,
+       "loeo_f1_R": 0.8041666666666667,
+       "loeo_n_pred_R": 1716
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.9227811598846524,
+       "id_n_pred": 1639,
+       "loeo_f1_R": 0.9150368707919205,
+       "loeo_n_pred_R": 1637
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.5306122448979592,
+       "id_n_pred": 26,
+       "loeo_f1_R": 0.0273972602739726,
+       "loeo_n_pred_R": 1
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.5229911751045053,
+       "id_n_pred": 904,
+       "loeo_f1_R": 0.46544428772919605,
+       "loeo_n_pred_R": 878
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.5042654028436019,
+       "id_n_pred": 1807,
+       "loeo_f1_R": 0.5053318824809576,
+       "loeo_n_pred_R": 2182
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.5342741935483871,
+       "id_n_pred": 469,
+       "loeo_f1_R": 0.45560747663551404,
+       "loeo_n_pred_R": 333
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.8545534924845269,
+       "id_n_pred": 4838,
+       "loeo_f1_R": 0.8465808170515098,
+       "loeo_n_pred_R": 4798
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.8359877060631461,
+       "id_n_pred": 1779,
+       "loeo_f1_R": 0.8174936921783011,
+       "loeo_n_pred_R": 1767
+      }
+     },
+     "loeo_aggregation_R": -0.011937203278555075,
+     "loeo_aggregation_whole": -0.02208870364143256,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.52188952774976,
+      "p": 1.065717437629972e-12,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.5404918032786885,
+      "median_f1_prev_ge_5pct": 0.7750964187327823,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    },
+    {
+     "seed": 42,
+     "E1": 0.024936256717108307,
+     "scoring": 0.03772003303545443,
+     "reweighting": -0.012783776318346027,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.5645410103265991,
+      "p": 5.113139523859926e-15,
+      "spearman_within_class": 0.4951944653834195,
+      "p_within_class": 2.1002554165137458e-11
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.43478260869565216,
+      "n_pred": 20,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.7092451987494417,
+       "id_n_pred": 1151,
+       "loeo_f1_R": 0.690744920993228,
+       "loeo_n_pred_R": 1127
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.8715542521994135,
+       "id_n_pred": 883,
+       "loeo_f1_R": 0.8609970674486803,
+       "loeo_n_pred_R": 883
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.8093963722866488,
+       "id_n_pred": 1719,
+       "loeo_f1_R": 0.7989371124889283,
+       "loeo_n_pred_R": 1743
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.9201030927835051,
+       "id_n_pred": 1622,
+       "loeo_f1_R": 0.9144694533762058,
+       "loeo_n_pred_R": 1628
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.43478260869565216,
+       "id_n_pred": 20,
+       "loeo_f1_R": 0.15,
+       "loeo_n_pred_R": 8
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.5643693107932379,
+       "id_n_pred": 1058,
+       "loeo_f1_R": 0.5067012537829658,
+       "loeo_n_pred_R": 1064
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.5073787772312017,
+       "id_n_pred": 1856,
+       "loeo_f1_R": 0.48961358052267145,
+       "loeo_n_pred_R": 2064
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.5058949624866024,
+       "id_n_pred": 410,
+       "loeo_f1_R": 0.4406392694063927,
+       "loeo_n_pred_R": 353
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.8564753004005341,
+       "id_n_pred": 4778,
+       "loeo_f1_R": 0.8490290717252217,
+       "loeo_n_pred_R": 4699
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.824736550194121,
+       "id_n_pred": 1806,
+       "loeo_f1_R": 0.8290888511601585,
+       "loeo_n_pred_R": 1734
+      }
+     },
+     "loeo_aggregation_R": -0.0038560431661406325,
+     "loeo_aggregation_whole": -0.02165817702551176,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.5126831805329937,
+      "p": 3.0681812141882036e-12,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.5326484660849986,
+      "median_f1_prev_ge_5pct": 0.7860671150647285,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    }
+   ]
+  },
+  {
+   "plan": "confirm",
+   "corpus": "crisislext26",
+   "model": "distilbert-base-uncased",
+   "summary": {
+    "E1": {
+     "mean": 0.09192425017113122,
+     "min": 0.08994710104886694,
+     "max": 0.09576739088764719
+    },
+    "scoring": {
+     "mean": 0.09318587746653405,
+     "min": 0.09067130894304272,
+     "max": 0.09785312166838149
+    },
+    "reweighting": {
+     "mean": -0.001261627295402899,
+     "min": -0.0020857307807343106,
+     "max": -0.0007242078941758394
+    },
+    "loeo_aggregation_R": {
+     "mean": 0.07717574205503012,
+     "min": 0.07474793473604113,
+     "max": 0.08088379031210713
+    },
+    "loeo_aggregation_whole": {
+     "mean": 0.08618722156429576,
+     "min": 0.08311220423273996,
+     "max": 0.09056625013794739
+    },
+    "spearman_prev_f1": {
+     "mean": 0.6400469116828482,
+     "max_p": 1.9620138829855e-18
+    },
+    "id_spearman_prev_f1_R": {
+     "mean": 0.6201012337817975,
+     "max_p": 1.0523118834030803e-16,
+     "within_class_mean": 0.5478215918590742,
+     "within_class_max_p": 2.213849750489862e-12
+    },
+    "rarest_class_learned_seeds": [
+     1,
+     2,
+     42
+    ],
+    "reweighting_by_rare_class": {
+     "learned": [
+      -0.001261627295402899
+     ],
+     "not_learned": []
+    }
+   },
+   "seeds": [
+    {
+     "seed": 1,
+     "E1": 0.09005825857687955,
+     "scoring": 0.09103320178817793,
+     "reweighting": -0.000974943211298547,
+     "id_cells_R": {
+      "n": 150,
+      "spearman": 0.632451132556649,
+      "p": 3.929146768733872e-18,
+      "spearman_within_class": 0.576521498704225,
+      "p_within_class": 1.1612840257717203e-14
+     },
+     "rarest_class": {
+      "class": "caution_and_advice",
+      "n_events": 23,
+      "n_events_total": 26,
+      "pooled_id_f1": 0.5995762711864406,
+      "n_pred": 470,
+      "n_true": 474
+     },
+     "per_class": {
+      "affected_individuals": {
+       "n_events": 26,
+       "n_true": 935,
+       "id_f1": 0.7978260869565217,
+       "id_n_pred": 905,
+       "loeo_f1_R": 0.7627593942793045,
+       "loeo_n_pred_R": 848
+      },
+      "caution_and_advice": {
+       "n_events": 23,
+       "n_true": 474,
+       "id_f1": 0.5995762711864406,
+       "id_n_pred": 470,
+       "loeo_f1_R": 0.4993757802746567,
+       "loeo_n_pred_R": 327
+      },
+      "donations_and_volunteering": {
+       "n_events": 23,
+       "n_true": 494,
+       "id_f1": 0.735812133072407,
+       "id_n_pred": 528,
+       "loeo_f1_R": 0.720160481444333,
+       "loeo_n_pred_R": 503
+      },
+      "infrastructure_and_utilities": {
+       "n_events": 26,
+       "n_true": 326,
+       "id_f1": 0.23902439024390243,
+       "id_n_pred": 84,
+       "loeo_f1_R": 0.1687344913151365,
+       "loeo_n_pred_R": 77
+      },
+      "other_useful_information": {
+       "n_events": 26,
+       "n_true": 1544,
+       "id_f1": 0.7163636363636363,
+       "id_n_pred": 1756,
+       "loeo_f1_R": 0.6867097499297555,
+       "loeo_n_pred_R": 2015
+      },
+      "sympathy_and_support": {
+       "n_events": 26,
+       "n_true": 913,
+       "id_f1": 0.7737068965517241,
+       "id_n_pred": 943,
+       "loeo_f1_R": 0.746856205576818,
+       "loeo_n_pred_R": 916
+      }
+     },
+     "loeo_aggregation_R": 0.0758955011169421,
+     "loeo_aggregation_whole": 0.08488321032219992,
+     "cells": {
+      "n": 155,
+      "spearman_prev_f1": 0.6287480884181752,
+      "p": 1.9620138829855e-18,
+      "share_prev_lt_5pct": 0.23225806451612904,
+      "median_f1_prev_lt_5pct": 0.23783359497645212,
+      "median_f1_prev_ge_5pct": 0.6473429951690821,
+      "median_n_prev_lt_5pct": 19.0
+     }
+    },
+    {
+     "seed": 2,
+     "E1": 0.09576739088764719,
+     "scoring": 0.09785312166838149,
+     "reweighting": -0.0020857307807343106,
+     "id_cells_R": {
+      "n": 150,
+      "spearman": 0.6170973728234894,
+      "p": 4.131882718495827e-17,
+      "spearman_within_class": 0.5329332155357429,
+      "p_within_class": 2.213849750489862e-12
+     },
+     "rarest_class": {
+      "class": "caution_and_advice",
+      "n_events": 23,
+      "n_events_total": 26,
+      "pooled_id_f1": 0.5956937799043063,
+      "n_pred": 362,
+      "n_true": 474
+     },
+     "per_class": {
+      "affected_individuals": {
+       "n_events": 26,
+       "n_true": 935,
+       "id_f1": 0.7995666305525461,
+       "id_n_pred": 911,
+       "loeo_f1_R": 0.7594793435200905,
+       "loeo_n_pred_R": 832
+      },
+      "caution_and_advice": {
+       "n_events": 23,
+       "n_true": 474,
+       "id_f1": 0.5956937799043063,
+       "id_n_pred": 362,
+       "loeo_f1_R": 0.4896969696969697,
+       "loeo_n_pred_R": 351
+      },
+      "donations_and_volunteering": {
+       "n_events": 23,
+       "n_true": 494,
+       "id_f1": 0.72,
+       "id_n_pred": 531,
+       "loeo_f1_R": 0.7051546391752578,
+       "loeo_n_pred_R": 476
+      },
+      "infrastructure_and_utilities": {
+       "n_events": 26,
+       "n_true": 326,
+       "id_f1": 0.31363636363636366,
+       "id_n_pred": 114,
+       "loeo_f1_R": 0.195,
+       "loeo_n_pred_R": 74
+      },
+      "other_useful_information": {
+       "n_events": 26,
+       "n_true": 1544,
+       "id_f1": 0.7083333333333334,
+       "id_n_pred": 1816,
+       "loeo_f1_R": 0.6830357142857143,
+       "loeo_n_pred_R": 2040
+      },
+      "sympathy_and_support": {
+       "n_events": 26,
+       "n_true": 913,
+       "id_f1": 0.7731903485254692,
+       "id_n_pred": 952,
+       "loeo_f1_R": 0.7447973713033954,
+       "loeo_n_pred_R": 913
+      }
+     },
+     "loeo_aggregation_R": 0.08088379031210713,
+     "loeo_aggregation_whole": 0.09056625013794739,
+     "cells": {
+      "n": 155,
+      "spearman_prev_f1": 0.6520539306318891,
+      "p": 3.9391916663834866e-20,
+      "share_prev_lt_5pct": 0.23225806451612904,
+      "median_f1_prev_lt_5pct": 0.1760154738878143,
+      "median_f1_prev_ge_5pct": 0.6169154228855721,
+      "median_n_prev_lt_5pct": 19.0
+     }
+    },
+    {
+     "seed": 42,
+     "E1": 0.08994710104886694,
+     "scoring": 0.09067130894304272,
+     "reweighting": -0.0007242078941758394,
+     "id_cells_R": {
+      "n": 150,
+      "spearman": 0.6107551959652541,
+      "p": 1.0523118834030803e-16,
+      "spearman_within_class": 0.5340100613372546,
+      "p_within_class": 1.9619897749639915e-12
+     },
+     "rarest_class": {
+      "class": "caution_and_advice",
+      "n_events": 23,
+      "n_events_total": 26,
+      "pooled_id_f1": 0.5875831485587583,
+      "n_pred": 428,
+      "n_true": 474
+     },
+     "per_class": {
+      "affected_individuals": {
+       "n_events": 26,
+       "n_true": 935,
+       "id_f1": 0.7982310668877833,
+       "id_n_pred": 874,
+       "loeo_f1_R": 0.7553072625698324,
+       "loeo_n_pred_R": 855
+      },
+      "caution_and_advice": {
+       "n_events": 23,
+       "n_true": 474,
+       "id_f1": 0.5875831485587583,
+       "id_n_pred": 428,
+       "loeo_f1_R": 0.4915254237288136,
+       "loeo_n_pred_R": 352
+      },
+      "donations_and_volunteering": {
+       "n_events": 23,
+       "n_true": 494,
+       "id_f1": 0.7349177330895795,
+       "id_n_pred": 600,
+       "loeo_f1_R": 0.722820763956905,
+       "loeo_n_pred_R": 527
+      },
+      "infrastructure_and_utilities": {
+       "n_events": 26,
+       "n_true": 326,
+       "id_f1": 0.16216216216216217,
+       "id_n_pred": 44,
+       "loeo_f1_R": 0.07428571428571429,
+       "loeo_n_pred_R": 24
+      },
+      "other_useful_information": {
+       "n_events": 26,
+       "n_true": 1544,
+       "id_f1": 0.7141162514827996,
+       "id_n_pred": 1828,
+       "loeo_f1_R": 0.6852114674992904,
+       "loeo_n_pred_R": 1979
+      },
+      "sympathy_and_support": {
+       "n_events": 26,
+       "n_true": 913,
+       "id_f1": 0.7747945205479452,
+       "id_n_pred": 912,
+       "loeo_f1_R": 0.7400644468313641,
+       "loeo_n_pred_R": 949
+      }
+     },
+     "loeo_aggregation_R": 0.07474793473604113,
+     "loeo_aggregation_whole": 0.08311220423273996,
+     "cells": {
+      "n": 155,
+      "spearman_prev_f1": 0.6393387159984804,
+      "p": 3.4630511852313933e-19,
+      "share_prev_lt_5pct": 0.23225806451612904,
+      "median_f1_prev_lt_5pct": 0.12549019607843137,
+      "median_f1_prev_ge_5pct": 0.6482758620689655,
+      "median_n_prev_lt_5pct": 19.0
+     }
+    }
+   ]
+  },
+  {
+   "plan": "confirm",
+   "corpus": "crisislext26",
+   "model": "roberta-base",
+   "summary": {
+    "E1": {
+     "mean": 0.0901164385015402,
+     "min": 0.08698220545237223,
+     "max": 0.0930439857276123
+    },
+    "scoring": {
+     "mean": 0.0918617634714403,
+     "min": 0.08822662392091567,
+     "max": 0.09478071284111643
+    },
+    "reweighting": {
+     "mean": -0.0017453249699001725,
+     "min": -0.0022548293276528214,
+     "max": -0.0012444184685434581
+    },
+    "loeo_aggregation_R": {
+     "mean": 0.08405102410379106,
+     "min": 0.08343171447308328,
+     "max": 0.08506085436537358
+    },
+    "loeo_aggregation_whole": {
+     "mean": 0.09014412878128937,
+     "min": 0.08616029864804264,
+     "max": 0.09401536173599057
+    },
+    "spearman_prev_f1": {
+     "mean": 0.6273424707983795,
+     "max_p": 2.1479111670242514e-17
+    },
+    "id_spearman_prev_f1_R": {
+     "mean": 0.6037668641362984,
+     "max_p": 2.982647394441976e-15,
+     "within_class_mean": 0.5867502984326803,
+     "within_class_max_p": 2.264795004776763e-14
+    },
+    "rarest_class_learned_seeds": [
+     1,
+     2,
+     42
+    ],
+    "reweighting_by_rare_class": {
+     "learned": [
+      -0.0017453249699001725
+     ],
+     "not_learned": []
+    }
+   },
+   "seeds": [
+    {
+     "seed": 1,
+     "E1": 0.08698220545237223,
+     "scoring": 0.08822662392091567,
+     "reweighting": -0.0012444184685434581,
+     "id_cells_R": {
+      "n": 150,
+      "spearman": 0.6108111292005807,
+      "p": 1.0437670513165246e-16,
+      "spearman_within_class": 0.5713168156759908,
+      "p_within_class": 2.264795004776763e-14
+     },
+     "rarest_class": {
+      "class": "caution_and_advice",
+      "n_events": 23,
+      "n_events_total": 26,
+      "pooled_id_f1": 0.6157068062827226,
+      "n_pred": 481,
+      "n_true": 474
+     },
+     "per_class": {
+      "affected_individuals": {
+       "n_events": 26,
+       "n_true": 935,
+       "id_f1": 0.8222698072805139,
+       "id_n_pred": 933,
+       "loeo_f1_R": 0.8052660449808009,
+       "loeo_n_pred_R": 888
+      },
+      "caution_and_advice": {
+       "n_events": 23,
+       "n_true": 474,
+       "id_f1": 0.6157068062827226,
+       "id_n_pred": 481,
+       "loeo_f1_R": 0.5477560414269275,
+       "loeo_n_pred_R": 395
+      },
+      "donations_and_volunteering": {
+       "n_events": 23,
+       "n_true": 494,
+       "id_f1": 0.772399588053553,
+       "id_n_pred": 477,
+       "loeo_f1_R": 0.7648261758691206,
+       "loeo_n_pred_R": 484
+      },
+      "infrastructure_and_utilities": {
+       "n_events": 26,
+       "n_true": 326,
+       "id_f1": 0.3943089430894309,
+       "id_n_pred": 166,
+       "loeo_f1_R": 0.362962962962963,
+       "loeo_n_pred_R": 214
+      },
+      "other_useful_information": {
+       "n_events": 26,
+       "n_true": 1544,
+       "id_f1": 0.7247905677939808,
+       "id_n_pred": 1679,
+       "loeo_f1_R": 0.7206453540484016,
+       "loeo_n_pred_R": 1803
+      },
+      "sympathy_and_support": {
+       "n_events": 26,
+       "n_true": 913,
+       "id_f1": 0.789049919484702,
+       "id_n_pred": 950,
+       "loeo_f1_R": 0.7801652892561983,
+       "loeo_n_pred_R": 902
+      }
+     },
+     "loeo_aggregation_R": 0.08506085436537358,
+     "loeo_aggregation_whole": 0.09401536173599057,
+     "cells": {
+      "n": 155,
+      "spearman_prev_f1": 0.6460469725897915,
+      "p": 1.1142009925157292e-19,
+      "share_prev_lt_5pct": 0.23225806451612904,
+      "median_f1_prev_lt_5pct": 0.3571428571428571,
+      "median_f1_prev_ge_5pct": 0.6829268292682927,
+      "median_n_prev_lt_5pct": 19.0
+     }
+    },
+    {
+     "seed": 2,
+     "E1": 0.09032312432463607,
+     "scoring": 0.09257795365228878,
+     "reweighting": -0.0022548293276528214,
+     "id_cells_R": {
+      "n": 150,
+      "spearman": 0.6136527473230428,
+      "p": 6.883173481754436e-17,
+      "spearman_within_class": 0.6041600198842315,
+      "p_within_class": 2.721489190340706e-16
+     },
+     "rarest_class": {
+      "class": "caution_and_advice",
+      "n_events": 23,
+      "n_events_total": 26,
+      "pooled_id_f1": 0.6146788990825688,
+      "n_pred": 398,
+      "n_true": 474
+     },
+     "per_class": {
+      "affected_individuals": {
+       "n_events": 26,
+       "n_true": 935,
+       "id_f1": 0.8129233976029182,
+       "id_n_pred": 984,
+       "loeo_f1_R": 0.7918050941306756,
+       "loeo_n_pred_R": 871
+      },
+      "caution_and_advice": {
+       "n_events": 23,
+       "n_true": 474,
+       "id_f1": 0.6146788990825688,
+       "id_n_pred": 398,
+       "loeo_f1_R": 0.5328638497652582,
+       "loeo_n_pred_R": 378
+      },
+      "donations_and_volunteering": {
+       "n_events": 23,
+       "n_true": 494,
+       "id_f1": 0.7731755424063116,
+       "id_n_pred": 520,
+       "loeo_f1_R": 0.74609375,
+       "loeo_n_pred_R": 530
+      },
+      "infrastructure_and_utilities": {
+       "n_events": 26,
+       "n_true": 326,
+       "id_f1": 0.4367816091954023,
+       "id_n_pred": 283,
+       "loeo_f1_R": 0.30303030303030304,
+       "loeo_n_pred_R": 202
+      },
+      "other_useful_information": {
+       "n_events": 26,
+       "n_true": 1544,
+       "id_f1": 0.7244245524296675,
+       "id_n_pred": 1584,
+       "loeo_f1_R": 0.7085068411659726,
+       "loeo_n_pred_R": 1818
+      },
+      "sympathy_and_support": {
+       "n_events": 26,
+       "n_true": 913,
+       "id_f1": 0.8043715846994536,
+       "id_n_pred": 917,
+       "loeo_f1_R": 0.7766666666666666,
+       "loeo_n_pred_R": 887
+      }
+     },
+     "loeo_aggregation_R": 0.08366050347291631,
+     "loeo_aggregation_whole": 0.09025672595983492,
+     "cells": {
+      "n": 155,
+      "spearman_prev_f1": 0.6225441743104406,
+      "p": 5.256377839381125e-18,
+      "share_prev_lt_5pct": 0.23225806451612904,
+      "median_f1_prev_lt_5pct": 0.33739837398373984,
+      "median_f1_prev_ge_5pct": 0.6746987951807228,
+      "median_n_prev_lt_5pct": 19.0
+     }
+    },
+    {
+     "seed": 42,
+     "E1": 0.0930439857276123,
+     "scoring": 0.09478071284111643,
+     "reweighting": -0.0017367271135042377,
+     "id_cells_R": {
+      "n": 150,
+      "spearman": 0.5868367158852718,
+      "p": 2.982647394441976e-15,
+      "spearman_within_class": 0.5847740597378189,
+      "p_within_class": 3.92932056092017e-15
+     },
+     "rarest_class": {
+      "class": "caution_and_advice",
+      "n_events": 23,
+      "n_events_total": 26,
+      "pooled_id_f1": 0.610989010989011,
+      "n_pred": 436,
+      "n_true": 474
+     },
+     "per_class": {
+      "affected_individuals": {
+       "n_events": 26,
+       "n_true": 935,
+       "id_f1": 0.8223295759527643,
+       "id_n_pred": 928,
+       "loeo_f1_R": 0.7923497267759563,
+       "loeo_n_pred_R": 895
+      },
+      "caution_and_advice": {
+       "n_events": 23,
+       "n_true": 474,
+       "id_f1": 0.610989010989011,
+       "id_n_pred": 436,
+       "loeo_f1_R": 0.5522041763341067,
+       "loeo_n_pred_R": 388
+      },
+      "donations_and_volunteering": {
+       "n_events": 23,
+       "n_true": 494,
+       "id_f1": 0.7852283770651117,
+       "id_n_pred": 535,
+       "loeo_f1_R": 0.7719298245614035,
+       "loeo_n_pred_R": 532
+      },
+      "infrastructure_and_utilities": {
+       "n_events": 26,
+       "n_true": 326,
+       "id_f1": 0.45203252032520325,
+       "id_n_pred": 289,
+       "loeo_f1_R": 0.33136094674556216,
+       "loeo_n_pred_R": 181
+      },
+      "other_useful_information": {
+       "n_events": 26,
+       "n_true": 1544,
+       "id_f1": 0.7163613392293114,
+       "id_n_pred": 1622,
+       "loeo_f1_R": 0.70766434413814,
+       "loeo_n_pred_R": 1757
+      },
+      "sympathy_and_support": {
+       "n_events": 26,
+       "n_true": 913,
+       "id_f1": 0.8004471771939631,
+       "id_n_pred": 876,
+       "loeo_f1_R": 0.7746478873239436,
+       "loeo_n_pred_R": 933
+      }
+     },
+     "loeo_aggregation_R": 0.08343171447308328,
+     "loeo_aggregation_whole": 0.08616029864804264,
+     "cells": {
+      "n": 155,
+      "spearman_prev_f1": 0.613436265494906,
+      "p": 2.1479111670242514e-17,
+      "share_prev_lt_5pct": 0.23225806451612904,
+      "median_f1_prev_lt_5pct": 0.3484848484848485,
+      "median_f1_prev_ge_5pct": 0.6753246753246753,
+      "median_n_prev_lt_5pct": 19.0
+     }
+    }
+   ]
+  },
+  {
+   "plan": "confirm_ep4",
+   "corpus": "humaid19",
+   "model": "distilbert-base-uncased",
+   "summary": {
+    "E1": {
+     "mean": 0.027547201568130925,
+     "min": 0.0035382744362099094,
+     "max": 0.05052225869112836
+    },
+    "scoring": {
+     "mean": 0.044172362384085145,
+     "min": 0.04098754413694491,
+     "max": 0.04802486686270463
+    },
+    "reweighting": {
+     "mean": -0.016625160815954224,
+     "min": -0.04448659242649476,
+     "max": 0.008937784170393204
+    },
+    "loeo_aggregation_R": {
+     "mean": -0.0014050355858278019,
+     "min": -0.0074199142247407535,
+     "max": 0.0033013666510884887
+    },
+    "loeo_aggregation_whole": {
+     "mean": -0.01583749054147321,
+     "min": -0.018257497722298233,
+     "max": -0.013657618041936548
+    },
+    "spearman_prev_f1": {
+     "mean": 0.5218007707554853,
+     "max_p": 2.878850525893877e-12
+    },
+    "id_spearman_prev_f1_R": {
+     "mean": 0.559747621690639,
+     "max_p": 4.14194160992913e-14,
+     "within_class_mean": 0.4996034512857438,
+     "within_class_max_p": 1.9434856210554945e-10
+    },
+    "rarest_class_learned_seeds": [
+     1,
+     2,
+     42
+    ],
+    "reweighting_by_rare_class": {
+     "learned": [
+      -0.007338016945774045
+     ],
+     "not_learned": [
+      -0.04448659242649476
+     ]
+    }
+   },
+   "seeds": [
+    {
+     "seed": 1,
+     "E1": 0.006202944837847335,
+     "scoring": 0.04523362145794877,
+     "reweighting": -0.03903067662010157,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.5663692461304111,
+      "p": 3.997011252063934e-15,
+      "spearman_within_class": 0.49085783440898323,
+      "p_within_class": 3.3280898751391e-11
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.05405405405405406,
+      "n_pred": 2,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.6902101028162718,
+       "id_n_pred": 1149,
+       "loeo_f1_R": 0.6341920374707259,
+       "loeo_n_pred_R": 1047
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.8734100545124167,
+       "id_n_pred": 829,
+       "loeo_f1_R": 0.8759553203997649,
+       "loeo_n_pred_R": 879
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.7980505635089857,
+       "id_n_pred": 1639,
+       "loeo_f1_R": 0.7839710756251883,
+       "loeo_n_pred_R": 1675
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.9143407122232916,
+       "id_n_pred": 1635,
+       "loeo_f1_R": 0.9127343244990304,
+       "loeo_n_pred_R": 1612
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.05405405405405406,
+       "id_n_pred": 2,
+       "loeo_f1_R": 0.10526315789473684,
+       "loeo_n_pred_R": 4
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.5331621737270005,
+       "id_n_pred": 1088,
+       "loeo_f1_R": 0.4946695095948827,
+       "loeo_n_pred_R": 1096
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.5268840423234723,
+       "id_n_pred": 2218,
+       "loeo_f1_R": 0.4870578084555651,
+       "loeo_n_pred_R": 2223
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.537109375,
+       "id_n_pred": 501,
+       "loeo_f1_R": 0.4569606801275239,
+       "loeo_n_pred_R": 418
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.8520045819014891,
+       "id_n_pred": 4520,
+       "loeo_f1_R": 0.8478659935750344,
+       "loeo_n_pred_R": 4506
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.8199886428165815,
+       "id_n_pred": 1722,
+       "loeo_f1_R": 0.8108701619544332,
+       "loeo_n_pred_R": 1843
+      }
+     },
+     "loeo_aggregation_R": 0.0033013666510884887,
+     "loeo_aggregation_whole": -0.013657618041936548,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.5132456102746444,
+      "p": 2.878850525893877e-12,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.49693486590038316,
+      "median_f1_prev_ge_5pct": 0.7637828649926968,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    },
+    {
+     "seed": 2,
+     "E1": 0.05052225869112836,
+     "scoring": 0.04244341707874226,
+     "reweighting": 0.00807884161238623,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.5548768527159897,
+      "p": 1.8334378339856427e-14,
+      "spearman_within_class": 0.5258884581262596,
+      "p_within_class": 6.665302446608603e-13
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.6371681415929203,
+      "n_pred": 41,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.681651376146789,
+       "id_n_pred": 1092,
+       "loeo_f1_R": 0.6477003319108582,
+       "loeo_n_pred_R": 1021
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.8717026378896883,
+       "id_n_pred": 846,
+       "loeo_f1_R": 0.8735224586288416,
+       "loeo_n_pred_R": 870
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.797261089610003,
+       "id_n_pred": 1715,
+       "loeo_f1_R": 0.7843019772318753,
+       "loeo_n_pred_R": 1694
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.9209150326797385,
+       "id_n_pred": 1578,
+       "loeo_f1_R": 0.9089153524299968,
+       "loeo_n_pred_R": 1625
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.6371681415929203,
+       "id_n_pred": 41,
+       "loeo_f1_R": 0.1038961038961039,
+       "loeo_n_pred_R": 5
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.5199473914949584,
+       "id_n_pred": 1032,
+       "loeo_f1_R": 0.4419889502762431,
+       "loeo_n_pred_R": 923
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.5134379703289615,
+       "id_n_pred": 2238,
+       "loeo_f1_R": 0.49824271242505686,
+       "loeo_n_pred_R": 2424
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.545816733067729,
+       "id_n_pred": 481,
+       "loeo_f1_R": 0.4652173913043478,
+       "loeo_n_pred_R": 397
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.8528542187855356,
+       "id_n_pred": 4584,
+       "loeo_f1_R": 0.8461010747770409,
+       "loeo_n_pred_R": 4536
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.8175057208237986,
+       "id_n_pred": 1696,
+       "loeo_f1_R": 0.8137472283813747,
+       "loeo_n_pred_R": 1808
+      }
+     },
+     "loeo_aggregation_R": -0.0017366195839563225,
+     "loeo_aggregation_whole": -0.018257497722298233,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.5170846746727649,
+      "p": 1.857987100018361e-12,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.5321477428180574,
+      "median_f1_prev_ge_5pct": 0.7600715731706147,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    },
+    {
+     "seed": 3,
+     "E1": 0.0035382744362099094,
+     "scoring": 0.04802486686270463,
+     "reweighting": -0.04448659242649476,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.5692025209075616,
+      "p": 2.7206991732201637e-15,
+      "spearman_within_class": 0.4736466618523523,
+      "p_within_class": 1.9434856210554945e-10
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.0,
+      "n_pred": 0,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.6764150943396227,
+       "id_n_pred": 1032,
+       "loeo_f1_R": 0.6497607655502392,
+       "loeo_n_pred_R": 1002
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.8722519310754605,
+       "id_n_pred": 861,
+       "loeo_f1_R": 0.8677685950413223,
+       "loeo_n_pred_R": 872
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.793573810245529,
+       "id_n_pred": 1655,
+       "loeo_f1_R": 0.786308973172988,
+       "loeo_n_pred_R": 1599
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.9132537891002902,
+       "id_n_pred": 1619,
+       "loeo_f1_R": 0.9099128188569583,
+       "loeo_n_pred_R": 1615
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.0,
+       "id_n_pred": 0,
+       "loeo_f1_R": 0.10126582278481013,
+       "loeo_n_pred_R": 7
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.5112436897659477,
+       "id_n_pred": 930,
+       "loeo_f1_R": 0.44089456869009586,
+       "loeo_n_pred_R": 942
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.531082750102923,
+       "id_n_pred": 2445,
+       "loeo_f1_R": 0.4995987158908507,
+       "loeo_n_pred_R": 2571
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.5294705294705294,
+       "id_n_pred": 478,
+       "loeo_f1_R": 0.46236559139784944,
+       "loeo_n_pred_R": 407
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.8537904060738525,
+       "id_n_pred": 4483,
+       "loeo_f1_R": 0.8469857340082835,
+       "loeo_n_pred_R": 4482
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.8127777777777778,
+       "id_n_pred": 1800,
+       "loeo_f1_R": 0.8169717138103162,
+       "loeo_n_pred_R": 1806
+      }
+     },
+     "loeo_aggregation_R": 0.00023502481429737987,
+     "loeo_aggregation_whole": -0.014551561802109814,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.5341428630917349,
+      "p": 2.480571877405342e-13,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.47333333333333333,
+      "median_f1_prev_ge_5pct": 0.7628427147502843,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    },
+    {
+     "seed": 42,
+     "E1": 0.04992532830733809,
+     "scoring": 0.04098754413694491,
+     "reweighting": 0.008937784170393204,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.5485418670085936,
+      "p": 4.14194160992913e-14,
+      "spearman_within_class": 0.50802085075538,
+      "p_within_class": 5.179026064091584e-12
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.6724137931034483,
+      "n_pred": 44,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.6909952606635071,
+       "id_n_pred": 1022,
+       "loeo_f1_R": 0.6489815253434391,
+       "loeo_n_pred_R": 1023
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.8800959232613909,
+       "id_n_pred": 846,
+       "loeo_f1_R": 0.8704908338261383,
+       "loeo_n_pred_R": 869
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.8043478260869565,
+       "id_n_pred": 1576,
+       "loeo_f1_R": 0.786273329319687,
+       "loeo_n_pred_R": 1678
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.921967213114754,
+       "id_n_pred": 1568,
+       "loeo_f1_R": 0.9135082604470359,
+       "loeo_n_pred_R": 1605
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.6724137931034483,
+       "id_n_pred": 44,
+       "loeo_f1_R": 0.10126582278481013,
+       "loeo_n_pred_R": 7
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.5415973377703827,
+       "id_n_pred": 1155,
+       "loeo_f1_R": 0.44148936170212766,
+       "loeo_n_pred_R": 1007
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.5335040546308152,
+       "id_n_pred": 2273,
+       "loeo_f1_R": 0.49040867389491244,
+       "loeo_n_pred_R": 2383
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.5068349106203995,
+       "id_n_pred": 428,
+       "loeo_f1_R": 0.4733984799131379,
+       "loeo_n_pred_R": 398
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.8553259141494436,
+       "id_n_pred": 4596,
+       "loeo_f1_R": 0.848713550600343,
+       "loeo_n_pred_R": 4535
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.8139082058414464,
+       "id_n_pred": 1795,
+       "loeo_f1_R": 0.8093385214007782,
+       "loeo_n_pred_R": 1798
+      }
+     },
+     "loeo_aggregation_R": -0.0074199142247407535,
+     "loeo_aggregation_whole": -0.016883284599548243,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.5227299349827967,
+      "p": 9.661138519433972e-13,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.4979847738468428,
+      "median_f1_prev_ge_5pct": 0.7710863594258843,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    }
+   ]
+  },
+  {
+   "plan": "confirm_ep4",
+   "corpus": "humaid19",
+   "model": "roberta-base",
+   "summary": {
+    "E1": {
+     "mean": 0.05077202626283825,
+     "min": 0.045849026135585946,
+     "max": 0.05546059026868444
+    },
+    "scoring": {
+     "mean": 0.042814526067788974,
+     "min": 0.03748287429336533,
+     "max": 0.0456816249051807
+    },
+    "reweighting": {
+     "mean": 0.007957500195049358,
+     "min": 0.002461959154729975,
+     "max": 0.010729256743914936
+    },
+    "loeo_aggregation_R": {
+     "mean": 0.020179098442719617,
+     "min": -0.004664978829312605,
+     "max": 0.029714548789758433
+    },
+    "loeo_aggregation_whole": {
+     "mean": 0.007426064361063522,
+     "min": -0.020036328575258944,
+     "max": 0.020594288719342102
+    },
+    "spearman_prev_f1": {
+     "mean": 0.5179570129271389,
+     "max_p": 5.763117409352611e-12
+    },
+    "id_spearman_prev_f1_R": {
+     "mean": 0.551464452271143,
+     "max_p": 1.9351051902653596e-13,
+     "within_class_mean": 0.49242423783788913,
+     "within_class_max_p": 3.263959757228931e-10
+    },
+    "rarest_class_learned_seeds": [
+     1,
+     2,
+     3,
+     42
+    ],
+    "reweighting_by_rare_class": {
+     "learned": [
+      0.007957500195049358
+     ],
+     "not_learned": []
+    }
+   },
+   "seeds": [
+    {
+     "seed": 1,
+     "E1": 0.045849026135585946,
+     "scoring": 0.043387066980855975,
+     "reweighting": 0.002461959154729975,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.5546651500762863,
+      "p": 1.8845825195004094e-14,
+      "spearman_within_class": 0.4684027723892042,
+      "p_within_class": 3.263959757228931e-10
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.7008547008547008,
+      "n_pred": 45,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.7192595857205818,
+       "id_n_pred": 1181,
+       "loeo_f1_R": 0.6913023884632717,
+       "loeo_n_pred_R": 1131
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.8685916322922805,
+       "id_n_pred": 875,
+       "loeo_f1_R": 0.8689574839836924,
+       "loeo_n_pred_R": 895
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.8083850014762326,
+       "id_n_pred": 1743,
+       "loeo_f1_R": 0.8005891016200295,
+       "loeo_n_pred_R": 1751
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.9260827092152394,
+       "id_n_pred": 1589,
+       "loeo_f1_R": 0.9222222222222223,
+       "loeo_n_pred_R": 1578
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.7008547008547008,
+       "id_n_pred": 45,
+       "loeo_f1_R": 0.5370370370370371,
+       "loeo_n_pred_R": 36
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.5572619569986836,
+       "id_n_pred": 1030,
+       "loeo_f1_R": 0.5136563876651983,
+       "loeo_n_pred_R": 1021
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.5233728472377545,
+       "id_n_pred": 2058,
+       "loeo_f1_R": 0.5054895809993278,
+       "loeo_n_pred_R": 2050
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.5821678321678322,
+       "id_n_pred": 621,
+       "loeo_f1_R": 0.5529865125240848,
+       "loeo_n_pred_R": 515
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.8566812831756289,
+       "id_n_pred": 4456,
+       "loeo_f1_R": 0.853664087391898,
+       "loeo_n_pred_R": 4578
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.8308131241084166,
+       "id_n_pred": 1705,
+       "loeo_f1_R": 0.830890642615558,
+       "loeo_n_pred_R": 1748
+      }
+     },
+     "loeo_aggregation_R": 0.029714548789758433,
+     "loeo_aggregation_whole": 0.016117188198640386,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.5202315401893927,
+      "p": 1.2923184111364721e-12,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.5740279507402795,
+      "median_f1_prev_ge_5pct": 0.7793514502375262,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    },
+    {
+     "seed": 2,
+     "E1": 0.04821213103728017,
+     "scoring": 0.03748287429336533,
+     "reweighting": 0.010729256743914936,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.5361819242367216,
+      "p": 1.9351051902653596e-13,
+      "spearman_within_class": 0.48792301553386475,
+      "p_within_class": 4.528040477972698e-11
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.7751937984496124,
+      "n_pred": 57,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.7262065854758682,
+       "id_n_pred": 1129,
+       "loeo_f1_R": 0.6915038618809632,
+       "loeo_n_pred_R": 1113
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.8823880597014926,
+       "id_n_pred": 853,
+       "loeo_f1_R": 0.8657599053814311,
+       "loeo_n_pred_R": 869
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.8107469737230587,
+       "id_n_pred": 1743,
+       "loeo_f1_R": 0.7995296884185773,
+       "loeo_n_pred_R": 1758
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.9282894736842106,
+       "id_n_pred": 1558,
+       "loeo_f1_R": 0.9173715029277814,
+       "loeo_n_pred_R": 1592
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.7751937984496124,
+       "id_n_pred": 57,
+       "loeo_f1_R": 0.16279069767441862,
+       "loeo_n_pred_R": 14
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.5617495711835334,
+       "id_n_pred": 1083,
+       "loeo_f1_R": 0.4940962761126249,
+       "loeo_n_pred_R": 953
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.5303626037570992,
+       "id_n_pred": 2165,
+       "loeo_f1_R": 0.4990211007178595,
+       "loeo_n_pred_R": 2184
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.5861084681255947,
+       "id_n_pred": 528,
+       "loeo_f1_R": 0.5365853658536586,
+       "loeo_n_pred_R": 502
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.8604624672513954,
+       "id_n_pred": 4569,
+       "loeo_f1_R": 0.851063829787234,
+       "loeo_n_pred_R": 4532
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.8373317729666472,
+       "id_n_pred": 1618,
+       "loeo_f1_R": 0.8321249302844395,
+       "loeo_n_pred_R": 1786
+      }
+     },
+     "loeo_aggregation_R": -0.004664978829312605,
+     "loeo_aggregation_whole": -0.020036328575258944,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.5070604415573398,
+      "p": 5.763117409352611e-12,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.5560632019798211,
+      "median_f1_prev_ge_5pct": 0.7703265968964272,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    },
+    {
+     "seed": 3,
+     "E1": 0.05356635760980244,
+     "scoring": 0.04470653809175389,
+     "reweighting": 0.008859819518048696,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.5600703712636634,
+      "p": 9.278311222748578e-15,
+      "spearman_within_class": 0.4970030724349037,
+      "p_within_class": 1.730057499650961e-11
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.768,
+      "n_pred": 53,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.7186067827681026,
+       "id_n_pred": 1094,
+       "loeo_f1_R": 0.6972898484152503,
+       "loeo_n_pred_R": 1089
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.8768768768768769,
+       "id_n_pred": 843,
+       "loeo_f1_R": 0.8675534991324465,
+       "loeo_n_pred_R": 907
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.8063660477453581,
+       "id_n_pred": 1749,
+       "loeo_f1_R": 0.7961630695443646,
+       "loeo_n_pred_R": 1692
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.9316688567674113,
+       "id_n_pred": 1562,
+       "loeo_f1_R": 0.9190243902439025,
+       "loeo_n_pred_R": 1593
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.768,
+       "id_n_pred": 53,
+       "loeo_f1_R": 0.48598130841121495,
+       "loeo_n_pred_R": 35
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.5502931889941363,
+       "id_n_pred": 968,
+       "loeo_f1_R": 0.48247232472324725,
+       "loeo_n_pred_R": 919
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.5470158866466295,
+       "id_n_pred": 2245,
+       "loeo_f1_R": 0.5072340425531915,
+       "loeo_n_pred_R": 2287
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.566420664206642,
+       "id_n_pred": 561,
+       "loeo_f1_R": 0.5539358600583091,
+       "loeo_n_pred_R": 506
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.8617960775318271,
+       "id_n_pred": 4509,
+       "loeo_f1_R": 0.8541260185929072,
+       "loeo_n_pred_R": 4503
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.8348962773515203,
+       "id_n_pred": 1719,
+       "loeo_f1_R": 0.8342665173572228,
+       "loeo_n_pred_R": 1772
+      }
+     },
+     "loeo_aggregation_R": 0.02631252346909796,
+     "loeo_aggregation_whole": 0.013029109101530545,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.513455096636195,
+      "p": 2.8112730050554396e-12,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.5674044265593561,
+      "median_f1_prev_ge_5pct": 0.781027477169409,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    },
+    {
+     "seed": 42,
+     "E1": 0.05546059026868444,
+     "scoring": 0.0456816249051807,
+     "reweighting": 0.009778965363503828,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.5549403635079009,
+      "p": 1.8183599252253484e-14,
+      "spearman_within_class": 0.516368090993584,
+      "p_within_class": 2.0170709549574664e-12
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.7534246575342466,
+      "n_pred": 74,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.7063870352716873,
+       "id_n_pred": 1010,
+       "loeo_f1_R": 0.7019143117593437,
+       "loeo_n_pred_R": 1106
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.8846611177170036,
+       "id_n_pred": 860,
+       "loeo_f1_R": 0.8672875436554133,
+       "loeo_n_pred_R": 896
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.8168587022437841,
+       "id_n_pred": 1654,
+       "loeo_f1_R": 0.8061194468961459,
+       "loeo_n_pred_R": 1755
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.9245966414224563,
+       "id_n_pred": 1555,
+       "loeo_f1_R": 0.9190414507772021,
+       "loeo_n_pred_R": 1606
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.7534246575342466,
+       "id_n_pred": 74,
+       "loeo_f1_R": 0.5420560747663551,
+       "loeo_n_pred_R": 35
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.5999195818254925,
+       "id_n_pred": 1238,
+       "loeo_f1_R": 0.5159597726278968,
+       "loeo_n_pred_R": 1038
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.5395856052344602,
+       "id_n_pred": 2172,
+       "loeo_f1_R": 0.5037560760053027,
+       "loeo_n_pred_R": 2113
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.5852216748768473,
+       "id_n_pred": 492,
+       "loeo_f1_R": 0.55435847208619,
+       "loeo_n_pred_R": 498
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.864951768488746,
+       "id_n_pred": 4498,
+       "loeo_f1_R": 0.8589140167604179,
+       "loeo_n_pred_R": 4501
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.8338028169014085,
+       "id_n_pred": 1750,
+       "loeo_f1_R": 0.829817158931083,
+       "loeo_n_pred_R": 1755
+      }
+     },
+     "loeo_aggregation_R": 0.029354300341334683,
+     "loeo_aggregation_whole": 0.020594288719342102,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.5310809733256281,
+      "p": 3.590409117007934e-13,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.5590697674418605,
+      "median_f1_prev_ge_5pct": 0.802555910543131,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    }
+   ]
+  },
+  {
+   "plan": "confirm_ep4",
+   "corpus": "crisislext26",
+   "model": "distilbert-base-uncased",
+   "summary": {
+    "E1": {
+     "mean": 0.0871733649383476,
+     "min": 0.0871733649383476,
+     "max": 0.0871733649383476
+    },
+    "scoring": {
+     "mean": 0.09008403191610466,
+     "min": 0.09008403191610466,
+     "max": 0.09008403191610466
+    },
+    "reweighting": {
+     "mean": -0.002910666977757095,
+     "min": -0.002910666977757095,
+     "max": -0.002910666977757095
+    },
+    "loeo_aggregation_R": {
+     "mean": 0.08551190387847396,
+     "min": 0.08551190387847396,
+     "max": 0.08551190387847396
+    },
+    "loeo_aggregation_whole": {
+     "mean": 0.09654102556363131,
+     "min": 0.09654102556363131,
+     "max": 0.09654102556363131
+    },
+    "spearman_prev_f1": {
+     "mean": 0.6601690692174862,
+     "max_p": 9.30976645492297e-21
+    },
+    "id_spearman_prev_f1_R": {
+     "mean": 0.589589234807006,
+     "max_p": 2.058358267212646e-15,
+     "within_class_mean": 0.5806409754974666,
+     "within_class_max_p": 6.786900334460447e-15
+    },
+    "rarest_class_learned_seeds": [
+     42
+    ],
+    "reweighting_by_rare_class": {
+     "learned": [
+      -0.002910666977757095
+     ],
+     "not_learned": []
+    }
+   },
+   "seeds": [
+    {
+     "seed": 42,
+     "E1": 0.0871733649383476,
+     "scoring": 0.09008403191610466,
+     "reweighting": -0.002910666977757095,
+     "id_cells_R": {
+      "n": 150,
+      "spearman": 0.589589234807006,
+      "p": 2.058358267212646e-15,
+      "spearman_within_class": 0.5806409754974666,
+      "p_within_class": 6.786900334460447e-15
+     },
+     "rarest_class": {
+      "class": "caution_and_advice",
+      "n_events": 23,
+      "n_events_total": 26,
+      "pooled_id_f1": 0.6106870229007634,
+      "n_pred": 443,
+      "n_true": 474
+     },
+     "per_class": {
+      "affected_individuals": {
+       "n_events": 26,
+       "n_true": 935,
+       "id_f1": 0.80931744312026,
+       "id_n_pred": 911,
+       "loeo_f1_R": 0.7769145394006659,
+       "loeo_n_pred_R": 867
+      },
+      "caution_and_advice": {
+       "n_events": 23,
+       "n_true": 474,
+       "id_f1": 0.6106870229007634,
+       "id_n_pred": 443,
+       "loeo_f1_R": 0.5529542920847269,
+       "loeo_n_pred_R": 423
+      },
+      "donations_and_volunteering": {
+       "n_events": 23,
+       "n_true": 494,
+       "id_f1": 0.7687687687687688,
+       "id_n_pred": 505,
+       "loeo_f1_R": 0.7333994053518335,
+       "loeo_n_pred_R": 515
+      },
+      "infrastructure_and_utilities": {
+       "n_events": 26,
+       "n_true": 326,
+       "id_f1": 0.4921135646687697,
+       "id_n_pred": 308,
+       "loeo_f1_R": 0.34944237918215615,
+       "loeo_n_pred_R": 212
+      },
+      "other_useful_information": {
+       "n_events": 26,
+       "n_true": 1544,
+       "id_f1": 0.7201267828843106,
+       "id_n_pred": 1611,
+       "loeo_f1_R": 0.7014563106796117,
+       "loeo_n_pred_R": 1752
+      },
+      "sympathy_and_support": {
+       "n_events": 26,
+       "n_true": 913,
+       "id_f1": 0.7874794069192751,
+       "id_n_pred": 908,
+       "loeo_f1_R": 0.7562841530054645,
+       "loeo_n_pred_R": 917
+      }
+     },
+     "loeo_aggregation_R": 0.08551190387847396,
+     "loeo_aggregation_whole": 0.09654102556363131,
+     "cells": {
+      "n": 155,
+      "spearman_prev_f1": 0.6601690692174862,
+      "p": 9.30976645492297e-21,
+      "share_prev_lt_5pct": 0.23225806451612904,
+      "median_f1_prev_lt_5pct": 0.27636363636363637,
+      "median_f1_prev_ge_5pct": 0.6666666666666666,
+      "median_n_prev_lt_5pct": 19.0
+     }
+    }
+   ]
+  },
+  {
+   "plan": "x3_tfidf",
+   "corpus": "humaid19",
+   "model": "tfidf-lr",
+   "summary": {
+    "E1": {
+     "mean": 0.03541214129484538,
+     "min": 0.027869470193423673,
+     "max": 0.04228173101808652
+    },
+    "scoring": {
+     "mean": 0.07452113880461239,
+     "min": 0.07105487496593382,
+     "max": 0.07781760814970026
+    },
+    "reweighting": {
+     "mean": -0.03910899750976697,
+     "min": -0.0452253302275671,
+     "max": -0.03370346449922708
+    },
+    "loeo_aggregation_R": {
+     "mean": -0.0032352319719229027,
+     "min": -0.007992928871283445,
+     "max": 0.0019473692937836962
+    },
+    "loeo_aggregation_whole": {
+     "mean": -0.00826078125862435,
+     "min": -0.010925253540634783,
+     "max": -0.0058631474544764695
+    },
+    "spearman_prev_f1": {
+     "mean": 0.5852591490896353,
+     "max_p": 1.739286259341383e-15
+    },
+    "id_spearman_prev_f1_R": {
+     "mean": 0.6450886110534741,
+     "max_p": 8.500541841928322e-20,
+     "within_class_mean": 0.6174946891757087,
+     "within_class_max_p": 2.9554655227920134e-17
+    },
+    "rarest_class_learned_seeds": [
+     2,
+     4,
+     42
+    ],
+    "reweighting_by_rare_class": {
+     "learned": [
+      -0.03647430163275054
+     ],
+     "not_learned": [
+      -0.04306104132529162
+     ]
+    }
+   },
+   "seeds": [
+    {
+     "seed": 1,
+     "E1": 0.027869470193423673,
+     "scoring": 0.07309480042099085,
+     "reweighting": -0.0452253302275671,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.6469505918171445,
+      "p": 1.399478971100782e-20,
+      "spearman_within_class": 0.625733812934475,
+      "p_within_class": 5.459370193928281e-19
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.0,
+      "n_pred": 0,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.5851528384279476,
+       "id_n_pred": 744,
+       "loeo_f1_R": 0.4626959247648903,
+       "loeo_n_pred_R": 507
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.6901300688599847,
+       "id_n_pred": 485,
+       "loeo_f1_R": 0.681504221028396,
+       "loeo_n_pred_R": 481
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.7567043618739903,
+       "id_n_pred": 1451,
+       "loeo_f1_R": 0.7521531100478469,
+       "loeo_n_pred_R": 1491
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.8634635326650536,
+       "id_n_pred": 1411,
+       "loeo_f1_R": 0.8572433192686357,
+       "loeo_n_pred_R": 1362
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.0,
+       "id_n_pred": 0,
+       "loeo_f1_R": 0.0,
+       "loeo_n_pred_R": 0
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.37301992846193155,
+       "id_n_pred": 708,
+       "loeo_f1_R": 0.26216814159292035,
+       "loeo_n_pred_R": 559
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.49211711711711714,
+       "id_n_pred": 2915,
+       "loeo_f1_R": 0.4617301530793877,
+       "loeo_n_pred_R": 3205
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.3825136612021858,
+       "id_n_pred": 209,
+       "loeo_f1_R": 0.23708206686930092,
+       "loeo_n_pred_R": 135
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.7666699692856435,
+       "id_n_pred": 5883,
+       "loeo_f1_R": 0.7489494771816672,
+       "loeo_n_pred_R": 6023
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.778283287837428,
+       "id_n_pred": 1497,
+       "loeo_f1_R": 0.7676646706586826,
+       "loeo_n_pred_R": 1540
+      }
+     },
+     "loeo_aggregation_R": -0.007992928871283445,
+     "loeo_aggregation_whole": -0.0058631474544764695,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.5882357092735876,
+      "p": 1.86128280922733e-16,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.2945998071359691,
+      "median_f1_prev_ge_5pct": 0.6625995371764931,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    },
+    {
+     "seed": 2,
+     "E1": 0.03735141046670676,
+     "scoring": 0.07105487496593382,
+     "reweighting": -0.03370346449922708,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.6390461394657768,
+      "p": 5.666270108186365e-20,
+      "spearman_within_class": 0.6195700804087791,
+      "p_within_class": 1.5026620623645346e-18
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.15384615384615385,
+      "n_pred": 6,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.5976138828633406,
+       "id_n_pred": 756,
+       "loeo_f1_R": 0.4751728472658705,
+       "loeo_n_pred_R": 503
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.7452966714905933,
+       "id_n_pred": 560,
+       "loeo_f1_R": 0.6640746500777605,
+       "loeo_n_pred_R": 464
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.7497590748474141,
+       "id_n_pred": 1469,
+       "loeo_f1_R": 0.7455696202531645,
+       "loeo_n_pred_R": 1516
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.8707671043538355,
+       "id_n_pred": 1412,
+       "loeo_f1_R": 0.8587491215741392,
+       "loeo_n_pred_R": 1364
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.15384615384615385,
+       "id_n_pred": 6,
+       "loeo_f1_R": 0.0,
+       "loeo_n_pred_R": 0
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.3680083638264506,
+       "id_n_pred": 664,
+       "loeo_f1_R": 0.19708454810495626,
+       "loeo_n_pred_R": 466
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.49865848984285166,
+       "id_n_pred": 2805,
+       "loeo_f1_R": 0.45861648370796304,
+       "loeo_n_pred_R": 3326
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.3136094674556213,
+       "id_n_pred": 153,
+       "loeo_f1_R": 0.223950233281493,
+       "loeo_n_pred_R": 120
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.7682950755346282,
+       "id_n_pred": 5984,
+       "loeo_f1_R": 0.7495608042162796,
+       "loeo_n_pred_R": 6036
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.7723132969034608,
+       "id_n_pred": 1494,
+       "loeo_f1_R": 0.7581620314389359,
+       "loeo_n_pred_R": 1508
+      }
+     },
+     "loeo_aggregation_R": -0.003732122526343473,
+     "loeo_aggregation_whole": -0.008219929068639109,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.5871379397326969,
+      "p": 2.1831174062545867e-16,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.2857142857142857,
+      "median_f1_prev_ge_5pct": 0.66890756302521,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    },
+    {
+     "seed": 3,
+     "E1": 0.03219257189802871,
+     "scoring": 0.0730893243210449,
+     "reweighting": -0.040896752423016144,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.6398964191934204,
+      "p": 4.884448064499926e-20,
+      "spearman_within_class": 0.6006095604995305,
+      "p_within_class": 2.9554655227920134e-17
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.0,
+      "n_pred": 0,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.5662718556119571,
+       "id_n_pred": 685,
+       "loeo_f1_R": 0.4597846738442052,
+       "loeo_n_pred_R": 491
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.7619047619047619,
+       "id_n_pred": 585,
+       "loeo_f1_R": 0.6944024205748865,
+       "loeo_n_pred_R": 500
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.7634985790969372,
+       "id_n_pred": 1523,
+       "loeo_f1_R": 0.7484582927620902,
+       "loeo_n_pred_R": 1437
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.8647512263489839,
+       "id_n_pred": 1372,
+       "loeo_f1_R": 0.8507779349363508,
+       "loeo_n_pred_R": 1346
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.0,
+       "id_n_pred": 0,
+       "loeo_f1_R": 0.0,
+       "loeo_n_pred_R": 0
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.36967808930425755,
+       "id_n_pred": 677,
+       "loeo_f1_R": 0.24577226606538896,
+       "loeo_n_pred_R": 525
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.4932985852568876,
+       "id_n_pred": 2959,
+       "loeo_f1_R": 0.46584699453551914,
+       "loeo_n_pred_R": 3443
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.3500717360114778,
+       "id_n_pred": 174,
+       "loeo_f1_R": 0.2398753894080997,
+       "loeo_n_pred_R": 119
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.7724962630792227,
+       "id_n_pred": 5825,
+       "loeo_f1_R": 0.7539463299131808,
+       "loeo_n_pred_R": 5926
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.7774750227066304,
+       "id_n_pred": 1503,
+       "loeo_f1_R": 0.761761158021713,
+       "loeo_n_pred_R": 1516
+      }
+     },
+     "loeo_aggregation_R": -0.0032333463788161154,
+     "loeo_aggregation_whole": -0.009483403241500099,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.5966164893863128,
+      "p": 5.3986172437491866e-17,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.2864741641337386,
+      "median_f1_prev_ge_5pct": 0.6596621700136274,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    },
+    {
+     "seed": 4,
+     "E1": 0.04228173101808652,
+     "scoring": 0.07754908616539216,
+     "reweighting": -0.035267355147305605,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.6628401753713468,
+      "p": 7.40187977958463e-22,
+      "spearman_within_class": 0.6385398740530248,
+      "p_within_class": 6.188632041155097e-20
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.12987012987012986,
+      "n_pred": 5,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.5843203609701072,
+       "id_n_pred": 685,
+       "loeo_f1_R": 0.4733118971061093,
+       "loeo_n_pred_R": 467
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.7312775330396476,
+       "id_n_pred": 540,
+       "loeo_f1_R": 0.6630350194552529,
+       "loeo_n_pred_R": 463
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.7655954631379962,
+       "id_n_pred": 1530,
+       "loeo_f1_R": 0.7383419689119171,
+       "loeo_n_pred_R": 1444
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.8536585365853658,
+       "id_n_pred": 1388,
+       "loeo_f1_R": 0.85997171145686,
+       "loeo_n_pred_R": 1346
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.12987012987012986,
+       "id_n_pred": 5,
+       "loeo_f1_R": 0.0,
+       "loeo_n_pred_R": 0
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.32830820770519265,
+       "id_n_pred": 542,
+       "loeo_f1_R": 0.23583815028901733,
+       "loeo_n_pred_R": 481
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.4916573971078977,
+       "id_n_pred": 2981,
+       "loeo_f1_R": 0.47149725274725274,
+       "loeo_n_pred_R": 3411
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.32116788321167883,
+       "id_n_pred": 162,
+       "loeo_f1_R": 0.18619582664526485,
+       "loeo_n_pred_R": 100
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.7675399862623884,
+       "id_n_pred": 5981,
+       "loeo_f1_R": 0.746268656716418,
+       "loeo_n_pred_R": 6108
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.7722712070538158,
+       "id_n_pred": 1489,
+       "loeo_f1_R": 0.7547974413646056,
+       "loeo_n_pred_R": 1483
+      }
+     },
+     "loeo_aggregation_R": -0.003165131376955177,
+     "loeo_aggregation_whole": -0.010925253540634783,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.5724642794784027,
+      "p": 1.739286259341383e-15,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.28621463852716655,
+      "median_f1_prev_ge_5pct": 0.6598194575214507,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    },
+    {
+     "seed": 42,
+     "E1": 0.03736552289798123,
+     "scoring": 0.07781760814970026,
+     "reweighting": -0.04045208525171896,
+     "id_cells_R": {
+      "n": 162,
+      "spearman": 0.6367097294196826,
+      "p": 8.500541841928322e-20,
+      "spearman_within_class": 0.6030201179827342,
+      "p_within_class": 2.0459483901234864e-17
+     },
+     "rarest_class": {
+      "class": "missing_or_found_people",
+      "n_events": 4,
+      "n_events_total": 19,
+      "pooled_id_f1": 0.0273972602739726,
+      "n_pred": 1,
+      "n_true": 72
+     },
+     "per_class": {
+      "caution_and_advice": {
+       "n_events": 18,
+       "n_true": 1088,
+       "id_f1": 0.5763490241102182,
+       "id_n_pred": 654,
+       "loeo_f1_R": 0.4462809917355372,
+       "loeo_n_pred_R": 485
+      },
+      "displaced_people_and_evacuations": {
+       "n_events": 11,
+       "n_true": 822,
+       "id_f1": 0.746705710102489,
+       "id_n_pred": 544,
+       "loeo_f1_R": 0.6990144048521607,
+       "loeo_n_pred_R": 497
+      },
+      "infrastructure_and_utility_damage": {
+       "n_events": 19,
+       "n_true": 1644,
+       "id_f1": 0.7680751173708921,
+       "id_n_pred": 1551,
+       "loeo_f1_R": 0.7508705286483064,
+       "loeo_n_pred_R": 1515
+      },
+      "injured_or_dead_people": {
+       "n_events": 17,
+       "n_true": 1482,
+       "id_f1": 0.8634942688433483,
+       "id_n_pred": 1397,
+       "loeo_f1_R": 0.8545001778726432,
+       "loeo_n_pred_R": 1329
+      },
+      "missing_or_found_people": {
+       "n_events": 4,
+       "n_true": 72,
+       "id_f1": 0.0273972602739726,
+       "id_n_pred": 1,
+       "loeo_f1_R": 0.0,
+       "loeo_n_pred_R": 0
+      },
+      "not_humanitarian": {
+       "n_events": 18,
+       "n_true": 1249,
+       "id_f1": 0.3787878787878788,
+       "id_n_pred": 731,
+       "loeo_f1_R": 0.2832980972515856,
+       "loeo_n_pred_R": 643
+      },
+      "other_relevant_information": {
+       "n_events": 19,
+       "n_true": 2413,
+       "id_f1": 0.49944092433842713,
+       "id_n_pred": 2953,
+       "loeo_f1_R": 0.4625244792593911,
+       "loeo_n_pred_R": 3204
+      },
+      "requests_or_urgent_needs": {
+       "n_events": 18,
+       "n_true": 523,
+       "id_f1": 0.2887864823348694,
+       "id_n_pred": 128,
+       "loeo_f1_R": 0.2113564668769716,
+       "loeo_n_pred_R": 111
+      },
+      "rescue_volunteering_or_donation_effort": {
+       "n_events": 19,
+       "n_true": 4210,
+       "id_f1": 0.7729344164850406,
+       "id_n_pred": 5884,
+       "loeo_f1_R": 0.7486967640405232,
+       "loeo_n_pred_R": 5957
+      },
+      "sympathy_and_support": {
+       "n_events": 19,
+       "n_true": 1800,
+       "id_f1": 0.7662576687116565,
+       "id_n_pred": 1460,
+       "loeo_f1_R": 0.7549077929803688,
+       "loeo_n_pred_R": 1562
+      }
+     },
+     "loeo_aggregation_R": 0.0019473692937836962,
+     "loeo_aggregation_whole": -0.00681217298787129,
+     "cells": {
+      "n": 162,
+      "spearman_prev_f1": 0.5818413275771763,
+      "p": 4.673350128750371e-16,
+      "share_prev_lt_5pct": 0.3333333333333333,
+      "median_f1_prev_lt_5pct": 0.2926675663517769,
+      "median_f1_prev_ge_5pct": 0.6609664884684963,
+      "median_n_prev_lt_5pct": 70.5
+     }
+    }
+   ]
+  },
+  {
+   "plan": "x3_tfidf",
+   "corpus": "crisislext26",
+   "model": "tfidf-lr",
+   "summary": {
+    "E1": {
+     "mean": 0.10993246801903196,
+     "min": 0.10563846864423782,
+     "max": 0.11574026885457633
+    },
+    "scoring": {
+     "mean": 0.11222443373836793,
+     "min": 0.10800696277926845,
+     "max": 0.11776022141745866
+    },
+    "reweighting": {
+     "mean": -0.0022919657193360677,
+     "min": -0.0024874504600949357,
+     "max": -0.0020199525628825073
+    },
+    "loeo_aggregation_R": {
+     "mean": 0.06398840617156554,
+     "min": 0.05893537259117637,
+     "max": 0.06770129756560855
+    },
+    "loeo_aggregation_whole": {
+     "mean": 0.07240996310575835,
+     "min": 0.06755790352744412,
+     "max": 0.07547796807500512
+    },
+    "spearman_prev_f1": {
+     "mean": 0.6741008431774249,
+     "max_p": 2.5213215323165746e-21
+    },
+    "id_spearman_prev_f1_R": {
+     "mean": 0.7130996349010293,
+     "max_p": 5.626278784701618e-22,
+     "within_class_mean": 0.6743356097414344,
+     "within_class_max_p": 5.141044489636015e-17
+    },
+    "rarest_class_learned_seeds": [
+     1,
+     2,
+     42
+    ],
+    "reweighting_by_rare_class": {
+     "learned": [
+      -0.0022919657193360677
+     ],
+     "not_learned": []
+    }
+   },
+   "seeds": [
+    {
+     "seed": 1,
+     "E1": 0.10563846864423782,
+     "scoring": 0.10800696277926845,
+     "reweighting": -0.0023684941350307605,
+     "id_cells_R": {
+      "n": 150,
+      "spearman": 0.6834434031892754,
+      "p": 5.626278784701618e-22,
+      "spearman_within_class": 0.6156275901470502,
+      "p_within_class": 5.141044489636015e-17
+     },
+     "rarest_class": {
+      "class": "caution_and_advice",
+      "n_events": 23,
+      "n_events_total": 26,
+      "pooled_id_f1": 0.5329744279946165,
+      "n_pred": 269,
+      "n_true": 474
+     },
+     "per_class": {
+      "affected_individuals": {
+       "n_events": 26,
+       "n_true": 935,
+       "id_f1": 0.7505747126436781,
+       "id_n_pred": 805,
+       "loeo_f1_R": 0.687913409500902,
+       "loeo_n_pred_R": 728
+      },
+      "caution_and_advice": {
+       "n_events": 23,
+       "n_true": 474,
+       "id_f1": 0.5329744279946165,
+       "id_n_pred": 269,
+       "loeo_f1_R": 0.31527093596059114,
+       "loeo_n_pred_R": 135
+      },
+      "donations_and_volunteering": {
+       "n_events": 23,
+       "n_true": 494,
+       "id_f1": 0.6781214203894617,
+       "id_n_pred": 379,
+       "loeo_f1_R": 0.607981220657277,
+       "loeo_n_pred_R": 358
+      },
+      "infrastructure_and_utilities": {
+       "n_events": 26,
+       "n_true": 326,
+       "id_f1": 0.18592964824120603,
+       "id_n_pred": 72,
+       "loeo_f1_R": 0.06321839080459771,
+       "loeo_n_pred_R": 22
+      },
+      "other_useful_information": {
+       "n_events": 26,
+       "n_true": 1544,
+       "id_f1": 0.6845915201654602,
+       "id_n_pred": 2324,
+       "loeo_f1_R": 0.6408500590318772,
+       "loeo_n_pred_R": 2691
+      },
+      "sympathy_and_support": {
+       "n_events": 26,
+       "n_true": 913,
+       "id_f1": 0.7382857142857143,
+       "id_n_pred": 837,
+       "loeo_f1_R": 0.6474474474474474,
+       "loeo_n_pred_R": 752
+      }
+     },
+     "loeo_aggregation_R": 0.06770129756560855,
+     "loeo_aggregation_whole": 0.07419401771482581,
+     "cells": {
+      "n": 155,
+      "spearman_prev_f1": 0.6693088136820038,
+      "p": 1.7368309655276218e-21,
+      "share_prev_lt_5pct": 0.23225806451612904,
+      "median_f1_prev_lt_5pct": 0.047619047619047616,
+      "median_f1_prev_ge_5pct": 0.5402298850574713,
+      "median_n_prev_lt_5pct": 19.0
+     }
+    },
+    {
+     "seed": 2,
+     "E1": 0.10841866655828175,
+     "scoring": 0.11090611701837666,
+     "reweighting": -0.0024874504600949357,
+     "id_cells_R": {
+      "n": 150,
+      "spearman": 0.7312981324379192,
+      "p": 2.264883945752806e-26,
+      "spearman_within_class": 0.7154407943956052,
+      "p_within_class": 8.153842118996559e-25
+     },
+     "rarest_class": {
+      "class": "caution_and_advice",
+      "n_events": 23,
+      "n_events_total": 26,
+      "pooled_id_f1": 0.5379310344827586,
+      "n_pred": 251,
+      "n_true": 474
+     },
+     "per_class": {
+      "affected_individuals": {
+       "n_events": 26,
+       "n_true": 935,
+       "id_f1": 0.7585421412300684,
+       "id_n_pred": 821,
+       "loeo_f1_R": 0.6834532374100719,
+       "loeo_n_pred_R": 733
+      },
+      "caution_and_advice": {
+       "n_events": 23,
+       "n_true": 474,
+       "id_f1": 0.5379310344827586,
+       "id_n_pred": 251,
+       "loeo_f1_R": 0.24625623960066556,
+       "loeo_n_pred_R": 127
+      },
+      "donations_and_volunteering": {
+       "n_events": 23,
+       "n_true": 494,
+       "id_f1": 0.6857772877618522,
+       "id_n_pred": 413,
+       "loeo_f1_R": 0.6018518518518519,
+       "loeo_n_pred_R": 370
+      },
+      "infrastructure_and_utilities": {
+       "n_events": 26,
+       "n_true": 326,
+       "id_f1": 0.1514360313315927,
+       "id_n_pred": 57,
+       "loeo_f1_R": 0.05847953216374269,
+       "loeo_n_pred_R": 16
+      },
+      "other_useful_information": {
+       "n_events": 26,
+       "n_true": 1544,
+       "id_f1": 0.6856396866840732,
+       "id_n_pred": 2286,
+       "loeo_f1_R": 0.6410256410256411,
+       "loeo_n_pred_R": 2668
+      },
+      "sympathy_and_support": {
+       "n_events": 26,
+       "n_true": 913,
+       "id_f1": 0.7340485601355167,
+       "id_n_pred": 858,
+       "loeo_f1_R": 0.6421364985163205,
+       "loeo_n_pred_R": 772
+      }
+     },
+     "loeo_aggregation_R": 0.05893537259117637,
+     "loeo_aggregation_whole": 0.06755790352744412,
+     "cells": {
+      "n": 155,
+      "spearman_prev_f1": 0.6673074798921492,
+      "p": 2.5213215323165746e-21,
+      "share_prev_lt_5pct": 0.23225806451612904,
+      "median_f1_prev_lt_5pct": 0.05380200860832138,
+      "median_f1_prev_ge_5pct": 0.5429740791268759,
+      "median_n_prev_lt_5pct": 19.0
+     }
+    },
+    {
+     "seed": 42,
+     "E1": 0.11574026885457633,
+     "scoring": 0.11776022141745866,
+     "reweighting": -0.0020199525628825073,
+     "id_cells_R": {
+      "n": 150,
+      "spearman": 0.7245573690758934,
+      "p": 1.0712045388669249e-25,
+      "spearman_within_class": 0.6919384446816479,
+      "p_within_class": 1.0778125236921458e-22
+     },
+     "rarest_class": {
+      "class": "caution_and_advice",
+      "n_events": 23,
+      "n_events_total": 26,
+      "pooled_id_f1": 0.5604249667994687,
+      "n_pred": 279,
+      "n_true": 474
+     },
+     "per_class": {
+      "affected_individuals": {
+       "n_events": 26,
+       "n_true": 935,
+       "id_f1": 0.7554535017221584,
+       "id_n_pred": 807,
+       "loeo_f1_R": 0.6743902439024391,
+       "loeo_n_pred_R": 705
+      },
+      "caution_and_advice": {
+       "n_events": 23,
+       "n_true": 474,
+       "id_f1": 0.5604249667994687,
+       "id_n_pred": 279,
+       "loeo_f1_R": 0.28426395939086296,
+       "loeo_n_pred_R": 117
+      },
+      "donations_and_volunteering": {
+       "n_events": 23,
+       "n_true": 494,
+       "id_f1": 0.6892039258451472,
+       "id_n_pred": 423,
+       "loeo_f1_R": 0.6047058823529412,
+       "loeo_n_pred_R": 356
+      },
+      "infrastructure_and_utilities": {
+       "n_events": 26,
+       "n_true": 326,
+       "id_f1": 0.18686868686868688,
+       "id_n_pred": 70,
+       "loeo_f1_R": 0.03592814371257485,
+       "loeo_n_pred_R": 8
+      },
+      "other_useful_information": {
+       "n_events": 26,
+       "n_true": 1544,
+       "id_f1": 0.6888536714210248,
+       "id_n_pred": 2242,
+       "loeo_f1_R": 0.6386475698520779,
+       "loeo_n_pred_R": 2715
+      },
+      "sympathy_and_support": {
+       "n_events": 26,
+       "n_true": 913,
+       "id_f1": 0.7277840269966255,
+       "id_n_pred": 865,
+       "loeo_f1_R": 0.6383981154299175,
+       "loeo_n_pred_R": 785
+      }
+     },
+     "loeo_aggregation_R": 0.06532854835791169,
+     "loeo_aggregation_whole": 0.07547796807500512,
+     "cells": {
+      "n": 155,
+      "spearman_prev_f1": 0.685686235958122,
+      "p": 7.351520308307578e-23,
+      "share_prev_lt_5pct": 0.23225806451612904,
+      "median_f1_prev_lt_5pct": 0.0,
+      "median_f1_prev_ge_5pct": 0.5421686746987951,
+      "median_n_prev_lt_5pct": 19.0
+     }
+    }
+   ]
+  }
+ ],
+ "rare_class_vs_reweighting": {
+  "humaid19": {
+   "n_runs": 23,
+   "spearman_f1_reweighting": 0.9387825250282087,
+   "p": 3.4820458871840606e-11,
+   "bands": {
+    "zero": {
+     "n": 10,
+     "f1_min": 0.0,
+     "f1_max": 0.0,
+     "rw_min": -0.04861645186203772,
+     "rw_max": -0.03945085865224149
+    },
+    "low": {
+     "n": 4,
+     "f1_min": 0.0273972602739726,
+     "f1_max": 0.15384615384615385,
+     "rw_min": -0.04045208525171896,
+     "rw_max": -0.03370346449922708
+    },
+    "mid": {
+     "n": 3,
+     "f1_min": 0.43478260869565216,
+     "f1_max": 0.5306122448979592,
+     "rw_min": -0.012783776318346027,
+     "rw_max": -0.006588013224446694
+    },
+    "high": {
+     "n": 6,
+     "f1_min": 0.6371681415929203,
+     "f1_max": 0.7751937984496124,
+     "rw_min": 0.002461959154729975,
+     "rw_max": 0.010729256743914936
+    }
+   }
+  },
+  "crisislext26": {
+   "n_runs": 10,
+   "spearman_f1_reweighting": 0.24848484848484845,
+   "p": 0.4887763045192432,
+   "bands": {
+    "mid": {
+     "n": 6,
+     "f1_min": 0.5329744279946165,
+     "f1_max": 0.5995762711864406,
+     "rw_min": -0.0024874504600949357,
+     "rw_max": -0.0007242078941758394
+    },
+    "high": {
+     "n": 4,
+     "f1_min": 0.6106870229007634,
+     "f1_max": 0.6157068062827226,
+     "rw_min": -0.002910666977757095,
+     "rw_max": -0.0012444184685434581
+    }
+   }
+  }
+ }
+}

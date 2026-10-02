@@ -1,0 +1,43 @@
+{
+ "corpus": "humaid19",
+ "model": "data/models/distilbert-base-uncased/12040accade4e8a0f71eabdb258fecc2e7e948be",
+ "held_out_event_not_scored": "srilanka_floods_2017",
+ "seed": 42,
+ "epochs": 5,
+ "n_train": 6000,
+ "n_source_val": 600,
+ "curve": [
+  {
+   "epoch": 1,
+   "train_loss": 1.59368,
+   "val_loss": 0.89141,
+   "val_macro_f1_present": 0.53462
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.74441,
+   "val_loss": 0.76907,
+   "val_macro_f1_present": 0.60452
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.57166,
+   "val_loss": 0.76574,
+   "val_macro_f1_present": 0.63699
+  },
+  {
+   "epoch": 4,
+   "train_loss": 0.4536,
+   "val_loss": 0.78198,
+   "val_macro_f1_present": 0.74478
+  },
+  {
+   "epoch": 5,
+   "train_loss": 0.39046,
+   "val_loss": 0.79469,
+   "val_macro_f1_present": 0.73829
+  }
+ ],
+ "elapsed_sec": 823.0,
+ "code_sha256": "d794071319caf87e7151e8fe7f8c57520734533c35c0e13a2d455ae466d29649"
+}

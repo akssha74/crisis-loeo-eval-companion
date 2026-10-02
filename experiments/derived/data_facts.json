@@ -1,0 +1,28 @@
+{
+ "humaid19": {
+  "n_classes": 10,
+  "n_events": 19,
+  "classes_per_event_min": 6,
+  "classes_per_event_max": 10,
+  "events_lacking_a_class": 17,
+  "mean_absent_classes": 1.4736842105263157,
+  "R_e_size_median": 439,
+  "R_e_cells_present": 162,
+  "R_e_cells_lt5_share": 0.030864197530864196,
+  "pooled_R_min_class_size": 72,
+  "within_event_duplicate_rows": 2
+ },
+ "crisislext26": {
+  "n_classes": 6,
+  "n_events": 26,
+  "classes_per_event_min": 5,
+  "classes_per_event_max": 6,
+  "events_lacking_a_class": 1,
+  "mean_absent_classes": 0.038461538461538464,
+  "R_e_size_median": 181,
+  "R_e_cells_present": 150,
+  "R_e_cells_lt5_share": 0.11333333333333333,
+  "pooled_R_min_class_size": 326,
+  "within_event_duplicate_rows": 3014
+ }
+}

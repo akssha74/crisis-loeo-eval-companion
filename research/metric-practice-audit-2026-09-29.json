@@ -1,0 +1,430 @@
+[
+  {
+    "id": "P01",
+    "citation": "Nguyen, D. T., Al-Mannai, K. A., Joty, S., Sajjad, H., Imran, M., Mitra, P. (2017). Robust Classification of Crisis-Related Data on Social Networks Using Convolutional Neural Networks. ICWSM 11(1). Extended version: arXiv 1608.03902.",
+    "url": "https://ojs.aaai.org/index.php/ICWSM/article/view/14950",
+    "task": "binary informative vs not (ICWSM version); multi-class humanitarian (arXiv version); cross-event = out-of-event training tested on each target event",
+    "n_classes": "2 (ICWSM); 6 (arXiv multi-class)",
+    "metrics": ["AUC", "accuracy (arXiv)", "macro-F1 (arXiv)"],
+    "aggregation": "per-event only (4 target events; no cross-event average)",
+    "random_vs_cross_event_same_instances": "same (implied): event-only vs out-of-event vs event+out models evaluated on each event's 20% test split",
+    "code_url": null,
+    "labels_argument_passed": "no_code_found",
+    "evidence_quotes": [
+      "ICWSM p.633: \"Given a particular event (e.g. Nepal earthquake), we use data from all other events plus All others (see Table 1) as out-of-event data. We divide each event dataset into train (70%), validation (10%) and test sets (20%)\"",
+      "ICWSM: \"Table 2: The AUC scores of non-neural and neural network-based classifiers. event, out and event+out represents the three different settings of the training data\"",
+      "arXiv: \"Table IV summarizes the accuracy and macro-F1 scores.\"",
+      "Table 1 class counts: every event has >=83 tweets in every class (e.g., California Earthquake Donations 83, Sympathy 83)"
+    ],
+    "verified": "full_text (ICWSM PDF + arXiv PDF); no code linked"
+  },
+  {
+    "id": "P02",
+    "citation": "Alam, F., Joty, S., Imran, M. (2018). Domain Adaptation with Adversarial Training and Graph Embeddings. ACL 2018, pp. 1077-1087.",
+    "url": "https://aclanthology.org/P18-1099/",
+    "task": "binary relevant vs non-relevant; one-to-one transfer between Nepal earthquake and Queensland floods",
+    "n_classes": 2,
+    "metrics": ["weighted precision", "weighted recall", "weighted F1", "weighted AUC"],
+    "aggregation": "per-event (2 source->target pairs; no average)",
+    "random_vs_cross_event_same_instances": "unverified: in-domain (60/30/10 split) vs transfer; target test file passed via command-line option -T in code",
+    "code_url": "https://github.com/firojalam/domain-adaptation (commit 24b36d7)",
+    "labels_argument_passed": "not_applicable: no macro; P/R/F1 support-weighted from classification_report; no labels argument",
+    "evidence_quotes": [
+      "\"we use weighted average precision, recall, F-measure, and Area Under ROC-Curve (AUC) ... The rationale behind choosing the weighted metric is that it takes into account the class imbalance problem.\"",
+      "\"We split the labeled data into 60% as training, 30% as test and 10% as development.\"",
+      "Table 1: NEQ Relevant 5,527 / Non-relevant 6,141; QFL 5,414 / 4,619",
+      "cnn/performance.py L58-60: wAUC=metrics.roc_auc_score(y_true,y_pred); L71: P,R,F1=classifaction_report(report); L108-117 support-weighted sum over classification_report rows",
+      "cnn/cnn_domain_adaptation.py L155: parser.add_option('-T', action=\"store\", dest=\"domain_test_file\")",
+      "README: \"We will make the code publicly available soon.\""
+    ],
+    "verified": "full_text + code"
+  },
+  {
+    "id": "P03",
+    "citation": "Medina Maza, S., Spiliopoulou, E., Hovy, E., Hauptmann, A. (2020). Event-Related Bias Removal for Real-time Disaster Events. Findings of EMNLP 2020, pp. 3858-3868.",
+    "url": "https://aclanthology.org/2020.findings-emnlp.344/",
+    "task": "binary critical vs non-critical (TREC-IS priorities grouped); leave-one-event-out within disaster type",
+    "n_classes": 2,
+    "metrics": ["macro-F1", "Non-Critical F1", "Critical F1", "micro-F1 (mentioned in text; not tabulated)"],
+    "aggregation": "mean of per-held-out-event scores (mean over n LOEO splits per event type)",
+    "random_vs_cross_event_same_instances": "no_comparison (no in-distribution score)",
+    "code_url": "https://github.com/salmedina/CriticalTweetsClassifier (probable; paper link https://salmedina.github.io/EventBiasRemoval/ returns 404)",
+    "labels_argument_passed": "fixed_label_list (custom macro over fixed 2-label map; not sklearn)",
+    "evidence_quotes": [
+      "\"We evaluated the three models on each split obtaining the macro-F1 and the micro-F1 scores from the cr predictions. Finally, we calculated the mean of these metrics, which we can see in Table 2.\"",
+      "\"the training data consists of all the events of the same disaster type except one, as it is used for testing the model.\"",
+      "src/classifier.py L325-339 calc_metrics: loops over all labels in label_map, macro_f1 /= len(final_metrics); L348: scores = {label_idx: {'correct': 0.0, 'gold': 0.0001, 'predicted': 0.0001} for label_idx in label_map}",
+      "data/labeled_data.json: all 25 held-out ('valid:') events contain the critical class; minimum 2014_Chile_Earthquake_en 13 of 311",
+      "Held-out event is used for epoch selection: \"considered as the best model the one which showed the highest Critical-F1 score\"; code classifier.py L265-279"
+    ],
+    "verified": "full_text + probable code (repo not linked from paper)"
+  },
+  {
+    "id": "P04",
+    "citation": "Wang, C., Nulty, P., Lillis, D. (2021). Crisis Domain Adaptation Using Sequence-to-Sequence Transformers (CAST). ISCRAM 2021, pp. 655-666.",
+    "url": "https://lill.is/pubs/Wang2021a.pdf",
+    "task": "binary relevance (nepal_queensland) and on-topic/off-topic (CrisisT6); one-to-one and leave-one-out many-to-one",
+    "n_classes": 2,
+    "metrics": ["weighted-F1 (nepal_queensland)", "accuracy (CrisisT6)"],
+    "aggregation": "per-event (pairs) and mean of per-event accuracy for CrisisT6 leave-one-out (Table 4 'Average')",
+    "random_vs_cross_event_same_instances": "different for CrisisT6 (in-domain 5-fold CV inside event vs cross-domain on whole target event, shown in one matrix); same for nepal_queensland (standard test split)",
+    "code_url": "https://github.com/wangcongcong123/CAST (commit 99a780e)",
+    "labels_argument_passed": "no (macro computed with default labels on generated strings, but macro is not a reported metric)",
+    "evidence_quotes": [
+      "\"the weighted F1 scores are reported for nepal_queensland (Alam et al. 2018) and the accuracy scores are reported for CrisisT6 (Liu et al. 2020).\"",
+      "\"we use 5-fold cross-validation evaluation whenever the in-domain performance is reported for CrisisT6.\"",
+      "\"Table 4. Leave-one-out cross-domain adaptation accuracy using CrisisT6. The last row reports the average score.\"",
+      "metric_scripts/cls.py L34: macro_precision, macro_recall, macro_fscore, _ = precision_recall_fscore_support(labels, preds, average='macro')",
+      "train_t6.py L241-243: encoded[\"test\"] = encoded_dataset[\"train\"].filter(lambda example: example[\"event_name\"] == EVENTSHORT2LONG[test_e])",
+      "train_t6.py L216-225: kfold = KFold(n_splits=5) ... encoded[\"test\"] = encoded_dataset[\"train\"].select(test_indices)"
+    ],
+    "verified": "full_text + code"
+  },
+  {
+    "id": "P05",
+    "citation": "Seeberger, P., Riedhammer, K. (2022). Enhancing Crisis-Related Tweet Classification with Entity-Masked Language Modeling and Multi-Task Learning. NLP4PI 2022, pp. 70-78.",
+    "url": "https://aclanthology.org/2022.nlp4pi-1.9/",
+    "task": "multi-label TREC-IS information types (2020-B split: train events 1-52, test events 53-75)",
+    "n_classes": "25 low-level + 4 high-level labels (multi-label)",
+    "metrics": ["macro-F1 across information types (LT, LB, actionable AIT)"],
+    "aggregation": "pooled over 21 test events (main tables); Figure 4 mean +- s.d. of per-event F1 within event type",
+    "random_vs_cross_event_same_instances": "different: development set (stratified 10% of training events) used 'as a proxy to estimate the in-domain event performance' vs test events",
+    "code_url": "https://github.com/seebergerph/EMLM (commit 9f02ec3; moved from https://github.com/th-nuernberg/crisis-tapt-hmc)",
+    "labels_argument_passed": "no (partial(f1_score, average='macro') on 2-D multi-label indicator arrays; label set fixed by columns)",
+    "evidence_quotes": [
+      "\"We follow the TREC-IS evaluation scheme: macro-averaged F1-score across information types\"",
+      "\"we additionally analyzed the development set, as a proxy to estimate the in-domain event performance ... Contrary to the test set, standard MLM increases the absolute LB performance by 2% whereas the E-MLM approach drops by 5%\"",
+      "\"Figure 4: Comparison across event types w.r.t. F1-score ... We plot the mean and standard deviation for multiple events within a event type.\"",
+      "src/evaluation/metrics.py L15: 'f1_macro': partial(f1_score,  average='macro'),",
+      "src/evaluation/scoring.py _filter_actionable: preds = preds[:, actionable_indices]"
+    ],
+    "verified": "full_text + code (per-event scoring code not found)"
+  },
+  {
+    "id": "P06",
+    "citation": "Pramanick, A., Beck, T., Stowe, K., Gurevych, I. (2022). The challenges of temporal alignment on Twitter during crises. Findings of EMNLP 2022, pp. 2658-2672. [within-event temporal; not cross-event]",
+    "url": "https://aclanthology.org/2022.findings-emnlp.195/",
+    "task": "per-event temporal train/test within event: Sandy binary relevance; CrisisLexT26 informativeness; HumAID humanitarian",
+    "n_classes": "Sandy 2; T26 4; HumAID 11-way head in code (10 real labels plus literal 'class_label')",
+    "metrics": ["binary F1 (Sandy)", "macro-F1 (T26, HumAID)"],
+    "aggregation": "per-event (Tables 8-9) and mean over events of per-event CONTROL-TEMPORAL differences (Table 1)",
+    "random_vs_cross_event_same_instances": "same: CONTROL and TEMPORAL evaluated on the same test set (within event)",
+    "code_url": "https://github.com/UKPLab/emnlp2022-temporal-adaptation (commit 331bc3a)",
+    "labels_argument_passed": "no (sklearn default labels; per-event test scores)",
+    "evidence_quotes": [
+      "\"We report binary-F1 Score for Sandy and macro-F1 score for multi-class classification task on T26 and Humaid datasets.\"",
+      "\"We use the same test set as in TEMPORAL setup while ensuring that there is no overlap between the train and test split\"",
+      "\"Table 1: Temporal Performance Degradation: Averaged F1 performance difference of the CONTROL to TEMPORAL setting for the BERT baseline model.\"",
+      "Experiments.py L234: 'f1_macro': f1_score(p.label_ids, preds, average='macro'), (used for test.scores at L176-178)",
+      "Baseline.py L69-75: 'For multi-event datasets, loop over each event.'",
+      "CONST.py L28: N_LABELS = {\"sandy\":2, \"clex\":4, \"humaid\":11}; L43 includes 'class_label': 6",
+      "HumAID (P12) Table 7: per-event '# Cls' 6-10 after removing classes with <15 tweets"
+    ],
+    "verified": "full_text + code"
+  },
+  {
+    "id": "P07",
+    "citation": "Sanchez, C., Sarmiento, H., Abeliuk, A., Perez, J., Poblete, B. (2023). Cross-Lingual and Cross-Domain Crisis Classification for Low-Resource Scenarios. ICWSM 17(1), 754-765.",
+    "url": "https://ojs.aaai.org/index.php/ICWSM/article/view/22185",
+    "task": "binary related vs not related; events assigned wholly to train or test; mono/cross/multi-lingual x mono/cross/multi-domain scenarios",
+    "n_classes": 2,
+    "metrics": ["F1-score (averaging not stated in text)"],
+    "aggregation": "pooled per target (language x hazard domain) test set; average of 5 runs",
+    "random_vs_cross_event_same_instances": "same target test set across scenarios (monodomain vs cross-domain); no random split",
+    "code_url": "https://github.com/cinthiasanchez/Crisis-Classification (commit 1ea5d67)",
+    "labels_argument_passed": "no (code computes binary, macro without labels, and micro; which is reported is unverified)",
+    "evidence_quotes": [
+      "\"For evaluation, each event was distributed into a training or test set. To provide more representative examples for generalization, training sets prioritized events with the highest and most balanced number of instances\"",
+      "\"we opted to augment the negative class by including a random sample of negative instances from the complete testing set (i.e., not only from the test event for that scenario)\"",
+      "src/report.py L17: f1sc_binary = f1_score(y_test, predictions, average='binary'); L70-71: compute_score_threshold(probs, y, f1_score, {'average':'macro'}); L91: f1_score(y, (prob >= .5) *1., average='macro')",
+      "results/tabulated results.md: \"We show the F1-score below. This score is the average of 5 executions.\" EN Flood Monodomain LF 0.84; results/files/RF_LF_1.csv test_f1 0.8389 vs test_f1_macro 0.8283",
+      "Table 4: both classes present in every target (minimum Spanish Explosion 747 related / 50 not related)"
+    ],
+    "verified": "full_text + code"
+  },
+  {
+    "id": "P08",
+    "citation": "Seeberger, P., Freisinger, S., Bocklet, T., Riedhammer, K. (2025). Generalizing to Unseen Disaster Events: A Causal View. Findings of IJCNLP-AACL 2025, pp. 28-37.",
+    "url": "https://aclanthology.org/2025.findings-ijcnlp.2/",
+    "task": "multi-class HumAID and CrisisLexT26; multi-label TREC-IS; temporal disjoint event split",
+    "n_classes": "HumAID 9; CrisisLexT26 7; TREC-IS 7 (merged, multi-label)",
+    "metrics": ["macro precision", "macro recall", "macro-F1"],
+    "aggregation": "pooled over test events (HumAID 4, CrisisLex 6, TREC-IS 9); averaged over 5 seeds",
+    "random_vs_cross_event_same_instances": "different: probe on training-event encodings ('train events') contrasted with Table 1 test events",
+    "code_url": null,
+    "labels_argument_passed": "no_code_found",
+    "evidence_quotes": [
+      "\"we use a temporal split strategy and divide the events into disjoint sets according to the provided timestamps.\"",
+      "\"We use macro-averaged precision (P), recall (R), and F1 scores as evaluation metrics\"",
+      "\"Table 1: Macro Precision, Recall, and F1 scores of the three datasets, averaged and tested over the same five seeds.\"",
+      "\"the baseline model achieves the highest main task performance for train events but worse performance for test events (see Table 1)\"",
+      "Table 4: every class has test instances in each dataset (minimum TREC-IS requests 74)"
+    ],
+    "verified": "full_text; no code found (seebergerph/*, th-nuernberg/* checked)"
+  },
+  {
+    "id": "P09",
+    "citation": "Kersten, J., Kruspe, A., Wiegmann, M., Klan, F. (2019). Robust Filtering of Crisis-related Tweets. ISCRAM 2019.",
+    "url": "https://downloads-cf.webis.de/publications/papers/kersten_2019.pdf",
+    "task": "binary related vs unrelated; leave-one-event-out over 6 flood and 5 hurricane events (local and global CNNs)",
+    "n_classes": 2,
+    "metrics": ["per-class precision", "per-class recall", "per-class F1 (related, unrelated)", "standard deviations"],
+    "aggregation": "mean (+- s.d.) of per-held-out-event scores",
+    "random_vs_cross_event_same_instances": "different: randomly excluded 10% test data vs data from unseen events",
+    "code_url": null,
+    "labels_argument_passed": "no_code_found",
+    "evidence_quotes": [
+      "\"we exclude 10 % randomly sampled tweets from CV for independent testing. In order to test the the models' transferability, each of the events is successively excluded for training local and global models, and is instead used for testing.\"",
+      "\"Table 2. Local and global models tested with randomly excluded and unseen event data, where l=local, g=global, re=randomly excluded data, ue=unseen event data\"",
+      "Flood CNNl_re Related F1 0.915+-0.039 vs CNNl_ue 0.875+-0.054",
+      "\"Perfect class balance is achieved by randomly sampling the required amount of unrelated tweets from the Events2012 data set.\""
+    ],
+    "verified": "full_text; no code linked"
+  },
+  {
+    "id": "P10",
+    "citation": "Wiegmann, M., Kersten, J., Klan, F., Potthast, M., Stein, B. (2020). Analysis of Detection Models for Disaster-Related Tweets. ISCRAM 2020, pp. 872-880.",
+    "url": "https://elib.dlr.de/137213/",
+    "task": "binary disaster-related vs unrelated; cross-disaster (same type) and cross-type evaluation over 46 disasters, 9 types",
+    "n_classes": 2,
+    "metrics": ["F1 (averaging not stated)", "precision", "recall", "misclassification rate on tranquil tweets"],
+    "aggregation": "mean of pooled groups (per-type test sets pooling all non-training disasters of that type; averaged over models and 6-fold Monte Carlo CV)",
+    "random_vs_cross_event_same_instances": "same: 8 type-specific models and generic model on the same 10 test sets; no random split",
+    "code_url": null,
+    "labels_argument_passed": "no_code_found",
+    "evidence_quotes": [
+      "\"We trained a model on the sampled tweets for each disaster type and tested it against all tweets from all other disasters of the same type not selected for training.\"",
+      "\"We tested all 8 same-type models and the generic model on each of the 10 test sets from the cross-disaster experiments, and the combined test set\"",
+      "\"we removed all negative examples from the datasets and filled them up to balance with tweets from the tranquil sample.\""
+    ],
+    "verified": "full_text; no code linked"
+  },
+  {
+    "id": "P11",
+    "citation": "Alam, F., Sajjad, H., Imran, M., Ofli, F. (2021). CrisisBench: Benchmarking Crisis-related Social Media Datasets for Humanitarian Information Processing. ICWSM 2021. [cross-dataset, not held-out event]",
+    "url": "https://ojs.aaai.org/index.php/ICWSM/article/view/18115",
+    "task": "informativeness (binary) and humanitarian (multi-class) on consolidated data; cross-dataset CrisisLex <-> CrisisNLP",
+    "n_classes": "informativeness 2; humanitarian 11 (consolidated), CrisisLex 6, CrisisNLP 10",
+    "metrics": ["weighted precision", "weighted recall", "weighted F1", "accuracy"],
+    "aggregation": "pooled per source dataset test split (random 70/10/20)",
+    "random_vs_cross_event_same_instances": "same: in-dataset vs cross-dataset on the same test set (e.g., CNLP->CNLP 0.832 vs CLex->CNLP 0.689)",
+    "code_url": "https://github.com/firojalam/crisis_datasets_benchmarks (commit 2dc70b4)",
+    "labels_argument_passed": "not_applicable: weighted F1 only; no labels argument",
+    "evidence_quotes": [
+      "\"We split data into train, dev, and test sets with a proportion of 70%, 10%, and 20%, respectively\"",
+      "\"we use weighted average precision (P), recall (R), and F1-measure (F1). The rationale behind choosing the weighted metric is that it takes into account the class imbalance problem.\"",
+      "\"there is 14.3% difference in F1 on CrisisNLP data using the CrisisLex model for the informativeness task.\"",
+      "\"We report the results of those classes only for which the model is able to classify.\"",
+      "bin/performance.py L52: F1=metrics.f1_score(y_true,y_pred,average=\"weighted\")"
+    ],
+    "verified": "full_text + code"
+  },
+  {
+    "id": "P12",
+    "citation": "Alam, F., Qazi, U., Imran, M., Ofli, F. (2021). HumAID: Human-Annotated Disaster Incidents Data from Twitter with Deep Learning Benchmarks. ICWSM 15(1), 933-942. [no cross-event experiments]",
+    "url": "https://ojs.aaai.org/index.php/ICWSM/article/view/18116",
+    "task": "multi-class humanitarian; event-level, event-type-level and all-combined random 70/10/20 splits",
+    "n_classes": "10 after low-prevalence removal (6-10 per event)",
+    "metrics": ["weighted precision", "weighted recall", "weighted F1"],
+    "aggregation": "per-event, per-type and All on random splits; 'Average' row over the 24 test sets",
+    "random_vs_cross_event_same_instances": "no_comparison (no cross-event experiment)",
+    "code_url": null,
+    "labels_argument_passed": "not_checked",
+    "evidence_quotes": [
+      "\"We removed low prevalent classes (i.e., number of tweets with a class label less than 15, e.g., in event 2016 Ecuador Earthquake, there were only 3 tweets with the class label Displaced people and evacuations) in some events from the classification experiments.\"",
+      "\"The purpose of event and event type level experiments is to provide a baseline, which can be used to compare cross event experiments in future studies.\"",
+      "\"The column # Cls reports number of class labels available after removing low prevalent class labels.\" Table 7 # Cls per event: 6 (2016 Italy Earthquake) to 10; All 10",
+      "Table 7 RoBERTa: All 0.760; Average 0.781"
+    ],
+    "verified": "full_text; code not checked"
+  },
+  {
+    "id": "P13",
+    "citation": "Imran, M., Ziaullah, A. W., Chen, K., Ofli, F. (2024). Evaluating Robustness of LLMs on Crisis-Related Microblogs across Events, Information Types, and Linguistic Features. arXiv 2412.10413.",
+    "url": "https://arxiv.org/abs/2412.10413",
+    "task": "zero/few-shot LLM humanitarian classification on HumAID test split, with event-wise and disaster-type results",
+    "n_classes": 9,
+    "metrics": ["macro-F1 (stated for disaster-type, class-wise and hashtag analyses)", "F1, accuracy, precision, recall (Table 3; averaging not stated)"],
+    "aggregation": "per-event (Figure 9) and pooled (overall Table 3/Figure 10; per disaster type Figure 2)",
+    "random_vs_cross_event_same_instances": "different: LLM F1 on the test split vs 'RoBERTa (F1=0.78)' from HumAID, which matches HumAID's RoBERTa 'Average' row (0.781, weighted F1 averaged over 24 test sets) rather than 'All' (0.760)",
+    "code_url": null,
+    "labels_argument_passed": "no_code_found",
+    "evidence_quotes": [
+      "\"We drop the 'other relevant information' class from our analysis ... We use the test split (N=15,160) for our experiments.\"",
+      "\"Figure 2(a) shows the macro F1-scores for GPT-3.5, GPT-4, and GPT-4o across various few-shot settings.\"",
+      "\"Figure 9 shows the event-wise F1-scores for both proprietary and open-source models\"",
+      "\"Figure 10 shows the F1-scores for both proprietary and open-source models across all shots and the SOTA supervised baseline (i.e., RoBERTa F1=0.78) as we report in [3].\""
+    ],
+    "verified": "full_text; no code found"
+  },
+  {
+    "id": "P14",
+    "citation": "McDaniel, E. L., Scheele, S., Liu, J. (2024). Zero-Shot Classification of Crisis Tweets Using Instruction-Finetuned Large Language Models. arXiv 2410.00182.",
+    "url": "https://arxiv.org/abs/2410.00182",
+    "task": "zero-shot LLM informativeness (binary) and humanitarian (16-label prompt) on CrisisBench test data, per source dataset",
+    "n_classes": "informativeness 2; humanitarian 16 in prompt, scored on each dataset's label subset",
+    "metrics": ["macro-F1", "weighted-F1", "binary F1 (informativeness)"],
+    "aggregation": "pooled per source dataset and consolidated",
+    "random_vs_cross_event_same_instances": "unverified: LLM scores compared with fine-tuned benchmark numbers from other papers; invalid responses omitted",
+    "code_url": null,
+    "labels_argument_passed": "no_code_found (text: evaluation restricted to labels present within each dataset)",
+    "evidence_quotes": [
+      "\"For the informativeness classification, we calculate macro (unweighted), weighted, and binary (only the positive class) F1 scores; for the humanitarian classification, we calculate weighted and macro (unweighted) class-averaged F1 scores.\"",
+      "\"Given that some datasets in CrisisBench may cover only a subset of the 16 labels specified in the prompt, we maintain consistency in the prompt by including all 16 labels in our evaluation framework. However, the performance assessment of each dataset is based exclusively on the rankings of the labels present within that dataset.\"",
+      "\"with a weighted F1 of 0.828 (LLM: GPT-4o) vs. 0.883 (fine-tuned RoBERTa) ... on CrisisLexT26 [11] (macro F1 of .492 vs .848)\"",
+      "\"Responses that were not valid were omitted from analysis.\""
+    ],
+    "verified": "full_text; no code found"
+  },
+  {
+    "id": "P15",
+    "citation": "Zou, H. P., Zhou, Y., Caragea, C., Caragea, D. (2023). Semi-Supervised Few-Shot Learning for Fine-Grained Disaster Tweet Classification (CrisisMatch). ISCRAM 2023. arXiv 2310.14627.",
+    "url": "https://arxiv.org/abs/2310.14627",
+    "task": "multi-class humanitarian (HumAID-derived Earthquake, Wildfires, Floods); out-of-domain Earthquake/Wildfires -> Floods",
+    "n_classes": 7,
+    "metrics": ["accuracy", "macro-F1"],
+    "aggregation": "pooled (Floods test set, 970 tweets from several flood events); mean of 3 runs",
+    "random_vs_cross_event_same_instances": "no direct comparison (in-domain and out-of-domain reported on different test sets in separate tables)",
+    "code_url": null,
+    "labels_argument_passed": "no_code_found",
+    "evidence_quotes": [
+      "\"We use Earthquake and Wildfires datasets for in-domain evaluation and Floods dataset for out-of-domain evaluation.\"",
+      "\"we discard those classes with less than 100 data and use the 7-class version of the datasets\"",
+      "\"We use accuracy and macro-F1 as our evaluation metrics.\"",
+      "\"We will release our sampled and processed datasets\" (no CrisisMatch repo under github.com/HenryPengZou)"
+    ],
+    "verified": "full_text; no code found"
+  },
+  {
+    "id": "P16",
+    "citation": "Livers, J., Johnson, N., Spurlock, K. D., Nasraoui, O. (2025). When Splits Matter: Interpreting Disaster Tweet Classification Models. IEEE ICDM Workshops 2025, pp. 2844-2851. DOI 10.1109/ICDMW69685.2025.00363.",
+    "url": "https://researchr.org/publication/LiversJSN25",
+    "task": "linear SVMs on four tasks (informativeness, first-responder relevance, disaster type, secondary annotation); random split vs Disaster-Holdout Validation",
+    "n_classes": "UNVERIFIED",
+    "metrics": ["UNVERIFIED"],
+    "aggregation": "UNVERIFIED (abstract: LODO extension 'Disaster-Holdout Validation')",
+    "random_vs_cross_event_same_instances": "UNVERIFIED (abstract states random splits inflate performance)",
+    "code_url": null,
+    "labels_argument_passed": "UNVERIFIED",
+    "evidence_quotes": [
+      "Abstract (exa.ai record): \"common evaluation practices, such as random data splits, can inflate performance by allowing disaster-specific vocabulary to leak between training and testing sets. We propose a new evaluation framework ... called Disaster-Holdout Validation (DHV), extending the Leave-One-Disaster-Out (LODO) strategy\""
+    ],
+    "verified": "abstract_only_UNVERIFIED"
+  },
+  {
+    "id": "P17",
+    "citation": "McCreadie, R., Buntain, C., Soboroff, I. (2020). Incident Streams 2019: Actionable Insights and How to Find Them. ISCRAM 2020, pp. 744-760; plus TREC-IS official evaluation notebooks (2019-A v2; 2021-B v3.0).",
+    "url": "https://eprints.gla.ac.uk/210955/",
+    "task": "multi-label information-type categorisation (plus priority) on new events per edition; systems may train on prior editions",
+    "n_classes": "25 information types (multi-label)",
+    "metrics": ["Info-type positive-class F1 macro over types (All, Actionable)", "Info-type accuracy", "priority RMSE"],
+    "aggregation": "pooled: 'micro-averaged over all events but macro-averaged over information types' (headline); notebooks also emit per-event values",
+    "random_vs_cross_event_same_instances": "no_comparison",
+    "code_url": "http://dcs.gla.ac.uk/~richardm/TREC_IS/2019/TREC-IS_V2_2018Events_2019AFormat_Evaluation_Notebook.ipynb ; https://trec.nist.gov/pubs/trec30/appendices/incident/ucdcs-mtl.ens.html (rendered 2021-B v3.0 notebook)",
+    "labels_argument_passed": "fixed_label_list (per-type binary F1 summed over the fixed ontology and divided by len(informationTypes2Index))",
+    "evidence_quotes": [
+      "Overview: \"we calculate metrics, like accuracy, micro-averaged over all events but macro-averaged over information types.\"",
+      "Overview: \"Info. Type Positive F1, All ... The 'All' version of this metric macro-averages over all information types.\"",
+      "Notebooks, overall cell: \"# Does not average across events (larger events have more impact)\"; categoryF1 = f1_score(category2GroundTruth[categoryId], category2Predicted[categoryId], average='binary'); avgF1/numInformationTypes",
+      "2019-A per-event cell 6: loops all categories, prints avgF1/len(informationTypes2Index)",
+      "2021-B per-event (rendered lines 1533-1563): if sum(event2groundtruth[eventId].get(categoryId)) == 0: continue ... print(... tavgF1/categoryCount) ... perEventFile.write(... tavgF1/len(informationTypes2Index))",
+      "2021-B 'Per Event F1 Graph' (lines 1779-1785): all categories, avgF1_/len(informationTypes2Index); output: \"UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no true nor predicted samples\""
+    ],
+    "verified": "full_text (2019 overview) + official evaluation notebooks"
+  },
+  {
+    "id": "P18",
+    "citation": "Krishnan, J., Purohit, H., Rangwala, H. (2020). Unsupervised and Interpretable Domain Adaptation to Rapidly Filter Tweets for Emergency Services. ASONAM 2020. arXiv 2003.04991.",
+    "url": "https://arxiv.org/abs/2003.04991",
+    "task": "four binary tasks (priority, factoid, sentiment, irrelevant) on 10 TREC-IS 2018 events; leave-one-event-out",
+    "n_classes": "2 per task (4 tasks)",
+    "metrics": ["accuracy", "F1 (averaging not stated; code weighted)"],
+    "aggregation": "per-event plus mean of per-event (AVG row); each score averaged over 10 runs",
+    "random_vs_cross_event_same_instances": "no_comparison",
+    "code_url": "https://github.com/jitinkrishnan/Crisis-Tweet-Multi-Task-DA (commit 8a775df)",
+    "labels_argument_passed": "not_applicable: weighted F1, no labels argument",
+    "evidence_quotes": [
+      "\"The original dataset consisted of 15 crisis events. However, due to very low data, we trimmed the events and tasks such that there are at least 10 positive samples for each task.\"",
+      "\"for crisis events is performed by choosing one target event as the test set and training on the rest.\"",
+      "Table V caption: \"EACH REPORTED SCORE IS AN AVERAGE OF 10 INDEPENDENT RUNS OF EACH EXPERIMENT.\" with per-event Acc/F1 rows and an AVG row",
+      "models.py L238: f1 = f1_score(y_true, y_pred, average='weighted')"
+    ],
+    "verified": "full_text + code"
+  },
+  {
+    "id": "P19",
+    "citation": "Alharbi, A., Lee, M. (2022). Classifying Arabic Crisis Tweets using Data Selection and Pre-trained Language Models. OSACT 2022 Workshop @ LREC 2022, pp. 71-78.",
+    "url": "https://aclanthology.org/2022.osact-1.8/",
+    "task": "Arabic crisis tweets (Kawarith): binary relevancy and multi-class information type; leave-one-event-out over 7 target events",
+    "n_classes": "relevancy 2; information types >=5 (exact count UNVERIFIED)",
+    "metrics": ["weighted-F1", "macro-F1", "accuracy (information type)"],
+    "aggregation": "per-event plus mean of per-event ('We report the average score'; 'average weighted F1 and macro F1')",
+    "random_vs_cross_event_same_instances": "no_comparison",
+    "code_url": null,
+    "labels_argument_passed": "no_code_found",
+    "evidence_quotes": [
+      "\"We experimented with different source and target crisis pairs using the leave-one-out strategy. In other words, the evaluation was performed by choosing one target event as the test set and the rest events for training.\"",
+      "\"We report the average score. We used the weighted F1 and macro F1 to evaluate the models' performance on the relevancy detection task as the dataset is unbalanced. For information classification, we used the accuracy ... and macro F1 score.\"",
+      "\"BERT-DS(k=10) improved the average weighted F1 and macro F1 over BERT(all) by 3.67% and 4.57%, respectively.\"",
+      "Table 1: Cairo bombing (CB) 700 relevant / 6 irrelevant"
+    ],
+    "verified": "full_text; no code found"
+  },
+  {
+    "id": "P20",
+    "citation": "Zou, H. P., Zhou, Y., Zhang, W., Caragea, C. (2023). DeCrisisMB: Debiased Semi-Supervised Learning for Crisis Tweet Classification via Memory Bank. Findings of EMNLP 2023, pp. 6104-6115.",
+    "url": "https://www.cs.uic.edu/~cornelia/papers/emnlp23c.pdf",
+    "task": "multi-class humanitarian (HumAID-derived Hurricane and ThreeCrises); out-of-distribution ThreeCrises<->Hurricane",
+    "n_classes": 8,
+    "metrics": ["accuracy", "macro-F1"],
+    "aggregation": "mean of per-mini-batch macro-F1 on a pooled (multi-event) target test set; average over 3 runs",
+    "random_vs_cross_event_same_instances": "no_comparison",
+    "code_url": "https://github.com/HenryPengZou/DeCrisisMB (commit 04afb44)",
+    "labels_argument_passed": "no (torchmetrics 0.10.0 F1Score(num_classes=n_labels, average='macro'); macro drops classes with tp+fp+fn==0, i.e. same effective label set as sklearn default)",
+    "evidence_quotes": [
+      "Paper: \"Table 4: Out-of-distribution results. Average over 3 runs.\"; Table 1 Hurricane/ThreeCrises 8 classes, Test: 160 per class",
+      "main_ODomain.py L511: f1 = F1Score(num_classes=n_labels, average='macro')",
+      "main_ODomain.py L563: total_eval_f1 += f1(preds, target).item()  (inside per-batch loop); L573: avg_val_f1 = total_eval_f1 / len(loader)",
+      "main_ODomain.py L422: target_test_loader = DataLoader(target_test_dataset, batch_size=bs, shuffle=True); L71: bs = 32",
+      "requirements.txt: torchmetrics==0.10.0; torchmetrics v0.10.0 f_beta.py L777: cond = (tp + fp + fn == 0) | (tp + fp + fn == -3); metric.py forward: 'computing the metric on the current batch of inputs'"
+    ],
+    "verified": "full_text + code"
+  },
+  {
+    "id": "P21",
+    "citation": "Meunier, R., Benamara, F., Moriceau, V., Qiao, Z., Ramasamy, S. (2025). CrisisTS: Coupling Social Media Textual Data and Meteorological Time Series for Urgency Classification. ACL 2025 (Long), pp. 16082-16099.",
+    "url": "https://aclanthology.org/2025.acl-long.783/",
+    "task": "French and English crisis tweets: utility (binary), urgency (3-class), humanitarian/intent; out-of-event and out-of-type",
+    "n_classes": "utility 2; urgency 3; humanitarian/intent 6+ (per-dataset)",
+    "metrics": ["macro F-score ('average F-score')", "per-class F-score"],
+    "aggregation": "mean of pooled groups: out-of-event = mean over 9 experiments on 3 held-out event sets; out-of-type = mean over held-out types",
+    "random_vs_cross_event_same_instances": "no_comparison",
+    "code_url": "https://huggingface.co/datasets/Unknees/CrisisTS (data and Linker_*.py only; no evaluation code)",
+    "labels_argument_passed": "no_code_found",
+    "evidence_quotes": [
+      "\"The models are successively tested on each of these three sets while trained on all events that are not present in the chosen test set ... The results are then the mean of the results obtained for each experiments.\"",
+      "\"Out-of-type ... consists in the average of n runs, each run with n - 1 crisis types for training and the remaining crisis type for testing.\"",
+      "\"Table 1: Results on the French dataset in terms of average F-score.\"; \"Table 3: Macro F1-scores on the French dataset\"",
+      "Table 4 (French): Attack MAT-DMG 0, ADV_WARN 0; Explosion ADV_WARN 0, NOT USEFUL 0. Table 5 (English): Flood and Fire NOT USEFUL 'N/A'"
+    ],
+    "verified": "full_text; no evaluation code released"
+  },
+  {
+    "id": "P22",
+    "citation": "Yu, M., Huang, Q., Qin, H., Scheele, C., Yang, C. (2019). Deep learning for real-time social media text classification for situation awareness - using Hurricanes Sandy, Harvey, and Irma as case studies. International Journal of Digital Earth 12(11), 1230-1247.",
+    "url": "https://par.nsf.gov/servlets/purl/10139179",
+    "task": "multi-class topic classification of hurricane tweets; train on earlier hurricane(s), test on a later one",
+    "n_classes": 5,
+    "metrics": ["precision", "recall", "F1 (averaging not stated)", "accuracy"],
+    "aggregation": "per-event (4 source->target pairs)",
+    "random_vs_cross_event_same_instances": "different: single-event random 80/20 split vs cross-event test on the whole target event",
+    "code_url": null,
+    "labels_argument_passed": "no_code_found",
+    "evidence_quotes": [
+      "\"For single event experiment, we randomly select from the single-event dataset to generate training (80%) and validation (20%) sets. For cross-event experiment, we train the classifiers using the dataset from one event and test the others.\"",
+      "\"The overall or averaged accuracy scores are demonstrated in Table 3\" (rows: Precision, Recall, F1-score)",
+      "Table 3 Irma CNN F1 0.79 (single-event) vs Table 4(b) Sandy->Irma CNN F1 0.78"
+    ],
+    "verified": "full_text; no code linked"
+  }
+]

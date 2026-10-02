@@ -1,0 +1,4832 @@
+{
+ "arms": [
+  {
+   "arm": "2 epochs",
+   "corpus": "humaid19",
+   "model": "distilbert-base-uncased",
+   "seeds": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "42"
+   ],
+   "incomplete_seeds": [],
+   "A": {
+    "P": {
+     "mean": -0.018803070357393436,
+     "ci95": [
+      -0.03752577754515449,
+      0.0009638556218672742
+     ]
+    },
+    "D": {
+     "mean": 0.01899006035577644,
+     "ci95": [
+      -0.011613813765537183,
+      0.052353446397879325
+     ]
+    },
+    "O": {
+     "mean": 0.07016590410227862,
+     "ci95": [
+      0.041886269637028836,
+      0.09883420754854562
+     ]
+    }
+   },
+   "W": {
+    "mean": 0.004543945288600626,
+    "ci95": [
+     -0.011570436558365026,
+     0.02111989383905843
+    ]
+   },
+   "N": {
+    "mean": -0.023347015645994063,
+    "ci95": [
+     -0.04413784133527994,
+     -0.003018328370750455
+    ]
+   },
+   "A_min_support": {
+    "mean": -0.018803070357393436,
+    "ci95": [
+     -0.03752577754515449,
+     0.0009638556218672742
+    ]
+   },
+   "per_seed_A": {
+    "1": -0.018128463920534355,
+    "2": -0.023270287193115635,
+    "3": -0.01559104262801958,
+    "4": -0.01837306103784564,
+    "42": -0.018652497007451974
+   }
+  },
+  {
+   "arm": "2 epochs",
+   "corpus": "humaid19",
+   "model": "roberta-base",
+   "seeds": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "42"
+   ],
+   "incomplete_seeds": [],
+   "A": {
+    "P": {
+     "mean": -0.022245212700665973,
+     "ci95": [
+      -0.04037296155283798,
+      0.01025086082272224
+     ]
+    },
+    "D": {
+     "mean": 0.028260697670431267,
+     "ci95": [
+      -0.005193192060808353,
+      0.07014000594159507
+     ]
+    },
+    "O": {
+     "mean": 0.07750706297458776,
+     "ci95": [
+      0.048923112718827745,
+      0.11735931331328288
+     ]
+    }
+   },
+   "W": {
+    "mean": -0.0018733963827912703,
+    "ci95": [
+     -0.015831166923482586,
+     0.0141011051566707
+    ]
+   },
+   "N": {
+    "mean": -0.020371816317874703,
+    "ci95": [
+     -0.039187042201691,
+     0.0156216429433026
+    ]
+   },
+   "A_min_support": {
+    "mean": -0.022245212700665973,
+    "ci95": [
+     -0.04037296155283798,
+     0.01025086082272224
+    ]
+   },
+   "per_seed_A": {
+    "1": -0.02278631627303196,
+    "2": -0.02540593530191415,
+    "3": -0.0192869312614391,
+    "4": -0.02208870364143256,
+    "42": -0.02165817702551176
+   }
+  },
+  {
+   "arm": "4 epochs",
+   "corpus": "humaid19",
+   "model": "distilbert-base-uncased",
+   "seeds": [
+    "1",
+    "2",
+    "3",
+    "42"
+   ],
+   "incomplete_seeds": [
+    {
+     "seed": "4",
+     "reason": "missing loeo:hurricane_harvey_2017 in experiments/runs/confirm_ep4/humaid19/distilbert-base-uncased/seed4"
+    }
+   ],
+   "A": {
+    "P": {
+     "mean": -0.01583749054147318,
+     "ci95": [
+      -0.03457183140639945,
+      0.02315145683999803
+     ]
+    },
+    "D": {
+     "mean": 0.03910806945256684,
+     "ci95": [
+      0.005561508413664387,
+      0.08273025810830521
+     ]
+    },
+    "O": {
+     "mean": 0.08157876404609629,
+     "ci95": [
+      0.05206698668049479,
+      0.12680288844986368
+     ]
+    }
+   },
+   "W": {
+    "mean": 0.0008306617739816669,
+    "ci95": [
+     -0.014149348940920807,
+     0.018329338382838102
+    ]
+   },
+   "N": {
+    "mean": -0.01666815231545485,
+    "ci95": [
+     -0.03617309286619972,
+     0.02308677872980822
+    ]
+   },
+   "A_min_support": {
+    "mean": -0.01583749054147318,
+    "ci95": [
+     -0.03457183140639945,
+     0.02315145683999803
+    ]
+   },
+   "per_seed_A": {
+    "1": -0.013657618041936548,
+    "2": -0.018257497722298233,
+    "3": -0.014551561802109703,
+    "42": -0.016883284599548243
+   }
+  },
+  {
+   "arm": "4 epochs",
+   "corpus": "humaid19",
+   "model": "roberta-base",
+   "seeds": [
+    "1",
+    "2",
+    "3",
+    "42"
+   ],
+   "incomplete_seeds": [
+    {
+     "seed": "4",
+     "reason": "missing loeo:greece_wildfires_2018 in experiments/runs/confirm_ep4/humaid19/roberta-base/seed4"
+    }
+   ],
+   "A": {
+    "P": {
+     "mean": 0.007426064361063522,
+     "ci95": [
+      -0.01601063291064077,
+      0.02476806070434429
+     ]
+    },
+    "D": {
+     "mean": 0.08269864850789266,
+     "ci95": [
+      0.04211188922590952,
+      0.12022300097734813
+     ]
+    },
+    "O": {
+     "mean": 0.10990068382401863,
+     "ci95": [
+      0.0723210333403713,
+      0.1432279691478692
+     ]
+    }
+   },
+   "W": {
+    "mean": -0.004550770772446117,
+    "ci95": [
+     -0.01575888380286714,
+     0.007910901296009111
+    ]
+   },
+   "N": {
+    "mean": 0.011976835133509639,
+    "ci95": [
+     -0.012234657331410943,
+     0.028887861407567293
+    ]
+   },
+   "A_min_support": {
+    "mean": 0.007426064361063522,
+    "ci95": [
+     -0.01601063291064077,
+     0.02476806070434429
+    ]
+   },
+   "per_seed_A": {
+    "1": 0.016117188198640386,
+    "2": -0.020036328575258944,
+    "3": 0.013029109101530545,
+    "42": 0.020594288719342102
+   }
+  },
+  {
+   "arm": "TF-IDF",
+   "corpus": "humaid19",
+   "model": "tfidf-lr",
+   "seeds": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "42"
+   ],
+   "incomplete_seeds": [],
+   "A": {
+    "P": {
+     "mean": -0.00826078125862435,
+     "ci95": [
+      -0.033281481117170116,
+      0.015019774970368
+     ]
+    },
+    "D": {
+     "mean": 0.011100000619185568,
+     "ci95": [
+      -0.015826938238246678,
+      0.0368727400605435
+     ]
+    },
+    "O": {
+     "mean": 0.07134285230833168,
+     "ci95": [
+      0.043935469720538314,
+      0.0957584385924734
+     ]
+    }
+   },
+   "W": {
+    "mean": 0.0010325436099247521,
+    "ci95": [
+     -0.019067141113261153,
+     0.02113698698219663
+    ]
+   },
+   "N": {
+    "mean": -0.009293324868549103,
+    "ci95": [
+     -0.037128456994384273,
+     0.016511490418776767
+    ]
+   },
+   "A_min_support": {
+    "mean": -0.00826078125862435,
+    "ci95": [
+     -0.033281481117170116,
+     0.015019774970368
+    ]
+   },
+   "per_seed_A": {
+    "1": -0.0058631474544764695,
+    "2": -0.008219929068639109,
+    "3": -0.009483403241500099,
+    "4": -0.010925253540634783,
+    "42": -0.00681217298787129
+   }
+  },
+  {
+   "arm": "uncapped",
+   "corpus": "humaid19",
+   "model": "distilbert-base-uncased",
+   "seeds": [
+    "42"
+   ],
+   "incomplete_seeds": [],
+   "A": {
+    "P": {
+     "mean": 0.03252826471444836,
+     "ci95": [
+      0.0067030754265534065,
+      0.04136837761683597
+     ]
+    },
+    "D": {
+     "mean": 0.11653389259564317,
+     "ci95": [
+      0.07137864314529921,
+      0.14951152580789182
+     ]
+    },
+    "O": {
+     "mean": 0.13696701378016718,
+     "ci95": [
+      0.09554854277201381,
+      0.16849372862198045
+     ]
+    }
+   },
+   "W": {
+    "mean": -0.005813722957743961,
+    "ci95": [
+     -0.016440916900261053,
+     0.004602320689462612
+    ]
+   },
+   "N": {
+    "mean": 0.038341987672192324,
+    "ci95": [
+     0.008903797350039383,
+     0.049674004532747416
+    ]
+   },
+   "A_min_support": {
+    "mean": 0.03252826471444836,
+    "ci95": [
+     0.0067030754265534065,
+     0.04136837761683597
+    ]
+   },
+   "per_seed_A": {
+    "42": 0.03252826471444836
+   }
+  },
+  {
+   "arm": "2 epochs",
+   "corpus": "crisislext26",
+   "model": "distilbert-base-uncased",
+   "seeds": [
+    "1",
+    "2",
+    "42"
+   ],
+   "incomplete_seeds": [],
+   "A": {
+    "P": {
+     "mean": 0.08618722156429572,
+     "ci95": [
+      0.05684664643913656,
+      0.1129231942381241
+     ]
+    },
+    "D": {
+     "mean": 0.08941582225410978,
+     "ci95": [
+      0.06024202991610883,
+      0.1162263874330289
+     ]
+    },
+    "O": {
+     "mean": 0.08941582225410978,
+     "ci95": [
+      0.06024202991610883,
+      0.1162263874330289
+     ]
+    }
+   },
+   "W": {
+    "mean": 0.001635643775019735,
+    "ci95": [
+     -0.0007096670342199741,
+     0.005124654111419005
+    ]
+   },
+   "N": {
+    "mean": 0.08455157778927598,
+    "ci95": [
+     0.055860242328357124,
+     0.11024110927909629
+    ]
+   },
+   "A_min_support": {
+    "mean": 0.044239077651037705,
+    "ci95": [
+     0.013835797911648687,
+     0.06820655601904083
+    ]
+   },
+   "per_seed_A": {
+    "1": 0.08488321032219992,
+    "2": 0.09056625013794739,
+    "42": 0.08311220423273996
+   }
+  },
+  {
+   "arm": "2 epochs",
+   "corpus": "crisislext26",
+   "model": "roberta-base",
+   "seeds": [
+    "1",
+    "2",
+    "42"
+   ],
+   "incomplete_seeds": [],
+   "A": {
+    "P": {
+     "mean": 0.0901441287812893,
+     "ci95": [
+      0.05970676052002241,
+      0.1156564510280944
+     ]
+    },
+    "D": {
+     "mean": 0.09403744517362367,
+     "ci95": [
+      0.06294571122378369,
+      0.11929713308733983
+     ]
+    },
+    "O": {
+     "mean": 0.09403744517362367,
+     "ci95": [
+      0.06294571122378369,
+      0.11929713308733983
+     ]
+    }
+   },
+   "W": {
+    "mean": 0.0021775456161983917,
+    "ci95": [
+     -0.00035538004053709454,
+     0.005880150214843502
+    ]
+   },
+   "N": {
+    "mean": 0.08796658316509091,
+    "ci95": [
+     0.058378325771478085,
+     0.11374790461681696
+    ]
+   },
+   "A_min_support": {
+    "mean": 0.04652103471026806,
+    "ci95": [
+     0.015596906824363556,
+     0.06932639577550882
+    ]
+   },
+   "per_seed_A": {
+    "1": 0.09401536173599057,
+    "2": 0.09025672595983492,
+    "42": 0.08616029864804264
+   }
+  },
+  {
+   "arm": "4 epochs",
+   "corpus": "crisislext26",
+   "model": "distilbert-base-uncased",
+   "seeds": [
+    "42"
+   ],
+   "incomplete_seeds": [],
+   "A": {
+    "P": {
+     "mean": 0.09654102556363131,
+     "ci95": [
+      0.06383321758644789,
+      0.12304453116320173
+     ]
+    },
+    "D": {
+     "mean": 0.10013770684710765,
+     "ci95": [
+      0.06784026466709638,
+      0.12432376155021364
+     ]
+    },
+    "O": {
+     "mean": 0.10013770684710765,
+     "ci95": [
+      0.06784026466709638,
+      0.12432376155021364
+     ]
+    }
+   },
+   "W": {
+    "mean": 0.0014233581780006554,
+    "ci95": [
+     -0.0009815492079469246,
+     0.004879793113159396
+    ]
+   },
+   "N": {
+    "mean": 0.09511766738563066,
+    "ci95": [
+     0.06196305595190612,
+     0.1205792140033635
+    ]
+   },
+   "A_min_support": {
+    "mean": 0.05014332000484312,
+    "ci95": [
+     0.018239759295303127,
+     0.0717448221556333
+    ]
+   },
+   "per_seed_A": {
+    "42": 0.09654102556363131
+   }
+  },
+  {
+   "arm": "TF-IDF",
+   "corpus": "crisislext26",
+   "model": "tfidf-lr",
+   "seeds": [
+    "1",
+    "2",
+    "42"
+   ],
+   "incomplete_seeds": [],
+   "A": {
+    "P": {
+     "mean": 0.07240996310575833,
+     "ci95": [
+      0.04607681396198151,
+      0.09200311658668114
+     ]
+    },
+    "D": {
+     "mean": 0.07501680136580646,
+     "ci95": [
+      0.04907653020143356,
+      0.0944047928124951
+     ]
+    },
+    "O": {
+     "mean": 0.07501680136580646,
+     "ci95": [
+      0.04907653020143356,
+      0.0944047928124951
+     ]
+    }
+   },
+   "W": {
+    "mean": 0.0015063409389721543,
+    "ci95": [
+     -0.0005032716196742198,
+     0.0045335736466952095
+    ]
+   },
+   "N": {
+    "mean": 0.07090362216678618,
+    "ci95": [
+     0.04423296868421605,
+     0.0905231375209751
+    ]
+   },
+   "A_min_support": {
+    "mean": 0.03234910373242267,
+    "ci95": [
+     0.002549674483873607,
+     0.0494702817026265
+    ]
+   },
+   "per_seed_A": {
+    "1": 0.07419401771482581,
+    "2": 0.06755790352744412,
+    "42": 0.07547796807500512
+   }
+  },
+  {
+   "arm": "uncapped",
+   "corpus": "crisislext26",
+   "model": "distilbert-base-uncased",
+   "seeds": [
+    "42"
+   ],
+   "incomplete_seeds": [],
+   "A": {
+    "P": {
+     "mean": 0.09390856431312689,
+     "ci95": [
+      0.06209848527254237,
+      0.11969022535437632
+     ]
+    },
+    "D": {
+     "mean": 0.09754933822080125,
+     "ci95": [
+      0.06662259312525363,
+      0.12228643542440357
+     ]
+    },
+    "O": {
+     "mean": 0.09754933822080125,
+     "ci95": [
+      0.06662259312525363,
+      0.12228643542440357
+     ]
+    }
+   },
+   "W": {
+    "mean": 0.0012349258150500253,
+    "ci95": [
+     -0.0007567587887682247,
+     0.003940670119655582
+    ]
+   },
+   "N": {
+    "mean": 0.09267363849807686,
+    "ci95": [
+     0.06111869518837352,
+     0.11891122467707566
+    ]
+   },
+   "A_min_support": {
+    "mean": 0.051527565628691985,
+    "ci95": [
+     0.021704942500782115,
+     0.07142086299866261
+    ]
+   },
+   "per_seed_A": {
+    "42": 0.09390856431312689
+   }
+  }
+ ],
+ "spearman": [
+  {
+   "corpus": "humaid19",
+   "model": "distilbert-base-uncased",
+   "rho_mean": 0.5626350598505586,
+   "rho_min": 0.5542518795392573,
+   "rho_max": 0.5845690701726642,
+   "max_p": 1.9884595432360793e-14,
+   "n_cells": 162
+  },
+  {
+   "corpus": "humaid19",
+   "model": "roberta-base",
+   "rho_mean": 0.5228224009096026,
+   "rho_min": 0.5126831805329937,
+   "rho_max": 0.530875008912237,
+   "max_p": 3.0681812141882036e-12,
+   "n_cells": 162
+  },
+  {
+   "corpus": "crisislext26",
+   "model": "distilbert-base-uncased",
+   "rho_mean": 0.6400469116828482,
+   "rho_min": 0.6287480884181752,
+   "rho_max": 0.6520539306318891,
+   "max_p": 1.9620138829855e-18,
+   "n_cells": 155
+  },
+  {
+   "corpus": "crisislext26",
+   "model": "roberta-base",
+   "rho_mean": 0.6273424707983795,
+   "rho_min": 0.613436265494906,
+   "rho_max": 0.6460469725897915,
+   "max_p": 2.1479111670242514e-17,
+   "n_cells": 155
+  }
+ ],
+ "per_event": {
+  "humaid19": {
+   "california_wildfires_2018": {
+    "n": 7376,
+    "n_present": 10,
+    "distilbert-base-uncased": 0.5503623302842884,
+    "roberta-base": 0.6092735064964337
+   },
+   "canada_wildfires_2016": {
+    "n": 2242,
+    "n_present": 8,
+    "distilbert-base-uncased": 0.6292843104610267,
+    "roberta-base": 0.7067813812339232
+   },
+   "cyclone_idai_2019": {
+    "n": 3933,
+    "n_present": 10,
+    "distilbert-base-uncased": 0.5285308773234967,
+    "roberta-base": 0.6207567219202967
+   },
+   "ecuador_earthquake_2016": {
+    "n": 1563,
+    "n_present": 8,
+    "distilbert-base-uncased": 0.6119711522346185,
+    "roberta-base": 0.7466042917679223
+   },
+   "greece_wildfires_2018": {
+    "n": 1515,
+    "n_present": 9,
+    "distilbert-base-uncased": 0.5238314152164479,
+    "roberta-base": 0.6319113655417727
+   },
+   "hurricane_dorian_2019": {
+    "n": 7613,
+    "n_present": 9,
+    "distilbert-base-uncased": 0.5902874926848052,
+    "roberta-base": 0.6341521377388686
+   },
+   "hurricane_florence_2018": {
+    "n": 6264,
+    "n_present": 9,
+    "distilbert-base-uncased": 0.5941153632289876,
+    "roberta-base": 0.6560719567557736
+   },
+   "hurricane_harvey_2017": {
+    "n": 9112,
+    "n_present": 9,
+    "distilbert-base-uncased": 0.6634525417856505,
+    "roberta-base": 0.7185227453920054
+   },
+   "hurricane_irma_2017": {
+    "n": 9399,
+    "n_present": 9,
+    "distilbert-base-uncased": 0.6486192221859675,
+    "roberta-base": 0.6951054293905188
+   },
+   "hurricane_maria_2017": {
+    "n": 7278,
+    "n_present": 9,
+    "distilbert-base-uncased": 0.6103838418773664,
+    "roberta-base": 0.694073134255413
+   },
+   "hurricane_matthew_2016": {
+    "n": 1654,
+    "n_present": 9,
+    "distilbert-base-uncased": 0.6298525447742271,
+    "roberta-base": 0.7107542827883669
+   },
+   "italy_earthquake_aug_2016": {
+    "n": 1201,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.6681961812741598,
+    "roberta-base": 0.7084208765096657
+   },
+   "kaikoura_earthquake_2016": {
+    "n": 2195,
+    "n_present": 9,
+    "distilbert-base-uncased": 0.6341507917646647,
+    "roberta-base": 0.7130552647060597
+   },
+   "kerala_floods_2018": {
+    "n": 7984,
+    "n_present": 9,
+    "distilbert-base-uncased": 0.5385160202350703,
+    "roberta-base": 0.6267630649630062
+   },
+   "maryland_floods_2018": {
+    "n": 742,
+    "n_present": 8,
+    "distilbert-base-uncased": 0.546842364459623,
+    "roberta-base": 0.5723636290981208
+   },
+   "midwestern_us_floods_2019": {
+    "n": 1880,
+    "n_present": 7,
+    "distilbert-base-uncased": 0.5703561877173774,
+    "roberta-base": 0.6631679750233413
+   },
+   "pakistan_earthquake_2019": {
+    "n": 1958,
+    "n_present": 8,
+    "distilbert-base-uncased": 0.6033187322302557,
+    "roberta-base": 0.672310506230305
+   },
+   "puebla_mexico_earthquake_2017": {
+    "n": 2015,
+    "n_present": 8,
+    "distilbert-base-uncased": 0.6000095466017074,
+    "roberta-base": 0.6646836463540932
+   },
+   "srilanka_floods_2017": {
+    "n": 560,
+    "n_present": 8,
+    "distilbert-base-uncased": 0.552095206680637,
+    "roberta-base": 0.6619243281445013
+   }
+  },
+  "crisislext26": {
+   "2012_colorado_wildfires": {
+    "n": 943,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.5934348442549813,
+    "roberta-base": 0.6547669765123882
+   },
+   "2012_costa_rica_earthquake": {
+    "n": 866,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.48363391023382246,
+    "roberta-base": 0.5867216172848845
+   },
+   "2012_guatemala_earthquake": {
+    "n": 905,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.5586439190303613,
+    "roberta-base": 0.6025831036791659
+   },
+   "2012_italy_earthquakes": {
+    "n": 912,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.443378396297146,
+    "roberta-base": 0.4680428971003858
+   },
+   "2012_philipinnes_floods": {
+    "n": 874,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.5023876152403496,
+    "roberta-base": 0.523476633692888
+   },
+   "2012_typhoon_pablo": {
+    "n": 871,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.6147136649875685,
+    "roberta-base": 0.6674983911360902
+   },
+   "2012_venezuela_refinery": {
+    "n": 872,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.3815134074270168,
+    "roberta-base": 0.43451087332742966
+   },
+   "2013_alberta_floods": {
+    "n": 913,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.5676926376108806,
+    "roberta-base": 0.6874010795131174
+   },
+   "2013_australia_bushfire": {
+    "n": 930,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.5054549615653033,
+    "roberta-base": 0.5978931006022309
+   },
+   "2013_bohol_earthquake": {
+    "n": 943,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.6595913505667205,
+    "roberta-base": 0.6971098948654273
+   },
+   "2013_boston_bombings": {
+    "n": 913,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.5280704953295082,
+    "roberta-base": 0.7105760256120138
+   },
+   "2013_brazil_nightclub_fire": {
+    "n": 922,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.3977394445059222,
+    "roberta-base": 0.476332310281902
+   },
+   "2013_colorado_floods": {
+    "n": 901,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.581771367880839,
+    "roberta-base": 0.7093364373748622
+   },
+   "2013_glasgow_helicopter_crash": {
+    "n": 885,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.5367074419712163,
+    "roberta-base": 0.5601817585537185
+   },
+   "2013_la_airport_shootings": {
+    "n": 896,
+    "n_present": 5,
+    "distilbert-base-uncased": 0.5036617076109956,
+    "roberta-base": 0.607357357204156
+   },
+   "2013_lac_megantic_train_crash": {
+    "n": 872,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.5200821004290698,
+    "roberta-base": 0.5780770399951027
+   },
+   "2013_manila_floods": {
+    "n": 808,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.5440693860730444,
+    "roberta-base": 0.5705903022992325
+   },
+   "2013_ny_train_crash": {
+    "n": 999,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.4882781498778777,
+    "roberta-base": 0.5582470891434314
+   },
+   "2013_queensland_floods": {
+    "n": 892,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.5726982732226901,
+    "roberta-base": 0.6414820961221013
+   },
+   "2013_russia_meteor": {
+    "n": 949,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.40212906572422275,
+    "roberta-base": 0.4488804180737273
+   },
+   "2013_sardinia_floods": {
+    "n": 910,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.3807800299555226,
+    "roberta-base": 0.5196101939885476
+   },
+   "2013_savar_building_collapse": {
+    "n": 874,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.40454118869364947,
+    "roberta-base": 0.46720955419085053
+   },
+   "2013_singapore_haze": {
+    "n": 731,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.2914914913665651,
+    "roberta-base": 0.3463232911813134
+   },
+   "2013_spain_train_crash": {
+    "n": 987,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.5210364404898862,
+    "roberta-base": 0.6277697666355176
+   },
+   "2013_typhoon_yolanda": {
+    "n": 924,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.6250407442155593,
+    "roberta-base": 0.6907269736970006
+   },
+   "2013_west_texas_explosion": {
+    "n": 883,
+    "n_present": 6,
+    "distilbert-base-uncased": 0.6078742201907883,
+    "roberta-base": 0.6412475825827304
+   }
+  }
+ },
+ "cells_below_min_support": {
+  "humaid19": {
+   "cells": 0,
+   "messages": 0,
+   "events": 0,
+   "cells_total": 162,
+   "messages_total": 76484
+  },
+  "crisislext26": {
+   "cells": 14,
+   "messages": 79,
+   "events": 11,
+   "cells_total": 155,
+   "messages_total": 23375
+  }
+ },
+ "cells": {
+  "humaid19": {
+   "distilbert-base-uncased": [
+    {
+     "event": "california_wildfires_2018",
+     "class": "caution_and_advice",
+     "support": 139,
+     "f1": 0.40696889220324656
+    },
+    {
+     "event": "california_wildfires_2018",
+     "class": "displaced_people_and_evacuations",
+     "support": 368,
+     "f1": 0.7890478238599516
+    },
+    {
+     "event": "california_wildfires_2018",
+     "class": "infrastructure_and_utility_damage",
+     "support": 422,
+     "f1": 0.673835270315624
+    },
+    {
+     "event": "california_wildfires_2018",
+     "class": "injured_or_dead_people",
+     "support": 1946,
+     "f1": 0.9027659379134361
+    },
+    {
+     "event": "california_wildfires_2018",
+     "class": "missing_or_found_people",
+     "support": 179,
+     "f1": 0.0
+    },
+    {
+     "event": "california_wildfires_2018",
+     "class": "not_humanitarian",
+     "support": 1318,
+     "f1": 0.48040190783887543
+    },
+    {
+     "event": "california_wildfires_2018",
+     "class": "other_relevant_information",
+     "support": 1038,
+     "f1": 0.5074741620934028
+    },
+    {
+     "event": "california_wildfires_2018",
+     "class": "requests_or_urgent_needs",
+     "support": 79,
+     "f1": 0.16651669062812643
+    },
+    {
+     "event": "california_wildfires_2018",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 1415,
+     "f1": 0.8601357157256899
+    },
+    {
+     "event": "california_wildfires_2018",
+     "class": "sympathy_and_support",
+     "support": 472,
+     "f1": 0.7164769022645305
+    },
+    {
+     "event": "canada_wildfires_2016",
+     "class": "caution_and_advice",
+     "support": 106,
+     "f1": 0.4081175830217564
+    },
+    {
+     "event": "canada_wildfires_2016",
+     "class": "displaced_people_and_evacuations",
+     "support": 380,
+     "f1": 0.8842034051135453
+    },
+    {
+     "event": "canada_wildfires_2016",
+     "class": "infrastructure_and_utility_damage",
+     "support": 251,
+     "f1": 0.8584243134427743
+    },
+    {
+     "event": "canada_wildfires_2016",
+     "class": "not_humanitarian",
+     "support": 79,
+     "f1": 0.3196193327986724
+    },
+    {
+     "event": "canada_wildfires_2016",
+     "class": "other_relevant_information",
+     "support": 311,
+     "f1": 0.5625638889583348
+    },
+    {
+     "event": "canada_wildfires_2016",
+     "class": "requests_or_urgent_needs",
+     "support": 20,
+     "f1": 0.26463207106124353
+    },
+    {
+     "event": "canada_wildfires_2016",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 934,
+     "f1": 0.9058186489821205
+    },
+    {
+     "event": "canada_wildfires_2016",
+     "class": "sympathy_and_support",
+     "support": 161,
+     "f1": 0.8308952403097664
+    },
+    {
+     "event": "cyclone_idai_2019",
+     "class": "caution_and_advice",
+     "support": 89,
+     "f1": 0.5153583992261765
+    },
+    {
+     "event": "cyclone_idai_2019",
+     "class": "displaced_people_and_evacuations",
+     "support": 57,
+     "f1": 0.5612607737654605
+    },
+    {
+     "event": "cyclone_idai_2019",
+     "class": "infrastructure_and_utility_damage",
+     "support": 354,
+     "f1": 0.7744759864934349
+    },
+    {
+     "event": "cyclone_idai_2019",
+     "class": "injured_or_dead_people",
+     "support": 433,
+     "f1": 0.8904954995797982
+    },
+    {
+     "event": "cyclone_idai_2019",
+     "class": "missing_or_found_people",
+     "support": 19,
+     "f1": 0.0
+    },
+    {
+     "event": "cyclone_idai_2019",
+     "class": "not_humanitarian",
+     "support": 80,
+     "f1": 0.3289911134233012
+    },
+    {
+     "event": "cyclone_idai_2019",
+     "class": "other_relevant_information",
+     "support": 407,
+     "f1": 0.45340807876975286
+    },
+    {
+     "event": "cyclone_idai_2019",
+     "class": "requests_or_urgent_needs",
+     "support": 143,
+     "f1": 0.09280644640029302
+    },
+    {
+     "event": "cyclone_idai_2019",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 1869,
+     "f1": 0.8753616821498786
+    },
+    {
+     "event": "cyclone_idai_2019",
+     "class": "sympathy_and_support",
+     "support": 482,
+     "f1": 0.7931507934268718
+    },
+    {
+     "event": "ecuador_earthquake_2016",
+     "class": "caution_and_advice",
+     "support": 30,
+     "f1": 0.6067130727088355
+    },
+    {
+     "event": "ecuador_earthquake_2016",
+     "class": "infrastructure_and_utility_damage",
+     "support": 70,
+     "f1": 0.7719907349490043
+    },
+    {
+     "event": "ecuador_earthquake_2016",
+     "class": "injured_or_dead_people",
+     "support": 555,
+     "f1": 0.9704114082649126
+    },
+    {
+     "event": "ecuador_earthquake_2016",
+     "class": "not_humanitarian",
+     "support": 23,
+     "f1": 0.24037243646751288
+    },
+    {
+     "event": "ecuador_earthquake_2016",
+     "class": "other_relevant_information",
+     "support": 81,
+     "f1": 0.4617175043548006
+    },
+    {
+     "event": "ecuador_earthquake_2016",
+     "class": "requests_or_urgent_needs",
+     "support": 91,
+     "f1": 0.07143021978568515
+    },
+    {
+     "event": "ecuador_earthquake_2016",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 394,
+     "f1": 0.8694334851571816
+    },
+    {
+     "event": "ecuador_earthquake_2016",
+     "class": "sympathy_and_support",
+     "support": 319,
+     "f1": 0.9037003561890152
+    },
+    {
+     "event": "greece_wildfires_2018",
+     "class": "caution_and_advice",
+     "support": 26,
+     "f1": 0.4868268154711717
+    },
+    {
+     "event": "greece_wildfires_2018",
+     "class": "infrastructure_and_utility_damage",
+     "support": 38,
+     "f1": 0.5479305086046659
+    },
+    {
+     "event": "greece_wildfires_2018",
+     "class": "injured_or_dead_people",
+     "support": 495,
+     "f1": 0.8966037351131562
+    },
+    {
+     "event": "greece_wildfires_2018",
+     "class": "missing_or_found_people",
+     "support": 20,
+     "f1": 0.0
+    },
+    {
+     "event": "greece_wildfires_2018",
+     "class": "not_humanitarian",
+     "support": 74,
+     "f1": 0.47124243857856707
+    },
+    {
+     "event": "greece_wildfires_2018",
+     "class": "other_relevant_information",
+     "support": 159,
+     "f1": 0.593666491006078
+    },
+    {
+     "event": "greece_wildfires_2018",
+     "class": "requests_or_urgent_needs",
+     "support": 25,
+     "f1": 0.0731702524805973
+    },
+    {
+     "event": "greece_wildfires_2018",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 356,
+     "f1": 0.8526041858791167
+    },
+    {
+     "event": "greece_wildfires_2018",
+     "class": "sympathy_and_support",
+     "support": 322,
+     "f1": 0.7924383098146786
+    },
+    {
+     "event": "hurricane_dorian_2019",
+     "class": "caution_and_advice",
+     "support": 1369,
+     "f1": 0.6142697781122984
+    },
+    {
+     "event": "hurricane_dorian_2019",
+     "class": "displaced_people_and_evacuations",
+     "support": 802,
+     "f1": 0.8895581827873469
+    },
+    {
+     "event": "hurricane_dorian_2019",
+     "class": "infrastructure_and_utility_damage",
+     "support": 815,
+     "f1": 0.6828430162570653
+    },
+    {
+     "event": "hurricane_dorian_2019",
+     "class": "injured_or_dead_people",
+     "support": 60,
+     "f1": 0.5620701221033505
+    },
+    {
+     "event": "hurricane_dorian_2019",
+     "class": "not_humanitarian",
+     "support": 874,
+     "f1": 0.3604508978192238
+    },
+    {
+     "event": "hurricane_dorian_2019",
+     "class": "other_relevant_information",
+     "support": 1444,
+     "f1": 0.4914542199784071
+    },
+    {
+     "event": "hurricane_dorian_2019",
+     "class": "requests_or_urgent_needs",
+     "support": 179,
+     "f1": 0.10209318174795139
+    },
+    {
+     "event": "hurricane_dorian_2019",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 987,
+     "f1": 0.7852188666030868
+    },
+    {
+     "event": "hurricane_dorian_2019",
+     "class": "sympathy_and_support",
+     "support": 1083,
+     "f1": 0.8246291687545149
+    },
+    {
+     "event": "hurricane_florence_2018",
+     "class": "caution_and_advice",
+     "support": 1310,
+     "f1": 0.5800813110202795
+    },
+    {
+     "event": "hurricane_florence_2018",
+     "class": "displaced_people_and_evacuations",
+     "support": 637,
+     "f1": 0.8499370006307293
+    },
+    {
+     "event": "hurricane_florence_2018",
+     "class": "infrastructure_and_utility_damage",
+     "support": 320,
+     "f1": 0.623590483203
+    },
+    {
+     "event": "hurricane_florence_2018",
+     "class": "injured_or_dead_people",
+     "support": 297,
+     "f1": 0.9151069473727442
+    },
+    {
+     "event": "hurricane_florence_2018",
+     "class": "not_humanitarian",
+     "support": 1060,
+     "f1": 0.2618230107485666
+    },
+    {
+     "event": "hurricane_florence_2018",
+     "class": "other_relevant_information",
+     "support": 636,
+     "f1": 0.33618735469175387
+    },
+    {
+     "event": "hurricane_florence_2018",
+     "class": "requests_or_urgent_needs",
+     "support": 54,
+     "f1": 0.13251965949640368
+    },
+    {
+     "event": "hurricane_florence_2018",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 1478,
+     "f1": 0.8316969730170823
+    },
+    {
+     "event": "hurricane_florence_2018",
+     "class": "sympathy_and_support",
+     "support": 472,
+     "f1": 0.8160955288803289
+    },
+    {
+     "event": "hurricane_harvey_2017",
+     "class": "caution_and_advice",
+     "support": 541,
+     "f1": 0.6309183570051757
+    },
+    {
+     "event": "hurricane_harvey_2017",
+     "class": "displaced_people_and_evacuations",
+     "support": 688,
+     "f1": 0.8830483678438839
+    },
+    {
+     "event": "hurricane_harvey_2017",
+     "class": "infrastructure_and_utility_damage",
+     "support": 1217,
+     "f1": 0.8154863380151604
+    },
+    {
+     "event": "hurricane_harvey_2017",
+     "class": "injured_or_dead_people",
+     "support": 698,
+     "f1": 0.9259565823494811
+    },
+    {
+     "event": "hurricane_harvey_2017",
+     "class": "not_humanitarian",
+     "support": 410,
+     "f1": 0.35707178860779903
+    },
+    {
+     "event": "hurricane_harvey_2017",
+     "class": "other_relevant_information",
+     "support": 1767,
+     "f1": 0.5589640922431094
+    },
+    {
+     "event": "hurricane_harvey_2017",
+     "class": "requests_or_urgent_needs",
+     "support": 333,
+     "f1": 0.21379914794917623
+    },
+    {
+     "event": "hurricane_harvey_2017",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 2823,
+     "f1": 0.8501754594071608
+    },
+    {
+     "event": "hurricane_harvey_2017",
+     "class": "sympathy_and_support",
+     "support": 635,
+     "f1": 0.7356527426499079
+    },
+    {
+     "event": "hurricane_irma_2017",
+     "class": "caution_and_advice",
+     "support": 613,
+     "f1": 0.5801895007476158
+    },
+    {
+     "event": "hurricane_irma_2017",
+     "class": "displaced_people_and_evacuations",
+     "support": 755,
+     "f1": 0.8788557990515946
+    },
+    {
+     "event": "hurricane_irma_2017",
+     "class": "infrastructure_and_utility_damage",
+     "support": 1881,
+     "f1": 0.8551629705830571
+    },
+    {
+     "event": "hurricane_irma_2017",
+     "class": "injured_or_dead_people",
+     "support": 894,
+     "f1": 0.925866862224348
+    },
+    {
+     "event": "hurricane_irma_2017",
+     "class": "not_humanitarian",
+     "support": 615,
+     "f1": 0.4055889559442932
+    },
+    {
+     "event": "hurricane_irma_2017",
+     "class": "other_relevant_information",
+     "support": 2358,
+     "f1": 0.5047243142442317
+    },
+    {
+     "event": "hurricane_irma_2017",
+     "class": "requests_or_urgent_needs",
+     "support": 126,
+     "f1": 0.2582801798699027
+    },
+    {
+     "event": "hurricane_irma_2017",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 1590,
+     "f1": 0.7259725290152167
+    },
+    {
+     "event": "hurricane_irma_2017",
+     "class": "sympathy_and_support",
+     "support": 567,
+     "f1": 0.7029318879934475
+    },
+    {
+     "event": "hurricane_maria_2017",
+     "class": "caution_and_advice",
+     "support": 220,
+     "f1": 0.5569780753880998
+    },
+    {
+     "event": "hurricane_maria_2017",
+     "class": "displaced_people_and_evacuations",
+     "support": 131,
+     "f1": 0.8623913431792503
+    },
+    {
+     "event": "hurricane_maria_2017",
+     "class": "infrastructure_and_utility_damage",
+     "support": 1427,
+     "f1": 0.871329828575812
+    },
+    {
+     "event": "hurricane_maria_2017",
+     "class": "injured_or_dead_people",
+     "support": 302,
+     "f1": 0.892222494125129
+    },
+    {
+     "event": "hurricane_maria_2017",
+     "class": "not_humanitarian",
+     "support": 270,
+     "f1": 0.3733642233088624
+    },
+    {
+     "event": "hurricane_maria_2017",
+     "class": "other_relevant_information",
+     "support": 1568,
+     "f1": 0.4910487179002163
+    },
+    {
+     "event": "hurricane_maria_2017",
+     "class": "requests_or_urgent_needs",
+     "support": 711,
+     "f1": 0.011558281757468985
+    },
+    {
+     "event": "hurricane_maria_2017",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 1977,
+     "f1": 0.7517232306275433
+    },
+    {
+     "event": "hurricane_maria_2017",
+     "class": "sympathy_and_support",
+     "support": 672,
+     "f1": 0.6828383820339159
+    },
+    {
+     "event": "hurricane_matthew_2016",
+     "class": "caution_and_advice",
+     "support": 36,
+     "f1": 0.5116553784395889
+    },
+    {
+     "event": "hurricane_matthew_2016",
+     "class": "displaced_people_and_evacuations",
+     "support": 38,
+     "f1": 0.900890161729602
+    },
+    {
+     "event": "hurricane_matthew_2016",
+     "class": "infrastructure_and_utility_damage",
+     "support": 178,
+     "f1": 0.7653102147979695
+    },
+    {
+     "event": "hurricane_matthew_2016",
+     "class": "injured_or_dead_people",
+     "support": 224,
+     "f1": 0.9496778513284456
+    },
+    {
+     "event": "hurricane_matthew_2016",
+     "class": "not_humanitarian",
+     "support": 76,
+     "f1": 0.25621308175394175
+    },
+    {
+     "event": "hurricane_matthew_2016",
+     "class": "other_relevant_information",
+     "support": 328,
+     "f1": 0.5767244308153213
+    },
+    {
+     "event": "hurricane_matthew_2016",
+     "class": "requests_or_urgent_needs",
+     "support": 53,
+     "f1": 0.03597883597883598
+    },
+    {
+     "event": "hurricane_matthew_2016",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 326,
+     "f1": 0.7676599625919588
+    },
+    {
+     "event": "hurricane_matthew_2016",
+     "class": "sympathy_and_support",
+     "support": 395,
+     "f1": 0.9045629855323799
+    },
+    {
+     "event": "italy_earthquake_aug_2016",
+     "class": "infrastructure_and_utility_damage",
+     "support": 54,
+     "f1": 0.6921361259840186
+    },
+    {
+     "event": "italy_earthquake_aug_2016",
+     "class": "injured_or_dead_people",
+     "support": 174,
+     "f1": 0.9239649051554913
+    },
+    {
+     "event": "italy_earthquake_aug_2016",
+     "class": "other_relevant_information",
+     "support": 52,
+     "f1": 0.43060370192006864
+    },
+    {
+     "event": "italy_earthquake_aug_2016",
+     "class": "requests_or_urgent_needs",
+     "support": 30,
+     "f1": 0.14237610586756694
+    },
+    {
+     "event": "italy_earthquake_aug_2016",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 312,
+     "f1": 0.8937097110925103
+    },
+    {
+     "event": "italy_earthquake_aug_2016",
+     "class": "sympathy_and_support",
+     "support": 579,
+     "f1": 0.9263865376253033
+    },
+    {
+     "event": "kaikoura_earthquake_2016",
+     "class": "caution_and_advice",
+     "support": 493,
+     "f1": 0.6437373258223017
+    },
+    {
+     "event": "kaikoura_earthquake_2016",
+     "class": "displaced_people_and_evacuations",
+     "support": 87,
+     "f1": 0.8134202466056163
+    },
+    {
+     "event": "kaikoura_earthquake_2016",
+     "class": "infrastructure_and_utility_damage",
+     "support": 312,
+     "f1": 0.8071972536860859
+    },
+    {
+     "event": "kaikoura_earthquake_2016",
+     "class": "injured_or_dead_people",
+     "support": 105,
+     "f1": 0.9389357494890327
+    },
+    {
+     "event": "kaikoura_earthquake_2016",
+     "class": "not_humanitarian",
+     "support": 224,
+     "f1": 0.3006950789655778
+    },
+    {
+     "event": "kaikoura_earthquake_2016",
+     "class": "other_relevant_information",
+     "support": 311,
+     "f1": 0.4788503050729659
+    },
+    {
+     "event": "kaikoura_earthquake_2016",
+     "class": "requests_or_urgent_needs",
+     "support": 24,
+     "f1": 0.03783549783549783
+    },
+    {
+     "event": "kaikoura_earthquake_2016",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 207,
+     "f1": 0.8171375836262724
+    },
+    {
+     "event": "kaikoura_earthquake_2016",
+     "class": "sympathy_and_support",
+     "support": 432,
+     "f1": 0.8695480847786328
+    },
+    {
+     "event": "kerala_floods_2018",
+     "class": "caution_and_advice",
+     "support": 139,
+     "f1": 0.3706709940851525
+    },
+    {
+     "event": "kerala_floods_2018",
+     "class": "displaced_people_and_evacuations",
+     "support": 56,
+     "f1": 0.47389974910265725
+    },
+    {
+     "event": "kerala_floods_2018",
+     "class": "infrastructure_and_utility_damage",
+     "support": 296,
+     "f1": 0.6315339127271189
+    },
+    {
+     "event": "kerala_floods_2018",
+     "class": "injured_or_dead_people",
+     "support": 363,
+     "f1": 0.8694864889819609
+    },
+    {
+     "event": "kerala_floods_2018",
+     "class": "not_humanitarian",
+     "support": 456,
+     "f1": 0.40752439054908096
+    },
+    {
+     "event": "kerala_floods_2018",
+     "class": "other_relevant_information",
+     "support": 955,
+     "f1": 0.47509402191787425
+    },
+    {
+     "event": "kerala_floods_2018",
+     "class": "requests_or_urgent_needs",
+     "support": 590,
+     "f1": 0.04718822594236301
+    },
+    {
+     "event": "kerala_floods_2018",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 4294,
+     "f1": 0.8577058425618114
+    },
+    {
+     "event": "kerala_floods_2018",
+     "class": "sympathy_and_support",
+     "support": 835,
+     "f1": 0.7135405562476118
+    },
+    {
+     "event": "maryland_floods_2018",
+     "class": "caution_and_advice",
+     "support": 70,
+     "f1": 0.7801194296196187
+    },
+    {
+     "event": "maryland_floods_2018",
+     "class": "infrastructure_and_utility_damage",
+     "support": 79,
+     "f1": 0.5388731125172354
+    },
+    {
+     "event": "maryland_floods_2018",
+     "class": "injured_or_dead_people",
+     "support": 56,
+     "f1": 0.5009724094276751
+    },
+    {
+     "event": "maryland_floods_2018",
+     "class": "missing_or_found_people",
+     "support": 140,
+     "f1": 0.0
+    },
+    {
+     "event": "maryland_floods_2018",
+     "class": "not_humanitarian",
+     "support": 77,
+     "f1": 0.37307398077159776
+    },
+    {
+     "event": "maryland_floods_2018",
+     "class": "other_relevant_information",
+     "support": 137,
+     "f1": 0.5829991661711472
+    },
+    {
+     "event": "maryland_floods_2018",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 73,
+     "f1": 0.7272756676757249
+    },
+    {
+     "event": "maryland_floods_2018",
+     "class": "sympathy_and_support",
+     "support": 110,
+     "f1": 0.8714251494939852
+    },
+    {
+     "event": "midwestern_us_floods_2019",
+     "class": "caution_and_advice",
+     "support": 79,
+     "f1": 0.6235413290693858
+    },
+    {
+     "event": "midwestern_us_floods_2019",
+     "class": "infrastructure_and_utility_damage",
+     "support": 140,
+     "f1": 0.7026715445151436
+    },
+    {
+     "event": "midwestern_us_floods_2019",
+     "class": "not_humanitarian",
+     "support": 389,
+     "f1": 0.4932541272840276
+    },
+    {
+     "event": "midwestern_us_floods_2019",
+     "class": "other_relevant_information",
+     "support": 273,
+     "f1": 0.4894249259921213
+    },
+    {
+     "event": "midwestern_us_floods_2019",
+     "class": "requests_or_urgent_needs",
+     "support": 46,
+     "f1": 0.0914795008912656
+    },
+    {
+     "event": "midwestern_us_floods_2019",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 788,
+     "f1": 0.8798766899748454
+    },
+    {
+     "event": "midwestern_us_floods_2019",
+     "class": "sympathy_and_support",
+     "support": 165,
+     "f1": 0.7122451962948532
+    },
+    {
+     "event": "pakistan_earthquake_2019",
+     "class": "caution_and_advice",
+     "support": 71,
+     "f1": 0.4992148931080229
+    },
+    {
+     "event": "pakistan_earthquake_2019",
+     "class": "infrastructure_and_utility_damage",
+     "support": 125,
+     "f1": 0.7091364382131404
+    },
+    {
+     "event": "pakistan_earthquake_2019",
+     "class": "injured_or_dead_people",
+     "support": 401,
+     "f1": 0.9199543375296912
+    },
+    {
+     "event": "pakistan_earthquake_2019",
+     "class": "not_humanitarian",
+     "support": 213,
+     "f1": 0.5544477070406726
+    },
+    {
+     "event": "pakistan_earthquake_2019",
+     "class": "other_relevant_information",
+     "support": 154,
+     "f1": 0.4300838245490544
+    },
+    {
+     "event": "pakistan_earthquake_2019",
+     "class": "requests_or_urgent_needs",
+     "support": 19,
+     "f1": 0.03809523809523809
+    },
+    {
+     "event": "pakistan_earthquake_2019",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 152,
+     "f1": 0.7666788896564455
+    },
+    {
+     "event": "pakistan_earthquake_2019",
+     "class": "sympathy_and_support",
+     "support": 823,
+     "f1": 0.9089385296497803
+    },
+    {
+     "event": "puebla_mexico_earthquake_2017",
+     "class": "caution_and_advice",
+     "support": 35,
+     "f1": 0.3132967200610221
+    },
+    {
+     "event": "puebla_mexico_earthquake_2017",
+     "class": "infrastructure_and_utility_damage",
+     "support": 167,
+     "f1": 0.7516462053726961
+    },
+    {
+     "event": "puebla_mexico_earthquake_2017",
+     "class": "injured_or_dead_people",
+     "support": 254,
+     "f1": 0.9262126370425527
+    },
+    {
+     "event": "puebla_mexico_earthquake_2017",
+     "class": "not_humanitarian",
+     "support": 38,
+     "f1": 0.3214793447293447
+    },
+    {
+     "event": "puebla_mexico_earthquake_2017",
+     "class": "other_relevant_information",
+     "support": 109,
+     "f1": 0.46033897059958856
+    },
+    {
+     "event": "puebla_mexico_earthquake_2017",
+     "class": "requests_or_urgent_needs",
+     "support": 61,
+     "f1": 0.23330635151907614
+    },
+    {
+     "event": "puebla_mexico_earthquake_2017",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 984,
+     "f1": 0.9261630691362278
+    },
+    {
+     "event": "puebla_mexico_earthquake_2017",
+     "class": "sympathy_and_support",
+     "support": 367,
+     "f1": 0.8676330743531503
+    },
+    {
+     "event": "srilanka_floods_2017",
+     "class": "caution_and_advice",
+     "support": 28,
+     "f1": 0.565446308077887
+    },
+    {
+     "event": "srilanka_floods_2017",
+     "class": "infrastructure_and_utility_damage",
+     "support": 17,
+     "f1": 0.6890507511407191
+    },
+    {
+     "event": "srilanka_floods_2017",
+     "class": "injured_or_dead_people",
+     "support": 46,
+     "f1": 0.8985938792390404
+    },
+    {
+     "event": "srilanka_floods_2017",
+     "class": "not_humanitarian",
+     "support": 20,
+     "f1": 0.10845096932053452
+    },
+    {
+     "event": "srilanka_floods_2017",
+     "class": "other_relevant_information",
+     "support": 56,
+     "f1": 0.5192635291864353
+    },
+    {
+     "event": "srilanka_floods_2017",
+     "class": "requests_or_urgent_needs",
+     "support": 34,
+     "f1": 0.0
+    },
+    {
+     "event": "srilanka_floods_2017",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 319,
+     "f1": 0.8975317650384843
+    },
+    {
+     "event": "srilanka_floods_2017",
+     "class": "sympathy_and_support",
+     "support": 40,
+     "f1": 0.7384244514419953
+    }
+   ],
+   "roberta-base": [
+    {
+     "event": "california_wildfires_2018",
+     "class": "caution_and_advice",
+     "support": 139,
+     "f1": 0.5293622453212344
+    },
+    {
+     "event": "california_wildfires_2018",
+     "class": "displaced_people_and_evacuations",
+     "support": 368,
+     "f1": 0.8029855511710708
+    },
+    {
+     "event": "california_wildfires_2018",
+     "class": "infrastructure_and_utility_damage",
+     "support": 422,
+     "f1": 0.7027779349833544
+    },
+    {
+     "event": "california_wildfires_2018",
+     "class": "injured_or_dead_people",
+     "support": 1946,
+     "f1": 0.9023631364787654
+    },
+    {
+     "event": "california_wildfires_2018",
+     "class": "missing_or_found_people",
+     "support": 179,
+     "f1": 0.0
+    },
+    {
+     "event": "california_wildfires_2018",
+     "class": "not_humanitarian",
+     "support": 1318,
+     "f1": 0.6115777181703101
+    },
+    {
+     "event": "california_wildfires_2018",
+     "class": "other_relevant_information",
+     "support": 1038,
+     "f1": 0.5252100933849307
+    },
+    {
+     "event": "california_wildfires_2018",
+     "class": "requests_or_urgent_needs",
+     "support": 79,
+     "f1": 0.3983726666944548
+    },
+    {
+     "event": "california_wildfires_2018",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 1415,
+     "f1": 0.8650313896309211
+    },
+    {
+     "event": "california_wildfires_2018",
+     "class": "sympathy_and_support",
+     "support": 472,
+     "f1": 0.755054329129296
+    },
+    {
+     "event": "canada_wildfires_2016",
+     "class": "caution_and_advice",
+     "support": 106,
+     "f1": 0.57992452539323
+    },
+    {
+     "event": "canada_wildfires_2016",
+     "class": "displaced_people_and_evacuations",
+     "support": 380,
+     "f1": 0.9084095544375309
+    },
+    {
+     "event": "canada_wildfires_2016",
+     "class": "infrastructure_and_utility_damage",
+     "support": 251,
+     "f1": 0.8665563553474103
+    },
+    {
+     "event": "canada_wildfires_2016",
+     "class": "not_humanitarian",
+     "support": 79,
+     "f1": 0.39610751811888145
+    },
+    {
+     "event": "canada_wildfires_2016",
+     "class": "other_relevant_information",
+     "support": 311,
+     "f1": 0.5843851523712172
+    },
+    {
+     "event": "canada_wildfires_2016",
+     "class": "requests_or_urgent_needs",
+     "support": 20,
+     "f1": 0.539248460336428
+    },
+    {
+     "event": "canada_wildfires_2016",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 934,
+     "f1": 0.9199502754922392
+    },
+    {
+     "event": "canada_wildfires_2016",
+     "class": "sympathy_and_support",
+     "support": 161,
+     "f1": 0.8596692083744493
+    },
+    {
+     "event": "cyclone_idai_2019",
+     "class": "caution_and_advice",
+     "support": 89,
+     "f1": 0.5884365582144234
+    },
+    {
+     "event": "cyclone_idai_2019",
+     "class": "displaced_people_and_evacuations",
+     "support": 57,
+     "f1": 0.6118052465702633
+    },
+    {
+     "event": "cyclone_idai_2019",
+     "class": "infrastructure_and_utility_damage",
+     "support": 354,
+     "f1": 0.7756372144752246
+    },
+    {
+     "event": "cyclone_idai_2019",
+     "class": "injured_or_dead_people",
+     "support": 433,
+     "f1": 0.9033818398613249
+    },
+    {
+     "event": "cyclone_idai_2019",
+     "class": "missing_or_found_people",
+     "support": 19,
+     "f1": 0.4139354838709677
+    },
+    {
+     "event": "cyclone_idai_2019",
+     "class": "not_humanitarian",
+     "support": 80,
+     "f1": 0.38961766292531286
+    },
+    {
+     "event": "cyclone_idai_2019",
+     "class": "other_relevant_information",
+     "support": 407,
+     "f1": 0.4621863473452853
+    },
+    {
+     "event": "cyclone_idai_2019",
+     "class": "requests_or_urgent_needs",
+     "support": 143,
+     "f1": 0.3722497534571878
+    },
+    {
+     "event": "cyclone_idai_2019",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 1869,
+     "f1": 0.884091813771667
+    },
+    {
+     "event": "cyclone_idai_2019",
+     "class": "sympathy_and_support",
+     "support": 482,
+     "f1": 0.8062252987113107
+    },
+    {
+     "event": "ecuador_earthquake_2016",
+     "class": "caution_and_advice",
+     "support": 30,
+     "f1": 0.6576752455625123
+    },
+    {
+     "event": "ecuador_earthquake_2016",
+     "class": "infrastructure_and_utility_damage",
+     "support": 70,
+     "f1": 0.8352240476153543
+    },
+    {
+     "event": "ecuador_earthquake_2016",
+     "class": "injured_or_dead_people",
+     "support": 555,
+     "f1": 0.9729946617828166
+    },
+    {
+     "event": "ecuador_earthquake_2016",
+     "class": "not_humanitarian",
+     "support": 23,
+     "f1": 0.511919146036793
+    },
+    {
+     "event": "ecuador_earthquake_2016",
+     "class": "other_relevant_information",
+     "support": 81,
+     "f1": 0.5734714895226809
+    },
+    {
+     "event": "ecuador_earthquake_2016",
+     "class": "requests_or_urgent_needs",
+     "support": 91,
+     "f1": 0.6033000525538138
+    },
+    {
+     "event": "ecuador_earthquake_2016",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 394,
+     "f1": 0.8956823347603985
+    },
+    {
+     "event": "ecuador_earthquake_2016",
+     "class": "sympathy_and_support",
+     "support": 319,
+     "f1": 0.9225673563090092
+    },
+    {
+     "event": "greece_wildfires_2018",
+     "class": "caution_and_advice",
+     "support": 26,
+     "f1": 0.6018981676150964
+    },
+    {
+     "event": "greece_wildfires_2018",
+     "class": "infrastructure_and_utility_damage",
+     "support": 38,
+     "f1": 0.6485126190366949
+    },
+    {
+     "event": "greece_wildfires_2018",
+     "class": "injured_or_dead_people",
+     "support": 495,
+     "f1": 0.9044182202542304
+    },
+    {
+     "event": "greece_wildfires_2018",
+     "class": "missing_or_found_people",
+     "support": 20,
+     "f1": 0.381437908496732
+    },
+    {
+     "event": "greece_wildfires_2018",
+     "class": "not_humanitarian",
+     "support": 74,
+     "f1": 0.5650163159239374
+    },
+    {
+     "event": "greece_wildfires_2018",
+     "class": "other_relevant_information",
+     "support": 159,
+     "f1": 0.5935145981059713
+    },
+    {
+     "event": "greece_wildfires_2018",
+     "class": "requests_or_urgent_needs",
+     "support": 25,
+     "f1": 0.30019181861287125
+    },
+    {
+     "event": "greece_wildfires_2018",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 356,
+     "f1": 0.8631501307498024
+    },
+    {
+     "event": "greece_wildfires_2018",
+     "class": "sympathy_and_support",
+     "support": 322,
+     "f1": 0.8290625110806189
+    },
+    {
+     "event": "hurricane_dorian_2019",
+     "class": "caution_and_advice",
+     "support": 1369,
+     "f1": 0.6663832478198822
+    },
+    {
+     "event": "hurricane_dorian_2019",
+     "class": "displaced_people_and_evacuations",
+     "support": 802,
+     "f1": 0.8947123894310106
+    },
+    {
+     "event": "hurricane_dorian_2019",
+     "class": "infrastructure_and_utility_damage",
+     "support": 815,
+     "f1": 0.672018632119616
+    },
+    {
+     "event": "hurricane_dorian_2019",
+     "class": "injured_or_dead_people",
+     "support": 60,
+     "f1": 0.5969475683978249
+    },
+    {
+     "event": "hurricane_dorian_2019",
+     "class": "not_humanitarian",
+     "support": 874,
+     "f1": 0.4724252088584593
+    },
+    {
+     "event": "hurricane_dorian_2019",
+     "class": "other_relevant_information",
+     "support": 1444,
+     "f1": 0.42180963564292284
+    },
+    {
+     "event": "hurricane_dorian_2019",
+     "class": "requests_or_urgent_needs",
+     "support": 179,
+     "f1": 0.33406761307566113
+    },
+    {
+     "event": "hurricane_dorian_2019",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 987,
+     "f1": 0.8067260879180583
+    },
+    {
+     "event": "hurricane_dorian_2019",
+     "class": "sympathy_and_support",
+     "support": 1083,
+     "f1": 0.8422788563863823
+    },
+    {
+     "event": "hurricane_florence_2018",
+     "class": "caution_and_advice",
+     "support": 1310,
+     "f1": 0.7205631726931456
+    },
+    {
+     "event": "hurricane_florence_2018",
+     "class": "displaced_people_and_evacuations",
+     "support": 637,
+     "f1": 0.8511975424345739
+    },
+    {
+     "event": "hurricane_florence_2018",
+     "class": "infrastructure_and_utility_damage",
+     "support": 320,
+     "f1": 0.6608072765455353
+    },
+    {
+     "event": "hurricane_florence_2018",
+     "class": "injured_or_dead_people",
+     "support": 297,
+     "f1": 0.9204060378122711
+    },
+    {
+     "event": "hurricane_florence_2018",
+     "class": "not_humanitarian",
+     "support": 1060,
+     "f1": 0.3614780076201431
+    },
+    {
+     "event": "hurricane_florence_2018",
+     "class": "other_relevant_information",
+     "support": 636,
+     "f1": 0.34620410346245756
+    },
+    {
+     "event": "hurricane_florence_2018",
+     "class": "requests_or_urgent_needs",
+     "support": 54,
+     "f1": 0.32575952185503
+    },
+    {
+     "event": "hurricane_florence_2018",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 1478,
+     "f1": 0.858710640651838
+    },
+    {
+     "event": "hurricane_florence_2018",
+     "class": "sympathy_and_support",
+     "support": 472,
+     "f1": 0.8595213077269672
+    },
+    {
+     "event": "hurricane_harvey_2017",
+     "class": "caution_and_advice",
+     "support": 541,
+     "f1": 0.6848285364207928
+    },
+    {
+     "event": "hurricane_harvey_2017",
+     "class": "displaced_people_and_evacuations",
+     "support": 688,
+     "f1": 0.892249251757517
+    },
+    {
+     "event": "hurricane_harvey_2017",
+     "class": "infrastructure_and_utility_damage",
+     "support": 1217,
+     "f1": 0.8102210711564559
+    },
+    {
+     "event": "hurricane_harvey_2017",
+     "class": "injured_or_dead_people",
+     "support": 698,
+     "f1": 0.9357315843321228
+    },
+    {
+     "event": "hurricane_harvey_2017",
+     "class": "not_humanitarian",
+     "support": 410,
+     "f1": 0.4002647489458405
+    },
+    {
+     "event": "hurricane_harvey_2017",
+     "class": "other_relevant_information",
+     "support": 1767,
+     "f1": 0.5797802705572426
+    },
+    {
+     "event": "hurricane_harvey_2017",
+     "class": "requests_or_urgent_needs",
+     "support": 333,
+     "f1": 0.52950324110186
+    },
+    {
+     "event": "hurricane_harvey_2017",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 2823,
+     "f1": 0.8577870486084244
+    },
+    {
+     "event": "hurricane_harvey_2017",
+     "class": "sympathy_and_support",
+     "support": 635,
+     "f1": 0.776338955647793
+    },
+    {
+     "event": "hurricane_irma_2017",
+     "class": "caution_and_advice",
+     "support": 613,
+     "f1": 0.6384448306574112
+    },
+    {
+     "event": "hurricane_irma_2017",
+     "class": "displaced_people_and_evacuations",
+     "support": 755,
+     "f1": 0.8874505851802242
+    },
+    {
+     "event": "hurricane_irma_2017",
+     "class": "infrastructure_and_utility_damage",
+     "support": 1881,
+     "f1": 0.8603064413707194
+    },
+    {
+     "event": "hurricane_irma_2017",
+     "class": "injured_or_dead_people",
+     "support": 894,
+     "f1": 0.9278698319004081
+    },
+    {
+     "event": "hurricane_irma_2017",
+     "class": "not_humanitarian",
+     "support": 615,
+     "f1": 0.4658323791211031
+    },
+    {
+     "event": "hurricane_irma_2017",
+     "class": "other_relevant_information",
+     "support": 2358,
+     "f1": 0.48401764447053147
+    },
+    {
+     "event": "hurricane_irma_2017",
+     "class": "requests_or_urgent_needs",
+     "support": 126,
+     "f1": 0.5193748647585797
+    },
+    {
+     "event": "hurricane_irma_2017",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 1590,
+     "f1": 0.745133065199491
+    },
+    {
+     "event": "hurricane_irma_2017",
+     "class": "sympathy_and_support",
+     "support": 567,
+     "f1": 0.727519221856201
+    },
+    {
+     "event": "hurricane_maria_2017",
+     "class": "caution_and_advice",
+     "support": 220,
+     "f1": 0.6400360634481228
+    },
+    {
+     "event": "hurricane_maria_2017",
+     "class": "displaced_people_and_evacuations",
+     "support": 131,
+     "f1": 0.8508266362770339
+    },
+    {
+     "event": "hurricane_maria_2017",
+     "class": "infrastructure_and_utility_damage",
+     "support": 1427,
+     "f1": 0.8776972747142032
+    },
+    {
+     "event": "hurricane_maria_2017",
+     "class": "injured_or_dead_people",
+     "support": 302,
+     "f1": 0.9142141128619086
+    },
+    {
+     "event": "hurricane_maria_2017",
+     "class": "not_humanitarian",
+     "support": 270,
+     "f1": 0.4114069015401931
+    },
+    {
+     "event": "hurricane_maria_2017",
+     "class": "other_relevant_information",
+     "support": 1568,
+     "f1": 0.5013378051627064
+    },
+    {
+     "event": "hurricane_maria_2017",
+     "class": "requests_or_urgent_needs",
+     "support": 711,
+     "f1": 0.5525257355412602
+    },
+    {
+     "event": "hurricane_maria_2017",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 1977,
+     "f1": 0.7869322546357367
+    },
+    {
+     "event": "hurricane_maria_2017",
+     "class": "sympathy_and_support",
+     "support": 672,
+     "f1": 0.7116814241175512
+    },
+    {
+     "event": "hurricane_matthew_2016",
+     "class": "caution_and_advice",
+     "support": 36,
+     "f1": 0.502021051558478
+    },
+    {
+     "event": "hurricane_matthew_2016",
+     "class": "displaced_people_and_evacuations",
+     "support": 38,
+     "f1": 0.8883083344202426
+    },
+    {
+     "event": "hurricane_matthew_2016",
+     "class": "infrastructure_and_utility_damage",
+     "support": 178,
+     "f1": 0.8004221123213325
+    },
+    {
+     "event": "hurricane_matthew_2016",
+     "class": "injured_or_dead_people",
+     "support": 224,
+     "f1": 0.9522330726189063
+    },
+    {
+     "event": "hurricane_matthew_2016",
+     "class": "not_humanitarian",
+     "support": 76,
+     "f1": 0.39456620249633045
+    },
+    {
+     "event": "hurricane_matthew_2016",
+     "class": "other_relevant_information",
+     "support": 328,
+     "f1": 0.5682257313331037
+    },
+    {
+     "event": "hurricane_matthew_2016",
+     "class": "requests_or_urgent_needs",
+     "support": 53,
+     "f1": 0.5531055345064562
+    },
+    {
+     "event": "hurricane_matthew_2016",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 326,
+     "f1": 0.8160697645891742
+    },
+    {
+     "event": "hurricane_matthew_2016",
+     "class": "sympathy_and_support",
+     "support": 395,
+     "f1": 0.9218367412512787
+    },
+    {
+     "event": "italy_earthquake_aug_2016",
+     "class": "infrastructure_and_utility_damage",
+     "support": 54,
+     "f1": 0.741589615486683
+    },
+    {
+     "event": "italy_earthquake_aug_2016",
+     "class": "injured_or_dead_people",
+     "support": 174,
+     "f1": 0.9314333584027462
+    },
+    {
+     "event": "italy_earthquake_aug_2016",
+     "class": "other_relevant_information",
+     "support": 52,
+     "f1": 0.4029804550508194
+    },
+    {
+     "event": "italy_earthquake_aug_2016",
+     "class": "requests_or_urgent_needs",
+     "support": 30,
+     "f1": 0.36244656304156087
+    },
+    {
+     "event": "italy_earthquake_aug_2016",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 312,
+     "f1": 0.886159472392006
+    },
+    {
+     "event": "italy_earthquake_aug_2016",
+     "class": "sympathy_and_support",
+     "support": 579,
+     "f1": 0.925915794684179
+    },
+    {
+     "event": "kaikoura_earthquake_2016",
+     "class": "caution_and_advice",
+     "support": 493,
+     "f1": 0.7455848469905862
+    },
+    {
+     "event": "kaikoura_earthquake_2016",
+     "class": "displaced_people_and_evacuations",
+     "support": 87,
+     "f1": 0.8340628167364068
+    },
+    {
+     "event": "kaikoura_earthquake_2016",
+     "class": "infrastructure_and_utility_damage",
+     "support": 312,
+     "f1": 0.8427521795199631
+    },
+    {
+     "event": "kaikoura_earthquake_2016",
+     "class": "injured_or_dead_people",
+     "support": 105,
+     "f1": 0.9448310386213612
+    },
+    {
+     "event": "kaikoura_earthquake_2016",
+     "class": "not_humanitarian",
+     "support": 224,
+     "f1": 0.44160884916506554
+    },
+    {
+     "event": "kaikoura_earthquake_2016",
+     "class": "other_relevant_information",
+     "support": 311,
+     "f1": 0.5095487568370248
+    },
+    {
+     "event": "kaikoura_earthquake_2016",
+     "class": "requests_or_urgent_needs",
+     "support": 24,
+     "f1": 0.3558697854720056
+    },
+    {
+     "event": "kaikoura_earthquake_2016",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 207,
+     "f1": 0.8468253008296163
+    },
+    {
+     "event": "kaikoura_earthquake_2016",
+     "class": "sympathy_and_support",
+     "support": 432,
+     "f1": 0.8964138081825072
+    },
+    {
+     "event": "kerala_floods_2018",
+     "class": "caution_and_advice",
+     "support": 139,
+     "f1": 0.45840688651314243
+    },
+    {
+     "event": "kerala_floods_2018",
+     "class": "displaced_people_and_evacuations",
+     "support": 56,
+     "f1": 0.5889171545155317
+    },
+    {
+     "event": "kerala_floods_2018",
+     "class": "infrastructure_and_utility_damage",
+     "support": 296,
+     "f1": 0.6623063334714963
+    },
+    {
+     "event": "kerala_floods_2018",
+     "class": "injured_or_dead_people",
+     "support": 363,
+     "f1": 0.8803772094871405
+    },
+    {
+     "event": "kerala_floods_2018",
+     "class": "not_humanitarian",
+     "support": 456,
+     "f1": 0.4499041825699065
+    },
+    {
+     "event": "kerala_floods_2018",
+     "class": "other_relevant_information",
+     "support": 955,
+     "f1": 0.49247674572760325
+    },
+    {
+     "event": "kerala_floods_2018",
+     "class": "requests_or_urgent_needs",
+     "support": 590,
+     "f1": 0.5088771625091919
+    },
+    {
+     "event": "kerala_floods_2018",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 4294,
+     "f1": 0.8726240349606064
+    },
+    {
+     "event": "kerala_floods_2018",
+     "class": "sympathy_and_support",
+     "support": 835,
+     "f1": 0.7269778749124365
+    },
+    {
+     "event": "maryland_floods_2018",
+     "class": "caution_and_advice",
+     "support": 70,
+     "f1": 0.8312134320619495
+    },
+    {
+     "event": "maryland_floods_2018",
+     "class": "infrastructure_and_utility_damage",
+     "support": 79,
+     "f1": 0.6553158824485252
+    },
+    {
+     "event": "maryland_floods_2018",
+     "class": "injured_or_dead_people",
+     "support": 56,
+     "f1": 0.5292547970997076
+    },
+    {
+     "event": "maryland_floods_2018",
+     "class": "missing_or_found_people",
+     "support": 140,
+     "f1": 0.0
+    },
+    {
+     "event": "maryland_floods_2018",
+     "class": "not_humanitarian",
+     "support": 77,
+     "f1": 0.4314905945862134
+    },
+    {
+     "event": "maryland_floods_2018",
+     "class": "other_relevant_information",
+     "support": 137,
+     "f1": 0.6282265398698625
+    },
+    {
+     "event": "maryland_floods_2018",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 73,
+     "f1": 0.6156323333461274
+    },
+    {
+     "event": "maryland_floods_2018",
+     "class": "sympathy_and_support",
+     "support": 110,
+     "f1": 0.8877754533725815
+    },
+    {
+     "event": "midwestern_us_floods_2019",
+     "class": "caution_and_advice",
+     "support": 79,
+     "f1": 0.7255217284255737
+    },
+    {
+     "event": "midwestern_us_floods_2019",
+     "class": "infrastructure_and_utility_damage",
+     "support": 140,
+     "f1": 0.7158368548845022
+    },
+    {
+     "event": "midwestern_us_floods_2019",
+     "class": "not_humanitarian",
+     "support": 389,
+     "f1": 0.6776308013731056
+    },
+    {
+     "event": "midwestern_us_floods_2019",
+     "class": "other_relevant_information",
+     "support": 273,
+     "f1": 0.4991422522077288
+    },
+    {
+     "event": "midwestern_us_floods_2019",
+     "class": "requests_or_urgent_needs",
+     "support": 46,
+     "f1": 0.4065855410822907
+    },
+    {
+     "event": "midwestern_us_floods_2019",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 788,
+     "f1": 0.8987379637093023
+    },
+    {
+     "event": "midwestern_us_floods_2019",
+     "class": "sympathy_and_support",
+     "support": 165,
+     "f1": 0.7187206834808858
+    },
+    {
+     "event": "pakistan_earthquake_2019",
+     "class": "caution_and_advice",
+     "support": 71,
+     "f1": 0.5906810813250885
+    },
+    {
+     "event": "pakistan_earthquake_2019",
+     "class": "infrastructure_and_utility_damage",
+     "support": 125,
+     "f1": 0.7313174111943936
+    },
+    {
+     "event": "pakistan_earthquake_2019",
+     "class": "injured_or_dead_people",
+     "support": 401,
+     "f1": 0.93400104749007
+    },
+    {
+     "event": "pakistan_earthquake_2019",
+     "class": "not_humanitarian",
+     "support": 213,
+     "f1": 0.6718789478519566
+    },
+    {
+     "event": "pakistan_earthquake_2019",
+     "class": "other_relevant_information",
+     "support": 154,
+     "f1": 0.40427983986625693
+    },
+    {
+     "event": "pakistan_earthquake_2019",
+     "class": "requests_or_urgent_needs",
+     "support": 19,
+     "f1": 0.3322251036615363
+    },
+    {
+     "event": "pakistan_earthquake_2019",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 152,
+     "f1": 0.7942624555308377
+    },
+    {
+     "event": "pakistan_earthquake_2019",
+     "class": "sympathy_and_support",
+     "support": 823,
+     "f1": 0.9198381629223011
+    },
+    {
+     "event": "puebla_mexico_earthquake_2017",
+     "class": "caution_and_advice",
+     "support": 35,
+     "f1": 0.40304727008222213
+    },
+    {
+     "event": "puebla_mexico_earthquake_2017",
+     "class": "infrastructure_and_utility_damage",
+     "support": 167,
+     "f1": 0.7879952799982505
+    },
+    {
+     "event": "puebla_mexico_earthquake_2017",
+     "class": "injured_or_dead_people",
+     "support": 254,
+     "f1": 0.9285644459085169
+    },
+    {
+     "event": "puebla_mexico_earthquake_2017",
+     "class": "not_humanitarian",
+     "support": 38,
+     "f1": 0.2954526558097986
+    },
+    {
+     "event": "puebla_mexico_earthquake_2017",
+     "class": "other_relevant_information",
+     "support": 109,
+     "f1": 0.5074392405558459
+    },
+    {
+     "event": "puebla_mexico_earthquake_2017",
+     "class": "requests_or_urgent_needs",
+     "support": 61,
+     "f1": 0.5680763915416696
+    },
+    {
+     "event": "puebla_mexico_earthquake_2017",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 984,
+     "f1": 0.9339644960098887
+    },
+    {
+     "event": "puebla_mexico_earthquake_2017",
+     "class": "sympathy_and_support",
+     "support": 367,
+     "f1": 0.8929293909265528
+    },
+    {
+     "event": "srilanka_floods_2017",
+     "class": "caution_and_advice",
+     "support": 28,
+     "f1": 0.7064505928853755
+    },
+    {
+     "event": "srilanka_floods_2017",
+     "class": "infrastructure_and_utility_damage",
+     "support": 17,
+     "f1": 0.7429350478130966
+    },
+    {
+     "event": "srilanka_floods_2017",
+     "class": "injured_or_dead_people",
+     "support": 46,
+     "f1": 0.9116296999238955
+    },
+    {
+     "event": "srilanka_floods_2017",
+     "class": "not_humanitarian",
+     "support": 20,
+     "f1": 0.17837235228539577
+    },
+    {
+     "event": "srilanka_floods_2017",
+     "class": "other_relevant_information",
+     "support": 56,
+     "f1": 0.5855536640307284
+    },
+    {
+     "event": "srilanka_floods_2017",
+     "class": "requests_or_urgent_needs",
+     "support": 34,
+     "f1": 0.450801923195972
+    },
+    {
+     "event": "srilanka_floods_2017",
+     "class": "rescue_volunteering_or_donation_effort",
+     "support": 319,
+     "f1": 0.9187498605411148
+    },
+    {
+     "event": "srilanka_floods_2017",
+     "class": "sympathy_and_support",
+     "support": 40,
+     "f1": 0.8009014844804317
+    }
+   ]
+  },
+  "crisislext26": {
+   "distilbert-base-uncased": [
+    {
+     "event": "2012_colorado_wildfires",
+     "class": "affected_individuals",
+     "support": 151,
+     "f1": 0.557479531997442
+    },
+    {
+     "event": "2012_colorado_wildfires",
+     "class": "caution_and_advice",
+     "support": 45,
+     "f1": 0.39969884557470303
+    },
+    {
+     "event": "2012_colorado_wildfires",
+     "class": "donations_and_volunteering",
+     "support": 78,
+     "f1": 0.7706783582998417
+    },
+    {
+     "event": "2012_colorado_wildfires",
+     "class": "infrastructure_and_utilities",
+     "support": 71,
+     "f1": 0.2031430068098481
+    },
+    {
+     "event": "2012_colorado_wildfires",
+     "class": "other_useful_information",
+     "support": 426,
+     "f1": 0.774981650193169
+    },
+    {
+     "event": "2012_colorado_wildfires",
+     "class": "sympathy_and_support",
+     "support": 172,
+     "f1": 0.8546276726548836
+    },
+    {
+     "event": "2012_costa_rica_earthquake",
+     "class": "affected_individuals",
+     "support": 44,
+     "f1": 0.6883098639805393
+    },
+    {
+     "event": "2012_costa_rica_earthquake",
+     "class": "caution_and_advice",
+     "support": 291,
+     "f1": 0.44100212692217194
+    },
+    {
+     "event": "2012_costa_rica_earthquake",
+     "class": "donations_and_volunteering",
+     "support": 5,
+     "f1": 0.2884615384615385
+    },
+    {
+     "event": "2012_costa_rica_earthquake",
+     "class": "infrastructure_and_utilities",
+     "support": 51,
+     "f1": 0.1055312290944475
+    },
+    {
+     "event": "2012_costa_rica_earthquake",
+     "class": "other_useful_information",
+     "support": 398,
+     "f1": 0.7059798098034568
+    },
+    {
+     "event": "2012_costa_rica_earthquake",
+     "class": "sympathy_and_support",
+     "support": 77,
+     "f1": 0.6725188931407805
+    },
+    {
+     "event": "2012_guatemala_earthquake",
+     "class": "affected_individuals",
+     "support": 256,
+     "f1": 0.8868094444763601
+    },
+    {
+     "event": "2012_guatemala_earthquake",
+     "class": "caution_and_advice",
+     "support": 71,
+     "f1": 0.4390936390936391
+    },
+    {
+     "event": "2012_guatemala_earthquake",
+     "class": "donations_and_volunteering",
+     "support": 36,
+     "f1": 0.5902533866889771
+    },
+    {
+     "event": "2012_guatemala_earthquake",
+     "class": "infrastructure_and_utilities",
+     "support": 44,
+     "f1": 0.0
+    },
+    {
+     "event": "2012_guatemala_earthquake",
+     "class": "other_useful_information",
+     "support": 373,
+     "f1": 0.7540139178874293
+    },
+    {
+     "event": "2012_guatemala_earthquake",
+     "class": "sympathy_and_support",
+     "support": 125,
+     "f1": 0.6816931260357618
+    },
+    {
+     "event": "2012_italy_earthquakes",
+     "class": "affected_individuals",
+     "support": 117,
+     "f1": 0.7919645045132265
+    },
+    {
+     "event": "2012_italy_earthquakes",
+     "class": "caution_and_advice",
+     "support": 152,
+     "f1": 0.18477568293501043
+    },
+    {
+     "event": "2012_italy_earthquakes",
+     "class": "donations_and_volunteering",
+     "support": 108,
+     "f1": 0.49589998080219694
+    },
+    {
+     "event": "2012_italy_earthquakes",
+     "class": "infrastructure_and_utilities",
+     "support": 49,
+     "f1": 0.039738562091503275
+    },
+    {
+     "event": "2012_italy_earthquakes",
+     "class": "other_useful_information",
+     "support": 320,
+     "f1": 0.5796592113472192
+    },
+    {
+     "event": "2012_italy_earthquakes",
+     "class": "sympathy_and_support",
+     "support": 166,
+     "f1": 0.5682324360937194
+    },
+    {
+     "event": "2012_philipinnes_floods",
+     "class": "affected_individuals",
+     "support": 193,
+     "f1": 0.47137198972293987
+    },
+    {
+     "event": "2012_philipinnes_floods",
+     "class": "caution_and_advice",
+     "support": 105,
+     "f1": 0.5925325705217249
+    },
+    {
+     "event": "2012_philipinnes_floods",
+     "class": "donations_and_volunteering",
+     "support": 332,
+     "f1": 0.704284709901906
+    },
+    {
+     "event": "2012_philipinnes_floods",
+     "class": "infrastructure_and_utilities",
+     "support": 73,
+     "f1": 0.08040051679586563
+    },
+    {
+     "event": "2012_philipinnes_floods",
+     "class": "other_useful_information",
+     "support": 63,
+     "f1": 0.3972816057491621
+    },
+    {
+     "event": "2012_philipinnes_floods",
+     "class": "sympathy_and_support",
+     "support": 108,
+     "f1": 0.7684542987504995
+    },
+    {
+     "event": "2012_typhoon_pablo",
+     "class": "affected_individuals",
+     "support": 148,
+     "f1": 0.8686831023357676
+    },
+    {
+     "event": "2012_typhoon_pablo",
+     "class": "caution_and_advice",
+     "support": 213,
+     "f1": 0.581584782781429
+    },
+    {
+     "event": "2012_typhoon_pablo",
+     "class": "donations_and_volunteering",
+     "support": 116,
+     "f1": 0.8604963584549471
+    },
+    {
+     "event": "2012_typhoon_pablo",
+     "class": "infrastructure_and_utilities",
+     "support": 39,
+     "f1": 0.17089056691695878
+    },
+    {
+     "event": "2012_typhoon_pablo",
+     "class": "other_useful_information",
+     "support": 146,
+     "f1": 0.39796529295348804
+    },
+    {
+     "event": "2012_typhoon_pablo",
+     "class": "sympathy_and_support",
+     "support": 209,
+     "f1": 0.8086618864828207
+    },
+    {
+     "event": "2012_venezuela_refinery",
+     "class": "affected_individuals",
+     "support": 104,
+     "f1": 0.6637432075459331
+    },
+    {
+     "event": "2012_venezuela_refinery",
+     "class": "caution_and_advice",
+     "support": 5,
+     "f1": 0.0
+    },
+    {
+     "event": "2012_venezuela_refinery",
+     "class": "donations_and_volunteering",
+     "support": 91,
+     "f1": 0.47175588706790555
+    },
+    {
+     "event": "2012_venezuela_refinery",
+     "class": "infrastructure_and_utilities",
+     "support": 137,
+     "f1": 0.004694835680751174
+    },
+    {
+     "event": "2012_venezuela_refinery",
+     "class": "other_useful_information",
+     "support": 395,
+     "f1": 0.626004330297129
+    },
+    {
+     "event": "2012_venezuela_refinery",
+     "class": "sympathy_and_support",
+     "support": 140,
+     "f1": 0.522882183970382
+    },
+    {
+     "event": "2013_alberta_floods",
+     "class": "affected_individuals",
+     "support": 78,
+     "f1": 0.6657043571237636
+    },
+    {
+     "event": "2013_alberta_floods",
+     "class": "caution_and_advice",
+     "support": 104,
+     "f1": 0.46652090373020605
+    },
+    {
+     "event": "2013_alberta_floods",
+     "class": "donations_and_volunteering",
+     "support": 220,
+     "f1": 0.8056766383233542
+    },
+    {
+     "event": "2013_alberta_floods",
+     "class": "infrastructure_and_utilities",
+     "support": 199,
+     "f1": 0.2270652191514997
+    },
+    {
+     "event": "2013_alberta_floods",
+     "class": "other_useful_information",
+     "support": 173,
+     "f1": 0.5063711118708024
+    },
+    {
+     "event": "2013_alberta_floods",
+     "class": "sympathy_and_support",
+     "support": 139,
+     "f1": 0.734817595465657
+    },
+    {
+     "event": "2013_australia_bushfire",
+     "class": "affected_individuals",
+     "support": 75,
+     "f1": 0.27588578381868706
+    },
+    {
+     "event": "2013_australia_bushfire",
+     "class": "caution_and_advice",
+     "support": 202,
+     "f1": 0.4504827608284661
+    },
+    {
+     "event": "2013_australia_bushfire",
+     "class": "donations_and_volunteering",
+     "support": 41,
+     "f1": 0.6303973717146433
+    },
+    {
+     "event": "2013_australia_bushfire",
+     "class": "infrastructure_and_utilities",
+     "support": 73,
+     "f1": 0.1497657295850067
+    },
+    {
+     "event": "2013_australia_bushfire",
+     "class": "other_useful_information",
+     "support": 378,
+     "f1": 0.6836628569873368
+    },
+    {
+     "event": "2013_australia_bushfire",
+     "class": "sympathy_and_support",
+     "support": 161,
+     "f1": 0.8425352664576803
+    },
+    {
+     "event": "2013_bohol_earthquake",
+     "class": "affected_individuals",
+     "support": 147,
+     "f1": 0.9103160196570594
+    },
+    {
+     "event": "2013_bohol_earthquake",
+     "class": "caution_and_advice",
+     "support": 35,
+     "f1": 0.3949992606783235
+    },
+    {
+     "event": "2013_bohol_earthquake",
+     "class": "donations_and_volunteering",
+     "support": 42,
+     "f1": 0.9242685025817555
+    },
+    {
+     "event": "2013_bohol_earthquake",
+     "class": "infrastructure_and_utilities",
+     "support": 69,
+     "f1": 0.10838153221714868
+    },
+    {
+     "event": "2013_bohol_earthquake",
+     "class": "other_useful_information",
+     "support": 160,
+     "f1": 0.7041318942143097
+    },
+    {
+     "event": "2013_bohol_earthquake",
+     "class": "sympathy_and_support",
+     "support": 490,
+     "f1": 0.9154508940517253
+    },
+    {
+     "event": "2013_boston_bombings",
+     "class": "affected_individuals",
+     "support": 107,
+     "f1": 0.47205297437044774
+    },
+    {
+     "event": "2013_boston_bombings",
+     "class": "caution_and_advice",
+     "support": 19,
+     "f1": 0.06073153899240855
+    },
+    {
+     "event": "2013_boston_bombings",
+     "class": "donations_and_volunteering",
+     "support": 29,
+     "f1": 0.7113964671747492
+    },
+    {
+     "event": "2013_boston_bombings",
+     "class": "infrastructure_and_utilities",
+     "support": 7,
+     "f1": 0.3148148148148148
+    },
+    {
+     "event": "2013_boston_bombings",
+     "class": "other_useful_information",
+     "support": 381,
+     "f1": 0.7446529599569419
+    },
+    {
+     "event": "2013_boston_bombings",
+     "class": "sympathy_and_support",
+     "support": 370,
+     "f1": 0.8647742166676874
+    },
+    {
+     "event": "2013_brazil_nightclub_fire",
+     "class": "affected_individuals",
+     "support": 261,
+     "f1": 0.8103314493047898
+    },
+    {
+     "event": "2013_brazil_nightclub_fire",
+     "class": "caution_and_advice",
+     "support": 2,
+     "f1": 0.0
+    },
+    {
+     "event": "2013_brazil_nightclub_fire",
+     "class": "donations_and_volunteering",
+     "support": 31,
+     "f1": 0.3169230769230769
+    },
+    {
+     "event": "2013_brazil_nightclub_fire",
+     "class": "infrastructure_and_utilities",
+     "support": 6,
+     "f1": 0.0
+    },
+    {
+     "event": "2013_brazil_nightclub_fire",
+     "class": "other_useful_information",
+     "support": 248,
+     "f1": 0.48469127481110136
+    },
+    {
+     "event": "2013_brazil_nightclub_fire",
+     "class": "sympathy_and_support",
+     "support": 374,
+     "f1": 0.7744908659965649
+    },
+    {
+     "event": "2013_colorado_floods",
+     "class": "affected_individuals",
+     "support": 205,
+     "f1": 0.7814674321705257
+    },
+    {
+     "event": "2013_colorado_floods",
+     "class": "caution_and_advice",
+     "support": 73,
+     "f1": 0.41669221278159824
+    },
+    {
+     "event": "2013_colorado_floods",
+     "class": "donations_and_volunteering",
+     "support": 149,
+     "f1": 0.7634604409471276
+    },
+    {
+     "event": "2013_colorado_floods",
+     "class": "infrastructure_and_utilities",
+     "support": 175,
+     "f1": 0.1978253452139949
+    },
+    {
+     "event": "2013_colorado_floods",
+     "class": "other_useful_information",
+     "support": 222,
+     "f1": 0.573019668828652
+    },
+    {
+     "event": "2013_colorado_floods",
+     "class": "sympathy_and_support",
+     "support": 77,
+     "f1": 0.7581631073431359
+    },
+    {
+     "event": "2013_glasgow_helicopter_crash",
+     "class": "affected_individuals",
+     "support": 248,
+     "f1": 0.8228643488671722
+    },
+    {
+     "event": "2013_glasgow_helicopter_crash",
+     "class": "caution_and_advice",
+     "support": 5,
+     "f1": 0.0
+    },
+    {
+     "event": "2013_glasgow_helicopter_crash",
+     "class": "donations_and_volunteering",
+     "support": 69,
+     "f1": 0.8424983131938907
+    },
+    {
+     "event": "2013_glasgow_helicopter_crash",
+     "class": "infrastructure_and_utilities",
+     "support": 75,
+     "f1": 0.008658008658008658
+    },
+    {
+     "event": "2013_glasgow_helicopter_crash",
+     "class": "other_useful_information",
+     "support": 239,
+     "f1": 0.6978550032374109
+    },
+    {
+     "event": "2013_glasgow_helicopter_crash",
+     "class": "sympathy_and_support",
+     "support": 249,
+     "f1": 0.848368977870816
+    },
+    {
+     "event": "2013_la_airport_shootings",
+     "class": "affected_individuals",
+     "support": 423,
+     "f1": 0.5535813043920698
+    },
+    {
+     "event": "2013_la_airport_shootings",
+     "class": "caution_and_advice",
+     "support": 17,
+     "f1": 0.274899703471132
+    },
+    {
+     "event": "2013_la_airport_shootings",
+     "class": "infrastructure_and_utilities",
+     "support": 57,
+     "f1": 0.27688830134482306
+    },
+    {
+     "event": "2013_la_airport_shootings",
+     "class": "other_useful_information",
+     "support": 262,
+     "f1": 0.5815996980811279
+    },
+    {
+     "event": "2013_la_airport_shootings",
+     "class": "sympathy_and_support",
+     "support": 137,
+     "f1": 0.8313395307658257
+    },
+    {
+     "event": "2013_lac_megantic_train_crash",
+     "class": "affected_individuals",
+     "support": 161,
+     "f1": 0.8646892085507524
+    },
+    {
+     "event": "2013_lac_megantic_train_crash",
+     "class": "caution_and_advice",
+     "support": 7,
+     "f1": 0.10958605664488018
+    },
+    {
+     "event": "2013_lac_megantic_train_crash",
+     "class": "donations_and_volunteering",
+     "support": 80,
+     "f1": 0.6372053872053871
+    },
+    {
+     "event": "2013_lac_megantic_train_crash",
+     "class": "infrastructure_and_utilities",
+     "support": 66,
+     "f1": 0.10607657182999648
+    },
+    {
+     "event": "2013_lac_megantic_train_crash",
+     "class": "other_useful_information",
+     "support": 459,
+     "f1": 0.8117311374497201
+    },
+    {
+     "event": "2013_lac_megantic_train_crash",
+     "class": "sympathy_and_support",
+     "support": 99,
+     "f1": 0.5912042408936818
+    },
+    {
+     "event": "2013_manila_floods",
+     "class": "affected_individuals",
+     "support": 38,
+     "f1": 0.43956043956043955
+    },
+    {
+     "event": "2013_manila_floods",
+     "class": "caution_and_advice",
+     "support": 247,
+     "f1": 0.661474513121992
+    },
+    {
+     "event": "2013_manila_floods",
+     "class": "donations_and_volunteering",
+     "support": 240,
+     "f1": 0.8298795310659929
+    },
+    {
+     "event": "2013_manila_floods",
+     "class": "infrastructure_and_utilities",
+     "support": 32,
+     "f1": 0.19818108121801692
+    },
+    {
+     "event": "2013_manila_floods",
+     "class": "other_useful_information",
+     "support": 99,
+     "f1": 0.3626814395987972
+    },
+    {
+     "event": "2013_manila_floods",
+     "class": "sympathy_and_support",
+     "support": 152,
+     "f1": 0.7726393118730283
+    },
+    {
+     "event": "2013_ny_train_crash",
+     "class": "affected_individuals",
+     "support": 386,
+     "f1": 0.9398216075719327
+    },
+    {
+     "event": "2013_ny_train_crash",
+     "class": "caution_and_advice",
+     "support": 30,
+     "f1": 0.0196078431372549
+    },
+    {
+     "event": "2013_ny_train_crash",
+     "class": "donations_and_volunteering",
+     "support": 4,
+     "f1": 0.0
+    },
+    {
+     "event": "2013_ny_train_crash",
+     "class": "infrastructure_and_utilities",
+     "support": 51,
+     "f1": 0.22582058262148377
+    },
+    {
+     "event": "2013_ny_train_crash",
+     "class": "other_useful_information",
+     "support": 456,
+     "f1": 0.8733157484305997
+    },
+    {
+     "event": "2013_ny_train_crash",
+     "class": "sympathy_and_support",
+     "support": 72,
+     "f1": 0.8711031175059952
+    },
+    {
+     "event": "2013_queensland_floods",
+     "class": "affected_individuals",
+     "support": 128,
+     "f1": 0.47803423346878565
+    },
+    {
+     "event": "2013_queensland_floods",
+     "class": "caution_and_advice",
+     "support": 219,
+     "f1": 0.6021461011235649
+    },
+    {
+     "event": "2013_queensland_floods",
+     "class": "donations_and_volunteering",
+     "support": 60,
+     "f1": 0.5879994921187716
+    },
+    {
+     "event": "2013_queensland_floods",
+     "class": "infrastructure_and_utilities",
+     "support": 121,
+     "f1": 0.4021060973657062
+    },
+    {
+     "event": "2013_queensland_floods",
+     "class": "other_useful_information",
+     "support": 279,
+     "f1": 0.5981194995993854
+    },
+    {
+     "event": "2013_queensland_floods",
+     "class": "sympathy_and_support",
+     "support": 85,
+     "f1": 0.7677842156599266
+    },
+    {
+     "event": "2013_russia_meteor",
+     "class": "affected_individuals",
+     "support": 207,
+     "f1": 0.9084621823645093
+    },
+    {
+     "event": "2013_russia_meteor",
+     "class": "caution_and_advice",
+     "support": 13,
+     "f1": 0.12810457516339868
+    },
+    {
+     "event": "2013_russia_meteor",
+     "class": "donations_and_volunteering",
+     "support": 1,
+     "f1": 0.0
+    },
+    {
+     "event": "2013_russia_meteor",
+     "class": "infrastructure_and_utilities",
+     "support": 35,
+     "f1": 0.1368421052631579
+    },
+    {
+     "event": "2013_russia_meteor",
+     "class": "other_useful_information",
+     "support": 557,
+     "f1": 0.8505207343761402
+    },
+    {
+     "event": "2013_russia_meteor",
+     "class": "sympathy_and_support",
+     "support": 136,
+     "f1": 0.38884479717813053
+    },
+    {
+     "event": "2013_sardinia_floods",
+     "class": "affected_individuals",
+     "support": 123,
+     "f1": 0.6868220629496257
+    },
+    {
+     "event": "2013_sardinia_floods",
+     "class": "caution_and_advice",
+     "support": 123,
+     "f1": 0.18939758229718753
+    },
+    {
+     "event": "2013_sardinia_floods",
+     "class": "donations_and_volunteering",
+     "support": 148,
+     "f1": 0.4834997822536516
+    },
+    {
+     "event": "2013_sardinia_floods",
+     "class": "infrastructure_and_utilities",
+     "support": 55,
+     "f1": 0.08646388284006921
+    },
+    {
+     "event": "2013_sardinia_floods",
+     "class": "other_useful_information",
+     "support": 196,
+     "f1": 0.4131304795100828
+    },
+    {
+     "event": "2013_sardinia_floods",
+     "class": "sympathy_and_support",
+     "support": 265,
+     "f1": 0.4253663898825189
+    },
+    {
+     "event": "2013_savar_building_collapse",
+     "class": "affected_individuals",
+     "support": 499,
+     "f1": 0.8787774966459868
+    },
+    {
+     "event": "2013_savar_building_collapse",
+     "class": "caution_and_advice",
+     "support": 11,
+     "f1": 0.0
+    },
+    {
+     "event": "2013_savar_building_collapse",
+     "class": "donations_and_volunteering",
+     "support": 16,
+     "f1": 0.29195940671350507
+    },
+    {
+     "event": "2013_savar_building_collapse",
+     "class": "infrastructure_and_utilities",
+     "support": 19,
+     "f1": 0.011299435028248588
+    },
+    {
+     "event": "2013_savar_building_collapse",
+     "class": "other_useful_information",
+     "support": 300,
+     "f1": 0.6926670412304037
+    },
+    {
+     "event": "2013_savar_building_collapse",
+     "class": "sympathy_and_support",
+     "support": 29,
+     "f1": 0.5525437525437525
+    },
+    {
+     "event": "2013_singapore_haze",
+     "class": "affected_individuals",
+     "support": 89,
+     "f1": 0.03882297936263094
+    },
+    {
+     "event": "2013_singapore_haze",
+     "class": "caution_and_advice",
+     "support": 216,
+     "f1": 0.5334055310402829
+    },
+    {
+     "event": "2013_singapore_haze",
+     "class": "donations_and_volunteering",
+     "support": 5,
+     "f1": 0.2730953257269047
+    },
+    {
+     "event": "2013_singapore_haze",
+     "class": "infrastructure_and_utilities",
+     "support": 20,
+     "f1": 0.0
+    },
+    {
+     "event": "2013_singapore_haze",
+     "class": "other_useful_information",
+     "support": 340,
+     "f1": 0.6073371864499975
+    },
+    {
+     "event": "2013_singapore_haze",
+     "class": "sympathy_and_support",
+     "support": 61,
+     "f1": 0.2962879256195748
+    },
+    {
+     "event": "2013_spain_train_crash",
+     "class": "affected_individuals",
+     "support": 297,
+     "f1": 0.8136054130719806
+    },
+    {
+     "event": "2013_spain_train_crash",
+     "class": "caution_and_advice",
+     "support": 5,
+     "f1": 0.20875420875420878
+    },
+    {
+     "event": "2013_spain_train_crash",
+     "class": "donations_and_volunteering",
+     "support": 51,
+     "f1": 0.6194092483904038
+    },
+    {
+     "event": "2013_spain_train_crash",
+     "class": "infrastructure_and_utilities",
+     "support": 3,
+     "f1": 0.0
+    },
+    {
+     "event": "2013_spain_train_crash",
+     "class": "other_useful_information",
+     "support": 422,
+     "f1": 0.7951644038511
+    },
+    {
+     "event": "2013_spain_train_crash",
+     "class": "sympathy_and_support",
+     "support": 209,
+     "f1": 0.689285368871624
+    },
+    {
+     "event": "2013_typhoon_yolanda",
+     "class": "affected_individuals",
+     "support": 109,
+     "f1": 0.8194024945546361
+    },
+    {
+     "event": "2013_typhoon_yolanda",
+     "class": "caution_and_advice",
+     "support": 81,
+     "f1": 0.5249054072583484
+    },
+    {
+     "event": "2013_typhoon_yolanda",
+     "class": "donations_and_volunteering",
+     "support": 410,
+     "f1": 0.865988304236236
+    },
+    {
+     "event": "2013_typhoon_yolanda",
+     "class": "infrastructure_and_utilities",
+     "support": 21,
+     "f1": 0.21609067261241174
+    },
+    {
+     "event": "2013_typhoon_yolanda",
+     "class": "other_useful_information",
+     "support": 123,
+     "f1": 0.5293371408021089
+    },
+    {
+     "event": "2013_typhoon_yolanda",
+     "class": "sympathy_and_support",
+     "support": 180,
+     "f1": 0.7945204458296145
+    },
+    {
+     "event": "2013_west_texas_explosion",
+     "class": "affected_individuals",
+     "support": 196,
+     "f1": 0.815001939079599
+    },
+    {
+     "event": "2013_west_texas_explosion",
+     "class": "caution_and_advice",
+     "support": 15,
+     "f1": 0.282020202020202
+    },
+    {
+     "event": "2013_west_texas_explosion",
+     "class": "donations_and_volunteering",
+     "support": 42,
+     "f1": 0.7616071689268641
+    },
+    {
+     "event": "2013_west_texas_explosion",
+     "class": "infrastructure_and_utilities",
+     "support": 51,
+     "f1": 0.13306254141099874
+    },
+    {
+     "event": "2013_west_texas_explosion",
+     "class": "other_useful_information",
+     "support": 211,
+     "f1": 0.7460593812046499
+    },
+    {
+     "event": "2013_west_texas_explosion",
+     "class": "sympathy_and_support",
+     "support": 368,
+     "f1": 0.9094940885024161
+    }
+   ],
+   "roberta-base": [
+    {
+     "event": "2012_colorado_wildfires",
+     "class": "affected_individuals",
+     "support": 151,
+     "f1": 0.6298660857061099
+    },
+    {
+     "event": "2012_colorado_wildfires",
+     "class": "caution_and_advice",
+     "support": 45,
+     "f1": 0.4857275386913891
+    },
+    {
+     "event": "2012_colorado_wildfires",
+     "class": "donations_and_volunteering",
+     "support": 78,
+     "f1": 0.7988697130906437
+    },
+    {
+     "event": "2012_colorado_wildfires",
+     "class": "infrastructure_and_utilities",
+     "support": 71,
+     "f1": 0.3483580365907566
+    },
+    {
+     "event": "2012_colorado_wildfires",
+     "class": "other_useful_information",
+     "support": 426,
+     "f1": 0.7980537994821608
+    },
+    {
+     "event": "2012_colorado_wildfires",
+     "class": "sympathy_and_support",
+     "support": 172,
+     "f1": 0.8677266855132695
+    },
+    {
+     "event": "2012_costa_rica_earthquake",
+     "class": "affected_individuals",
+     "support": 44,
+     "f1": 0.6876174451033931
+    },
+    {
+     "event": "2012_costa_rica_earthquake",
+     "class": "caution_and_advice",
+     "support": 291,
+     "f1": 0.7958787020926597
+    },
+    {
+     "event": "2012_costa_rica_earthquake",
+     "class": "donations_and_volunteering",
+     "support": 5,
+     "f1": 0.26824307144673276
+    },
+    {
+     "event": "2012_costa_rica_earthquake",
+     "class": "infrastructure_and_utilities",
+     "support": 51,
+     "f1": 0.3082891861176676
+    },
+    {
+     "event": "2012_costa_rica_earthquake",
+     "class": "other_useful_information",
+     "support": 398,
+     "f1": 0.7915737572029226
+    },
+    {
+     "event": "2012_costa_rica_earthquake",
+     "class": "sympathy_and_support",
+     "support": 77,
+     "f1": 0.6687275417459312
+    },
+    {
+     "event": "2012_guatemala_earthquake",
+     "class": "affected_individuals",
+     "support": 256,
+     "f1": 0.9262753259239926
+    },
+    {
+     "event": "2012_guatemala_earthquake",
+     "class": "caution_and_advice",
+     "support": 71,
+     "f1": 0.39320320795068114
+    },
+    {
+     "event": "2012_guatemala_earthquake",
+     "class": "donations_and_volunteering",
+     "support": 36,
+     "f1": 0.6482105601027123
+    },
+    {
+     "event": "2012_guatemala_earthquake",
+     "class": "infrastructure_and_utilities",
+     "support": 44,
+     "f1": 0.13201412114455593
+    },
+    {
+     "event": "2012_guatemala_earthquake",
+     "class": "other_useful_information",
+     "support": 373,
+     "f1": 0.7817324137464388
+    },
+    {
+     "event": "2012_guatemala_earthquake",
+     "class": "sympathy_and_support",
+     "support": 125,
+     "f1": 0.7340629932066149
+    },
+    {
+     "event": "2012_italy_earthquakes",
+     "class": "affected_individuals",
+     "support": 117,
+     "f1": 0.7976321331012407
+    },
+    {
+     "event": "2012_italy_earthquakes",
+     "class": "caution_and_advice",
+     "support": 152,
+     "f1": 0.23710217755443885
+    },
+    {
+     "event": "2012_italy_earthquakes",
+     "class": "donations_and_volunteering",
+     "support": 108,
+     "f1": 0.532896254077027
+    },
+    {
+     "event": "2012_italy_earthquakes",
+     "class": "infrastructure_and_utilities",
+     "support": 49,
+     "f1": 0.06860254083484574
+    },
+    {
+     "event": "2012_italy_earthquakes",
+     "class": "other_useful_information",
+     "support": 320,
+     "f1": 0.5983869226232108
+    },
+    {
+     "event": "2012_italy_earthquakes",
+     "class": "sympathy_and_support",
+     "support": 166,
+     "f1": 0.5736373544115518
+    },
+    {
+     "event": "2012_philipinnes_floods",
+     "class": "affected_individuals",
+     "support": 193,
+     "f1": 0.504944620471338
+    },
+    {
+     "event": "2012_philipinnes_floods",
+     "class": "caution_and_advice",
+     "support": 105,
+     "f1": 0.5854888468807317
+    },
+    {
+     "event": "2012_philipinnes_floods",
+     "class": "donations_and_volunteering",
+     "support": 332,
+     "f1": 0.7038815908700252
+    },
+    {
+     "event": "2012_philipinnes_floods",
+     "class": "infrastructure_and_utilities",
+     "support": 73,
+     "f1": 0.2094493659892305
+    },
+    {
+     "event": "2012_philipinnes_floods",
+     "class": "other_useful_information",
+     "support": 63,
+     "f1": 0.3871109285900273
+    },
+    {
+     "event": "2012_philipinnes_floods",
+     "class": "sympathy_and_support",
+     "support": 108,
+     "f1": 0.7499844493559751
+    },
+    {
+     "event": "2012_typhoon_pablo",
+     "class": "affected_individuals",
+     "support": 148,
+     "f1": 0.8840365917945913
+    },
+    {
+     "event": "2012_typhoon_pablo",
+     "class": "caution_and_advice",
+     "support": 213,
+     "f1": 0.57693884940305
+    },
+    {
+     "event": "2012_typhoon_pablo",
+     "class": "donations_and_volunteering",
+     "support": 116,
+     "f1": 0.8875622623895246
+    },
+    {
+     "event": "2012_typhoon_pablo",
+     "class": "infrastructure_and_utilities",
+     "support": 39,
+     "f1": 0.4494752559268689
+    },
+    {
+     "event": "2012_typhoon_pablo",
+     "class": "other_useful_information",
+     "support": 146,
+     "f1": 0.3687544785356003
+    },
+    {
+     "event": "2012_typhoon_pablo",
+     "class": "sympathy_and_support",
+     "support": 209,
+     "f1": 0.8382229087669056
+    },
+    {
+     "event": "2012_venezuela_refinery",
+     "class": "affected_individuals",
+     "support": 104,
+     "f1": 0.7031498646658049
+    },
+    {
+     "event": "2012_venezuela_refinery",
+     "class": "caution_and_advice",
+     "support": 5,
+     "f1": 0.0
+    },
+    {
+     "event": "2012_venezuela_refinery",
+     "class": "donations_and_volunteering",
+     "support": 91,
+     "f1": 0.562355107788972
+    },
+    {
+     "event": "2012_venezuela_refinery",
+     "class": "infrastructure_and_utilities",
+     "support": 137,
+     "f1": 0.1226792961284302
+    },
+    {
+     "event": "2012_venezuela_refinery",
+     "class": "other_useful_information",
+     "support": 395,
+     "f1": 0.6746912059229487
+    },
+    {
+     "event": "2012_venezuela_refinery",
+     "class": "sympathy_and_support",
+     "support": 140,
+     "f1": 0.5441897654584221
+    },
+    {
+     "event": "2013_alberta_floods",
+     "class": "affected_individuals",
+     "support": 78,
+     "f1": 0.6673794797561082
+    },
+    {
+     "event": "2013_alberta_floods",
+     "class": "caution_and_advice",
+     "support": 104,
+     "f1": 0.5941105933244621
+    },
+    {
+     "event": "2013_alberta_floods",
+     "class": "donations_and_volunteering",
+     "support": 220,
+     "f1": 0.8650367326010847
+    },
+    {
+     "event": "2013_alberta_floods",
+     "class": "infrastructure_and_utilities",
+     "support": 199,
+     "f1": 0.6150647088098918
+    },
+    {
+     "event": "2013_alberta_floods",
+     "class": "other_useful_information",
+     "support": 173,
+     "f1": 0.5851640322365473
+    },
+    {
+     "event": "2013_alberta_floods",
+     "class": "sympathy_and_support",
+     "support": 139,
+     "f1": 0.79765093035061
+    },
+    {
+     "event": "2013_australia_bushfire",
+     "class": "affected_individuals",
+     "support": 75,
+     "f1": 0.35210852266655074
+    },
+    {
+     "event": "2013_australia_bushfire",
+     "class": "caution_and_advice",
+     "support": 202,
+     "f1": 0.5957155721362865
+    },
+    {
+     "event": "2013_australia_bushfire",
+     "class": "donations_and_volunteering",
+     "support": 41,
+     "f1": 0.657528895759185
+    },
+    {
+     "event": "2013_australia_bushfire",
+     "class": "infrastructure_and_utilities",
+     "support": 73,
+     "f1": 0.4226280761492029
+    },
+    {
+     "event": "2013_australia_bushfire",
+     "class": "other_useful_information",
+     "support": 378,
+     "f1": 0.7086836330142501
+    },
+    {
+     "event": "2013_australia_bushfire",
+     "class": "sympathy_and_support",
+     "support": 161,
+     "f1": 0.8506939038879101
+    },
+    {
+     "event": "2013_bohol_earthquake",
+     "class": "affected_individuals",
+     "support": 147,
+     "f1": 0.9144542884341074
+    },
+    {
+     "event": "2013_bohol_earthquake",
+     "class": "caution_and_advice",
+     "support": 35,
+     "f1": 0.3823754789272031
+    },
+    {
+     "event": "2013_bohol_earthquake",
+     "class": "donations_and_volunteering",
+     "support": 42,
+     "f1": 0.91869918699187
+    },
+    {
+     "event": "2013_bohol_earthquake",
+     "class": "infrastructure_and_utilities",
+     "support": 69,
+     "f1": 0.33185881806571466
+    },
+    {
+     "event": "2013_bohol_earthquake",
+     "class": "other_useful_information",
+     "support": 160,
+     "f1": 0.7193174802936128
+    },
+    {
+     "event": "2013_bohol_earthquake",
+     "class": "sympathy_and_support",
+     "support": 490,
+     "f1": 0.9159541164800564
+    },
+    {
+     "event": "2013_boston_bombings",
+     "class": "affected_individuals",
+     "support": 107,
+     "f1": 0.5384306302716344
+    },
+    {
+     "event": "2013_boston_bombings",
+     "class": "caution_and_advice",
+     "support": 19,
+     "f1": 0.6064319667260843
+    },
+    {
+     "event": "2013_boston_bombings",
+     "class": "donations_and_volunteering",
+     "support": 29,
+     "f1": 0.8304958183990442
+    },
+    {
+     "event": "2013_boston_bombings",
+     "class": "infrastructure_and_utilities",
+     "support": 7,
+     "f1": 0.6063348416289593
+    },
+    {
+     "event": "2013_boston_bombings",
+     "class": "other_useful_information",
+     "support": 381,
+     "f1": 0.7887037058793989
+    },
+    {
+     "event": "2013_boston_bombings",
+     "class": "sympathy_and_support",
+     "support": 370,
+     "f1": 0.8930591907669614
+    },
+    {
+     "event": "2013_brazil_nightclub_fire",
+     "class": "affected_individuals",
+     "support": 261,
+     "f1": 0.8219280704523516
+    },
+    {
+     "event": "2013_brazil_nightclub_fire",
+     "class": "caution_and_advice",
+     "support": 2,
+     "f1": 0.0
+    },
+    {
+     "event": "2013_brazil_nightclub_fire",
+     "class": "donations_and_volunteering",
+     "support": 31,
+     "f1": 0.5290809174044346
+    },
+    {
+     "event": "2013_brazil_nightclub_fire",
+     "class": "infrastructure_and_utilities",
+     "support": 6,
+     "f1": 0.030303030303030304
+    },
+    {
+     "event": "2013_brazil_nightclub_fire",
+     "class": "other_useful_information",
+     "support": 248,
+     "f1": 0.6305770895732746
+    },
+    {
+     "event": "2013_brazil_nightclub_fire",
+     "class": "sympathy_and_support",
+     "support": 374,
+     "f1": 0.846104753958321
+    },
+    {
+     "event": "2013_colorado_floods",
+     "class": "affected_individuals",
+     "support": 205,
+     "f1": 0.8414184129855772
+    },
+    {
+     "event": "2013_colorado_floods",
+     "class": "caution_and_advice",
+     "support": 73,
+     "f1": 0.5475655474226405
+    },
+    {
+     "event": "2013_colorado_floods",
+     "class": "donations_and_volunteering",
+     "support": 149,
+     "f1": 0.8252487403857941
+    },
+    {
+     "event": "2013_colorado_floods",
+     "class": "infrastructure_and_utilities",
+     "support": 175,
+     "f1": 0.6068141665639509
+    },
+    {
+     "event": "2013_colorado_floods",
+     "class": "other_useful_information",
+     "support": 222,
+     "f1": 0.6314746034114846
+    },
+    {
+     "event": "2013_colorado_floods",
+     "class": "sympathy_and_support",
+     "support": 77,
+     "f1": 0.8034971534797258
+    },
+    {
+     "event": "2013_glasgow_helicopter_crash",
+     "class": "affected_individuals",
+     "support": 248,
+     "f1": 0.8200173873191147
+    },
+    {
+     "event": "2013_glasgow_helicopter_crash",
+     "class": "caution_and_advice",
+     "support": 5,
+     "f1": 0.16666666666666666
+    },
+    {
+     "event": "2013_glasgow_helicopter_crash",
+     "class": "donations_and_volunteering",
+     "support": 69,
+     "f1": 0.6638749378874738
+    },
+    {
+     "event": "2013_glasgow_helicopter_crash",
+     "class": "infrastructure_and_utilities",
+     "support": 75,
+     "f1": 0.11251765896149883
+    },
+    {
+     "event": "2013_glasgow_helicopter_crash",
+     "class": "other_useful_information",
+     "support": 239,
+     "f1": 0.7131640211640211
+    },
+    {
+     "event": "2013_glasgow_helicopter_crash",
+     "class": "sympathy_and_support",
+     "support": 249,
+     "f1": 0.8848498793235363
+    },
+    {
+     "event": "2013_la_airport_shootings",
+     "class": "affected_individuals",
+     "support": 423,
+     "f1": 0.5851968785992004
+    },
+    {
+     "event": "2013_la_airport_shootings",
+     "class": "caution_and_advice",
+     "support": 17,
+     "f1": 0.3596031719551121
+    },
+    {
+     "event": "2013_la_airport_shootings",
+     "class": "infrastructure_and_utilities",
+     "support": 57,
+     "f1": 0.614398909294055
+    },
+    {
+     "event": "2013_la_airport_shootings",
+     "class": "other_useful_information",
+     "support": 262,
+     "f1": 0.6181847854523146
+    },
+    {
+     "event": "2013_la_airport_shootings",
+     "class": "sympathy_and_support",
+     "support": 137,
+     "f1": 0.8594030407200975
+    },
+    {
+     "event": "2013_lac_megantic_train_crash",
+     "class": "affected_individuals",
+     "support": 161,
+     "f1": 0.874485596707819
+    },
+    {
+     "event": "2013_lac_megantic_train_crash",
+     "class": "caution_and_advice",
+     "support": 7,
+     "f1": 0.1717171717171717
+    },
+    {
+     "event": "2013_lac_megantic_train_crash",
+     "class": "donations_and_volunteering",
+     "support": 80,
+     "f1": 0.6109419219884336
+    },
+    {
+     "event": "2013_lac_megantic_train_crash",
+     "class": "infrastructure_and_utilities",
+     "support": 66,
+     "f1": 0.3279034546527014
+    },
+    {
+     "event": "2013_lac_megantic_train_crash",
+     "class": "other_useful_information",
+     "support": 459,
+     "f1": 0.8206240009322151
+    },
+    {
+     "event": "2013_lac_megantic_train_crash",
+     "class": "sympathy_and_support",
+     "support": 99,
+     "f1": 0.6627900939722756
+    },
+    {
+     "event": "2013_manila_floods",
+     "class": "affected_individuals",
+     "support": 38,
+     "f1": 0.4508700481303221
+    },
+    {
+     "event": "2013_manila_floods",
+     "class": "caution_and_advice",
+     "support": 247,
+     "f1": 0.6721489827380304
+    },
+    {
+     "event": "2013_manila_floods",
+     "class": "donations_and_volunteering",
+     "support": 240,
+     "f1": 0.8506123859701954
+    },
+    {
+     "event": "2013_manila_floods",
+     "class": "infrastructure_and_utilities",
+     "support": 32,
+     "f1": 0.3578785746273431
+    },
+    {
+     "event": "2013_manila_floods",
+     "class": "other_useful_information",
+     "support": 99,
+     "f1": 0.33070843078427087
+    },
+    {
+     "event": "2013_manila_floods",
+     "class": "sympathy_and_support",
+     "support": 152,
+     "f1": 0.7613233915452325
+    },
+    {
+     "event": "2013_ny_train_crash",
+     "class": "affected_individuals",
+     "support": 386,
+     "f1": 0.9328270613036732
+    },
+    {
+     "event": "2013_ny_train_crash",
+     "class": "caution_and_advice",
+     "support": 30,
+     "f1": 0.23815676141257539
+    },
+    {
+     "event": "2013_ny_train_crash",
+     "class": "donations_and_volunteering",
+     "support": 4,
+     "f1": 0.0
+    },
+    {
+     "event": "2013_ny_train_crash",
+     "class": "infrastructure_and_utilities",
+     "support": 51,
+     "f1": 0.388645482086897
+    },
+    {
+     "event": "2013_ny_train_crash",
+     "class": "other_useful_information",
+     "support": 456,
+     "f1": 0.8516921479808541
+    },
+    {
+     "event": "2013_ny_train_crash",
+     "class": "sympathy_and_support",
+     "support": 72,
+     "f1": 0.9381610820765879
+    },
+    {
+     "event": "2013_queensland_floods",
+     "class": "affected_individuals",
+     "support": 128,
+     "f1": 0.576893379323464
+    },
+    {
+     "event": "2013_queensland_floods",
+     "class": "caution_and_advice",
+     "support": 219,
+     "f1": 0.6527636540020082
+    },
+    {
+     "event": "2013_queensland_floods",
+     "class": "donations_and_volunteering",
+     "support": 60,
+     "f1": 0.6685311653116531
+    },
+    {
+     "event": "2013_queensland_floods",
+     "class": "infrastructure_and_utilities",
+     "support": 121,
+     "f1": 0.5110274115923833
+    },
+    {
+     "event": "2013_queensland_floods",
+     "class": "other_useful_information",
+     "support": 279,
+     "f1": 0.6169261535542424
+    },
+    {
+     "event": "2013_queensland_floods",
+     "class": "sympathy_and_support",
+     "support": 85,
+     "f1": 0.8227508129488562
+    },
+    {
+     "event": "2013_russia_meteor",
+     "class": "affected_individuals",
+     "support": 207,
+     "f1": 0.9415381501053924
+    },
+    {
+     "event": "2013_russia_meteor",
+     "class": "caution_and_advice",
+     "support": 13,
+     "f1": 0.15184521192030578
+    },
+    {
+     "event": "2013_russia_meteor",
+     "class": "donations_and_volunteering",
+     "support": 1,
+     "f1": 0.0
+    },
+    {
+     "event": "2013_russia_meteor",
+     "class": "infrastructure_and_utilities",
+     "support": 35,
+     "f1": 0.38639730639730646
+    },
+    {
+     "event": "2013_russia_meteor",
+     "class": "other_useful_information",
+     "support": 557,
+     "f1": 0.8629020619711228
+    },
+    {
+     "event": "2013_russia_meteor",
+     "class": "sympathy_and_support",
+     "support": 136,
+     "f1": 0.3505997780482364
+    },
+    {
+     "event": "2013_sardinia_floods",
+     "class": "affected_individuals",
+     "support": 123,
+     "f1": 0.7977432966916677
+    },
+    {
+     "event": "2013_sardinia_floods",
+     "class": "caution_and_advice",
+     "support": 123,
+     "f1": 0.4832068496727131
+    },
+    {
+     "event": "2013_sardinia_floods",
+     "class": "donations_and_volunteering",
+     "support": 148,
+     "f1": 0.5489974959585994
+    },
+    {
+     "event": "2013_sardinia_floods",
+     "class": "infrastructure_and_utilities",
+     "support": 55,
+     "f1": 0.1573549257759784
+    },
+    {
+     "event": "2013_sardinia_floods",
+     "class": "other_useful_information",
+     "support": 196,
+     "f1": 0.49184215642544
+    },
+    {
+     "event": "2013_sardinia_floods",
+     "class": "sympathy_and_support",
+     "support": 265,
+     "f1": 0.6385164394068871
+    },
+    {
+     "event": "2013_savar_building_collapse",
+     "class": "affected_individuals",
+     "support": 499,
+     "f1": 0.9133389709325147
+    },
+    {
+     "event": "2013_savar_building_collapse",
+     "class": "caution_and_advice",
+     "support": 11,
+     "f1": 0.05128205128205129
+    },
+    {
+     "event": "2013_savar_building_collapse",
+     "class": "donations_and_volunteering",
+     "support": 16,
+     "f1": 0.41856368563685636
+    },
+    {
+     "event": "2013_savar_building_collapse",
+     "class": "infrastructure_and_utilities",
+     "support": 19,
+     "f1": 0.14273804300131637
+    },
+    {
+     "event": "2013_savar_building_collapse",
+     "class": "other_useful_information",
+     "support": 300,
+     "f1": 0.7490945313640814
+    },
+    {
+     "event": "2013_savar_building_collapse",
+     "class": "sympathy_and_support",
+     "support": 29,
+     "f1": 0.5282400429282831
+    },
+    {
+     "event": "2013_singapore_haze",
+     "class": "affected_individuals",
+     "support": 89,
+     "f1": 0.04083643452064505
+    },
+    {
+     "event": "2013_singapore_haze",
+     "class": "caution_and_advice",
+     "support": 216,
+     "f1": 0.4686279193951828
+    },
+    {
+     "event": "2013_singapore_haze",
+     "class": "donations_and_volunteering",
+     "support": 5,
+     "f1": 0.5098901098901099
+    },
+    {
+     "event": "2013_singapore_haze",
+     "class": "infrastructure_and_utilities",
+     "support": 20,
+     "f1": 0.10440251572327046
+    },
+    {
+     "event": "2013_singapore_haze",
+     "class": "other_useful_information",
+     "support": 340,
+     "f1": 0.6101643382691481
+    },
+    {
+     "event": "2013_singapore_haze",
+     "class": "sympathy_and_support",
+     "support": 61,
+     "f1": 0.34401842928952403
+    },
+    {
+     "event": "2013_spain_train_crash",
+     "class": "affected_individuals",
+     "support": 297,
+     "f1": 0.8807359480896196
+    },
+    {
+     "event": "2013_spain_train_crash",
+     "class": "caution_and_advice",
+     "support": 5,
+     "f1": 0.3333333333333333
+    },
+    {
+     "event": "2013_spain_train_crash",
+     "class": "donations_and_volunteering",
+     "support": 51,
+     "f1": 0.8779973649538867
+    },
+    {
+     "event": "2013_spain_train_crash",
+     "class": "infrastructure_and_utilities",
+     "support": 3,
+     "f1": 0.0
+    },
+    {
+     "event": "2013_spain_train_crash",
+     "class": "other_useful_information",
+     "support": 422,
+     "f1": 0.8395350236493728
+    },
+    {
+     "event": "2013_spain_train_crash",
+     "class": "sympathy_and_support",
+     "support": 209,
+     "f1": 0.835016929786894
+    },
+    {
+     "event": "2013_typhoon_yolanda",
+     "class": "affected_individuals",
+     "support": 109,
+     "f1": 0.8027476727888794
+    },
+    {
+     "event": "2013_typhoon_yolanda",
+     "class": "caution_and_advice",
+     "support": 81,
+     "f1": 0.5515724449392838
+    },
+    {
+     "event": "2013_typhoon_yolanda",
+     "class": "donations_and_volunteering",
+     "support": 410,
+     "f1": 0.8938866599884506
+    },
+    {
+     "event": "2013_typhoon_yolanda",
+     "class": "infrastructure_and_utilities",
+     "support": 21,
+     "f1": 0.5403213917145805
+    },
+    {
+     "event": "2013_typhoon_yolanda",
+     "class": "other_useful_information",
+     "support": 123,
+     "f1": 0.5326058770945682
+    },
+    {
+     "event": "2013_typhoon_yolanda",
+     "class": "sympathy_and_support",
+     "support": 180,
+     "f1": 0.8232277956562412
+    },
+    {
+     "event": "2013_west_texas_explosion",
+     "class": "affected_individuals",
+     "support": 196,
+     "f1": 0.821856253811899
+    },
+    {
+     "event": "2013_west_texas_explosion",
+     "class": "caution_and_advice",
+     "support": 15,
+     "f1": 0.1468599033816425
+    },
+    {
+     "event": "2013_west_texas_explosion",
+     "class": "donations_and_volunteering",
+     "support": 42,
+     "f1": 0.7715166647750918
+    },
+    {
+     "event": "2013_west_texas_explosion",
+     "class": "infrastructure_and_utilities",
+     "support": 51,
+     "f1": 0.42067316886594
+    },
+    {
+     "event": "2013_west_texas_explosion",
+     "class": "other_useful_information",
+     "support": 211,
+     "f1": 0.7669209233916915
+    },
+    {
+     "event": "2013_west_texas_explosion",
+     "class": "sympathy_and_support",
+     "support": 368,
+     "f1": 0.9196585812701179
+    }
+   ]
+  }
+ },
+ "implementation_check": {
+  "max_abs_diff_sklearn": 2.220446049250313e-16,
+  "max_abs_diff_companion": 0.0,
+  "n_scores": 1086,
+  "n_runs": 346
+ }
+}

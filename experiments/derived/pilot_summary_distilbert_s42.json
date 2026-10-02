@@ -1,0 +1,499 @@
+{
+ "runs_dir": "experiments/runs/pilot/distilbert-base-uncased/seed42",
+ "conventions": {
+  "all_predicted": {
+   "F1pool_id_random_R": 0.6001006789850128,
+   "F1pool_loeo_on_R": 0.5555604750602071,
+   "mean_event_id_random_R": 0.5941644816141303,
+   "mean_event_loeo_R": 0.5650170376717665,
+   "mean_event_loeo_all": 0.5315744696341753,
+   "mean_event_id_temporal_T": 0.5564491866495664,
+   "mean_event_loeo_T": 0.5337103759685643,
+   "E0_prior_study_gap": 0.06852620935083753,
+   "E1_aggregation": 0.005936197370882579,
+   "E2_matched_exposure": {
+    "mean": 0.029147443942363675,
+    "event_bootstrap_95ci": [
+     0.017656657562631895,
+     0.041028564344383456
+    ],
+    "n_events": 13,
+    "n_positive": 12,
+    "wilcoxon_p": 0.000732421875
+   },
+   "E3_test_subsample": 0.03344256803759116,
+   "E2p_pooled_matched": {
+    "value": 0.04454020392480573,
+    "instance_bootstrap_95ci": [
+     0.036940092637444716,
+     0.05219914710460907
+    ]
+   },
+   "E4_matched_temporal": {
+    "mean": 0.022738810681002156,
+    "event_bootstrap_95ci": [
+     0.008670622017259377,
+     0.03656860110415102
+    ],
+    "n_events": 13,
+    "n_positive": 9,
+    "wilcoxon_p": 0.01708984375
+   },
+   "decomposition_check": 1.1102230246251565e-16,
+   "size_weighted_E2": 0.02919772231603586,
+   "size_weighted_E4": 0.029235039048841827,
+   "E5_future_event_leakage": {
+    "mean": -0.0010602200584238573,
+    "event_bootstrap_95ci": [
+     -0.023663714545254042,
+     0.020442647453237216
+    ],
+    "n_events": 11,
+    "n_positive": 6,
+    "wilcoxon_p": 0.9658203125
+   },
+   "E5_future_event_leakage_on_T": {
+    "mean": -0.001128170276015563,
+    "event_bootstrap_95ci": [
+     -0.020852691193153607,
+     0.013506804069289766
+    ],
+    "n_events": 11,
+    "n_positive": 8,
+    "wilcoxon_p": 0.2783203125
+   },
+   "E5_events": [
+    "cyclone_idai_2019",
+    "greece_wildfires_2018",
+    "hurricane_harvey_2017",
+    "hurricane_irma_2017",
+    "hurricane_maria_2017",
+    "hurricane_matthew_2016",
+    "italy_earthquake_aug_2016",
+    "kaikoura_earthquake_2016",
+    "maryland_floods_2018",
+    "puebla_mexico_earthquake_2017",
+    "srilanka_floods_2017"
+   ]
+  },
+  "present": {
+   "F1pool_id_random_R": 0.6001006789850128,
+   "F1pool_loeo_on_R": 0.5555604750602071,
+   "mean_event_id_random_R": 0.5980712897998193,
+   "mean_event_loeo_R": 0.5730976624256918,
+   "mean_event_loeo_all": 0.5804086632814284,
+   "mean_event_id_temporal_T": 0.5787687718851069,
+   "mean_event_loeo_T": 0.5544860164361889,
+   "E0_prior_study_gap": 0.019692015703584476,
+   "E1_aggregation": 0.0020293891851935753,
+   "E2_matched_exposure": {
+    "mean": 0.024973627374127307,
+    "event_bootstrap_95ci": [
+     0.014571554090119253,
+     0.035625510173709185
+    ],
+    "n_events": 13,
+    "n_positive": 12,
+    "wilcoxon_p": 0.001220703125
+   },
+   "E3_test_subsample": -0.007311000855736549,
+   "E2p_pooled_matched": {
+    "value": 0.04454020392480573,
+    "instance_bootstrap_95ci": [
+     0.036940092637444716,
+     0.05219914710460907
+    ]
+   },
+   "E4_matched_temporal": {
+    "mean": 0.024282755448918284,
+    "event_bootstrap_95ci": [
+     0.009529759075669374,
+     0.0386918079815944
+    ],
+    "n_events": 13,
+    "n_positive": 9,
+    "wilcoxon_p": 0.01708984375
+   },
+   "decomposition_check": 1.4224732503009818e-16,
+   "size_weighted_E2": 0.028589523505247988,
+   "size_weighted_E4": 0.03000732813117519,
+   "E5_future_event_leakage": {
+    "mean": 0.0150117349310386,
+    "event_bootstrap_95ci": [
+     0.00021403719139103018,
+     0.030500883907312756
+    ],
+    "n_events": 11,
+    "n_positive": 8,
+    "wilcoxon_p": 0.1474609375
+   },
+   "E5_future_event_leakage_on_T": {
+    "mean": -0.0010541724056873823,
+    "event_bootstrap_95ci": [
+     -0.020778166746905566,
+     0.013588247614860412
+    ],
+    "n_events": 11,
+    "n_positive": 8,
+    "wilcoxon_p": 0.2783203125
+   },
+   "E5_events": [
+    "cyclone_idai_2019",
+    "greece_wildfires_2018",
+    "hurricane_harvey_2017",
+    "hurricane_irma_2017",
+    "hurricane_maria_2017",
+    "hurricane_matthew_2016",
+    "italy_earthquake_aug_2016",
+    "kaikoura_earthquake_2016",
+    "maryland_floods_2018",
+    "puebla_mexico_earthquake_2017",
+    "srilanka_floods_2017"
+   ]
+  }
+ },
+ "per_event": {
+  "all_predicted": [
+   {
+    "event": "canada_wildfires_2016",
+    "n": 2242,
+    "id_random_R": 0.6421,
+    "loeo_R": 0.6011,
+    "loeo_all": 0.501,
+    "id_temporal_T": 0.5583,
+    "loeo_T": 0.5058,
+    "chrono_all": NaN,
+    "loeo_sizematched_all": NaN,
+    "chrono_T": NaN,
+    "loeo_sizematched_T": NaN
+   },
+   {
+    "event": "cyclone_idai_2019",
+    "n": 3933,
+    "id_random_R": 0.5089,
+    "loeo_R": 0.4858,
+    "loeo_all": 0.4874,
+    "id_temporal_T": 0.4454,
+    "loeo_T": 0.4461,
+    "chrono_all": 0.5148,
+    "loeo_sizematched_all": 0.4874,
+    "chrono_T": 0.4423,
+    "loeo_sizematched_T": 0.4461
+   },
+   {
+    "event": "ecuador_earthquake_2016",
+    "n": 1563,
+    "id_random_R": 0.6728,
+    "loeo_R": 0.6507,
+    "loeo_all": 0.5486,
+    "id_temporal_T": 0.5347,
+    "loeo_T": 0.4971,
+    "chrono_all": NaN,
+    "loeo_sizematched_all": NaN,
+    "chrono_T": NaN,
+    "loeo_sizematched_T": NaN
+   },
+   {
+    "event": "greece_wildfires_2018",
+    "n": 1515,
+    "id_random_R": 0.4571,
+    "loeo_R": 0.4196,
+    "loeo_all": 0.4144,
+    "id_temporal_T": 0.4412,
+    "loeo_T": 0.4227,
+    "chrono_all": 0.409,
+    "loeo_sizematched_all": 0.4144,
+    "chrono_T": 0.4167,
+    "loeo_sizematched_T": 0.4227
+   },
+   {
+    "event": "hurricane_harvey_2017",
+    "n": 9112,
+    "id_random_R": 0.6543,
+    "loeo_R": 0.6244,
+    "loeo_all": 0.6344,
+    "id_temporal_T": 0.6488,
+    "loeo_T": 0.6053,
+    "chrono_all": 0.6124,
+    "loeo_sizematched_all": 0.6344,
+    "chrono_T": 0.6087,
+    "loeo_sizematched_T": 0.6053
+   },
+   {
+    "event": "hurricane_irma_2017",
+    "n": 9399,
+    "id_random_R": 0.6257,
+    "loeo_R": 0.6225,
+    "loeo_all": 0.6188,
+    "id_temporal_T": 0.6213,
+    "loeo_T": 0.6,
+    "chrono_all": 0.5933,
+    "loeo_sizematched_all": 0.6188,
+    "chrono_T": 0.5997,
+    "loeo_sizematched_T": 0.6
+   },
+   {
+    "event": "hurricane_maria_2017",
+    "n": 7278,
+    "id_random_R": 0.6674,
+    "loeo_R": 0.598,
+    "loeo_all": 0.5866,
+    "id_temporal_T": 0.622,
+    "loeo_T": 0.5803,
+    "chrono_all": 0.5899,
+    "loeo_sizematched_all": 0.5866,
+    "chrono_T": 0.5859,
+    "loeo_sizematched_T": 0.5803
+   },
+   {
+    "event": "hurricane_matthew_2016",
+    "n": 1654,
+    "id_random_R": 0.5959,
+    "loeo_R": 0.5793,
+    "loeo_all": 0.6501,
+    "id_temporal_T": 0.6141,
+    "loeo_T": 0.607,
+    "chrono_all": 0.5629,
+    "loeo_sizematched_all": 0.62,
+    "chrono_T": 0.5355,
+    "loeo_sizematched_T": 0.5786
+   },
+   {
+    "event": "italy_earthquake_aug_2016",
+    "n": 1201,
+    "id_random_R": 0.6558,
+    "loeo_R": 0.6663,
+    "loeo_all": 0.4567,
+    "id_temporal_T": 0.5697,
+    "loeo_T": 0.5332,
+    "chrono_all": 0.5521,
+    "loeo_sizematched_all": 0.4732,
+    "chrono_T": 0.521,
+    "loeo_sizematched_T": 0.5219
+   },
+   {
+    "event": "kaikoura_earthquake_2016",
+    "n": 2195,
+    "id_random_R": 0.6114,
+    "loeo_R": 0.574,
+    "loeo_all": 0.583,
+    "id_temporal_T": 0.5805,
+    "loeo_T": 0.51,
+    "chrono_all": 0.5224,
+    "loeo_sizematched_all": 0.5684,
+    "chrono_T": 0.4872,
+    "loeo_sizematched_T": 0.496
+   },
+   {
+    "event": "maryland_floods_2018",
+    "n": 742,
+    "id_random_R": 0.5119,
+    "loeo_R": 0.4839,
+    "loeo_all": 0.4044,
+    "id_temporal_T": 0.5666,
+    "loeo_T": 0.5725,
+    "chrono_all": 0.4466,
+    "loeo_sizematched_all": 0.4044,
+    "chrono_T": 0.558,
+    "loeo_sizematched_T": 0.5725
+   },
+   {
+    "event": "puebla_mexico_earthquake_2017",
+    "n": 2015,
+    "id_random_R": 0.5877,
+    "loeo_R": 0.5723,
+    "loeo_all": 0.521,
+    "id_temporal_T": 0.4997,
+    "loeo_T": 0.5158,
+    "chrono_all": 0.5374,
+    "loeo_sizematched_all": 0.521,
+    "chrono_T": 0.6003,
+    "loeo_sizematched_T": 0.5158
+   },
+   {
+    "event": "srilanka_floods_2017",
+    "n": 560,
+    "id_random_R": 0.5333,
+    "loeo_R": 0.4675,
+    "loeo_all": 0.5042,
+    "id_temporal_T": 0.5315,
+    "loeo_T": 0.5424,
+    "chrono_all": 0.5037,
+    "loeo_sizematched_all": 0.5042,
+    "chrono_T": 0.5387,
+    "loeo_sizematched_T": 0.5424
+   }
+  ],
+  "present": [
+   {
+    "event": "canada_wildfires_2016",
+    "n": 2242,
+    "id_random_R": 0.6421,
+    "loeo_R": 0.6011,
+    "loeo_all": 0.5636,
+    "id_temporal_T": 0.628,
+    "loeo_T": 0.569,
+    "chrono_all": NaN,
+    "loeo_sizematched_all": NaN,
+    "chrono_T": NaN,
+    "loeo_sizematched_T": NaN
+   },
+   {
+    "event": "cyclone_idai_2019",
+    "n": 3933,
+    "id_random_R": 0.5089,
+    "loeo_R": 0.4858,
+    "loeo_all": 0.4874,
+    "id_temporal_T": 0.4454,
+    "loeo_T": 0.4461,
+    "chrono_all": 0.5148,
+    "loeo_sizematched_all": 0.4874,
+    "chrono_T": 0.4423,
+    "loeo_sizematched_T": 0.4461
+   },
+   {
+    "event": "ecuador_earthquake_2016",
+    "n": 1563,
+    "id_random_R": 0.6728,
+    "loeo_R": 0.6507,
+    "loeo_all": 0.6172,
+    "id_temporal_T": 0.6111,
+    "loeo_T": 0.5681,
+    "chrono_all": NaN,
+    "loeo_sizematched_all": NaN,
+    "chrono_T": NaN,
+    "loeo_sizematched_T": NaN
+   },
+   {
+    "event": "greece_wildfires_2018",
+    "n": 1515,
+    "id_random_R": 0.5079,
+    "loeo_R": 0.4662,
+    "loeo_all": 0.4605,
+    "id_temporal_T": 0.4903,
+    "loeo_T": 0.4697,
+    "chrono_all": 0.4544,
+    "loeo_sizematched_all": 0.4605,
+    "chrono_T": 0.463,
+    "loeo_sizematched_T": 0.4697
+   },
+   {
+    "event": "hurricane_harvey_2017",
+    "n": 9112,
+    "id_random_R": 0.6543,
+    "loeo_R": 0.6244,
+    "loeo_all": 0.6344,
+    "id_temporal_T": 0.6488,
+    "loeo_T": 0.6053,
+    "chrono_all": 0.6124,
+    "loeo_sizematched_all": 0.6344,
+    "chrono_T": 0.6087,
+    "loeo_sizematched_T": 0.6053
+   },
+   {
+    "event": "hurricane_irma_2017",
+    "n": 9399,
+    "id_random_R": 0.6257,
+    "loeo_R": 0.6225,
+    "loeo_all": 0.6188,
+    "id_temporal_T": 0.6213,
+    "loeo_T": 0.6,
+    "chrono_all": 0.5933,
+    "loeo_sizematched_all": 0.6188,
+    "chrono_T": 0.5997,
+    "loeo_sizematched_T": 0.6
+   },
+   {
+    "event": "hurricane_maria_2017",
+    "n": 7278,
+    "id_random_R": 0.6674,
+    "loeo_R": 0.598,
+    "loeo_all": 0.5866,
+    "id_temporal_T": 0.622,
+    "loeo_T": 0.5803,
+    "chrono_all": 0.5899,
+    "loeo_sizematched_all": 0.5866,
+    "chrono_T": 0.5859,
+    "loeo_sizematched_T": 0.5803
+   },
+   {
+    "event": "hurricane_matthew_2016",
+    "n": 1654,
+    "id_random_R": 0.5959,
+    "loeo_R": 0.5793,
+    "loeo_all": 0.6501,
+    "id_temporal_T": 0.6141,
+    "loeo_T": 0.607,
+    "chrono_all": 0.5629,
+    "loeo_sizematched_all": 0.62,
+    "chrono_T": 0.5355,
+    "loeo_sizematched_T": 0.5786
+   },
+   {
+    "event": "italy_earthquake_aug_2016",
+    "n": 1201,
+    "id_random_R": 0.6558,
+    "loeo_R": 0.6663,
+    "loeo_all": 0.6851,
+    "id_temporal_T": 0.6647,
+    "loeo_T": 0.6221,
+    "chrono_all": 0.6441,
+    "loeo_sizematched_all": 0.6309,
+    "chrono_T": 0.6079,
+    "loeo_sizematched_T": 0.6089
+   },
+   {
+    "event": "kaikoura_earthquake_2016",
+    "n": 2195,
+    "id_random_R": 0.6114,
+    "loeo_R": 0.574,
+    "loeo_all": 0.583,
+    "id_temporal_T": 0.5805,
+    "loeo_T": 0.51,
+    "chrono_all": 0.5224,
+    "loeo_sizematched_all": 0.5684,
+    "chrono_T": 0.4872,
+    "loeo_sizematched_T": 0.496
+   },
+   {
+    "event": "maryland_floods_2018",
+    "n": 742,
+    "id_random_R": 0.5119,
+    "loeo_R": 0.4839,
+    "loeo_all": 0.5055,
+    "id_temporal_T": 0.5666,
+    "loeo_T": 0.5725,
+    "chrono_all": 0.5024,
+    "loeo_sizematched_all": 0.5055,
+    "chrono_T": 0.558,
+    "loeo_sizematched_T": 0.5725
+   },
+   {
+    "event": "puebla_mexico_earthquake_2017",
+    "n": 2015,
+    "id_random_R": 0.5877,
+    "loeo_R": 0.5723,
+    "loeo_all": 0.5861,
+    "id_temporal_T": 0.4997,
+    "loeo_T": 0.5158,
+    "chrono_all": 0.5374,
+    "loeo_sizematched_all": 0.5861,
+    "chrono_T": 0.6003,
+    "loeo_sizematched_T": 0.5158
+   },
+   {
+    "event": "srilanka_floods_2017",
+    "n": 560,
+    "id_random_R": 0.5333,
+    "loeo_R": 0.5259,
+    "loeo_all": 0.5672,
+    "id_temporal_T": 0.5315,
+    "loeo_T": 0.5424,
+    "chrono_all": 0.5666,
+    "loeo_sizematched_all": 0.5672,
+    "chrono_T": 0.5387,
+    "loeo_sizematched_T": 0.5424
+   }
+  ]
+ }
+}

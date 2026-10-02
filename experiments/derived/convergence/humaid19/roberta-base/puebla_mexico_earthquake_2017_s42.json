@@ -1,0 +1,43 @@
+{
+ "corpus": "humaid19",
+ "model": "data/models/roberta-base/e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+ "held_out_event_not_scored": "puebla_mexico_earthquake_2017",
+ "seed": 42,
+ "epochs": 5,
+ "n_train": 6000,
+ "n_source_val": 600,
+ "curve": [
+  {
+   "epoch": 1,
+   "train_loss": 1.43796,
+   "val_loss": 0.7514,
+   "val_macro_f1_present": 0.6189
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.66254,
+   "val_loss": 0.72122,
+   "val_macro_f1_present": 0.64216
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.50551,
+   "val_loss": 0.69935,
+   "val_macro_f1_present": 0.64384
+  },
+  {
+   "epoch": 4,
+   "train_loss": 0.39395,
+   "val_loss": 0.70164,
+   "val_macro_f1_present": 0.63487
+  },
+  {
+   "epoch": 5,
+   "train_loss": 0.31337,
+   "val_loss": 0.71999,
+   "val_macro_f1_present": 0.64046
+  }
+ ],
+ "elapsed_sec": 1473.1,
+ "code_sha256": "d794071319caf87e7151e8fe7f8c57520734533c35c0e13a2d455ae466d29649"
+}

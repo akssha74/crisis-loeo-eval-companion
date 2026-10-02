@@ -1,0 +1,19 @@
+{
+ "repo": "facebook/bart-large-mnli",
+ "revision": "d7645e127eaf1aefc7862fd59a17a5aa8558b8ce",
+ "hypotheses": {
+  "caution_and_advice": "This message is about caution and advice.",
+  "displaced_people_and_evacuations": "This message is about displaced people and evacuations.",
+  "infrastructure_and_utility_damage": "This message is about infrastructure and utility damage.",
+  "injured_or_dead_people": "This message is about injured or dead people.",
+  "missing_or_found_people": "This message is about missing or found people.",
+  "not_humanitarian": "This message is about not humanitarian.",
+  "other_relevant_information": "This message is about other relevant information.",
+  "requests_or_urgent_needs": "This message is about requests or urgent needs.",
+  "rescue_volunteering_or_donation_effort": "This message is about rescue volunteering or donation effort.",
+  "sympathy_and_support": "This message is about sympathy and support."
+ },
+ "max_length": 128,
+ "device": "mps",
+ "n": 76484
+}

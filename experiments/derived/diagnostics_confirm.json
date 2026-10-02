@@ -1,0 +1,7200 @@
+[
+ {
+  "corpus": "humaid19",
+  "model": "distilbert-base-uncased",
+  "em": [
+   {
+    "seed": 1,
+    "event": "california_wildfires_2018",
+    "E2": 0.009132718008851959,
+    "E2_after_prior_match": -0.009558069915920675
+   },
+   {
+    "seed": 1,
+    "event": "canada_wildfires_2016",
+    "E2": -0.020343337559694197,
+    "E2_after_prior_match": -0.024398348401062808
+   },
+   {
+    "seed": 1,
+    "event": "cyclone_idai_2019",
+    "E2": -0.028768561436831652,
+    "E2_after_prior_match": -0.030662567000397822
+   },
+   {
+    "seed": 1,
+    "event": "ecuador_earthquake_2016",
+    "E2": 0.05121999663803445,
+    "E2_after_prior_match": -0.021347940262942955
+   },
+   {
+    "seed": 1,
+    "event": "greece_wildfires_2018",
+    "E2": 0.0009753628850168727,
+    "E2_after_prior_match": -0.011403672634716644
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_dorian_2019",
+    "E2": 0.004944419081652218,
+    "E2_after_prior_match": 0.007444476607988304
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_florence_2018",
+    "E2": 0.0461377361070453,
+    "E2_after_prior_match": 0.005541610909419403
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_harvey_2017",
+    "E2": -0.0007663038970706637,
+    "E2_after_prior_match": -0.0044159675308312885
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_irma_2017",
+    "E2": -0.013348503002294176,
+    "E2_after_prior_match": -0.019114984947408153
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_maria_2017",
+    "E2": 0.05582450685779927,
+    "E2_after_prior_match": 0.03763870727880825
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_matthew_2016",
+    "E2": 0.012215692814729895,
+    "E2_after_prior_match": -0.014324070907847375
+   },
+   {
+    "seed": 1,
+    "event": "italy_earthquake_aug_2016",
+    "E2": 0.02390017898199004,
+    "E2_after_prior_match": -0.018258321996995064
+   },
+   {
+    "seed": 1,
+    "event": "kaikoura_earthquake_2016",
+    "E2": 0.044697220856890096,
+    "E2_after_prior_match": 0.01988422983902083
+   },
+   {
+    "seed": 1,
+    "event": "kerala_floods_2018",
+    "E2": -0.016330551339945765,
+    "E2_after_prior_match": -0.02386918582090547
+   },
+   {
+    "seed": 1,
+    "event": "maryland_floods_2018",
+    "E2": 0.021630995257966967,
+    "E2_after_prior_match": 0.06660263396785582
+   },
+   {
+    "seed": 1,
+    "event": "midwestern_us_floods_2019",
+    "E2": -0.04383618718538229,
+    "E2_after_prior_match": -0.03189571877964492
+   },
+   {
+    "seed": 1,
+    "event": "pakistan_earthquake_2019",
+    "E2": -0.0010234450931372319,
+    "E2_after_prior_match": 0.0037478547827727304
+   },
+   {
+    "seed": 1,
+    "event": "puebla_mexico_earthquake_2017",
+    "E2": -0.041712449313907385,
+    "E2_after_prior_match": 0.0039630125814140715
+   },
+   {
+    "seed": 1,
+    "event": "srilanka_floods_2017",
+    "E2": 0.020746817505042814,
+    "E2_after_prior_match": 0.029814376620945993
+   },
+   {
+    "seed": 2,
+    "event": "california_wildfires_2018",
+    "E2": 0.0074347733070917466,
+    "E2_after_prior_match": 0.018531458939740064
+   },
+   {
+    "seed": 2,
+    "event": "canada_wildfires_2016",
+    "E2": -0.018614895593345837,
+    "E2_after_prior_match": -0.00908988568023239
+   },
+   {
+    "seed": 2,
+    "event": "cyclone_idai_2019",
+    "E2": 0.004441945663836933,
+    "E2_after_prior_match": 0.030952586730427778
+   },
+   {
+    "seed": 2,
+    "event": "ecuador_earthquake_2016",
+    "E2": -0.015029400920829494,
+    "E2_after_prior_match": 0.013974545409043193
+   },
+   {
+    "seed": 2,
+    "event": "greece_wildfires_2018",
+    "E2": -0.025924407575504627,
+    "E2_after_prior_match": -0.01855970298840448
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_dorian_2019",
+    "E2": 0.02167576821607109,
+    "E2_after_prior_match": 0.02762324730440735
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_florence_2018",
+    "E2": 0.05204955353800844,
+    "E2_after_prior_match": 0.009990925829037822
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_harvey_2017",
+    "E2": 0.014297501822389314,
+    "E2_after_prior_match": 0.01774753669805007
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_irma_2017",
+    "E2": -0.002354251226788562,
+    "E2_after_prior_match": 0.020488082771436544
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_maria_2017",
+    "E2": 0.04173313254833555,
+    "E2_after_prior_match": 0.0030089817672934727
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_matthew_2016",
+    "E2": 0.057969666581431656,
+    "E2_after_prior_match": 0.02552890428690846
+   },
+   {
+    "seed": 2,
+    "event": "italy_earthquake_aug_2016",
+    "E2": 0.05357357578540922,
+    "E2_after_prior_match": 0.024473972316859327
+   },
+   {
+    "seed": 2,
+    "event": "kaikoura_earthquake_2016",
+    "E2": 0.08287785363886546,
+    "E2_after_prior_match": 0.010927004760823533
+   },
+   {
+    "seed": 2,
+    "event": "kerala_floods_2018",
+    "E2": 0.03145407974836956,
+    "E2_after_prior_match": 0.007178487194769767
+   },
+   {
+    "seed": 2,
+    "event": "maryland_floods_2018",
+    "E2": 0.021958137961607282,
+    "E2_after_prior_match": 0.03732447237151548
+   },
+   {
+    "seed": 2,
+    "event": "midwestern_us_floods_2019",
+    "E2": -0.0037373646447468323,
+    "E2_after_prior_match": 0.0092963098162544
+   },
+   {
+    "seed": 2,
+    "event": "pakistan_earthquake_2019",
+    "E2": 0.04853615472418371,
+    "E2_after_prior_match": 0.055243830766348756
+   },
+   {
+    "seed": 2,
+    "event": "puebla_mexico_earthquake_2017",
+    "E2": -0.009186707743490397,
+    "E2_after_prior_match": 0.03985306606151906
+   },
+   {
+    "seed": 2,
+    "event": "srilanka_floods_2017",
+    "E2": 0.025827648593162,
+    "E2_after_prior_match": -0.028974646311411445
+   },
+   {
+    "seed": 3,
+    "event": "california_wildfires_2018",
+    "E2": 0.0030280859191438303,
+    "E2_after_prior_match": 0.011302974193737936
+   },
+   {
+    "seed": 3,
+    "event": "canada_wildfires_2016",
+    "E2": -0.016432901231836716,
+    "E2_after_prior_match": -0.0037681967036958808
+   },
+   {
+    "seed": 3,
+    "event": "cyclone_idai_2019",
+    "E2": -0.03537621274777325,
+    "E2_after_prior_match": -0.0162647045142017
+   },
+   {
+    "seed": 3,
+    "event": "ecuador_earthquake_2016",
+    "E2": -0.05248546334995696,
+    "E2_after_prior_match": -0.060376146139159204
+   },
+   {
+    "seed": 3,
+    "event": "greece_wildfires_2018",
+    "E2": 0.01402798494226798,
+    "E2_after_prior_match": 0.028425697329040656
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_dorian_2019",
+    "E2": 0.022204456661662708,
+    "E2_after_prior_match": 0.001114558456409287
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_florence_2018",
+    "E2": 0.016928923836743937,
+    "E2_after_prior_match": 0.006608127698359834
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_harvey_2017",
+    "E2": -0.010773508999159076,
+    "E2_after_prior_match": -0.00961277575168773
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_irma_2017",
+    "E2": 0.010395547233866154,
+    "E2_after_prior_match": 0.00810392967599416
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_maria_2017",
+    "E2": 0.030179704225715143,
+    "E2_after_prior_match": 0.04080776115114215
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_matthew_2016",
+    "E2": 0.02974002569617573,
+    "E2_after_prior_match": 0.008546510435628374
+   },
+   {
+    "seed": 3,
+    "event": "italy_earthquake_aug_2016",
+    "E2": 0.03939068182236782,
+    "E2_after_prior_match": 0.032299571755881606
+   },
+   {
+    "seed": 3,
+    "event": "kaikoura_earthquake_2016",
+    "E2": 0.002642257379444901,
+    "E2_after_prior_match": -0.009583882917623465
+   },
+   {
+    "seed": 3,
+    "event": "kerala_floods_2018",
+    "E2": 0.006862139532471945,
+    "E2_after_prior_match": 0.006449647707639339
+   },
+   {
+    "seed": 3,
+    "event": "maryland_floods_2018",
+    "E2": 0.04425144192670216,
+    "E2_after_prior_match": 0.05686867648359173
+   },
+   {
+    "seed": 3,
+    "event": "midwestern_us_floods_2019",
+    "E2": 0.11103216013348882,
+    "E2_after_prior_match": 0.08480419400960848
+   },
+   {
+    "seed": 3,
+    "event": "pakistan_earthquake_2019",
+    "E2": -0.0012768580623291337,
+    "E2_after_prior_match": 0.017241506282975383
+   },
+   {
+    "seed": 3,
+    "event": "puebla_mexico_earthquake_2017",
+    "E2": -0.006009425074990138,
+    "E2_after_prior_match": 0.027396971415432403
+   },
+   {
+    "seed": 3,
+    "event": "srilanka_floods_2017",
+    "E2": -0.013067251264850255,
+    "E2_after_prior_match": 0.009331088321534842
+   },
+   {
+    "seed": 4,
+    "event": "california_wildfires_2018",
+    "E2": 0.0328366734366875,
+    "E2_after_prior_match": 0.014021787906539185
+   },
+   {
+    "seed": 4,
+    "event": "canada_wildfires_2016",
+    "E2": 0.004715130085330088,
+    "E2_after_prior_match": -0.004638194449257282
+   },
+   {
+    "seed": 4,
+    "event": "cyclone_idai_2019",
+    "E2": -0.0036382983195756835,
+    "E2_after_prior_match": 0.0057774415391789735
+   },
+   {
+    "seed": 4,
+    "event": "ecuador_earthquake_2016",
+    "E2": 0.01300167598482116,
+    "E2_after_prior_match": 0.027352591167916218
+   },
+   {
+    "seed": 4,
+    "event": "greece_wildfires_2018",
+    "E2": 0.006794204012178451,
+    "E2_after_prior_match": 0.008927501489273015
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_dorian_2019",
+    "E2": 0.027715558709839216,
+    "E2_after_prior_match": 0.020362922480248735
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_florence_2018",
+    "E2": 0.040129913423916586,
+    "E2_after_prior_match": 0.015457825453975893
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_harvey_2017",
+    "E2": 0.011307200963260322,
+    "E2_after_prior_match": -0.00257866937927298
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_irma_2017",
+    "E2": 0.018915019146042655,
+    "E2_after_prior_match": 0.0018789791647172427
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_maria_2017",
+    "E2": 0.02885564547878594,
+    "E2_after_prior_match": 0.030558591774103583
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_matthew_2016",
+    "E2": 0.004038423268633462,
+    "E2_after_prior_match": 0.0006344338747475975
+   },
+   {
+    "seed": 4,
+    "event": "italy_earthquake_aug_2016",
+    "E2": 0.04678067206007641,
+    "E2_after_prior_match": 0.021609693925361384
+   },
+   {
+    "seed": 4,
+    "event": "kaikoura_earthquake_2016",
+    "E2": 0.00662115058790036,
+    "E2_after_prior_match": 0.022432134627139555
+   },
+   {
+    "seed": 4,
+    "event": "kerala_floods_2018",
+    "E2": -0.010037353337211008,
+    "E2_after_prior_match": 0.011399943790053602
+   },
+   {
+    "seed": 4,
+    "event": "maryland_floods_2018",
+    "E2": -0.026817874269089992,
+    "E2_after_prior_match": 0.040833510713547794
+   },
+   {
+    "seed": 4,
+    "event": "midwestern_us_floods_2019",
+    "E2": 0.03438649826504081,
+    "E2_after_prior_match": -0.016054851747211663
+   },
+   {
+    "seed": 4,
+    "event": "pakistan_earthquake_2019",
+    "E2": 0.0511469061697134,
+    "E2_after_prior_match": 0.0034927558274003845
+   },
+   {
+    "seed": 4,
+    "event": "puebla_mexico_earthquake_2017",
+    "E2": -0.0016955627676238372,
+    "E2_after_prior_match": 0.01595801402997077
+   },
+   {
+    "seed": 4,
+    "event": "srilanka_floods_2017",
+    "E2": -0.06370474588862307,
+    "E2_after_prior_match": -0.06275988372148322
+   },
+   {
+    "seed": 42,
+    "event": "california_wildfires_2018",
+    "E2": 0.013481503583637533,
+    "E2_after_prior_match": 0.013932782666552956
+   },
+   {
+    "seed": 42,
+    "event": "canada_wildfires_2016",
+    "E2": 0.011095180022118178,
+    "E2_after_prior_match": 0.0019693935850205735
+   },
+   {
+    "seed": 42,
+    "event": "cyclone_idai_2019",
+    "E2": 0.007764123683556168,
+    "E2_after_prior_match": 0.008780659416875558
+   },
+   {
+    "seed": 42,
+    "event": "ecuador_earthquake_2016",
+    "E2": 0.011042446856917465,
+    "E2_after_prior_match": 0.03317764259241429
+   },
+   {
+    "seed": 42,
+    "event": "greece_wildfires_2018",
+    "E2": 0.014699134745332132,
+    "E2_after_prior_match": -0.006994252487297348
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_dorian_2019",
+    "E2": 0.020089149805798456,
+    "E2_after_prior_match": 0.015054798433017047
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_florence_2018",
+    "E2": 0.04707385405686382,
+    "E2_after_prior_match": 0.019936365554248492
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_harvey_2017",
+    "E2": 0.025470162781556227,
+    "E2_after_prior_match": 0.0012800205904883732
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_irma_2017",
+    "E2": 0.010253629737732362,
+    "E2_after_prior_match": 0.008544798711879298
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_maria_2017",
+    "E2": 0.011847349493317894,
+    "E2_after_prior_match": 7.744185238900414e-05
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_matthew_2016",
+    "E2": 0.04911863910870873,
+    "E2_after_prior_match": -0.008409098039321439
+   },
+   {
+    "seed": 42,
+    "event": "italy_earthquake_aug_2016",
+    "E2": 0.003916738698711231,
+    "E2_after_prior_match": 0.04298267853595694
+   },
+   {
+    "seed": 42,
+    "event": "kaikoura_earthquake_2016",
+    "E2": 0.03259726383203243,
+    "E2_after_prior_match": 0.03404975284191747
+   },
+   {
+    "seed": 42,
+    "event": "kerala_floods_2018",
+    "E2": 0.0273836022051267,
+    "E2_after_prior_match": 0.03484677486701171
+   },
+   {
+    "seed": 42,
+    "event": "maryland_floods_2018",
+    "E2": 0.03473475669342274,
+    "E2_after_prior_match": 0.09891078111771323
+   },
+   {
+    "seed": 42,
+    "event": "midwestern_us_floods_2019",
+    "E2": 0.027756150618064468,
+    "E2_after_prior_match": 0.018326945484545276
+   },
+   {
+    "seed": 42,
+    "event": "pakistan_earthquake_2019",
+    "E2": 0.0022823190896106293,
+    "E2_after_prior_match": -0.011045973808488263
+   },
+   {
+    "seed": 42,
+    "event": "puebla_mexico_earthquake_2017",
+    "E2": 0.017039568817804773,
+    "E2_after_prior_match": 0.0224378099275635
+   },
+   {
+    "seed": 42,
+    "event": "srilanka_floods_2017",
+    "E2": 0.027192464577071696,
+    "E2_after_prior_match": 0.13485533186620152
+   }
+  ],
+  "strata": [
+   {
+    "stratum": [
+     0.0,
+     0.5
+    ],
+    "n_tweets_per_seed": 13508,
+    "pooled_E2_P_mean_over_seeds": 0.02515658001547072
+   },
+   {
+    "stratum": [
+     0.5,
+     0.8
+    ],
+    "n_tweets_per_seed": 1767,
+    "pooled_E2_P_mean_over_seeds": 0.034251067427809104
+   },
+   {
+    "stratum": [
+     0.8,
+     1.0
+    ],
+    "n_tweets_per_seed": 27,
+    "pooled_E2_P_mean_over_seeds": 0.06475355841841916
+   }
+  ],
+  "rare": [
+   {
+    "seed": 1,
+    "event": "california_wildfires_2018",
+    "E2_classes_ge5": 0.009132718008851959
+   },
+   {
+    "seed": 1,
+    "event": "canada_wildfires_2016",
+    "E2_classes_ge5": -0.023249528639650574
+   },
+   {
+    "seed": 1,
+    "event": "cyclone_idai_2019",
+    "E2_classes_ge5": -0.028768561436831652
+   },
+   {
+    "seed": 1,
+    "event": "ecuador_earthquake_2016",
+    "E2_classes_ge5": 0.058537139014896544
+   },
+   {
+    "seed": 1,
+    "event": "greece_wildfires_2018",
+    "E2_classes_ge5": 0.001097283245643843
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_dorian_2019",
+    "E2_classes_ge5": 0.004944419081652218
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_florence_2018",
+    "E2_classes_ge5": 0.0461377361070453
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_harvey_2017",
+    "E2_classes_ge5": -0.0007663038970706637
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_irma_2017",
+    "E2_classes_ge5": -0.013348503002294176
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_maria_2017",
+    "E2_classes_ge5": 0.05582450685779927
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_matthew_2016",
+    "E2_classes_ge5": 0.012215692814729895
+   },
+   {
+    "seed": 1,
+    "event": "italy_earthquake_aug_2016",
+    "E2_classes_ge5": 0.02390017898199004
+   },
+   {
+    "seed": 1,
+    "event": "kaikoura_earthquake_2016",
+    "E2_classes_ge5": 0.050284373464001275
+   },
+   {
+    "seed": 1,
+    "event": "kerala_floods_2018",
+    "E2_classes_ge5": -0.016330551339945765
+   },
+   {
+    "seed": 1,
+    "event": "maryland_floods_2018",
+    "E2_classes_ge5": 0.021630995257966967
+   },
+   {
+    "seed": 1,
+    "event": "midwestern_us_floods_2019",
+    "E2_classes_ge5": -0.04383618718538229
+   },
+   {
+    "seed": 1,
+    "event": "pakistan_earthquake_2019",
+    "E2_classes_ge5": -0.0010234450931372319
+   },
+   {
+    "seed": 1,
+    "event": "puebla_mexico_earthquake_2017",
+    "E2_classes_ge5": -0.041712449313907385
+   },
+   {
+    "seed": 1,
+    "event": "srilanka_floods_2017",
+    "E2_classes_ge5": 0.02371064857719174
+   },
+   {
+    "seed": 2,
+    "event": "california_wildfires_2018",
+    "E2_classes_ge5": 0.0074347733070917466
+   },
+   {
+    "seed": 2,
+    "event": "canada_wildfires_2016",
+    "E2_classes_ge5": -0.02127416639239532
+   },
+   {
+    "seed": 2,
+    "event": "cyclone_idai_2019",
+    "E2_classes_ge5": 0.004441945663836933
+   },
+   {
+    "seed": 2,
+    "event": "ecuador_earthquake_2016",
+    "E2_classes_ge5": 0.008797567778792259
+   },
+   {
+    "seed": 2,
+    "event": "greece_wildfires_2018",
+    "E2_classes_ge5": -0.029164958522442608
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_dorian_2019",
+    "E2_classes_ge5": 0.02167576821607109
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_florence_2018",
+    "E2_classes_ge5": 0.05204955353800844
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_harvey_2017",
+    "E2_classes_ge5": 0.014297501822389314
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_irma_2017",
+    "E2_classes_ge5": -0.002354251226788562
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_maria_2017",
+    "E2_classes_ge5": 0.04173313254833555
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_matthew_2016",
+    "E2_classes_ge5": 0.057969666581431656
+   },
+   {
+    "seed": 2,
+    "event": "italy_earthquake_aug_2016",
+    "E2_classes_ge5": 0.05357357578540922
+   },
+   {
+    "seed": 2,
+    "event": "kaikoura_earthquake_2016",
+    "E2_classes_ge5": 0.009904252010390246
+   },
+   {
+    "seed": 2,
+    "event": "kerala_floods_2018",
+    "E2_classes_ge5": 0.03145407974836956
+   },
+   {
+    "seed": 2,
+    "event": "maryland_floods_2018",
+    "E2_classes_ge5": 0.021958137961607282
+   },
+   {
+    "seed": 2,
+    "event": "midwestern_us_floods_2019",
+    "E2_classes_ge5": -0.0037373646447468323
+   },
+   {
+    "seed": 2,
+    "event": "pakistan_earthquake_2019",
+    "E2_classes_ge5": 0.04853615472418371
+   },
+   {
+    "seed": 2,
+    "event": "puebla_mexico_earthquake_2017",
+    "E2_classes_ge5": -0.009186707743490397
+   },
+   {
+    "seed": 2,
+    "event": "srilanka_floods_2017",
+    "E2_classes_ge5": -0.027625544464957574
+   },
+   {
+    "seed": 3,
+    "event": "california_wildfires_2018",
+    "E2_classes_ge5": 0.0030280859191438303
+   },
+   {
+    "seed": 3,
+    "event": "canada_wildfires_2016",
+    "E2_classes_ge5": -0.018780458550670787
+   },
+   {
+    "seed": 3,
+    "event": "cyclone_idai_2019",
+    "E2_classes_ge5": -0.03537621274777325
+   },
+   {
+    "seed": 3,
+    "event": "ecuador_earthquake_2016",
+    "E2_classes_ge5": -0.019167060155052873
+   },
+   {
+    "seed": 3,
+    "event": "greece_wildfires_2018",
+    "E2_classes_ge5": 0.01578148306005145
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_dorian_2019",
+    "E2_classes_ge5": 0.022204456661662708
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_florence_2018",
+    "E2_classes_ge5": 0.016928923836743937
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_harvey_2017",
+    "E2_classes_ge5": -0.010773508999159076
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_irma_2017",
+    "E2_classes_ge5": 0.010395547233866154
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_maria_2017",
+    "E2_classes_ge5": 0.030179704225715143
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_matthew_2016",
+    "E2_classes_ge5": 0.02974002569617573
+   },
+   {
+    "seed": 3,
+    "event": "italy_earthquake_aug_2016",
+    "E2_classes_ge5": 0.03939068182236782
+   },
+   {
+    "seed": 3,
+    "event": "kaikoura_earthquake_2016",
+    "E2_classes_ge5": 0.002972539551875486
+   },
+   {
+    "seed": 3,
+    "event": "kerala_floods_2018",
+    "E2_classes_ge5": 0.006862139532471945
+   },
+   {
+    "seed": 3,
+    "event": "maryland_floods_2018",
+    "E2_classes_ge5": 0.04425144192670216
+   },
+   {
+    "seed": 3,
+    "event": "midwestern_us_floods_2019",
+    "E2_classes_ge5": 0.11103216013348882
+   },
+   {
+    "seed": 3,
+    "event": "pakistan_earthquake_2019",
+    "E2_classes_ge5": -0.0012768580623291337
+   },
+   {
+    "seed": 3,
+    "event": "puebla_mexico_earthquake_2017",
+    "E2_classes_ge5": -0.006009425074990138
+   },
+   {
+    "seed": 3,
+    "event": "srilanka_floods_2017",
+    "E2_classes_ge5": -0.014934001445543132
+   },
+   {
+    "seed": 4,
+    "event": "california_wildfires_2018",
+    "E2_classes_ge5": 0.0328366734366875
+   },
+   {
+    "seed": 4,
+    "event": "canada_wildfires_2016",
+    "E2_classes_ge5": 0.005388720097520117
+   },
+   {
+    "seed": 4,
+    "event": "cyclone_idai_2019",
+    "E2_classes_ge5": -0.0036382983195756835
+   },
+   {
+    "seed": 4,
+    "event": "ecuador_earthquake_2016",
+    "E2_classes_ge5": 0.008056337179931705
+   },
+   {
+    "seed": 4,
+    "event": "greece_wildfires_2018",
+    "E2_classes_ge5": 0.007643479513700591
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_dorian_2019",
+    "E2_classes_ge5": 0.027715558709839216
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_florence_2018",
+    "E2_classes_ge5": 0.040129913423916586
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_harvey_2017",
+    "E2_classes_ge5": 0.011307200963260322
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_irma_2017",
+    "E2_classes_ge5": 0.018915019146042655
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_maria_2017",
+    "E2_classes_ge5": 0.02885564547878594
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_matthew_2016",
+    "E2_classes_ge5": 0.004038423268633462
+   },
+   {
+    "seed": 4,
+    "event": "italy_earthquake_aug_2016",
+    "E2_classes_ge5": 0.04678067206007641
+   },
+   {
+    "seed": 4,
+    "event": "kaikoura_earthquake_2016",
+    "E2_classes_ge5": 0.0074487944113879045
+   },
+   {
+    "seed": 4,
+    "event": "kerala_floods_2018",
+    "E2_classes_ge5": -0.010037353337211008
+   },
+   {
+    "seed": 4,
+    "event": "maryland_floods_2018",
+    "E2_classes_ge5": -0.026817874269089992
+   },
+   {
+    "seed": 4,
+    "event": "midwestern_us_floods_2019",
+    "E2_classes_ge5": 0.03438649826504081
+   },
+   {
+    "seed": 4,
+    "event": "pakistan_earthquake_2019",
+    "E2_classes_ge5": 0.0511469061697134
+   },
+   {
+    "seed": 4,
+    "event": "puebla_mexico_earthquake_2017",
+    "E2_classes_ge5": -0.0016955627676238372
+   },
+   {
+    "seed": 4,
+    "event": "srilanka_floods_2017",
+    "E2_classes_ge5": -0.015662566729855
+   },
+   {
+    "seed": 42,
+    "event": "california_wildfires_2018",
+    "E2_classes_ge5": 0.013481503583637533
+   },
+   {
+    "seed": 42,
+    "event": "canada_wildfires_2016",
+    "E2_classes_ge5": 0.012680205739563744
+   },
+   {
+    "seed": 42,
+    "event": "cyclone_idai_2019",
+    "E2_classes_ge5": 0.007764123683556168
+   },
+   {
+    "seed": 42,
+    "event": "ecuador_earthquake_2016",
+    "E2_classes_ge5": 0.028946469877293324
+   },
+   {
+    "seed": 42,
+    "event": "greece_wildfires_2018",
+    "E2_classes_ge5": 0.016536526588498468
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_dorian_2019",
+    "E2_classes_ge5": 0.020089149805798456
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_florence_2018",
+    "E2_classes_ge5": 0.04707385405686382
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_harvey_2017",
+    "E2_classes_ge5": 0.025470162781556227
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_irma_2017",
+    "E2_classes_ge5": 0.010253629737732362
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_maria_2017",
+    "E2_classes_ge5": 0.011847349493317894
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_matthew_2016",
+    "E2_classes_ge5": 0.04911863910870873
+   },
+   {
+    "seed": 42,
+    "event": "italy_earthquake_aug_2016",
+    "E2_classes_ge5": 0.003916738698711231
+   },
+   {
+    "seed": 42,
+    "event": "kaikoura_earthquake_2016",
+    "E2_classes_ge5": 0.03667192181103629
+   },
+   {
+    "seed": 42,
+    "event": "kerala_floods_2018",
+    "E2_classes_ge5": 0.0273836022051267
+   },
+   {
+    "seed": 42,
+    "event": "maryland_floods_2018",
+    "E2_classes_ge5": 0.03473475669342274
+   },
+   {
+    "seed": 42,
+    "event": "midwestern_us_floods_2019",
+    "E2_classes_ge5": 0.027756150618064468
+   },
+   {
+    "seed": 42,
+    "event": "pakistan_earthquake_2019",
+    "E2_classes_ge5": 0.0022823190896106293
+   },
+   {
+    "seed": 42,
+    "event": "puebla_mexico_earthquake_2017",
+    "E2_classes_ge5": 0.017039568817804773
+   },
+   {
+    "seed": 42,
+    "event": "srilanka_floods_2017",
+    "E2_classes_ge5": 0.03107710237379624
+   }
+  ],
+  "stray_matched": [
+   {
+    "seed": 1,
+    "event": "california_wildfires_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "canada_wildfires_2016",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.06835160215524827
+   },
+   {
+    "seed": 1,
+    "event": "cyclone_idai_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "ecuador_earthquake_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.06745367425259985
+   },
+   {
+    "seed": 1,
+    "event": "greece_wildfires_2018",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 1,
+    "MC_e": 0.05190250447104122
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_dorian_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_florence_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_harvey_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_irma_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_maria_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_matthew_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "italy_earthquake_aug_2016",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 3,
+    "n_absent_classes": 4,
+    "MC_e": 0.22854539061459744
+   },
+   {
+    "seed": 1,
+    "event": "kaikoura_earthquake_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "kerala_floods_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "maryland_floods_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.059196466349079324
+   },
+   {
+    "seed": 1,
+    "event": "midwestern_us_floods_2019",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 2,
+    "n_absent_classes": 3,
+    "MC_e": 0.130486084602714
+   },
+   {
+    "seed": 1,
+    "event": "pakistan_earthquake_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.06861593199538951
+   },
+   {
+    "seed": 1,
+    "event": "puebla_mexico_earthquake_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.06981063398105303
+   },
+   {
+    "seed": 1,
+    "event": "srilanka_floods_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.06047478572392406
+   },
+   {
+    "seed": 2,
+    "event": "california_wildfires_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "canada_wildfires_2016",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.07274514323747205
+   },
+   {
+    "seed": 2,
+    "event": "cyclone_idai_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "ecuador_earthquake_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.06851041984310502
+   },
+   {
+    "seed": 2,
+    "event": "greece_wildfires_2018",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 1,
+    "MC_e": 0.05457521045790947
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_dorian_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_florence_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_harvey_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_irma_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_maria_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_matthew_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "italy_earthquake_aug_2016",
+    "id_on_R": 1,
+    "loeo_on_R": 0,
+    "loeo_on_event": 3,
+    "n_absent_classes": 4,
+    "MC_e": 0.2238553917678735
+   },
+   {
+    "seed": 2,
+    "event": "kaikoura_earthquake_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "kerala_floods_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "maryland_floods_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.06147574300955644
+   },
+   {
+    "seed": 2,
+    "event": "midwestern_us_floods_2019",
+    "id_on_R": 2,
+    "loeo_on_R": 2,
+    "loeo_on_event": 2,
+    "n_absent_classes": 3,
+    "MC_e": 0.13399588381292654
+   },
+   {
+    "seed": 2,
+    "event": "pakistan_earthquake_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.0674374821659397
+   },
+   {
+    "seed": 2,
+    "event": "puebla_mexico_earthquake_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.06940749060287943
+   },
+   {
+    "seed": 2,
+    "event": "srilanka_floods_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.06298389552897632
+   },
+   {
+    "seed": 3,
+    "event": "california_wildfires_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 3,
+    "event": "canada_wildfires_2016",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.06890113685802746
+   },
+   {
+    "seed": 3,
+    "event": "cyclone_idai_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 3,
+    "event": "ecuador_earthquake_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.06969181169303984
+   },
+   {
+    "seed": 3,
+    "event": "greece_wildfires_2018",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 1,
+    "MC_e": 0.051897489469890645
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_dorian_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_florence_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_harvey_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_irma_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_maria_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_matthew_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 3,
+    "event": "italy_earthquake_aug_2016",
+    "id_on_R": 1,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 4,
+    "MC_e": 0.09639535404130573
+   },
+   {
+    "seed": 3,
+    "event": "kaikoura_earthquake_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 3,
+    "event": "kerala_floods_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 3,
+    "event": "maryland_floods_2018",
+    "id_on_R": 1,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.06139751655242942
+   },
+   {
+    "seed": 3,
+    "event": "midwestern_us_floods_2019",
+    "id_on_R": 2,
+    "loeo_on_R": 1,
+    "loeo_on_event": 2,
+    "n_absent_classes": 3,
+    "MC_e": 0.12357438965913597
+   },
+   {
+    "seed": 3,
+    "event": "pakistan_earthquake_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.0665168513403952
+   },
+   {
+    "seed": 3,
+    "event": "puebla_mexico_earthquake_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 2,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 3,
+    "event": "srilanka_floods_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.05992091583775844
+   },
+   {
+    "seed": 4,
+    "event": "california_wildfires_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "canada_wildfires_2016",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.06692094111811198
+   },
+   {
+    "seed": 4,
+    "event": "cyclone_idai_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "ecuador_earthquake_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.06736810040704055
+   },
+   {
+    "seed": 4,
+    "event": "greece_wildfires_2018",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 1,
+    "MC_e": 0.052065430697759485
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_dorian_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_florence_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_harvey_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_irma_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_maria_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_matthew_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "italy_earthquake_aug_2016",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 3,
+    "n_absent_classes": 4,
+    "MC_e": 0.21689721476154306
+   },
+   {
+    "seed": 4,
+    "event": "kaikoura_earthquake_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "kerala_floods_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "maryland_floods_2018",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.06147556658023218
+   },
+   {
+    "seed": 4,
+    "event": "midwestern_us_floods_2019",
+    "id_on_R": 2,
+    "loeo_on_R": 2,
+    "loeo_on_event": 2,
+    "n_absent_classes": 3,
+    "MC_e": 0.12148497766954647
+   },
+   {
+    "seed": 4,
+    "event": "pakistan_earthquake_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 2,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "puebla_mexico_earthquake_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 2,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "srilanka_floods_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.06351291824977212
+   },
+   {
+    "seed": 42,
+    "event": "california_wildfires_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "canada_wildfires_2016",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.07268357133171055
+   },
+   {
+    "seed": 42,
+    "event": "cyclone_idai_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "ecuador_earthquake_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.06695996726789155
+   },
+   {
+    "seed": 42,
+    "event": "greece_wildfires_2018",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 1,
+    "MC_e": 0.051475072511623254
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_dorian_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_florence_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_harvey_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_irma_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_maria_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_matthew_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "italy_earthquake_aug_2016",
+    "id_on_R": 1,
+    "loeo_on_R": 0,
+    "loeo_on_event": 3,
+    "n_absent_classes": 4,
+    "MC_e": 0.2194398122165388
+   },
+   {
+    "seed": 42,
+    "event": "kaikoura_earthquake_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "kerala_floods_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "maryland_floods_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.06025602109738215
+   },
+   {
+    "seed": 42,
+    "event": "midwestern_us_floods_2019",
+    "id_on_R": 2,
+    "loeo_on_R": 2,
+    "loeo_on_event": 2,
+    "n_absent_classes": 3,
+    "MC_e": 0.1241877617194298
+   },
+   {
+    "seed": 42,
+    "event": "pakistan_earthquake_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.06767381817170526
+   },
+   {
+    "seed": 42,
+    "event": "puebla_mexico_earthquake_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 2,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "srilanka_floods_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.05982704392658961
+   }
+  ],
+  "mc_by_absent": [
+   {
+    "n_absent_classes": 0,
+    "mean": 0.0,
+    "count": 10
+   },
+   {
+    "n_absent_classes": 1,
+    "mean": 0.0058,
+    "count": 45
+   },
+   {
+    "n_absent_classes": 2,
+    "mean": 0.057,
+    "count": 30
+   },
+   {
+    "n_absent_classes": 3,
+    "mean": 0.1267,
+    "count": 5
+   },
+   {
+    "n_absent_classes": 4,
+    "mean": 0.197,
+    "count": 5
+   }
+  ],
+  "prior_match_summary": {
+   "E2": 0.013955049837762681,
+   "E2_after_prior_match": 0.01176825182631773,
+   "share_closed": 0.15670298829943452
+  },
+  "rare_summary": {
+   "E2_classes_ge5": 0.014065630570786029,
+   "n_events": 19
+  },
+  "stray_summary": {
+   "id_on_R": 0.274,
+   "loeo_on_R": 0.232,
+   "loeo_on_event": 0.568
+  }
+ },
+ {
+  "corpus": "humaid19",
+  "model": "roberta-base",
+  "em": [
+   {
+    "seed": 1,
+    "event": "california_wildfires_2018",
+    "E2": 0.004821070434095853,
+    "E2_after_prior_match": -0.0056364951622730475
+   },
+   {
+    "seed": 1,
+    "event": "canada_wildfires_2016",
+    "E2": -0.03323440341240791,
+    "E2_after_prior_match": -0.006495211797318157
+   },
+   {
+    "seed": 1,
+    "event": "cyclone_idai_2019",
+    "E2": -0.03862525077788448,
+    "E2_after_prior_match": -0.033015415964128714
+   },
+   {
+    "seed": 1,
+    "event": "ecuador_earthquake_2016",
+    "E2": -0.009068976660673078,
+    "E2_after_prior_match": -0.012817715277832598
+   },
+   {
+    "seed": 1,
+    "event": "greece_wildfires_2018",
+    "E2": 0.043485339932960776,
+    "E2_after_prior_match": -0.01948119015214611
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_dorian_2019",
+    "E2": 0.009162472726578108,
+    "E2_after_prior_match": 0.013560300599067765
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_florence_2018",
+    "E2": 0.054935642985398325,
+    "E2_after_prior_match": 0.02497868897219513
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_harvey_2017",
+    "E2": -0.004580088813330052,
+    "E2_after_prior_match": 0.005089804698752198
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_irma_2017",
+    "E2": 0.0010013776938265773,
+    "E2_after_prior_match": 0.002586646840770368
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_maria_2017",
+    "E2": 0.02968679363310922,
+    "E2_after_prior_match": 0.009304900023871632
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_matthew_2016",
+    "E2": -0.022285914944142782,
+    "E2_after_prior_match": -0.028571918020733555
+   },
+   {
+    "seed": 1,
+    "event": "italy_earthquake_aug_2016",
+    "E2": 0.013395314112038204,
+    "E2_after_prior_match": 0.025642327541915866
+   },
+   {
+    "seed": 1,
+    "event": "kaikoura_earthquake_2016",
+    "E2": 0.031007469599624193,
+    "E2_after_prior_match": 0.017321877348362102
+   },
+   {
+    "seed": 1,
+    "event": "kerala_floods_2018",
+    "E2": -0.014968958387342246,
+    "E2_after_prior_match": -0.014105175932783931
+   },
+   {
+    "seed": 1,
+    "event": "maryland_floods_2018",
+    "E2": -0.004725047243392622,
+    "E2_after_prior_match": 0.00598028938030748
+   },
+   {
+    "seed": 1,
+    "event": "midwestern_us_floods_2019",
+    "E2": -0.053960568874662274,
+    "E2_after_prior_match": -0.039149076057528376
+   },
+   {
+    "seed": 1,
+    "event": "pakistan_earthquake_2019",
+    "E2": -0.014874005204425944,
+    "E2_after_prior_match": -0.0520526924888679
+   },
+   {
+    "seed": 1,
+    "event": "puebla_mexico_earthquake_2017",
+    "E2": 0.030893066111651324,
+    "E2_after_prior_match": 0.007323017382344865
+   },
+   {
+    "seed": 1,
+    "event": "srilanka_floods_2017",
+    "E2": 0.060102714050082495,
+    "E2_after_prior_match": -0.020340656505517196
+   },
+   {
+    "seed": 2,
+    "event": "california_wildfires_2018",
+    "E2": 0.06140191871100065,
+    "E2_after_prior_match": 0.0676987102514448
+   },
+   {
+    "seed": 2,
+    "event": "canada_wildfires_2016",
+    "E2": -0.0024908343117266973,
+    "E2_after_prior_match": -0.007173570841092047
+   },
+   {
+    "seed": 2,
+    "event": "cyclone_idai_2019",
+    "E2": 0.06462884720892448,
+    "E2_after_prior_match": 0.07586031224896883
+   },
+   {
+    "seed": 2,
+    "event": "ecuador_earthquake_2016",
+    "E2": -0.011244073602818205,
+    "E2_after_prior_match": -0.014366610659470425
+   },
+   {
+    "seed": 2,
+    "event": "greece_wildfires_2018",
+    "E2": 0.028133028730811915,
+    "E2_after_prior_match": 0.0033668425906440147
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_dorian_2019",
+    "E2": -0.019447216116346366,
+    "E2_after_prior_match": -0.00701334692275557
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_florence_2018",
+    "E2": 0.040233449943964716,
+    "E2_after_prior_match": -0.01975052899469476
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_harvey_2017",
+    "E2": 0.0004212085434406321,
+    "E2_after_prior_match": 0.007366902937247954
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_irma_2017",
+    "E2": 0.016392046752702005,
+    "E2_after_prior_match": 0.00971110832010802
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_maria_2017",
+    "E2": 0.03038555404178156,
+    "E2_after_prior_match": 0.014192097616947619
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_matthew_2016",
+    "E2": -0.0083072662364444,
+    "E2_after_prior_match": -0.003505415617445884
+   },
+   {
+    "seed": 2,
+    "event": "italy_earthquake_aug_2016",
+    "E2": 0.038894298340874656,
+    "E2_after_prior_match": 0.02355956284381877
+   },
+   {
+    "seed": 2,
+    "event": "kaikoura_earthquake_2016",
+    "E2": -0.017087981052414714,
+    "E2_after_prior_match": -0.017624493947649866
+   },
+   {
+    "seed": 2,
+    "event": "kerala_floods_2018",
+    "E2": 0.0353440218100185,
+    "E2_after_prior_match": 0.025392488046764305
+   },
+   {
+    "seed": 2,
+    "event": "maryland_floods_2018",
+    "E2": 0.12827098158169437,
+    "E2_after_prior_match": 0.09894608359608226
+   },
+   {
+    "seed": 2,
+    "event": "midwestern_us_floods_2019",
+    "E2": 0.00016925902682929372,
+    "E2_after_prior_match": 0.03846152902417299
+   },
+   {
+    "seed": 2,
+    "event": "pakistan_earthquake_2019",
+    "E2": -0.005065974192324241,
+    "E2_after_prior_match": -0.033255995449890885
+   },
+   {
+    "seed": 2,
+    "event": "puebla_mexico_earthquake_2017",
+    "E2": -0.031168433102130244,
+    "E2_after_prior_match": 0.05596773522089338
+   },
+   {
+    "seed": 2,
+    "event": "srilanka_floods_2017",
+    "E2": -0.07730588865402588,
+    "E2_after_prior_match": -0.046593708677139856
+   },
+   {
+    "seed": 3,
+    "event": "california_wildfires_2018",
+    "E2": 0.012558089244004256,
+    "E2_after_prior_match": 0.031047602234969607
+   },
+   {
+    "seed": 3,
+    "event": "canada_wildfires_2016",
+    "E2": -0.011741605331094584,
+    "E2_after_prior_match": 0.006501350409133577
+   },
+   {
+    "seed": 3,
+    "event": "cyclone_idai_2019",
+    "E2": -0.06784707010668234,
+    "E2_after_prior_match": -0.06297402783597184
+   },
+   {
+    "seed": 3,
+    "event": "ecuador_earthquake_2016",
+    "E2": 0.024219786069372695,
+    "E2_after_prior_match": -0.007348556315730281
+   },
+   {
+    "seed": 3,
+    "event": "greece_wildfires_2018",
+    "E2": -0.021739150099074123,
+    "E2_after_prior_match": -0.03210537849084638
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_dorian_2019",
+    "E2": -0.0010123030021061963,
+    "E2_after_prior_match": 0.0028739313736382277
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_florence_2018",
+    "E2": 0.0682568506700294,
+    "E2_after_prior_match": 0.014278033275931246
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_harvey_2017",
+    "E2": 0.00011764549923698464,
+    "E2_after_prior_match": 0.002815403040726916
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_irma_2017",
+    "E2": 0.011266502689881941,
+    "E2_after_prior_match": 0.005737782252860479
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_maria_2017",
+    "E2": 0.01559307961805334,
+    "E2_after_prior_match": -0.0022333591239386275
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_matthew_2016",
+    "E2": 0.022460355364795848,
+    "E2_after_prior_match": -0.017955916410505535
+   },
+   {
+    "seed": 3,
+    "event": "italy_earthquake_aug_2016",
+    "E2": 0.011200387022397895,
+    "E2_after_prior_match": 0.01692984422772259
+   },
+   {
+    "seed": 3,
+    "event": "kaikoura_earthquake_2016",
+    "E2": 0.041252504064956064,
+    "E2_after_prior_match": 0.06840745274112991
+   },
+   {
+    "seed": 3,
+    "event": "kerala_floods_2018",
+    "E2": 0.004082572463768419,
+    "E2_after_prior_match": 0.004222408215740492
+   },
+   {
+    "seed": 3,
+    "event": "maryland_floods_2018",
+    "E2": 0.011769903685372118,
+    "E2_after_prior_match": 0.07957269782779086
+   },
+   {
+    "seed": 3,
+    "event": "midwestern_us_floods_2019",
+    "E2": 0.011624680438822366,
+    "E2_after_prior_match": 0.004885316663347017
+   },
+   {
+    "seed": 3,
+    "event": "pakistan_earthquake_2019",
+    "E2": 0.06154180795905417,
+    "E2_after_prior_match": 0.011050009776041203
+   },
+   {
+    "seed": 3,
+    "event": "puebla_mexico_earthquake_2017",
+    "E2": 0.03333099546617335,
+    "E2_after_prior_match": 0.0010853873757219468
+   },
+   {
+    "seed": 3,
+    "event": "srilanka_floods_2017",
+    "E2": 0.013418922499790709,
+    "E2_after_prior_match": 0.0008739626386685684
+   },
+   {
+    "seed": 4,
+    "event": "california_wildfires_2018",
+    "E2": 0.08513821717865755,
+    "E2_after_prior_match": 0.07772300132583732
+   },
+   {
+    "seed": 4,
+    "event": "canada_wildfires_2016",
+    "E2": 0.011656480846119144,
+    "E2_after_prior_match": -0.008263337045308572
+   },
+   {
+    "seed": 4,
+    "event": "cyclone_idai_2019",
+    "E2": 0.01319215710085897,
+    "E2_after_prior_match": 0.0031474916190338265
+   },
+   {
+    "seed": 4,
+    "event": "ecuador_earthquake_2016",
+    "E2": 0.0013385272747062915,
+    "E2_after_prior_match": 0.013270737320671078
+   },
+   {
+    "seed": 4,
+    "event": "greece_wildfires_2018",
+    "E2": 0.0737983348062502,
+    "E2_after_prior_match": 0.0738727416825059
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_dorian_2019",
+    "E2": -0.002707572748421594,
+    "E2_after_prior_match": -0.00597953575843857
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_florence_2018",
+    "E2": 0.037565926601620614,
+    "E2_after_prior_match": 0.019279691134886368
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_harvey_2017",
+    "E2": -0.01088331009326482,
+    "E2_after_prior_match": -0.002621796308884261
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_irma_2017",
+    "E2": 0.015387601458034639,
+    "E2_after_prior_match": 0.027318782341746894
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_maria_2017",
+    "E2": 0.016639239199816802,
+    "E2_after_prior_match": 0.002151106885120102
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_matthew_2016",
+    "E2": -0.025566137866003258,
+    "E2_after_prior_match": 0.012367787538722474
+   },
+   {
+    "seed": 4,
+    "event": "italy_earthquake_aug_2016",
+    "E2": 0.059113221766551205,
+    "E2_after_prior_match": 0.035189818566555786
+   },
+   {
+    "seed": 4,
+    "event": "kaikoura_earthquake_2016",
+    "E2": 0.004897983356760616,
+    "E2_after_prior_match": 0.008695926552295008
+   },
+   {
+    "seed": 4,
+    "event": "kerala_floods_2018",
+    "E2": 0.007765221449387405,
+    "E2_after_prior_match": 0.0022136619668119417
+   },
+   {
+    "seed": 4,
+    "event": "maryland_floods_2018",
+    "E2": 0.09542188517021133,
+    "E2_after_prior_match": 0.008752988414213347
+   },
+   {
+    "seed": 4,
+    "event": "midwestern_us_floods_2019",
+    "E2": -0.0012889978839741856,
+    "E2_after_prior_match": 0.001671572737589111
+   },
+   {
+    "seed": 4,
+    "event": "pakistan_earthquake_2019",
+    "E2": -0.012046024450889092,
+    "E2_after_prior_match": -0.0027123688789223444
+   },
+   {
+    "seed": 4,
+    "event": "puebla_mexico_earthquake_2017",
+    "E2": 0.013529637709640663,
+    "E2_after_prior_match": -0.014249508725538096
+   },
+   {
+    "seed": 4,
+    "event": "srilanka_floods_2017",
+    "E2": 0.04332467929986983,
+    "E2_after_prior_match": -0.043384575683845794
+   },
+   {
+    "seed": 42,
+    "event": "california_wildfires_2018",
+    "E2": 0.06544312318592438,
+    "E2_after_prior_match": 0.04793699601118773
+   },
+   {
+    "seed": 42,
+    "event": "canada_wildfires_2016",
+    "E2": 0.006405348008174383,
+    "E2_after_prior_match": 0.006634096911034448
+   },
+   {
+    "seed": 42,
+    "event": "cyclone_idai_2019",
+    "E2": -0.05844636098314637,
+    "E2_after_prior_match": -0.07546211427711846
+   },
+   {
+    "seed": 42,
+    "event": "ecuador_earthquake_2016",
+    "E2": -0.042575864435097976,
+    "E2_after_prior_match": -0.03043928113964811
+   },
+   {
+    "seed": 42,
+    "event": "greece_wildfires_2018",
+    "E2": -0.0004676198430665357,
+    "E2_after_prior_match": 0.03345707402249021
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_dorian_2019",
+    "E2": -0.0034115008754947995,
+    "E2_after_prior_match": -0.00956031590736095
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_florence_2018",
+    "E2": 0.06342069455911081,
+    "E2_after_prior_match": 0.018803976543055434
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_harvey_2017",
+    "E2": 0.00102209575376222,
+    "E2_after_prior_match": -0.0066792653224826415
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_irma_2017",
+    "E2": 0.0033262785284089436,
+    "E2_after_prior_match": -0.008000357083713272
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_maria_2017",
+    "E2": 0.03152572286773592,
+    "E2_after_prior_match": 0.007187035233278682
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_matthew_2016",
+    "E2": 0.017867070854982736,
+    "E2_after_prior_match": 0.029946198685929182
+   },
+   {
+    "seed": 42,
+    "event": "italy_earthquake_aug_2016",
+    "E2": 0.013427672477217434,
+    "E2_after_prior_match": 0.03346132402552637
+   },
+   {
+    "seed": 42,
+    "event": "kaikoura_earthquake_2016",
+    "E2": -0.005265829266443145,
+    "E2_after_prior_match": 0.08907139647687368
+   },
+   {
+    "seed": 42,
+    "event": "kerala_floods_2018",
+    "E2": 0.016946940453385406,
+    "E2_after_prior_match": 0.02650295685170667
+   },
+   {
+    "seed": 42,
+    "event": "maryland_floods_2018",
+    "E2": 0.12220419305961439,
+    "E2_after_prior_match": 0.09826334608882548
+   },
+   {
+    "seed": 42,
+    "event": "midwestern_us_floods_2019",
+    "E2": -0.0038074733678726824,
+    "E2_after_prior_match": 0.008751068050863009
+   },
+   {
+    "seed": 42,
+    "event": "pakistan_earthquake_2019",
+    "E2": -0.02113511529647405,
+    "E2_after_prior_match": 0.034987498862491306
+   },
+   {
+    "seed": 42,
+    "event": "puebla_mexico_earthquake_2017",
+    "E2": 0.024663956937647113,
+    "E2_after_prior_match": 0.0027357356016479706
+   },
+   {
+    "seed": 42,
+    "event": "srilanka_floods_2017",
+    "E2": 0.12186307494012094,
+    "E2_after_prior_match": 0.0011295676200142601
+   }
+  ],
+  "strata": [
+   {
+    "stratum": [
+     0.0,
+     0.5
+    ],
+    "n_tweets_per_seed": 13508,
+    "pooled_E2_P_mean_over_seeds": 0.03687840238790532
+   },
+   {
+    "stratum": [
+     0.5,
+     0.8
+    ],
+    "n_tweets_per_seed": 1767,
+    "pooled_E2_P_mean_over_seeds": 0.05176470010781915
+   },
+   {
+    "stratum": [
+     0.8,
+     1.0
+    ],
+    "n_tweets_per_seed": 27,
+    "pooled_E2_P_mean_over_seeds": 0.05696397857388576
+   }
+  ],
+  "rare": [
+   {
+    "seed": 1,
+    "event": "california_wildfires_2018",
+    "E2_classes_ge5": 0.004821070434095853
+   },
+   {
+    "seed": 1,
+    "event": "canada_wildfires_2016",
+    "E2_classes_ge5": -0.03798217532846615
+   },
+   {
+    "seed": 1,
+    "event": "cyclone_idai_2019",
+    "E2_classes_ge5": -0.03862525077788448
+   },
+   {
+    "seed": 1,
+    "event": "ecuador_earthquake_2016",
+    "E2_classes_ge5": -0.0008407352312453931
+   },
+   {
+    "seed": 1,
+    "event": "greece_wildfires_2018",
+    "E2_classes_ge5": -0.03441232590875243
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_dorian_2019",
+    "E2_classes_ge5": 0.009162472726578108
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_florence_2018",
+    "E2_classes_ge5": 0.054935642985398325
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_harvey_2017",
+    "E2_classes_ge5": -0.004580088813330052
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_irma_2017",
+    "E2_classes_ge5": 0.0010013776938265773
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_maria_2017",
+    "E2_classes_ge5": 0.02968679363310922
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_matthew_2016",
+    "E2_classes_ge5": -0.022285914944142782
+   },
+   {
+    "seed": 1,
+    "event": "italy_earthquake_aug_2016",
+    "E2_classes_ge5": 0.013395314112038204
+   },
+   {
+    "seed": 1,
+    "event": "kaikoura_earthquake_2016",
+    "E2_classes_ge5": 0.03488340329957729
+   },
+   {
+    "seed": 1,
+    "event": "kerala_floods_2018",
+    "E2_classes_ge5": -0.014968958387342246
+   },
+   {
+    "seed": 1,
+    "event": "maryland_floods_2018",
+    "E2_classes_ge5": -0.004725047243392622
+   },
+   {
+    "seed": 1,
+    "event": "midwestern_us_floods_2019",
+    "E2_classes_ge5": -0.053960568874662274
+   },
+   {
+    "seed": 1,
+    "event": "pakistan_earthquake_2019",
+    "E2_classes_ge5": -0.014874005204425944
+   },
+   {
+    "seed": 1,
+    "event": "puebla_mexico_earthquake_2017",
+    "E2_classes_ge5": 0.030893066111651324
+   },
+   {
+    "seed": 1,
+    "event": "srilanka_floods_2017",
+    "E2_classes_ge5": -0.002739755371334307
+   },
+   {
+    "seed": 2,
+    "event": "california_wildfires_2018",
+    "E2_classes_ge5": 0.06140191871100065
+   },
+   {
+    "seed": 2,
+    "event": "canada_wildfires_2016",
+    "E2_classes_ge5": -0.00284666778483067
+   },
+   {
+    "seed": 2,
+    "event": "cyclone_idai_2019",
+    "E2_classes_ge5": 0.06462884720892448
+   },
+   {
+    "seed": 2,
+    "event": "ecuador_earthquake_2016",
+    "E2_classes_ge5": -0.003780075047211451
+   },
+   {
+    "seed": 2,
+    "event": "greece_wildfires_2018",
+    "E2_classes_ge5": 0.031649657322163405
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_dorian_2019",
+    "E2_classes_ge5": -0.019447216116346366
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_florence_2018",
+    "E2_classes_ge5": 0.040233449943964716
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_harvey_2017",
+    "E2_classes_ge5": 0.0004212085434406321
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_irma_2017",
+    "E2_classes_ge5": 0.016392046752702005
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_maria_2017",
+    "E2_classes_ge5": 0.03038555404178156
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_matthew_2016",
+    "E2_classes_ge5": -0.0083072662364444
+   },
+   {
+    "seed": 2,
+    "event": "italy_earthquake_aug_2016",
+    "E2_classes_ge5": 0.038894298340874656
+   },
+   {
+    "seed": 2,
+    "event": "kaikoura_earthquake_2016",
+    "E2_classes_ge5": -0.019223978683966636
+   },
+   {
+    "seed": 2,
+    "event": "kerala_floods_2018",
+    "E2_classes_ge5": 0.0353440218100185
+   },
+   {
+    "seed": 2,
+    "event": "maryland_floods_2018",
+    "E2_classes_ge5": 0.12827098158169437
+   },
+   {
+    "seed": 2,
+    "event": "midwestern_us_floods_2019",
+    "E2_classes_ge5": 0.00016925902682929372
+   },
+   {
+    "seed": 2,
+    "event": "pakistan_earthquake_2019",
+    "E2_classes_ge5": -0.005065974192324241
+   },
+   {
+    "seed": 2,
+    "event": "puebla_mexico_earthquake_2017",
+    "E2_classes_ge5": -0.031168433102130244
+   },
+   {
+    "seed": 2,
+    "event": "srilanka_floods_2017",
+    "E2_classes_ge5": -0.08834958703317253
+   },
+   {
+    "seed": 3,
+    "event": "california_wildfires_2018",
+    "E2_classes_ge5": 0.012558089244004256
+   },
+   {
+    "seed": 3,
+    "event": "canada_wildfires_2016",
+    "E2_classes_ge5": -0.013418977521250874
+   },
+   {
+    "seed": 3,
+    "event": "cyclone_idai_2019",
+    "E2_classes_ge5": -0.06784707010668234
+   },
+   {
+    "seed": 3,
+    "event": "ecuador_earthquake_2016",
+    "E2_classes_ge5": 0.01815594598404502
+   },
+   {
+    "seed": 3,
+    "event": "greece_wildfires_2018",
+    "E2_classes_ge5": -0.024456543861458457
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_dorian_2019",
+    "E2_classes_ge5": -0.0010123030021061963
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_florence_2018",
+    "E2_classes_ge5": 0.0682568506700294
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_harvey_2017",
+    "E2_classes_ge5": 0.00011764549923698464
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_irma_2017",
+    "E2_classes_ge5": 0.011266502689881941
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_maria_2017",
+    "E2_classes_ge5": 0.01559307961805334
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_matthew_2016",
+    "E2_classes_ge5": 0.022460355364795848
+   },
+   {
+    "seed": 3,
+    "event": "italy_earthquake_aug_2016",
+    "E2_classes_ge5": 0.011200387022397895
+   },
+   {
+    "seed": 3,
+    "event": "kaikoura_earthquake_2016",
+    "E2_classes_ge5": 0.010694781358789651
+   },
+   {
+    "seed": 3,
+    "event": "kerala_floods_2018",
+    "E2_classes_ge5": 0.004082572463768419
+   },
+   {
+    "seed": 3,
+    "event": "maryland_floods_2018",
+    "E2_classes_ge5": 0.011769903685372118
+   },
+   {
+    "seed": 3,
+    "event": "midwestern_us_floods_2019",
+    "E2_classes_ge5": 0.011624680438822366
+   },
+   {
+    "seed": 3,
+    "event": "pakistan_earthquake_2019",
+    "E2_classes_ge5": 0.06154180795905417
+   },
+   {
+    "seed": 3,
+    "event": "puebla_mexico_earthquake_2017",
+    "E2_classes_ge5": 0.03333099546617335
+   },
+   {
+    "seed": 3,
+    "event": "srilanka_floods_2017",
+    "E2_classes_ge5": 0.01533591142833246
+   },
+   {
+    "seed": 4,
+    "event": "california_wildfires_2018",
+    "E2_classes_ge5": 0.08513821717865755
+   },
+   {
+    "seed": 4,
+    "event": "canada_wildfires_2016",
+    "E2_classes_ge5": 0.013321692395564577
+   },
+   {
+    "seed": 4,
+    "event": "cyclone_idai_2019",
+    "E2_classes_ge5": 0.01319215710085897
+   },
+   {
+    "seed": 4,
+    "event": "ecuador_earthquake_2016",
+    "E2_classes_ge5": -0.0075405493277732605
+   },
+   {
+    "seed": 4,
+    "event": "greece_wildfires_2018",
+    "E2_classes_ge5": 0.08302312665703138
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_dorian_2019",
+    "E2_classes_ge5": -0.002707572748421594
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_florence_2018",
+    "E2_classes_ge5": 0.037565926601620614
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_harvey_2017",
+    "E2_classes_ge5": -0.01088331009326482
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_irma_2017",
+    "E2_classes_ge5": 0.015387601458034639
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_maria_2017",
+    "E2_classes_ge5": 0.016639239199816802
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_matthew_2016",
+    "E2_classes_ge5": -0.025566137866003258
+   },
+   {
+    "seed": 4,
+    "event": "italy_earthquake_aug_2016",
+    "E2_classes_ge5": 0.059113221766551205
+   },
+   {
+    "seed": 4,
+    "event": "kaikoura_earthquake_2016",
+    "E2_classes_ge5": 0.011462612228736568
+   },
+   {
+    "seed": 4,
+    "event": "kerala_floods_2018",
+    "E2_classes_ge5": 0.007765221449387405
+   },
+   {
+    "seed": 4,
+    "event": "maryland_floods_2018",
+    "E2_classes_ge5": 0.09542188517021133
+   },
+   {
+    "seed": 4,
+    "event": "midwestern_us_floods_2019",
+    "E2_classes_ge5": -0.0012889978839741856
+   },
+   {
+    "seed": 4,
+    "event": "pakistan_earthquake_2019",
+    "E2_classes_ge5": -0.012046024450889092
+   },
+   {
+    "seed": 4,
+    "event": "puebla_mexico_earthquake_2017",
+    "E2_classes_ge5": 0.013529637709640663
+   },
+   {
+    "seed": 4,
+    "event": "srilanka_floods_2017",
+    "E2_classes_ge5": 0.04951391919985104
+   },
+   {
+    "seed": 42,
+    "event": "california_wildfires_2018",
+    "E2_classes_ge5": 0.06544312318592438
+   },
+   {
+    "seed": 42,
+    "event": "canada_wildfires_2016",
+    "E2_classes_ge5": 0.007320397723627803
+   },
+   {
+    "seed": 42,
+    "event": "cyclone_idai_2019",
+    "E2_classes_ge5": -0.05844636098314637
+   },
+   {
+    "seed": 42,
+    "event": "ecuador_earthquake_2016",
+    "E2_classes_ge5": -0.03913432125915961
+   },
+   {
+    "seed": 42,
+    "event": "greece_wildfires_2018",
+    "E2_classes_ge5": -0.000526072323449811
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_dorian_2019",
+    "E2_classes_ge5": -0.0034115008754947995
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_florence_2018",
+    "E2_classes_ge5": 0.06342069455911081
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_harvey_2017",
+    "E2_classes_ge5": 0.00102209575376222
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_irma_2017",
+    "E2_classes_ge5": 0.0033262785284089436
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_maria_2017",
+    "E2_classes_ge5": 0.03152572286773592
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_matthew_2016",
+    "E2_classes_ge5": 0.017867070854982736
+   },
+   {
+    "seed": 42,
+    "event": "italy_earthquake_aug_2016",
+    "E2_classes_ge5": 0.013427672477217434
+   },
+   {
+    "seed": 42,
+    "event": "kaikoura_earthquake_2016",
+    "E2_classes_ge5": 0.014909275408584777
+   },
+   {
+    "seed": 42,
+    "event": "kerala_floods_2018",
+    "E2_classes_ge5": 0.016946940453385406
+   },
+   {
+    "seed": 42,
+    "event": "maryland_floods_2018",
+    "E2_classes_ge5": 0.12220419305961439
+   },
+   {
+    "seed": 42,
+    "event": "midwestern_us_floods_2019",
+    "E2_classes_ge5": -0.0038074733678726824
+   },
+   {
+    "seed": 42,
+    "event": "pakistan_earthquake_2019",
+    "E2_classes_ge5": -0.02113511529647405
+   },
+   {
+    "seed": 42,
+    "event": "puebla_mexico_earthquake_2017",
+    "E2_classes_ge5": 0.024663956937647113
+   },
+   {
+    "seed": 42,
+    "event": "srilanka_floods_2017",
+    "E2_classes_ge5": 0.06784351421728119
+   }
+  ],
+  "stray_matched": [
+   {
+    "seed": 1,
+    "event": "california_wildfires_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "canada_wildfires_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.07853656080691318
+   },
+   {
+    "seed": 1,
+    "event": "cyclone_idai_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "ecuador_earthquake_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.08365029613948283
+   },
+   {
+    "seed": 1,
+    "event": "greece_wildfires_2018",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 1,
+    "MC_e": 0.06431241859243741
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_dorian_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_florence_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_harvey_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_irma_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_maria_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "hurricane_matthew_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "italy_earthquake_aug_2016",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 3,
+    "n_absent_classes": 4,
+    "MC_e": 0.23559694794007796
+   },
+   {
+    "seed": 1,
+    "event": "kaikoura_earthquake_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "kerala_floods_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "maryland_floods_2018",
+    "id_on_R": 1,
+    "loeo_on_R": 2,
+    "loeo_on_event": 2,
+    "n_absent_classes": 2,
+    "MC_e": 0.11587877987635015
+   },
+   {
+    "seed": 1,
+    "event": "midwestern_us_floods_2019",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 2,
+    "n_absent_classes": 3,
+    "MC_e": 0.151403849432601
+   },
+   {
+    "seed": 1,
+    "event": "pakistan_earthquake_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.07542554236385057
+   },
+   {
+    "seed": 1,
+    "event": "puebla_mexico_earthquake_2017",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 2,
+    "n_absent_classes": 2,
+    "MC_e": 0.1331032279162493
+   },
+   {
+    "seed": 1,
+    "event": "srilanka_floods_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.07573955867392523
+   },
+   {
+    "seed": 2,
+    "event": "california_wildfires_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "canada_wildfires_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.08008259213392122
+   },
+   {
+    "seed": 2,
+    "event": "cyclone_idai_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "ecuador_earthquake_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 2,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "greece_wildfires_2018",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 1,
+    "MC_e": 0.06492735144046113
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_dorian_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_florence_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_harvey_2017",
+    "id_on_R": 1,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_irma_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_maria_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "hurricane_matthew_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "italy_earthquake_aug_2016",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 3,
+    "n_absent_classes": 4,
+    "MC_e": 0.23311070526277256
+   },
+   {
+    "seed": 2,
+    "event": "kaikoura_earthquake_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "kerala_floods_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "maryland_floods_2018",
+    "id_on_R": 2,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.06333986074623399
+   },
+   {
+    "seed": 2,
+    "event": "midwestern_us_floods_2019",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 2,
+    "n_absent_classes": 3,
+    "MC_e": 0.1498504578651091
+   },
+   {
+    "seed": 2,
+    "event": "pakistan_earthquake_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.0755237688321776
+   },
+   {
+    "seed": 2,
+    "event": "puebla_mexico_earthquake_2017",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.07292427270303825
+   },
+   {
+    "seed": 2,
+    "event": "srilanka_floods_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.07321957273314017
+   },
+   {
+    "seed": 3,
+    "event": "california_wildfires_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 3,
+    "event": "canada_wildfires_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.07661346250651724
+   },
+   {
+    "seed": 3,
+    "event": "cyclone_idai_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 3,
+    "event": "ecuador_earthquake_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.08284231747322135
+   },
+   {
+    "seed": 3,
+    "event": "greece_wildfires_2018",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 1,
+    "MC_e": 0.06507022813643049
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_dorian_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_florence_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_harvey_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 1,
+    "MC_e": 0.07115851259822659
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_irma_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_maria_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 1,
+    "MC_e": 0.07106552378512421
+   },
+   {
+    "seed": 3,
+    "event": "hurricane_matthew_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 3,
+    "event": "italy_earthquake_aug_2016",
+    "id_on_R": 1,
+    "loeo_on_R": 2,
+    "loeo_on_event": 3,
+    "n_absent_classes": 4,
+    "MC_e": 0.24776319103410244
+   },
+   {
+    "seed": 3,
+    "event": "kaikoura_earthquake_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 3,
+    "event": "kerala_floods_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 3,
+    "event": "maryland_floods_2018",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 2,
+    "n_absent_classes": 2,
+    "MC_e": 0.11420228526057075
+   },
+   {
+    "seed": 3,
+    "event": "midwestern_us_floods_2019",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 2,
+    "n_absent_classes": 3,
+    "MC_e": 0.1489110636364952
+   },
+   {
+    "seed": 3,
+    "event": "pakistan_earthquake_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.07463225584040023
+   },
+   {
+    "seed": 3,
+    "event": "puebla_mexico_earthquake_2017",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.07306162233352964
+   },
+   {
+    "seed": 3,
+    "event": "srilanka_floods_2017",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.07336504549846468
+   },
+   {
+    "seed": 4,
+    "event": "california_wildfires_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "canada_wildfires_2016",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.07854228152427223
+   },
+   {
+    "seed": 4,
+    "event": "cyclone_idai_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "ecuador_earthquake_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.08286409759346036
+   },
+   {
+    "seed": 4,
+    "event": "greece_wildfires_2018",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 1,
+    "MC_e": 0.060279865711230785
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_dorian_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_florence_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_harvey_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_irma_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_maria_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "hurricane_matthew_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "italy_earthquake_aug_2016",
+    "id_on_R": 1,
+    "loeo_on_R": 2,
+    "loeo_on_event": 3,
+    "n_absent_classes": 4,
+    "MC_e": 0.227569848155264
+   },
+   {
+    "seed": 4,
+    "event": "kaikoura_earthquake_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "kerala_floods_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 4,
+    "event": "maryland_floods_2018",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 2,
+    "n_absent_classes": 2,
+    "MC_e": 0.11667981957797785
+   },
+   {
+    "seed": 4,
+    "event": "midwestern_us_floods_2019",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 2,
+    "n_absent_classes": 3,
+    "MC_e": 0.14233585559400458
+   },
+   {
+    "seed": 4,
+    "event": "pakistan_earthquake_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.07432537717761989
+   },
+   {
+    "seed": 4,
+    "event": "puebla_mexico_earthquake_2017",
+    "id_on_R": 1,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.07416943789133434
+   },
+   {
+    "seed": 4,
+    "event": "srilanka_floods_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.07237959297227792
+   },
+   {
+    "seed": 42,
+    "event": "california_wildfires_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "canada_wildfires_2016",
+    "id_on_R": 1,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.07888142593611114
+   },
+   {
+    "seed": 42,
+    "event": "cyclone_idai_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "ecuador_earthquake_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.08340909432169363
+   },
+   {
+    "seed": 42,
+    "event": "greece_wildfires_2018",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 1,
+    "MC_e": 0.06136581889032655
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_dorian_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_florence_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_harvey_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_irma_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_maria_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 1,
+    "loeo_on_event": 1,
+    "n_absent_classes": 1,
+    "MC_e": 0.068040141843698
+   },
+   {
+    "seed": 42,
+    "event": "hurricane_matthew_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "italy_earthquake_aug_2016",
+    "id_on_R": 1,
+    "loeo_on_R": 0,
+    "loeo_on_event": 3,
+    "n_absent_classes": 4,
+    "MC_e": 0.23666076845722583
+   },
+   {
+    "seed": 42,
+    "event": "kaikoura_earthquake_2016",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "kerala_floods_2018",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 1,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "maryland_floods_2018",
+    "id_on_R": 1,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.061994997244444905
+   },
+   {
+    "seed": 42,
+    "event": "midwestern_us_floods_2019",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 2,
+    "n_absent_classes": 3,
+    "MC_e": 0.14435207905328018
+   },
+   {
+    "seed": 42,
+    "event": "pakistan_earthquake_2019",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 2,
+    "MC_e": 0.07359889258056551
+   },
+   {
+    "seed": 42,
+    "event": "puebla_mexico_earthquake_2017",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 2,
+    "n_absent_classes": 2,
+    "MC_e": 0.13530081916762038
+   },
+   {
+    "seed": 42,
+    "event": "srilanka_floods_2017",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 2,
+    "MC_e": 0.0
+   }
+  ],
+  "mc_by_absent": [
+   {
+    "n_absent_classes": 0,
+    "mean": 0.0,
+    "count": 10
+   },
+   {
+    "n_absent_classes": 1,
+    "mean": 0.0117,
+    "count": 45
+   },
+   {
+    "n_absent_classes": 2,
+    "mean": 0.0785,
+    "count": 30
+   },
+   {
+    "n_absent_classes": 3,
+    "mean": 0.1474,
+    "count": 5
+   },
+   {
+    "n_absent_classes": 4,
+    "mean": 0.2361,
+    "count": 5
+   }
+  ],
+  "prior_match_summary": {
+   "E2": 0.014462762382485152,
+   "E2_after_prior_match": 0.0083810218298052,
+   "share_closed": 0.4205103003037045
+  },
+  "rare_summary": {
+   "E2_classes_ge5": 0.012464662442808902,
+   "n_events": 19
+  },
+  "stray_summary": {
+   "id_on_R": 0.316,
+   "loeo_on_R": 0.305,
+   "loeo_on_event": 0.695
+  }
+ },
+ {
+  "corpus": "crisislext26",
+  "model": "distilbert-base-uncased",
+  "em": [
+   {
+    "seed": 1,
+    "event": "2012_colorado_wildfires",
+    "E2": 0.040276170742223116,
+    "E2_after_prior_match": 0.029158706798170675
+   },
+   {
+    "seed": 1,
+    "event": "2012_costa_rica_earthquake",
+    "E2": 0.06716588255651901,
+    "E2_after_prior_match": -0.022374352764077066
+   },
+   {
+    "seed": 1,
+    "event": "2012_guatemala_earthquake",
+    "E2": 0.037647414190373096,
+    "E2_after_prior_match": 0.02537477955565559
+   },
+   {
+    "seed": 1,
+    "event": "2012_italy_earthquakes",
+    "E2": 0.03045581235215722,
+    "E2_after_prior_match": 0.005080220904119248
+   },
+   {
+    "seed": 1,
+    "event": "2012_philipinnes_floods",
+    "E2": 0.010037973245850984,
+    "E2_after_prior_match": 0.01793541738879667
+   },
+   {
+    "seed": 1,
+    "event": "2012_typhoon_pablo",
+    "E2": 0.03769932576699753,
+    "E2_after_prior_match": 0.007529633706821359
+   },
+   {
+    "seed": 1,
+    "event": "2012_venezuela_refinery",
+    "E2": 0.0802554335947876,
+    "E2_after_prior_match": 0.06468672377711293
+   },
+   {
+    "seed": 1,
+    "event": "2013_alberta_floods",
+    "E2": 0.04451812699706892,
+    "E2_after_prior_match": -0.00328354437437528
+   },
+   {
+    "seed": 1,
+    "event": "2013_australia_bushfire",
+    "E2": 0.016400891821234498,
+    "E2_after_prior_match": 0.024624749235836796
+   },
+   {
+    "seed": 1,
+    "event": "2013_bohol_earthquake",
+    "E2": -0.00345241801763696,
+    "E2_after_prior_match": -0.010094808929142718
+   },
+   {
+    "seed": 1,
+    "event": "2013_boston_bombings",
+    "E2": -0.015338939270921781,
+    "E2_after_prior_match": -0.0028339355419152445
+   },
+   {
+    "seed": 1,
+    "event": "2013_brazil_nightclub_fire",
+    "E2": 0.0692856644602532,
+    "E2_after_prior_match": 0.06371119663591296
+   },
+   {
+    "seed": 1,
+    "event": "2013_colorado_floods",
+    "E2": 0.060415658737515976,
+    "E2_after_prior_match": 0.003057958704447472
+   },
+   {
+    "seed": 1,
+    "event": "2013_glasgow_helicopter_crash",
+    "E2": -0.013598509219064359,
+    "E2_after_prior_match": -0.02779784710819211
+   },
+   {
+    "seed": 1,
+    "event": "2013_la_airport_shootings",
+    "E2": 0.08253728625022116,
+    "E2_after_prior_match": 0.03313507489830686
+   },
+   {
+    "seed": 1,
+    "event": "2013_lac_megantic_train_crash",
+    "E2": 0.014183755570365109,
+    "E2_after_prior_match": 0.03685108265451964
+   },
+   {
+    "seed": 1,
+    "event": "2013_manila_floods",
+    "E2": 0.03924194500400224,
+    "E2_after_prior_match": 0.005695296007200756
+   },
+   {
+    "seed": 1,
+    "event": "2013_ny_train_crash",
+    "E2": 0.08040883591324932,
+    "E2_after_prior_match": 0.03238254284925529
+   },
+   {
+    "seed": 1,
+    "event": "2013_queensland_floods",
+    "E2": -0.01786026686575104,
+    "E2_after_prior_match": -0.02567646517274491
+   },
+   {
+    "seed": 1,
+    "event": "2013_russia_meteor",
+    "E2": 0.023341576888487647,
+    "E2_after_prior_match": 0.006759420582800768
+   },
+   {
+    "seed": 1,
+    "event": "2013_sardinia_floods",
+    "E2": 0.07943487420171841,
+    "E2_after_prior_match": 0.06929601375614691
+   },
+   {
+    "seed": 1,
+    "event": "2013_savar_building_collapse",
+    "E2": 0.03518775209367214,
+    "E2_after_prior_match": 0.026044010833362108
+   },
+   {
+    "seed": 1,
+    "event": "2013_singapore_haze",
+    "E2": -0.05033864576850994,
+    "E2_after_prior_match": 0.02987627967108128
+   },
+   {
+    "seed": 1,
+    "event": "2013_spain_train_crash",
+    "E2": 0.06434303022113963,
+    "E2_after_prior_match": 0.05051785502982942
+   },
+   {
+    "seed": 1,
+    "event": "2013_typhoon_yolanda",
+    "E2": 0.009390871331478978,
+    "E2_after_prior_match": -0.06396357587513446
+   },
+   {
+    "seed": 1,
+    "event": "2013_west_texas_explosion",
+    "E2": 0.013553153314253552,
+    "E2_after_prior_match": -0.08452419206394679
+   },
+   {
+    "seed": 2,
+    "event": "2012_colorado_wildfires",
+    "E2": 0.060491188296164955,
+    "E2_after_prior_match": 0.053048782380957116
+   },
+   {
+    "seed": 2,
+    "event": "2012_costa_rica_earthquake",
+    "E2": 0.12159969522448355,
+    "E2_after_prior_match": 0.01863311965602199
+   },
+   {
+    "seed": 2,
+    "event": "2012_guatemala_earthquake",
+    "E2": 0.04965117120033502,
+    "E2_after_prior_match": 0.04089152235498572
+   },
+   {
+    "seed": 2,
+    "event": "2012_italy_earthquakes",
+    "E2": 0.012535181651442462,
+    "E2_after_prior_match": 0.0428041661142079
+   },
+   {
+    "seed": 2,
+    "event": "2012_philipinnes_floods",
+    "E2": 0.03302004514615553,
+    "E2_after_prior_match": 0.015222985960576363
+   },
+   {
+    "seed": 2,
+    "event": "2012_typhoon_pablo",
+    "E2": -0.028293875953599,
+    "E2_after_prior_match": 0.0032471029517442407
+   },
+   {
+    "seed": 2,
+    "event": "2012_venezuela_refinery",
+    "E2": 0.05383952401787473,
+    "E2_after_prior_match": 0.10514166615915799
+   },
+   {
+    "seed": 2,
+    "event": "2013_alberta_floods",
+    "E2": 0.051249921454846414,
+    "E2_after_prior_match": 0.020488051243589767
+   },
+   {
+    "seed": 2,
+    "event": "2013_australia_bushfire",
+    "E2": 0.05375821253336727,
+    "E2_after_prior_match": 0.08969021221130452
+   },
+   {
+    "seed": 2,
+    "event": "2013_bohol_earthquake",
+    "E2": 0.01844583711212422,
+    "E2_after_prior_match": 0.061943445994723234
+   },
+   {
+    "seed": 2,
+    "event": "2013_boston_bombings",
+    "E2": 0.020448168572896608,
+    "E2_after_prior_match": 0.009684909615934989
+   },
+   {
+    "seed": 2,
+    "event": "2013_brazil_nightclub_fire",
+    "E2": 0.06414727726839525,
+    "E2_after_prior_match": 0.036235538643385745
+   },
+   {
+    "seed": 2,
+    "event": "2013_colorado_floods",
+    "E2": 0.024242483173482765,
+    "E2_after_prior_match": 0.002755925443252538
+   },
+   {
+    "seed": 2,
+    "event": "2013_glasgow_helicopter_crash",
+    "E2": 0.02675239609560698,
+    "E2_after_prior_match": 0.027361355250197228
+   },
+   {
+    "seed": 2,
+    "event": "2013_la_airport_shootings",
+    "E2": 0.1507425457121198,
+    "E2_after_prior_match": 0.05141182322976834
+   },
+   {
+    "seed": 2,
+    "event": "2013_lac_megantic_train_crash",
+    "E2": 0.03663077925822589,
+    "E2_after_prior_match": 0.049980889227703273
+   },
+   {
+    "seed": 2,
+    "event": "2013_manila_floods",
+    "E2": 0.025980761388758655,
+    "E2_after_prior_match": -0.03599765308339309
+   },
+   {
+    "seed": 2,
+    "event": "2013_ny_train_crash",
+    "E2": -0.0480935028387971,
+    "E2_after_prior_match": 0.02371476493084923
+   },
+   {
+    "seed": 2,
+    "event": "2013_queensland_floods",
+    "E2": 0.00651796404322269,
+    "E2_after_prior_match": 0.05158409899181449
+   },
+   {
+    "seed": 2,
+    "event": "2013_russia_meteor",
+    "E2": 0.012839421251991723,
+    "E2_after_prior_match": 0.01269290952292429
+   },
+   {
+    "seed": 2,
+    "event": "2013_sardinia_floods",
+    "E2": 0.15216249000711546,
+    "E2_after_prior_match": 0.08403395014568377
+   },
+   {
+    "seed": 2,
+    "event": "2013_savar_building_collapse",
+    "E2": -0.009786960398955546,
+    "E2_after_prior_match": 0.004840432775504944
+   },
+   {
+    "seed": 2,
+    "event": "2013_singapore_haze",
+    "E2": 0.034590274833875,
+    "E2_after_prior_match": 0.05186169885080533
+   },
+   {
+    "seed": 2,
+    "event": "2013_spain_train_crash",
+    "E2": 0.12286344587890641,
+    "E2_after_prior_match": 0.14166572325993965
+   },
+   {
+    "seed": 2,
+    "event": "2013_typhoon_yolanda",
+    "E2": 0.014340337526462688,
+    "E2_after_prior_match": 0.10037105982938044
+   },
+   {
+    "seed": 2,
+    "event": "2013_west_texas_explosion",
+    "E2": -0.0035372528813153448,
+    "E2_after_prior_match": -0.0016768695782406473
+   },
+   {
+    "seed": 42,
+    "event": "2012_colorado_wildfires",
+    "E2": 0.011145066934018844,
+    "E2_after_prior_match": -0.0060562514339673745
+   },
+   {
+    "seed": 42,
+    "event": "2012_costa_rica_earthquake",
+    "E2": 0.05676949210136517,
+    "E2_after_prior_match": -0.001035929006149905
+   },
+   {
+    "seed": 42,
+    "event": "2012_guatemala_earthquake",
+    "E2": 0.04321922287527791,
+    "E2_after_prior_match": 0.07022984707888469
+   },
+   {
+    "seed": 42,
+    "event": "2012_italy_earthquakes",
+    "E2": 0.013704581808629546,
+    "E2_after_prior_match": 0.0007054617803419205
+   },
+   {
+    "seed": 42,
+    "event": "2012_philipinnes_floods",
+    "E2": 0.050184158997895356,
+    "E2_after_prior_match": 0.025302660269731825
+   },
+   {
+    "seed": 42,
+    "event": "2012_typhoon_pablo",
+    "E2": 0.007377850115986018,
+    "E2_after_prior_match": -0.020153528497815043
+   },
+   {
+    "seed": 42,
+    "event": "2012_venezuela_refinery",
+    "E2": 0.0006222874238499543,
+    "E2_after_prior_match": 0.0064459939761953855
+   },
+   {
+    "seed": 42,
+    "event": "2013_alberta_floods",
+    "E2": 0.042213444732514094,
+    "E2_after_prior_match": 0.03243135446471401
+   },
+   {
+    "seed": 42,
+    "event": "2013_australia_bushfire",
+    "E2": 0.014047387939092437,
+    "E2_after_prior_match": 0.0019451917651088224
+   },
+   {
+    "seed": 42,
+    "event": "2013_bohol_earthquake",
+    "E2": -0.0005740981199460204,
+    "E2_after_prior_match": 0.02025352269597791
+   },
+   {
+    "seed": 42,
+    "event": "2013_boston_bombings",
+    "E2": 0.052125823315346986,
+    "E2_after_prior_match": 0.027196705103681884
+   },
+   {
+    "seed": 42,
+    "event": "2013_brazil_nightclub_fire",
+    "E2": 0.12334722383365831,
+    "E2_after_prior_match": 0.09433157815742182
+   },
+   {
+    "seed": 42,
+    "event": "2013_colorado_floods",
+    "E2": 0.07165037668382868,
+    "E2_after_prior_match": 0.009799899579100213
+   },
+   {
+    "seed": 42,
+    "event": "2013_glasgow_helicopter_crash",
+    "E2": 0.008539495996344626,
+    "E2_after_prior_match": 0.0219199181073938
+   },
+   {
+    "seed": 42,
+    "event": "2013_la_airport_shootings",
+    "E2": 0.04587751205085505,
+    "E2_after_prior_match": 0.08006967018498967
+   },
+   {
+    "seed": 42,
+    "event": "2013_lac_megantic_train_crash",
+    "E2": 0.0018505984799273012,
+    "E2_after_prior_match": 0.0030888420981337594
+   },
+   {
+    "seed": 42,
+    "event": "2013_manila_floods",
+    "E2": -0.010707482521963296,
+    "E2_after_prior_match": 0.012891928663539443
+   },
+   {
+    "seed": 42,
+    "event": "2013_ny_train_crash",
+    "E2": 0.004612637409932507,
+    "E2_after_prior_match": 0.003914225464098586
+   },
+   {
+    "seed": 42,
+    "event": "2013_queensland_floods",
+    "E2": 0.08290489765447451,
+    "E2_after_prior_match": 0.022421247146584666
+   },
+   {
+    "seed": 42,
+    "event": "2013_russia_meteor",
+    "E2": 0.010528879656910406,
+    "E2_after_prior_match": 0.003708627330674563
+   },
+   {
+    "seed": 42,
+    "event": "2013_sardinia_floods",
+    "E2": 0.05789821187804456,
+    "E2_after_prior_match": 0.05665345169795605
+   },
+   {
+    "seed": 42,
+    "event": "2013_savar_building_collapse",
+    "E2": 0.025316167405834145,
+    "E2_after_prior_match": 0.006869537815964055
+   },
+   {
+    "seed": 42,
+    "event": "2013_singapore_haze",
+    "E2": 0.059148643621683705,
+    "E2_after_prior_match": 0.03055083707257622
+   },
+   {
+    "seed": 42,
+    "event": "2013_spain_train_crash",
+    "E2": 0.15029788603148742,
+    "E2_after_prior_match": 0.15426662960751614
+   },
+   {
+    "seed": 42,
+    "event": "2013_typhoon_yolanda",
+    "E2": -0.03659648788972181,
+    "E2_after_prior_match": -0.001551341059916056
+   },
+   {
+    "seed": 42,
+    "event": "2013_west_texas_explosion",
+    "E2": 0.030540380832003167,
+    "E2_after_prior_match": 0.003893143544372424
+   }
+  ],
+  "strata": [
+   {
+    "stratum": [
+     0.0,
+     0.5
+    ],
+    "n_tweets_per_seed": 2871,
+    "pooled_E2_P_mean_over_seeds": 0.03477604942348215
+   },
+   {
+    "stratum": [
+     0.5,
+     0.8
+    ],
+    "n_tweets_per_seed": 1107,
+    "pooled_E2_P_mean_over_seeds": 0.07577317278564599
+   },
+   {
+    "stratum": [
+     0.8,
+     1.0
+    ],
+    "n_tweets_per_seed": 706,
+    "pooled_E2_P_mean_over_seeds": 0.07483372503212045
+   }
+  ],
+  "rare": [
+   {
+    "seed": 1,
+    "event": "2012_colorado_wildfires",
+    "E2_classes_ge5": 0.040276170742223116
+   },
+   {
+    "seed": 1,
+    "event": "2012_costa_rica_earthquake",
+    "E2_classes_ge5": 0.06716588255651901
+   },
+   {
+    "seed": 1,
+    "event": "2012_guatemala_earthquake",
+    "E2_classes_ge5": 0.037647414190373096
+   },
+   {
+    "seed": 1,
+    "event": "2012_italy_earthquakes",
+    "E2_classes_ge5": 0.03045581235215722
+   },
+   {
+    "seed": 1,
+    "event": "2012_philipinnes_floods",
+    "E2_classes_ge5": 0.010037973245850984
+   },
+   {
+    "seed": 1,
+    "event": "2012_typhoon_pablo",
+    "E2_classes_ge5": 0.03769932576699753
+   },
+   {
+    "seed": 1,
+    "event": "2012_venezuela_refinery",
+    "E2_classes_ge5": 0.0802554335947876
+   },
+   {
+    "seed": 1,
+    "event": "2013_alberta_floods",
+    "E2_classes_ge5": 0.04451812699706892
+   },
+   {
+    "seed": 1,
+    "event": "2013_australia_bushfire",
+    "E2_classes_ge5": 0.016400891821234498
+   },
+   {
+    "seed": 1,
+    "event": "2013_bohol_earthquake",
+    "E2_classes_ge5": -0.00345241801763696
+   },
+   {
+    "seed": 1,
+    "event": "2013_boston_bombings",
+    "E2_classes_ge5": -0.02300840890638267
+   },
+   {
+    "seed": 1,
+    "event": "2013_brazil_nightclub_fire",
+    "E2_classes_ge5": 0.10392849669037973
+   },
+   {
+    "seed": 1,
+    "event": "2013_colorado_floods",
+    "E2_classes_ge5": 0.060415658737515976
+   },
+   {
+    "seed": 1,
+    "event": "2013_glasgow_helicopter_crash",
+    "E2_classes_ge5": -0.013598509219064359
+   },
+   {
+    "seed": 1,
+    "event": "2013_la_airport_shootings",
+    "E2_classes_ge5": 0.10317160781277646
+   },
+   {
+    "seed": 1,
+    "event": "2013_lac_megantic_train_crash",
+    "E2_classes_ge5": 0.017020506684438108
+   },
+   {
+    "seed": 1,
+    "event": "2013_manila_floods",
+    "E2_classes_ge5": 0.03924194500400224
+   },
+   {
+    "seed": 1,
+    "event": "2013_ny_train_crash",
+    "E2_classes_ge5": -0.04605341279679265
+   },
+   {
+    "seed": 1,
+    "event": "2013_queensland_floods",
+    "E2_classes_ge5": -0.01786026686575104
+   },
+   {
+    "seed": 1,
+    "event": "2013_russia_meteor",
+    "E2_classes_ge5": 0.029176971110609573
+   },
+   {
+    "seed": 1,
+    "event": "2013_sardinia_floods",
+    "E2_classes_ge5": 0.07943487420171841
+   },
+   {
+    "seed": 1,
+    "event": "2013_savar_building_collapse",
+    "E2_classes_ge5": 0.025931059742899887
+   },
+   {
+    "seed": 1,
+    "event": "2013_singapore_haze",
+    "E2_classes_ge5": -0.033841301986098304
+   },
+   {
+    "seed": 1,
+    "event": "2013_spain_train_crash",
+    "E2_classes_ge5": 0.08042878777642448
+   },
+   {
+    "seed": 1,
+    "event": "2013_typhoon_yolanda",
+    "E2_classes_ge5": 0.011269045597774863
+   },
+   {
+    "seed": 1,
+    "event": "2013_west_texas_explosion",
+    "E2_classes_ge5": 0.016263783977104374
+   },
+   {
+    "seed": 2,
+    "event": "2012_colorado_wildfires",
+    "E2_classes_ge5": 0.060491188296164955
+   },
+   {
+    "seed": 2,
+    "event": "2012_costa_rica_earthquake",
+    "E2_classes_ge5": 0.12159969522448355
+   },
+   {
+    "seed": 2,
+    "event": "2012_guatemala_earthquake",
+    "E2_classes_ge5": 0.04965117120033502
+   },
+   {
+    "seed": 2,
+    "event": "2012_italy_earthquakes",
+    "E2_classes_ge5": 0.012535181651442462
+   },
+   {
+    "seed": 2,
+    "event": "2012_philipinnes_floods",
+    "E2_classes_ge5": 0.03302004514615553
+   },
+   {
+    "seed": 2,
+    "event": "2012_typhoon_pablo",
+    "E2_classes_ge5": -0.028293875953599
+   },
+   {
+    "seed": 2,
+    "event": "2012_venezuela_refinery",
+    "E2_classes_ge5": 0.05383952401787473
+   },
+   {
+    "seed": 2,
+    "event": "2013_alberta_floods",
+    "E2_classes_ge5": 0.051249921454846414
+   },
+   {
+    "seed": 2,
+    "event": "2013_australia_bushfire",
+    "E2_classes_ge5": 0.05375821253336727
+   },
+   {
+    "seed": 2,
+    "event": "2013_bohol_earthquake",
+    "E2_classes_ge5": 0.01844583711212422
+   },
+   {
+    "seed": 2,
+    "event": "2013_boston_bombings",
+    "E2_classes_ge5": 0.03067225285934494
+   },
+   {
+    "seed": 2,
+    "event": "2013_brazil_nightclub_fire",
+    "E2_classes_ge5": 0.09622091590259285
+   },
+   {
+    "seed": 2,
+    "event": "2013_colorado_floods",
+    "E2_classes_ge5": 0.024242483173482765
+   },
+   {
+    "seed": 2,
+    "event": "2013_glasgow_helicopter_crash",
+    "E2_classes_ge5": 0.02675239609560698
+   },
+   {
+    "seed": 2,
+    "event": "2013_la_airport_shootings",
+    "E2_classes_ge5": 0.18842818214014972
+   },
+   {
+    "seed": 2,
+    "event": "2013_lac_megantic_train_crash",
+    "E2_classes_ge5": 0.04395693510987109
+   },
+   {
+    "seed": 2,
+    "event": "2013_manila_floods",
+    "E2_classes_ge5": 0.025980761388758655
+   },
+   {
+    "seed": 2,
+    "event": "2013_ny_train_crash",
+    "E2_classes_ge5": -0.07214025425819559
+   },
+   {
+    "seed": 2,
+    "event": "2013_queensland_floods",
+    "E2_classes_ge5": 0.00651796404322269
+   },
+   {
+    "seed": 2,
+    "event": "2013_russia_meteor",
+    "E2_classes_ge5": 0.016049276564989667
+   },
+   {
+    "seed": 2,
+    "event": "2013_sardinia_floods",
+    "E2_classes_ge5": 0.15216249000711546
+   },
+   {
+    "seed": 2,
+    "event": "2013_savar_building_collapse",
+    "E2_classes_ge5": 0.024870523646533527
+   },
+   {
+    "seed": 2,
+    "event": "2013_singapore_haze",
+    "E2_classes_ge5": 0.031052078917479242
+   },
+   {
+    "seed": 2,
+    "event": "2013_spain_train_crash",
+    "E2_classes_ge5": 0.153579307348633
+   },
+   {
+    "seed": 2,
+    "event": "2013_typhoon_yolanda",
+    "E2_classes_ge5": 0.017208405031755247
+   },
+   {
+    "seed": 2,
+    "event": "2013_west_texas_explosion",
+    "E2_classes_ge5": -0.013768512981387926
+   },
+   {
+    "seed": 42,
+    "event": "2012_colorado_wildfires",
+    "E2_classes_ge5": 0.011145066934018844
+   },
+   {
+    "seed": 42,
+    "event": "2012_costa_rica_earthquake",
+    "E2_classes_ge5": 0.05676949210136517
+   },
+   {
+    "seed": 42,
+    "event": "2012_guatemala_earthquake",
+    "E2_classes_ge5": 0.04321922287527791
+   },
+   {
+    "seed": 42,
+    "event": "2012_italy_earthquakes",
+    "E2_classes_ge5": 0.013704581808629546
+   },
+   {
+    "seed": 42,
+    "event": "2012_philipinnes_floods",
+    "E2_classes_ge5": 0.050184158997895356
+   },
+   {
+    "seed": 42,
+    "event": "2012_typhoon_pablo",
+    "E2_classes_ge5": 0.007377850115986018
+   },
+   {
+    "seed": 42,
+    "event": "2012_venezuela_refinery",
+    "E2_classes_ge5": 0.0006222874238499543
+   },
+   {
+    "seed": 42,
+    "event": "2013_alberta_floods",
+    "E2_classes_ge5": 0.042213444732514094
+   },
+   {
+    "seed": 42,
+    "event": "2013_australia_bushfire",
+    "E2_classes_ge5": 0.014047387939092437
+   },
+   {
+    "seed": 42,
+    "event": "2013_bohol_earthquake",
+    "E2_classes_ge5": -0.0005740981199460204
+   },
+   {
+    "seed": 42,
+    "event": "2013_boston_bombings",
+    "E2_classes_ge5": 0.07818873497302048
+   },
+   {
+    "seed": 42,
+    "event": "2013_brazil_nightclub_fire",
+    "E2_classes_ge5": 0.18502083575048744
+   },
+   {
+    "seed": 42,
+    "event": "2013_colorado_floods",
+    "E2_classes_ge5": 0.07165037668382868
+   },
+   {
+    "seed": 42,
+    "event": "2013_glasgow_helicopter_crash",
+    "E2_classes_ge5": 0.008539495996344626
+   },
+   {
+    "seed": 42,
+    "event": "2013_la_airport_shootings",
+    "E2_classes_ge5": 0.057346890063568856
+   },
+   {
+    "seed": 42,
+    "event": "2013_lac_megantic_train_crash",
+    "E2_classes_ge5": 0.0022207181759127392
+   },
+   {
+    "seed": 42,
+    "event": "2013_manila_floods",
+    "E2_classes_ge5": -0.010707482521963296
+   },
+   {
+    "seed": 42,
+    "event": "2013_ny_train_crash",
+    "E2_classes_ge5": 0.006918956114898789
+   },
+   {
+    "seed": 42,
+    "event": "2013_queensland_floods",
+    "E2_classes_ge5": 0.08290489765447451
+   },
+   {
+    "seed": 42,
+    "event": "2013_russia_meteor",
+    "E2_classes_ge5": 0.01316109957113798
+   },
+   {
+    "seed": 42,
+    "event": "2013_sardinia_floods",
+    "E2_classes_ge5": 0.05789821187804456
+   },
+   {
+    "seed": 42,
+    "event": "2013_savar_building_collapse",
+    "E2_classes_ge5": 0.039521223700556996
+   },
+   {
+    "seed": 42,
+    "event": "2013_singapore_haze",
+    "E2_classes_ge5": 0.04705629876585893
+   },
+   {
+    "seed": 42,
+    "event": "2013_spain_train_crash",
+    "E2_classes_ge5": 0.18787235753935927
+   },
+   {
+    "seed": 42,
+    "event": "2013_typhoon_yolanda",
+    "E2_classes_ge5": -0.04391578546766617
+   },
+   {
+    "seed": 42,
+    "event": "2013_west_texas_explosion",
+    "E2_classes_ge5": 0.02712464747459442
+   }
+  ],
+  "stray_matched": [
+   {
+    "seed": 1,
+    "event": "2012_colorado_wildfires",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2012_costa_rica_earthquake",
+    "id_on_R": 0,
+    "loeo_on_R": 1,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2012_guatemala_earthquake",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2012_italy_earthquakes",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2012_philipinnes_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2012_typhoon_pablo",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2012_venezuela_refinery",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_alberta_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_australia_bushfire",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_bohol_earthquake",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_boston_bombings",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_brazil_nightclub_fire",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_colorado_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_glasgow_helicopter_crash",
+    "id_on_R": 1,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_la_airport_shootings",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 1,
+    "MC_e": 0.08235472025514701
+   },
+   {
+    "seed": 1,
+    "event": "2013_lac_megantic_train_crash",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_manila_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_ny_train_crash",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_queensland_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_russia_meteor",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_sardinia_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_savar_building_collapse",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_singapore_haze",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_spain_train_crash",
+    "id_on_R": 0,
+    "loeo_on_R": 1,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_typhoon_yolanda",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_west_texas_explosion",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2012_colorado_wildfires",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2012_costa_rica_earthquake",
+    "id_on_R": 0,
+    "loeo_on_R": 1,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2012_guatemala_earthquake",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2012_italy_earthquakes",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2012_philipinnes_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2012_typhoon_pablo",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2012_venezuela_refinery",
+    "id_on_R": 0,
+    "loeo_on_R": 1,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_alberta_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_australia_bushfire",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_bohol_earthquake",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_boston_bombings",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_brazil_nightclub_fire",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_colorado_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_glasgow_helicopter_crash",
+    "id_on_R": 0,
+    "loeo_on_R": 1,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_la_airport_shootings",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 1,
+    "MC_e": 0.08115401288794671
+   },
+   {
+    "seed": 2,
+    "event": "2013_lac_megantic_train_crash",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_manila_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_ny_train_crash",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_queensland_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_russia_meteor",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_sardinia_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_savar_building_collapse",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_singapore_haze",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_spain_train_crash",
+    "id_on_R": 0,
+    "loeo_on_R": 1,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_typhoon_yolanda",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_west_texas_explosion",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2012_colorado_wildfires",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2012_costa_rica_earthquake",
+    "id_on_R": 1,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2012_guatemala_earthquake",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2012_italy_earthquakes",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2012_philipinnes_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2012_typhoon_pablo",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2012_venezuela_refinery",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_alberta_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_australia_bushfire",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_bohol_earthquake",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_boston_bombings",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_brazil_nightclub_fire",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_colorado_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_glasgow_helicopter_crash",
+    "id_on_R": 1,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_la_airport_shootings",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 1,
+    "MC_e": 0.08832212066240414
+   },
+   {
+    "seed": 42,
+    "event": "2013_lac_megantic_train_crash",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_manila_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_ny_train_crash",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_queensland_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_russia_meteor",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_sardinia_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_savar_building_collapse",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_singapore_haze",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_spain_train_crash",
+    "id_on_R": 0,
+    "loeo_on_R": 1,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_typhoon_yolanda",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_west_texas_explosion",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   }
+  ],
+  "mc_by_absent": [
+   {
+    "n_absent_classes": 0,
+    "mean": 0.0,
+    "count": 75
+   },
+   {
+    "n_absent_classes": 1,
+    "mean": 0.0839,
+    "count": 3
+   }
+  ],
+  "prior_match_summary": {
+   "E2": 0.036004799294028236,
+   "E2_after_prior_match": 0.02580632149807355,
+   "share_closed": 0.2832532883372081
+  },
+  "rare_summary": {
+   "E2_classes_ge5": 0.03872459522622333,
+   "n_events": 26
+  },
+  "stray_summary": {
+   "id_on_R": 0.064,
+   "loeo_on_R": 0.115,
+   "loeo_on_event": 0.038
+  }
+ },
+ {
+  "corpus": "crisislext26",
+  "model": "roberta-base",
+  "em": [
+   {
+    "seed": 1,
+    "event": "2012_colorado_wildfires",
+    "E2": 0.08558358529391952,
+    "E2_after_prior_match": 0.041360891204003325
+   },
+   {
+    "seed": 1,
+    "event": "2012_costa_rica_earthquake",
+    "E2": 0.013626178056788563,
+    "E2_after_prior_match": 0.0026666420571360705
+   },
+   {
+    "seed": 1,
+    "event": "2012_guatemala_earthquake",
+    "E2": -0.0256343282530076,
+    "E2_after_prior_match": -0.009855376899478352
+   },
+   {
+    "seed": 1,
+    "event": "2012_italy_earthquakes",
+    "E2": 0.04845533230275151,
+    "E2_after_prior_match": 0.01481046389196583
+   },
+   {
+    "seed": 1,
+    "event": "2012_philipinnes_floods",
+    "E2": 0.019349617631038596,
+    "E2_after_prior_match": 0.061182829841174624
+   },
+   {
+    "seed": 1,
+    "event": "2012_typhoon_pablo",
+    "E2": -0.024684207696881066,
+    "E2_after_prior_match": -0.01591749252189878
+   },
+   {
+    "seed": 1,
+    "event": "2012_venezuela_refinery",
+    "E2": -0.00843391956295192,
+    "E2_after_prior_match": -0.0230631398350174
+   },
+   {
+    "seed": 1,
+    "event": "2013_alberta_floods",
+    "E2": -0.0034296979602995714,
+    "E2_after_prior_match": -0.028507831452065036
+   },
+   {
+    "seed": 1,
+    "event": "2013_australia_bushfire",
+    "E2": 0.0574031507465953,
+    "E2_after_prior_match": 0.022916796735845457
+   },
+   {
+    "seed": 1,
+    "event": "2013_bohol_earthquake",
+    "E2": 0.016151711899651477,
+    "E2_after_prior_match": 0.011569884386092855
+   },
+   {
+    "seed": 1,
+    "event": "2013_boston_bombings",
+    "E2": 0.01999173745579863,
+    "E2_after_prior_match": 0.013258266040995559
+   },
+   {
+    "seed": 1,
+    "event": "2013_brazil_nightclub_fire",
+    "E2": 0.0012908151999145856,
+    "E2_after_prior_match": 0.030782075281780064
+   },
+   {
+    "seed": 1,
+    "event": "2013_colorado_floods",
+    "E2": -0.021046826175705413,
+    "E2_after_prior_match": -0.014368285620487864
+   },
+   {
+    "seed": 1,
+    "event": "2013_glasgow_helicopter_crash",
+    "E2": 0.09239811920489538,
+    "E2_after_prior_match": 0.0635528878602577
+   },
+   {
+    "seed": 1,
+    "event": "2013_la_airport_shootings",
+    "E2": 0.05804188501556917,
+    "E2_after_prior_match": 0.028985202488679085
+   },
+   {
+    "seed": 1,
+    "event": "2013_lac_megantic_train_crash",
+    "E2": 0.036436656287899494,
+    "E2_after_prior_match": -0.0007543478634237655
+   },
+   {
+    "seed": 1,
+    "event": "2013_manila_floods",
+    "E2": 0.05200928305386654,
+    "E2_after_prior_match": 0.046752594044462414
+   },
+   {
+    "seed": 1,
+    "event": "2013_ny_train_crash",
+    "E2": 0.08703916187725769,
+    "E2_after_prior_match": 0.10727067874217167
+   },
+   {
+    "seed": 1,
+    "event": "2013_queensland_floods",
+    "E2": 0.023857158288055347,
+    "E2_after_prior_match": -0.0064275023954925015
+   },
+   {
+    "seed": 1,
+    "event": "2013_russia_meteor",
+    "E2": -0.023430291196066544,
+    "E2_after_prior_match": 0.006812584121532961
+   },
+   {
+    "seed": 1,
+    "event": "2013_sardinia_floods",
+    "E2": -0.012870054694595234,
+    "E2_after_prior_match": 0.01085051376839008
+   },
+   {
+    "seed": 1,
+    "event": "2013_savar_building_collapse",
+    "E2": -0.028536208845769406,
+    "E2_after_prior_match": 0.003721305745042758
+   },
+   {
+    "seed": 1,
+    "event": "2013_singapore_haze",
+    "E2": 0.07070293879162598,
+    "E2_after_prior_match": -0.024529558513732286
+   },
+   {
+    "seed": 1,
+    "event": "2013_spain_train_crash",
+    "E2": -0.008625579349424872,
+    "E2_after_prior_match": 0.009756197279830348
+   },
+   {
+    "seed": 1,
+    "event": "2013_typhoon_yolanda",
+    "E2": -0.048888306767405965,
+    "E2_after_prior_match": -0.0378362632432957
+   },
+   {
+    "seed": 1,
+    "event": "2013_west_texas_explosion",
+    "E2": 0.06653660270997508,
+    "E2_after_prior_match": -0.00045150309751063045
+   },
+   {
+    "seed": 2,
+    "event": "2012_colorado_wildfires",
+    "E2": 0.06770870081084257,
+    "E2_after_prior_match": 0.03445024332599289
+   },
+   {
+    "seed": 2,
+    "event": "2012_costa_rica_earthquake",
+    "E2": 0.014143875595046373,
+    "E2_after_prior_match": 0.009841418823719694
+   },
+   {
+    "seed": 2,
+    "event": "2012_guatemala_earthquake",
+    "E2": 0.13179267685825813,
+    "E2_after_prior_match": 0.14720846568090962
+   },
+   {
+    "seed": 2,
+    "event": "2012_italy_earthquakes",
+    "E2": 0.07962757499237066,
+    "E2_after_prior_match": 0.07307183774591897
+   },
+   {
+    "seed": 2,
+    "event": "2012_philipinnes_floods",
+    "E2": 0.04557185426916588,
+    "E2_after_prior_match": 0.058482575644434154
+   },
+   {
+    "seed": 2,
+    "event": "2012_typhoon_pablo",
+    "E2": -0.0228738861432235,
+    "E2_after_prior_match": -0.02562034167930327
+   },
+   {
+    "seed": 2,
+    "event": "2012_venezuela_refinery",
+    "E2": 0.09869620213706243,
+    "E2_after_prior_match": 0.09744996991691746
+   },
+   {
+    "seed": 2,
+    "event": "2013_alberta_floods",
+    "E2": 0.02574178175846653,
+    "E2_after_prior_match": 0.026359807466804663
+   },
+   {
+    "seed": 2,
+    "event": "2013_australia_bushfire",
+    "E2": 0.07558709757583804,
+    "E2_after_prior_match": 0.07604981136888789
+   },
+   {
+    "seed": 2,
+    "event": "2013_bohol_earthquake",
+    "E2": 0.07131920603787623,
+    "E2_after_prior_match": 0.07848789611873175
+   },
+   {
+    "seed": 2,
+    "event": "2013_boston_bombings",
+    "E2": 0.08797662138026463,
+    "E2_after_prior_match": 0.1291494546093095
+   },
+   {
+    "seed": 2,
+    "event": "2013_brazil_nightclub_fire",
+    "E2": 0.04684980079843476,
+    "E2_after_prior_match": 0.0307932147217862
+   },
+   {
+    "seed": 2,
+    "event": "2013_colorado_floods",
+    "E2": 0.03766647215394325,
+    "E2_after_prior_match": 0.025803682858554278
+   },
+   {
+    "seed": 2,
+    "event": "2013_glasgow_helicopter_crash",
+    "E2": 0.19435564547641748,
+    "E2_after_prior_match": 0.04328648087827158
+   },
+   {
+    "seed": 2,
+    "event": "2013_la_airport_shootings",
+    "E2": 0.0845261140691248,
+    "E2_after_prior_match": 0.012968639386474634
+   },
+   {
+    "seed": 2,
+    "event": "2013_lac_megantic_train_crash",
+    "E2": 0.05053785403050115,
+    "E2_after_prior_match": 0.034808626851471125
+   },
+   {
+    "seed": 2,
+    "event": "2013_manila_floods",
+    "E2": 0.023261183290182896,
+    "E2_after_prior_match": 0.006216065318499386
+   },
+   {
+    "seed": 2,
+    "event": "2013_ny_train_crash",
+    "E2": 0.0075829113155396755,
+    "E2_after_prior_match": 0.023385105121046967
+   },
+   {
+    "seed": 2,
+    "event": "2013_queensland_floods",
+    "E2": 0.006386368947505328,
+    "E2_after_prior_match": 0.005150847302557993
+   },
+   {
+    "seed": 2,
+    "event": "2013_russia_meteor",
+    "E2": 0.023017623716153013,
+    "E2_after_prior_match": 0.021349418938096387
+   },
+   {
+    "seed": 2,
+    "event": "2013_sardinia_floods",
+    "E2": 0.01871761690951662,
+    "E2_after_prior_match": 0.03429496545017896
+   },
+   {
+    "seed": 2,
+    "event": "2013_savar_building_collapse",
+    "E2": -0.008085049332270222,
+    "E2_after_prior_match": -0.024765005631619097
+   },
+   {
+    "seed": 2,
+    "event": "2013_singapore_haze",
+    "E2": 0.05797178919500823,
+    "E2_after_prior_match": 0.026621556420317993
+   },
+   {
+    "seed": 2,
+    "event": "2013_spain_train_crash",
+    "E2": -0.00732019703481912,
+    "E2_after_prior_match": 0.011587089482870794
+   },
+   {
+    "seed": 2,
+    "event": "2013_typhoon_yolanda",
+    "E2": 0.006724742852690202,
+    "E2_after_prior_match": -0.0024501944788100083
+   },
+   {
+    "seed": 2,
+    "event": "2013_west_texas_explosion",
+    "E2": -0.05869337428900967,
+    "E2_after_prior_match": 0.00857184545495493
+   },
+   {
+    "seed": 42,
+    "event": "2012_colorado_wildfires",
+    "E2": 0.07400278477631617,
+    "E2_after_prior_match": 0.08428516390472918
+   },
+   {
+    "seed": 42,
+    "event": "2012_costa_rica_earthquake",
+    "E2": -0.032201554810894484,
+    "E2_after_prior_match": -0.05190472811777003
+   },
+   {
+    "seed": 42,
+    "event": "2012_guatemala_earthquake",
+    "E2": 0.08573160135124724,
+    "E2_after_prior_match": 0.022889846683117
+   },
+   {
+    "seed": 42,
+    "event": "2012_italy_earthquakes",
+    "E2": 0.03395083669514465,
+    "E2_after_prior_match": 0.04761271583544163
+   },
+   {
+    "seed": 42,
+    "event": "2012_philipinnes_floods",
+    "E2": 0.030015904024001228,
+    "E2_after_prior_match": 0.03004636592878218
+   },
+   {
+    "seed": 42,
+    "event": "2012_typhoon_pablo",
+    "E2": 0.04463429073055525,
+    "E2_after_prior_match": 0.04476707140784808
+   },
+   {
+    "seed": 42,
+    "event": "2012_venezuela_refinery",
+    "E2": 0.068845103799412,
+    "E2_after_prior_match": 0.03119910012793281
+   },
+   {
+    "seed": 42,
+    "event": "2013_alberta_floods",
+    "E2": 0.020769717049176295,
+    "E2_after_prior_match": -0.014109329181209551
+   },
+   {
+    "seed": 42,
+    "event": "2013_australia_bushfire",
+    "E2": 0.01689552180685394,
+    "E2_after_prior_match": 0.02952928207009009
+   },
+   {
+    "seed": 42,
+    "event": "2013_bohol_earthquake",
+    "E2": 0.01978624504852622,
+    "E2_after_prior_match": 0.04438512459067523
+   },
+   {
+    "seed": 42,
+    "event": "2013_boston_bombings",
+    "E2": 0.012848829657340355,
+    "E2_after_prior_match": 0.03592855068537948
+   },
+   {
+    "seed": 42,
+    "event": "2013_brazil_nightclub_fire",
+    "E2": 0.031649276950695915,
+    "E2_after_prior_match": 0.012187686278795906
+   },
+   {
+    "seed": 42,
+    "event": "2013_colorado_floods",
+    "E2": 0.015637778128408608,
+    "E2_after_prior_match": 0.015645335066097443
+   },
+   {
+    "seed": 42,
+    "event": "2013_glasgow_helicopter_crash",
+    "E2": 0.10168077026165911,
+    "E2_after_prior_match": 0.07961126757868009
+   },
+   {
+    "seed": 42,
+    "event": "2013_la_airport_shootings",
+    "E2": 0.039461918787402905,
+    "E2_after_prior_match": 0.042537986978092635
+   },
+   {
+    "seed": 42,
+    "event": "2013_lac_megantic_train_crash",
+    "E2": 0.06955523664894647,
+    "E2_after_prior_match": 0.02516009383624429
+   },
+   {
+    "seed": 42,
+    "event": "2013_manila_floods",
+    "E2": 0.007636027280243818,
+    "E2_after_prior_match": -0.020578073977156386
+   },
+   {
+    "seed": 42,
+    "event": "2013_ny_train_crash",
+    "E2": -0.0002302798216257118,
+    "E2_after_prior_match": 0.006025600519401153
+   },
+   {
+    "seed": 42,
+    "event": "2013_queensland_floods",
+    "E2": -0.03418346085800161,
+    "E2_after_prior_match": -0.006491017568718838
+   },
+   {
+    "seed": 42,
+    "event": "2013_russia_meteor",
+    "E2": 0.014335633443184892,
+    "E2_after_prior_match": 0.0359388305616446
+   },
+   {
+    "seed": 42,
+    "event": "2013_sardinia_floods",
+    "E2": 0.0358188664282546,
+    "E2_after_prior_match": 0.039969349333931814
+   },
+   {
+    "seed": 42,
+    "event": "2013_savar_building_collapse",
+    "E2": -0.022776087132522826,
+    "E2_after_prior_match": -0.040781728394037986
+   },
+   {
+    "seed": 42,
+    "event": "2013_singapore_haze",
+    "E2": 0.03516887075219788,
+    "E2_after_prior_match": -0.06722732889476646
+   },
+   {
+    "seed": 42,
+    "event": "2013_spain_train_crash",
+    "E2": 0.03875086198029132,
+    "E2_after_prior_match": 0.04079862449337379
+   },
+   {
+    "seed": 42,
+    "event": "2013_typhoon_yolanda",
+    "E2": 0.05603166500430312,
+    "E2_after_prior_match": 0.00891978727802556
+   },
+   {
+    "seed": 42,
+    "event": "2013_west_texas_explosion",
+    "E2": 0.10093266719822502,
+    "E2_after_prior_match": 0.016113959634929564
+   }
+  ],
+  "strata": [
+   {
+    "stratum": [
+     0.0,
+     0.5
+    ],
+    "n_tweets_per_seed": 2871,
+    "pooled_E2_P_mean_over_seeds": 0.028041122275816305
+   },
+   {
+    "stratum": [
+     0.5,
+     0.8
+    ],
+    "n_tweets_per_seed": 1107,
+    "pooled_E2_P_mean_over_seeds": 0.051228845305943405
+   },
+   {
+    "stratum": [
+     0.8,
+     1.0
+    ],
+    "n_tweets_per_seed": 706,
+    "pooled_E2_P_mean_over_seeds": 0.07100744803781596
+   }
+  ],
+  "rare": [
+   {
+    "seed": 1,
+    "event": "2012_colorado_wildfires",
+    "E2_classes_ge5": 0.08558358529391952
+   },
+   {
+    "seed": 1,
+    "event": "2012_costa_rica_earthquake",
+    "E2_classes_ge5": 0.013626178056788563
+   },
+   {
+    "seed": 1,
+    "event": "2012_guatemala_earthquake",
+    "E2_classes_ge5": -0.0256343282530076
+   },
+   {
+    "seed": 1,
+    "event": "2012_italy_earthquakes",
+    "E2_classes_ge5": 0.04845533230275151
+   },
+   {
+    "seed": 1,
+    "event": "2012_philipinnes_floods",
+    "E2_classes_ge5": 0.019349617631038596
+   },
+   {
+    "seed": 1,
+    "event": "2012_typhoon_pablo",
+    "E2_classes_ge5": -0.024684207696881066
+   },
+   {
+    "seed": 1,
+    "event": "2012_venezuela_refinery",
+    "E2_classes_ge5": -0.00843391956295192
+   },
+   {
+    "seed": 1,
+    "event": "2013_alberta_floods",
+    "E2_classes_ge5": -0.0034296979602995714
+   },
+   {
+    "seed": 1,
+    "event": "2013_australia_bushfire",
+    "E2_classes_ge5": 0.0574031507465953
+   },
+   {
+    "seed": 1,
+    "event": "2013_bohol_earthquake",
+    "E2_classes_ge5": 0.016151711899651477
+   },
+   {
+    "seed": 1,
+    "event": "2013_boston_bombings",
+    "E2_classes_ge5": 0.02998760618369789
+   },
+   {
+    "seed": 1,
+    "event": "2013_brazil_nightclub_fire",
+    "E2_classes_ge5": 0.001936222799871934
+   },
+   {
+    "seed": 1,
+    "event": "2013_colorado_floods",
+    "E2_classes_ge5": -0.021046826175705413
+   },
+   {
+    "seed": 1,
+    "event": "2013_glasgow_helicopter_crash",
+    "E2_classes_ge5": 0.09239811920489538
+   },
+   {
+    "seed": 1,
+    "event": "2013_la_airport_shootings",
+    "E2_classes_ge5": 0.07255235626946144
+   },
+   {
+    "seed": 1,
+    "event": "2013_lac_megantic_train_crash",
+    "E2_classes_ge5": 0.04372398754547946
+   },
+   {
+    "seed": 1,
+    "event": "2013_manila_floods",
+    "E2_classes_ge5": 0.05200928305386654
+   },
+   {
+    "seed": 1,
+    "event": "2013_ny_train_crash",
+    "E2_classes_ge5": -0.0361079238507801
+   },
+   {
+    "seed": 1,
+    "event": "2013_queensland_floods",
+    "E2_classes_ge5": 0.023857158288055347
+   },
+   {
+    "seed": 1,
+    "event": "2013_russia_meteor",
+    "E2_classes_ge5": 0.012378802671583644
+   },
+   {
+    "seed": 1,
+    "event": "2013_sardinia_floods",
+    "E2_classes_ge5": -0.012870054694595234
+   },
+   {
+    "seed": 1,
+    "event": "2013_savar_building_collapse",
+    "E2_classes_ge5": -0.03687039748951837
+   },
+   {
+    "seed": 1,
+    "event": "2013_singapore_haze",
+    "E2_classes_ge5": 0.010816312949343654
+   },
+   {
+    "seed": 1,
+    "event": "2013_spain_train_crash",
+    "E2_classes_ge5": -0.010781974186781063
+   },
+   {
+    "seed": 1,
+    "event": "2013_typhoon_yolanda",
+    "E2_classes_ge5": 0.0013340318791127403
+   },
+   {
+    "seed": 1,
+    "event": "2013_west_texas_explosion",
+    "E2_classes_ge5": 0.013177256585303443
+   },
+   {
+    "seed": 2,
+    "event": "2012_colorado_wildfires",
+    "E2_classes_ge5": 0.06770870081084257
+   },
+   {
+    "seed": 2,
+    "event": "2012_costa_rica_earthquake",
+    "E2_classes_ge5": 0.014143875595046373
+   },
+   {
+    "seed": 2,
+    "event": "2012_guatemala_earthquake",
+    "E2_classes_ge5": 0.13179267685825813
+   },
+   {
+    "seed": 2,
+    "event": "2012_italy_earthquakes",
+    "E2_classes_ge5": 0.07962757499237066
+   },
+   {
+    "seed": 2,
+    "event": "2012_philipinnes_floods",
+    "E2_classes_ge5": 0.04557185426916588
+   },
+   {
+    "seed": 2,
+    "event": "2012_typhoon_pablo",
+    "E2_classes_ge5": -0.0228738861432235
+   },
+   {
+    "seed": 2,
+    "event": "2012_venezuela_refinery",
+    "E2_classes_ge5": 0.09869620213706243
+   },
+   {
+    "seed": 2,
+    "event": "2013_alberta_floods",
+    "E2_classes_ge5": 0.02574178175846653
+   },
+   {
+    "seed": 2,
+    "event": "2013_australia_bushfire",
+    "E2_classes_ge5": 0.07558709757583804
+   },
+   {
+    "seed": 2,
+    "event": "2013_bohol_earthquake",
+    "E2_classes_ge5": 0.07131920603787623
+   },
+   {
+    "seed": 2,
+    "event": "2013_boston_bombings",
+    "E2_classes_ge5": 0.006964932070396945
+   },
+   {
+    "seed": 2,
+    "event": "2013_brazil_nightclub_fire",
+    "E2_classes_ge5": 0.07027470119765222
+   },
+   {
+    "seed": 2,
+    "event": "2013_colorado_floods",
+    "E2_classes_ge5": 0.03766647215394325
+   },
+   {
+    "seed": 2,
+    "event": "2013_glasgow_helicopter_crash",
+    "E2_classes_ge5": 0.19435564547641748
+   },
+   {
+    "seed": 2,
+    "event": "2013_la_airport_shootings",
+    "E2_classes_ge5": 0.10565764258640598
+   },
+   {
+    "seed": 2,
+    "event": "2013_lac_megantic_train_crash",
+    "E2_classes_ge5": 0.06064542483660129
+   },
+   {
+    "seed": 2,
+    "event": "2013_manila_floods",
+    "E2_classes_ge5": 0.023261183290182896
+   },
+   {
+    "seed": 2,
+    "event": "2013_ny_train_crash",
+    "E2_classes_ge5": 0.011374366973309402
+   },
+   {
+    "seed": 2,
+    "event": "2013_queensland_floods",
+    "E2_classes_ge5": 0.006386368947505328
+   },
+   {
+    "seed": 2,
+    "event": "2013_russia_meteor",
+    "E2_classes_ge5": 0.02877202964519132
+   },
+   {
+    "seed": 2,
+    "event": "2013_sardinia_floods",
+    "E2_classes_ge5": 0.01871761690951662
+   },
+   {
+    "seed": 2,
+    "event": "2013_savar_building_collapse",
+    "E2_classes_ge5": -0.036372118866560554
+   },
+   {
+    "seed": 2,
+    "event": "2013_singapore_haze",
+    "E2_classes_ge5": 0.061957683792512375
+   },
+   {
+    "seed": 2,
+    "event": "2013_spain_train_crash",
+    "E2_classes_ge5": -0.00915024629352379
+   },
+   {
+    "seed": 2,
+    "event": "2013_typhoon_yolanda",
+    "E2_classes_ge5": 0.00806969142322822
+   },
+   {
+    "seed": 2,
+    "event": "2013_west_texas_explosion",
+    "E2_classes_ge5": -0.013289192003954398
+   },
+   {
+    "seed": 42,
+    "event": "2012_colorado_wildfires",
+    "E2_classes_ge5": 0.07400278477631617
+   },
+   {
+    "seed": 42,
+    "event": "2012_costa_rica_earthquake",
+    "E2_classes_ge5": -0.032201554810894484
+   },
+   {
+    "seed": 42,
+    "event": "2012_guatemala_earthquake",
+    "E2_classes_ge5": 0.08573160135124724
+   },
+   {
+    "seed": 42,
+    "event": "2012_italy_earthquakes",
+    "E2_classes_ge5": 0.03395083669514465
+   },
+   {
+    "seed": 42,
+    "event": "2012_philipinnes_floods",
+    "E2_classes_ge5": 0.030015904024001228
+   },
+   {
+    "seed": 42,
+    "event": "2012_typhoon_pablo",
+    "E2_classes_ge5": 0.04463429073055525
+   },
+   {
+    "seed": 42,
+    "event": "2012_venezuela_refinery",
+    "E2_classes_ge5": 0.068845103799412
+   },
+   {
+    "seed": 42,
+    "event": "2013_alberta_floods",
+    "E2_classes_ge5": 0.020769717049176295
+   },
+   {
+    "seed": 42,
+    "event": "2013_australia_bushfire",
+    "E2_classes_ge5": 0.01689552180685394
+   },
+   {
+    "seed": 42,
+    "event": "2013_bohol_earthquake",
+    "E2_classes_ge5": 0.01978624504852622
+   },
+   {
+    "seed": 42,
+    "event": "2013_boston_bombings",
+    "E2_classes_ge5": 0.023439911152677073
+   },
+   {
+    "seed": 42,
+    "event": "2013_brazil_nightclub_fire",
+    "E2_classes_ge5": 0.047473915426043845
+   },
+   {
+    "seed": 42,
+    "event": "2013_colorado_floods",
+    "E2_classes_ge5": 0.015637778128408608
+   },
+   {
+    "seed": 42,
+    "event": "2013_glasgow_helicopter_crash",
+    "E2_classes_ge5": 0.10168077026165911
+   },
+   {
+    "seed": 42,
+    "event": "2013_la_airport_shootings",
+    "E2_classes_ge5": 0.049327398484253604
+   },
+   {
+    "seed": 42,
+    "event": "2013_lac_megantic_train_crash",
+    "E2_classes_ge5": 0.08346628397873579
+   },
+   {
+    "seed": 42,
+    "event": "2013_manila_floods",
+    "E2_classes_ge5": 0.007636027280243818
+   },
+   {
+    "seed": 42,
+    "event": "2013_ny_train_crash",
+    "E2_classes_ge5": -0.00034541973243862323
+   },
+   {
+    "seed": 42,
+    "event": "2013_queensland_floods",
+    "E2_classes_ge5": -0.03418346085800161
+   },
+   {
+    "seed": 42,
+    "event": "2013_russia_meteor",
+    "E2_classes_ge5": 0.017919541803981143
+   },
+   {
+    "seed": 42,
+    "event": "2013_sardinia_floods",
+    "E2_classes_ge5": 0.0358188664282546
+   },
+   {
+    "seed": 42,
+    "event": "2013_savar_building_collapse",
+    "E2_classes_ge5": -4.9528762400052884e-05
+   },
+   {
+    "seed": 42,
+    "event": "2013_singapore_haze",
+    "E2_classes_ge5": 0.05275330612829682
+   },
+   {
+    "seed": 42,
+    "event": "2013_spain_train_crash",
+    "E2_classes_ge5": 0.048438577475364175
+   },
+   {
+    "seed": 42,
+    "event": "2013_typhoon_yolanda",
+    "E2_classes_ge5": 0.0072379980051637816
+   },
+   {
+    "seed": 42,
+    "event": "2013_west_texas_explosion",
+    "E2_classes_ge5": 0.041119200637870224
+   }
+  ],
+  "stray_matched": [
+   {
+    "seed": 1,
+    "event": "2012_colorado_wildfires",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2012_costa_rica_earthquake",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2012_guatemala_earthquake",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2012_italy_earthquakes",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2012_philipinnes_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2012_typhoon_pablo",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2012_venezuela_refinery",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_alberta_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_australia_bushfire",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_bohol_earthquake",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_boston_bombings",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_brazil_nightclub_fire",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_colorado_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_glasgow_helicopter_crash",
+    "id_on_R": 1,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_la_airport_shootings",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 1,
+    "MC_e": 0.10252152184485597
+   },
+   {
+    "seed": 1,
+    "event": "2013_lac_megantic_train_crash",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_manila_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_ny_train_crash",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_queensland_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_russia_meteor",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_sardinia_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_savar_building_collapse",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_singapore_haze",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_spain_train_crash",
+    "id_on_R": 1,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_typhoon_yolanda",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 1,
+    "event": "2013_west_texas_explosion",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2012_colorado_wildfires",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2012_costa_rica_earthquake",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2012_guatemala_earthquake",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2012_italy_earthquakes",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2012_philipinnes_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2012_typhoon_pablo",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2012_venezuela_refinery",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_alberta_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_australia_bushfire",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_bohol_earthquake",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_boston_bombings",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_brazil_nightclub_fire",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_colorado_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_glasgow_helicopter_crash",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_la_airport_shootings",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 1,
+    "MC_e": 0.09558252433136033
+   },
+   {
+    "seed": 2,
+    "event": "2013_lac_megantic_train_crash",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_manila_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_ny_train_crash",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_queensland_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_russia_meteor",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_sardinia_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_savar_building_collapse",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_singapore_haze",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_spain_train_crash",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_typhoon_yolanda",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 2,
+    "event": "2013_west_texas_explosion",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2012_colorado_wildfires",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2012_costa_rica_earthquake",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2012_guatemala_earthquake",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2012_italy_earthquakes",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2012_philipinnes_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2012_typhoon_pablo",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2012_venezuela_refinery",
+    "id_on_R": 1,
+    "loeo_on_R": 1,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_alberta_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_australia_bushfire",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_bohol_earthquake",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_boston_bombings",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_brazil_nightclub_fire",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_colorado_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_glasgow_helicopter_crash",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_la_airport_shootings",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 1,
+    "n_absent_classes": 1,
+    "MC_e": 0.10557463242586174
+   },
+   {
+    "seed": 42,
+    "event": "2013_lac_megantic_train_crash",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_manila_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_ny_train_crash",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_queensland_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_russia_meteor",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_sardinia_floods",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_savar_building_collapse",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_singapore_haze",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_spain_train_crash",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_typhoon_yolanda",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   },
+   {
+    "seed": 42,
+    "event": "2013_west_texas_explosion",
+    "id_on_R": 0,
+    "loeo_on_R": 0,
+    "loeo_on_event": 0,
+    "n_absent_classes": 0,
+    "MC_e": 0.0
+   }
+  ],
+  "mc_by_absent": [
+   {
+    "n_absent_classes": 0,
+    "mean": 0.0,
+    "count": 75
+   },
+   {
+    "n_absent_classes": 1,
+    "mean": 0.1012,
+    "count": 3
+   }
+  ],
+  "prior_match_summary": {
+   "E2": 0.03290813776748364,
+   "E2_after_prior_match": 0.022686558023121632,
+   "share_closed": 0.31060948561063517
+  },
+  "rare_summary": {
+   "E2_classes_ge5": 0.03124731135679327,
+   "n_events": 26
+  },
+  "stray_summary": {
+   "id_on_R": 0.103,
+   "loeo_on_R": 0.077,
+   "loeo_on_event": 0.038
+  }
+ }
+]

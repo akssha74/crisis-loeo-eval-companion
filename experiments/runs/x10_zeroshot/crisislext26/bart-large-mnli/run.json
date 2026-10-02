@@ -1,0 +1,15 @@
+{
+ "repo": "facebook/bart-large-mnli",
+ "revision": "d7645e127eaf1aefc7862fd59a17a5aa8558b8ce",
+ "hypotheses": {
+  "affected_individuals": "This message is about affected individuals.",
+  "caution_and_advice": "This message is about caution and advice.",
+  "donations_and_volunteering": "This message is about donations and volunteering.",
+  "infrastructure_and_utilities": "This message is about infrastructure and utilities.",
+  "other_useful_information": "This message is about other useful information.",
+  "sympathy_and_support": "This message is about sympathy and support."
+ },
+ "max_length": 128,
+ "device": "mps",
+ "n": 23375
+}

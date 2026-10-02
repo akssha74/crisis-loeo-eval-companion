@@ -1,0 +1,43 @@
+{
+ "corpus": "crisislext26",
+ "model": "data/models/distilbert-base-uncased/12040accade4e8a0f71eabdb258fecc2e7e948be",
+ "held_out_event_not_scored": "2013_boston_bombings",
+ "seed": 42,
+ "epochs": 5,
+ "n_train": 6000,
+ "n_source_val": 600,
+ "curve": [
+  {
+   "epoch": 1,
+   "train_loss": 1.36525,
+   "val_loss": 0.87175,
+   "val_macro_f1_present": 0.58843
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.78572,
+   "val_loss": 0.73288,
+   "val_macro_f1_present": 0.70582
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.57284,
+   "val_loss": 0.72981,
+   "val_macro_f1_present": 0.73745
+  },
+  {
+   "epoch": 4,
+   "train_loss": 0.44704,
+   "val_loss": 0.76097,
+   "val_macro_f1_present": 0.72809
+  },
+  {
+   "epoch": 5,
+   "train_loss": 0.36498,
+   "val_loss": 0.77401,
+   "val_macro_f1_present": 0.73262
+  }
+ ],
+ "elapsed_sec": 660.1,
+ "code_sha256": "6d5c515e635f20d83dab0266ea4a2a7ed85a3f96063707fe44ef9365de73d7a6"
+}

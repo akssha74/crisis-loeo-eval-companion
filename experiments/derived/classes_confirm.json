@@ -1,0 +1,258 @@
+[
+ {
+  "corpus": "humaid19",
+  "model": "distilbert-base-uncased",
+  "n_seeds": 5,
+  "exploratory": true,
+  "classes": [
+   {
+    "class": "caution_and_advice",
+    "stray_predictions_per_seed": 2.4,
+    "matched_gain_mean": 0.009457378512467557,
+    "events_with_class_in_R": 18,
+    "events_positive": 11
+   },
+   {
+    "class": "displaced_people_and_evacuations",
+    "stray_predictions_per_seed": 22.8,
+    "matched_gain_mean": -0.0037641756910823665,
+    "events_with_class_in_R": 11,
+    "events_positive": 7
+   },
+   {
+    "class": "infrastructure_and_utility_damage",
+    "stray_predictions_per_seed": 0.0,
+    "matched_gain_mean": 0.008117921258425172,
+    "events_with_class_in_R": 19,
+    "events_positive": 14
+   },
+   {
+    "class": "injured_or_dead_people",
+    "stray_predictions_per_seed": 22.6,
+    "matched_gain_mean": 0.0029683293558542523,
+    "events_with_class_in_R": 17,
+    "events_positive": 9
+   },
+   {
+    "class": "missing_or_found_people",
+    "stray_predictions_per_seed": 0.0,
+    "matched_gain_mean": 0.0,
+    "events_with_class_in_R": 4,
+    "events_positive": 0
+   },
+   {
+    "class": "not_humanitarian",
+    "stray_predictions_per_seed": 6.8,
+    "matched_gain_mean": 0.024046914965059073,
+    "events_with_class_in_R": 18,
+    "events_positive": 10
+   },
+   {
+    "class": "other_relevant_information",
+    "stray_predictions_per_seed": 0.0,
+    "matched_gain_mean": 0.011183980496126664,
+    "events_with_class_in_R": 19,
+    "events_positive": 15
+   },
+   {
+    "class": "requests_or_urgent_needs",
+    "stray_predictions_per_seed": 0.0,
+    "matched_gain_mean": 0.06274367917608943,
+    "events_with_class_in_R": 18,
+    "events_positive": 13
+   },
+   {
+    "class": "rescue_volunteering_or_donation_effort",
+    "stray_predictions_per_seed": 0.0,
+    "matched_gain_mean": 0.004817648188852864,
+    "events_with_class_in_R": 19,
+    "events_positive": 13
+   },
+   {
+    "class": "sympathy_and_support",
+    "stray_predictions_per_seed": 0.0,
+    "matched_gain_mean": 0.0007372828158983009,
+    "events_with_class_in_R": 19,
+    "events_positive": 13
+   }
+  ]
+ },
+ {
+  "corpus": "humaid19",
+  "model": "roberta-base",
+  "n_seeds": 5,
+  "exploratory": true,
+  "classes": [
+   {
+    "class": "caution_and_advice",
+    "stray_predictions_per_seed": 5.0,
+    "matched_gain_mean": 0.028885148540737277,
+    "events_with_class_in_R": 18,
+    "events_positive": 14
+   },
+   {
+    "class": "displaced_people_and_evacuations",
+    "stray_predictions_per_seed": 21.2,
+    "matched_gain_mean": 0.001799311581967838,
+    "events_with_class_in_R": 11,
+    "events_positive": 8
+   },
+   {
+    "class": "infrastructure_and_utility_damage",
+    "stray_predictions_per_seed": 0.0,
+    "matched_gain_mean": 0.007221340312187427,
+    "events_with_class_in_R": 19,
+    "events_positive": 13
+   },
+   {
+    "class": "injured_or_dead_people",
+    "stray_predictions_per_seed": 14.2,
+    "matched_gain_mean": 0.007294145380965277,
+    "events_with_class_in_R": 17,
+    "events_positive": 11
+   },
+   {
+    "class": "missing_or_found_people",
+    "stray_predictions_per_seed": 2.2,
+    "matched_gain_mean": 0.08394003442769758,
+    "events_with_class_in_R": 4,
+    "events_positive": 2
+   },
+   {
+    "class": "not_humanitarian",
+    "stray_predictions_per_seed": 7.0,
+    "matched_gain_mean": 0.01497227744844958,
+    "events_with_class_in_R": 18,
+    "events_positive": 8
+   },
+   {
+    "class": "other_relevant_information",
+    "stray_predictions_per_seed": 0.0,
+    "matched_gain_mean": 0.008411721054473695,
+    "events_with_class_in_R": 19,
+    "events_positive": 13
+   },
+   {
+    "class": "requests_or_urgent_needs",
+    "stray_predictions_per_seed": 6.6,
+    "matched_gain_mean": 0.032350085083483165,
+    "events_with_class_in_R": 18,
+    "events_positive": 11
+   },
+   {
+    "class": "rescue_volunteering_or_donation_effort",
+    "stray_predictions_per_seed": 0.0,
+    "matched_gain_mean": 0.007970405510074954,
+    "events_with_class_in_R": 19,
+    "events_positive": 14
+   },
+   {
+    "class": "sympathy_and_support",
+    "stray_predictions_per_seed": 0.0,
+    "matched_gain_mean": 0.0017716826404080123,
+    "events_with_class_in_R": 19,
+    "events_positive": 7
+   }
+  ]
+ },
+ {
+  "corpus": "crisislext26",
+  "model": "distilbert-base-uncased",
+  "n_seeds": 3,
+  "exploratory": true,
+  "classes": [
+   {
+    "class": "affected_individuals",
+    "stray_predictions_per_seed": 0.0,
+    "matched_gain_mean": 0.028917607655686666,
+    "events_with_class_in_R": 26,
+    "events_positive": 17
+   },
+   {
+    "class": "caution_and_advice",
+    "stray_predictions_per_seed": 0.0,
+    "matched_gain_mean": 0.0557034204851448,
+    "events_with_class_in_R": 23,
+    "events_positive": 14
+   },
+   {
+    "class": "donations_and_volunteering",
+    "stray_predictions_per_seed": 3.3333333333333335,
+    "matched_gain_mean": 0.04648373008452815,
+    "events_with_class_in_R": 23,
+    "events_positive": 14
+   },
+   {
+    "class": "infrastructure_and_utilities",
+    "stray_predictions_per_seed": 0.0,
+    "matched_gain_mean": 0.03691828636971157,
+    "events_with_class_in_R": 26,
+    "events_positive": 10
+   },
+   {
+    "class": "other_useful_information",
+    "stray_predictions_per_seed": 0.0,
+    "matched_gain_mean": 0.015125273336621567,
+    "events_with_class_in_R": 26,
+    "events_positive": 15
+   },
+   {
+    "class": "sympathy_and_support",
+    "stray_predictions_per_seed": 0.0,
+    "matched_gain_mean": 0.031013389029824995,
+    "events_with_class_in_R": 26,
+    "events_positive": 20
+   }
+  ]
+ },
+ {
+  "corpus": "crisislext26",
+  "model": "roberta-base",
+  "n_seeds": 3,
+  "exploratory": true,
+  "classes": [
+   {
+    "class": "affected_individuals",
+    "stray_predictions_per_seed": 0.0,
+    "matched_gain_mean": 0.019406051011250113,
+    "events_with_class_in_R": 26,
+    "events_positive": 18
+   },
+   {
+    "class": "caution_and_advice",
+    "stray_predictions_per_seed": 0.0,
+    "matched_gain_mean": 0.05474373763735395,
+    "events_with_class_in_R": 23,
+    "events_positive": 15
+   },
+   {
+    "class": "donations_and_volunteering",
+    "stray_predictions_per_seed": 2.0,
+    "matched_gain_mean": 0.030100951160692384,
+    "events_with_class_in_R": 23,
+    "events_positive": 13
+   },
+   {
+    "class": "infrastructure_and_utilities",
+    "stray_predictions_per_seed": 0.0,
+    "matched_gain_mean": 0.07929084556089629,
+    "events_with_class_in_R": 26,
+    "events_positive": 18
+   },
+   {
+    "class": "other_useful_information",
+    "stray_predictions_per_seed": 0.0,
+    "matched_gain_mean": 2.263585500441611e-06,
+    "events_with_class_in_R": 26,
+    "events_positive": 14
+   },
+   {
+    "class": "sympathy_and_support",
+    "stray_predictions_per_seed": 0.0,
+    "matched_gain_mean": 0.013927205977331356,
+    "events_with_class_in_R": 26,
+    "events_positive": 18
+   }
+  ]
+ }
+]
