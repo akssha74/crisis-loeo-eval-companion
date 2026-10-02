@@ -11,12 +11,15 @@ Label-list conventions (--convention, required):
   O  every class of the corpus ontology; a class absent from both labels and predictions scores 0.
 Per-class F1 is 2TP / (2TP + FP + FN), and 0 when the denominator is 0; macro-F1 is the mean of per-class F1.
 A = pooled - per-event mean. Under P it is split as A^P = T1 + T2 + T3 + T4 (split_terms); under D or O,
-A - A^P is a closed-form label-list shift. Every result carries a signature naming the label list, the
-zero-denominator rule, the number of events, the metadata hash and the evaluator version.
+A - A^P is a closed-form label-list shift. With --min-cell t, the messages of every event-class cell (by true
+label) with fewer than t messages are removed before scoring; predictions of a removed class for other messages
+still count. The pooled score, the per-event mean and A each carry a signature naming the summary, the label
+list, the zero-denominator rule, the number of events, the cell threshold, the metadata hash and the evaluator
+version.
 
     python code/companion_eval.py --corpus crisislext26 --system tfidf-lr --seed 42 --convention P --out out
     python code/companion_eval.py --meta experiments/meta/corpus_crisislext26_meta.tsv \
-        --preds 'my_run/*.tsv.gz' --convention P --out out
+        --preds 'my_run/*.tsv.gz' --convention P --min-cell 15 --out out
 """
 import argparse
 import glob
@@ -28,7 +31,8 @@ import sys
 import numpy as np
 import pandas as pd
 
-VERSION = "1.1.0"
+VERSION = "1.2.0"
+SUMMARIES = {"pooled": "pooled", "per_event_mean": "per-event", "A": "difference"}
 REQUIRED = ("tweet_id", "event", "y_true", "y_pred")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SYSTEMS = os.path.join("experiments", "systems.tsv")
@@ -126,6 +130,8 @@ def split_terms(cnt):
     T3 = support-weighted mean - equal-weighted mean of F_ec over E_c (support weighting);
     T4 = equal-weighted mean over E_c - per-event mean (class composition; 0 when every event has every class).
     T2alt and T3alt reverse the order of T2 and T3, pooling the counts of each event weighted by 1 / s_ec.
+    T4c and T3c apply the class weights of the per-event mean, W_c = sum over E_c of 1 / (|E| |C_e|), before the
+    within-class weights: T4c = <S_c> - sum_c W_c S_c and T3c = sum_c W_c S_c - per-event mean (T3c + T4c = T3 + T4).
     """
     tp, fp, fn = (cnt[..., k].astype(float) for k in range(3))
     sup = tp + fn
@@ -144,14 +150,27 @@ def split_terms(cnt):
     swm = (sup * f_ec).sum(0) / np.maximum(sup.sum(0), 1)
     eqm = (f_ec * pres).sum(0) / np.maximum(pres.sum(0), 1)
     f_e = float(((f_ec * pres).sum(1) / np.maximum(pres.sum(1), 1)).mean())
+    w_class = (pres / np.maximum(pres.sum(1, keepdims=True), 1)).sum(0) / len(pres)
+    comp = float((w_class * swm)[keep].sum())
     m = {k: float(v[keep].mean()) for k, v in
          {"all": f_all, "in": f_in, "eq": f_eq, "swm": swm, "eqm": eqm}.items()}
     return {"T1": m["all"] - m["in"], "T2": m["in"] - m["swm"], "T3": m["swm"] - m["eqm"], "T4": m["eqm"] - f_e,
-            "T2alt": m["eq"] - m["eqm"], "T3alt": m["in"] - m["eq"]}
+            "T2alt": m["eq"] - m["eqm"], "T3alt": m["in"] - m["eq"], "T3c": comp - f_e, "T4c": m["swm"] - comp}
 
 
-def score(pred, meta, convention, partial=False):
+def remove_small_cells(pred, min_cell):
+    """Drop the messages of event-class cells (by true label) with fewer than min_cell messages."""
+    size = pred.groupby(["event", "y_true"])["tweet_id"].transform("size")
+    small = pred.loc[size < min_cell]
+    return pred[size >= min_cell], int(small.groupby(["event", "y_true"]).ngroups), int(len(small))
+
+
+def score(pred, meta, convention, partial=False, min_cell=0):
     events, absent = validate(pred, meta, partial)
+    removed_cells = removed_messages = 0
+    if min_cell > 0:
+        pred, removed_cells, removed_messages = remove_small_cells(pred, min_cell)
+        events = sorted(set(pred["event"]))
     classes = sorted(meta["label"].unique())
     cnt = np.stack([counts(pred[pred["event"] == e], classes) for e in events])
     pooled_cnt = cnt.sum(0)
@@ -170,7 +189,8 @@ def score(pred, meta, convention, partial=False):
                          "precision": tp / (tp + fp) if tp + fp else 0.0, "recall": tp / (tp + fn) if tp + fn else 0.0,
                          "f1": float(f[j]), "in_label_list": bool(m[j])})
     result = {"convention": convention, "classes": classes, "n_events": len(events), "partial": bool(absent),
-              "events_absent": absent, "n_messages": int(n_e.sum()), "pooled_macro_f1": f_pool,
+              "events_absent": absent, "min_cell": int(min_cell), "removed_cells": removed_cells,
+              "removed_messages": removed_messages, "n_messages": int(n_e.sum()), "pooled_macro_f1": f_pool,
               "per_event_mean_macro_f1": float(f_e.mean()), "A": f_pool - float(f_e.mean()),
               "A_P": a_p, "split_of_A_P": terms, "label_list_shift": f_pool - float(f_e.mean()) - a_p,
               "events": [{"event": e, "n": int(n_e[i]), "n_present_classes": int(label_mask(cnt[i], "P").sum()),
@@ -178,10 +198,10 @@ def score(pred, meta, convention, partial=False):
     return result, pd.DataFrame(rows)
 
 
-def signature(result, meta_sha):
+def signature(result, meta_sha, summary):
     events = f"{result['n_events']}{'+partial' if result['partial'] else ''}"
-    return (f"loeo-macro-f1|labels:{result['convention']}|zero-division:0|events:{events}|meta:{meta_sha[:12]}"
-            f"|v:{VERSION}")
+    return (f"loeo-macro-f1|summary:{SUMMARIES[summary]}|labels:{result['convention']}|zero-div:0"
+            f"|events:{events}|min-cell:{result['min_cell']}|meta:{meta_sha[:12]}|v:{VERSION}")
 
 
 def resolve_system(corpus, system, seed):
@@ -207,6 +227,8 @@ def main():
     ap.add_argument("--seed", help="with --system: training seed")
     ap.add_argument("--convention", required=True, choices=("P", "D", "O"))
     ap.add_argument("--partial", action="store_true", help="allow events without predictions")
+    ap.add_argument("--min-cell", type=int, default=0,
+                    help="remove the messages of event-class cells with fewer than this many messages")
     ap.add_argument("--out", required=True, help="output directory")
     a = ap.parse_args()
     if a.system:
@@ -219,28 +241,31 @@ def main():
     paths = sorted({p for pat in a.preds for p in (glob.glob(pat) or [pat])})
     meta = pd.read_csv(a.meta, sep="\t", dtype=str, keep_default_na=False)
     try:
-        result, cells = score(read_predictions(paths), meta, a.convention, a.partial)
+        result, cells = score(read_predictions(paths), meta, a.convention, a.partial, a.min_cell)
     except ValueError as err:
         sys.exit(f"validation failed: {err}")
     meta_sha = sha256(a.meta)
-    config = {"meta": {"path": a.meta, "sha256": meta_sha}, "convention": a.convention,
+    config = {"meta": {"path": a.meta, "sha256": meta_sha}, "convention": a.convention, "min_cell": a.min_cell,
               "preds": [{"path": p, "sha256": sha256(p)} for p in paths]}
-    result["signature"] = signature(result, meta_sha)
+    result["signatures"] = {k: signature(result, meta_sha, k) for k in SUMMARIES}
     result["evaluator_version"] = VERSION
     result["config_hash"] = hashlib.sha256(json.dumps(config, sort_keys=True).encode()).hexdigest()
     result["config"] = config
     os.makedirs(a.out, exist_ok=True)
     json.dump(result, open(os.path.join(a.out, "scores.json"), "w"), indent=1)
     cells.to_csv(os.path.join(a.out, "event_class_counts.tsv"), sep="\t", index=False)
+    removed = (f"  removed {result['removed_messages']} messages in {result['removed_cells']} cells"
+               if a.min_cell else "")
     print(f"events {result['n_events']}{' (partial)' if result['partial'] else ''}  messages {result['n_messages']}  "
-          f"convention {a.convention}")
+          f"convention {a.convention}{removed}")
     print(f"pooled {result['pooled_macro_f1']:.4f}  per-event mean {result['per_event_mean_macro_f1']:.4f}  "
           f"A {result['A']:+.4f}")
     t = result["split_of_A_P"]
     shift = "" if a.convention == "P" else f"  label list {result['label_list_shift']:+.4f}"
     print(f"A_P {result['A_P']:+.4f} = T1 {t['T1']:+.4f}  T2 {t['T2']:+.4f}  T3 {t['T3']:+.4f}  "
           f"T4 {t['T4']:+.4f}{shift}")
-    print(f"signature {result['signature']}")
+    for s in result["signatures"].values():
+        print(s)
     print(f"wrote {a.out}/scores.json, {a.out}/event_class_counts.tsv")
 
 

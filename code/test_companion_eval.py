@@ -87,6 +87,7 @@ def test_split_sums_to_a_p():
         t = res["split_of_A_P"]
         assert np.isclose(t["T1"] + t["T2"] + t["T3"] + t["T4"], res["A_P"])
         assert np.isclose(t["T2alt"] + t["T3alt"], t["T2"] + t["T3"])
+        assert np.isclose(t["T3c"] + t["T4c"], t["T3"] + t["T4"])
         assert t["T1"] <= 1e-12
 
 
@@ -94,6 +95,17 @@ def test_t4_zero_when_every_event_has_every_class():
     pred, meta = random_corpus(3, n_classes=1)
     res, _ = ce.score(pred, meta, "P")
     assert abs(res["split_of_A_P"]["T4"]) < 1e-12
+    assert abs(res["split_of_A_P"]["T4c"]) < 1e-12
+
+
+def test_min_cell_removes_small_cells():
+    pred, meta = toy()
+    res, _ = ce.score(pred, meta, "P", min_cell=2)
+    assert (res["removed_cells"], res["removed_messages"]) == (1, 1)
+    kept = pred[~((pred["event"] == "y") & (pred["y_true"] == "a"))]
+    cnt = np.stack([ce.counts(kept[kept["event"] == e], CLASSES) for e in ("x", "y")])
+    ref = ce.macro_f1(cnt.sum(0), "P") - np.mean([ce.macro_f1(c, "P") for c in cnt])
+    assert np.isclose(res["A_P"], ref) and res["n_messages"] == 7
 
 
 def test_validation():
@@ -117,10 +129,15 @@ def test_validation():
 def test_signature():
     pred, meta = toy()
     res, _ = ce.score(pred, meta, "D")
-    sig = ce.signature(res, "0123456789abcdef")
-    assert sig == f"loeo-macro-f1|labels:D|zero-division:0|events:2|meta:0123456789ab|v:{ce.VERSION}"
+    sig = ce.signature(res, "0123456789abcdef", "pooled")
+    assert sig == (f"loeo-macro-f1|summary:pooled|labels:D|zero-div:0|events:2|min-cell:0|meta:0123456789ab"
+                   f"|v:{ce.VERSION}")
+    assert "|summary:per-event|" in ce.signature(res, "0" * 64, "per_event_mean")
+    assert "|summary:difference|" in ce.signature(res, "0" * 64, "A")
     res, _ = ce.score(pred[pred["event"] == "x"], meta, "P", partial=True)
-    assert "|events:1+partial|" in ce.signature(res, "0" * 64)
+    assert "|events:1+partial|" in ce.signature(res, "0" * 64, "pooled")
+    res, _ = ce.score(pred, meta, "P", min_cell=2)
+    assert "|min-cell:2|" in ce.signature(res, "0" * 64, "pooled")
 
 
 if __name__ == "__main__":

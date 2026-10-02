@@ -32,18 +32,18 @@
   },
   {
    "name": "Code and tests",
-   "files": 53,
-   "bytes": 425488
+   "files": 54,
+   "bytes": 445757
   },
   {
    "name": "Derived results",
-   "files": 30,
-   "bytes": 2227581
+   "files": 31,
+   "bytes": 2267359
   },
   {
    "name": "Analysis plan and literature reading",
    "files": 5,
-   "bytes": 144494
+   "bytes": 146339
   },
   {
    "name": "Environments",
@@ -51,7 +51,7 @@
    "bytes": 3268
   }
  ],
- "total_files": 1670,
- "total_bytes": 87057816,
+ "total_files": 1672,
+ "total_bytes": 87119708,
  "prediction_files": 782
 }

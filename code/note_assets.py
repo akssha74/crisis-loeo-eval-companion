@@ -30,7 +30,7 @@ CORPORA = ("crisislext26", "humaid19")
 def load():
     get = lambda n: json.load(open(os.path.join(DERIVED, n)))  # noqa: E731
     return (get("revision_x9.json"), get("x10_zeroshot.json"), get("revision_x11.json"),
-            get("training_ids_check.json"), get("revision_x12.json"))
+            get("training_ids_check.json"), get("revision_x12.json"), get("revision_x13.json"))
 
 
 def sid_of(name):
@@ -104,6 +104,55 @@ def x12_keys(kv, x11, x12):
     kv["note-incomplete-n"] = str(len(x12["incomplete_seed_runs"]))
 
 
+def x13_keys(kv, x11, x13):
+    import pandas as pd
+    excl = lambda ci: not ci[0] <= 0 <= ci[1]  # noqa: E731
+    systems_x11 = {corpus: systems(x11, corpus) for corpus in CORPORA}
+    for corpus in CORPORA:
+        c = CORP[corpus]
+        rows = [(sid_of(r["system"]), r) for r in x13["systems"] if r["corpus"] == corpus]
+        for sid, r in rows:
+            b = f"note-{c}-{sid}"
+            kv[b + "-null"] = f3(r["null"]["A_P"]["mean"])
+            kv[b + "-omn"] = f3(r["observed_minus_null"]["mean"])
+            kv[b + "-omnlo"], kv[b + "-omnhi"] = (f3(x) for x in r["observed_minus_null"]["ci95"])
+            for k in ("T3c", "T4c"):
+                kv[f"{b}-{k}"] = f3(r["composition_first"][k]["mean"])
+        get = {"null": lambda r: r["null"]["A_P"]["mean"], "omn": lambda r: r["observed_minus_null"]["mean"],
+               "nullT3": lambda r: r["null"]["T3"]["mean"], "nullT4": lambda r: r["null"]["T4"]["mean"],
+               "null15": lambda r: r["null_t15"]["A_P"]["mean"],
+               "nullshare": lambda r: r["null"]["A_P"]["mean"] / r["A_P"],
+               "T3c": lambda r: r["composition_first"]["T3c"]["mean"],
+               "T4c": lambda r: r["composition_first"]["T4c"]["mean"]}
+        for k, fn in get.items():
+            for tag, sel in (("", rows), ("ms", [(s, r) for s, r in rows if len(r["seeds"]) > 1])):
+                vals = [fn(r) for _, r in sel]
+                if k == "nullshare":
+                    kv[f"note-{c}-{k}{tag}-min"], kv[f"note-{c}-{k}{tag}-max"] = pct(min(vals)), pct(max(vals))
+                else:
+                    rng_keys(kv, f"note-{c}-{k}{tag}", vals)
+        multi = {s for s, r in rows if len(r["seeds"]) > 1}
+        x11_rows = dict(systems_x11[corpus])
+        rng_keys(kv, f"note-{c}-t15ms", [x11_rows[s]["thresholds"]["15"]["mean"] for s in multi])
+        meta = pd.read_csv(f"experiments/meta/corpus_{corpus}_meta.tsv", sep="\t", dtype=str, keep_default_na=False)
+        n_e = meta.groupby("event").size()
+        kv[f"note-{c}-evmin"], kv[f"note-{c}-evmax"] = num(int(n_e.min())), num(int(n_e.max()))
+        kv[f"note-{c}-omn-npos"] = str(sum(r["observed_minus_null"]["ci95"][0] > 0 for _, r in rows))
+        kv[f"note-{c}-omn-nneg"] = str(sum(r["observed_minus_null"]["ci95"][1] < 0 for _, r in rows))
+        kv[f"note-{c}-nullabove"] = str(sum(r["null"]["A_P"]["mean"] > r["A_P"] for _, r in rows))
+        t3 = {s: r["terms"]["T3"]["mean"] for s, r in systems_x11[corpus]}
+        kv[f"note-{c}-nullT3above"] = str(sum(r["null"]["T3"]["mean"] > t3[s] for s, r in rows))
+        kv[f"note-{c}-T4c-nneg"] = str(sum(r["composition_first"]["T4c"]["mean"] < 0 for _, r in rows))
+        kv[f"note-{c}-T4c-nexcl"] = str(sum(excl(r["composition_first"]["T4c"]["ci95"]) for _, r in rows))
+        m = x13["mixed"][corpus]
+        kv[f"note-{c}-mixed-n"], kv[f"note-{c}-mixed-nrev"] = str(m["n"]), str(m["n_reversed"])
+        for x in m["comparisons"]:
+            g = f"note-{c}-mix-{sid_of(x['pooled_of'])}{sid_of(x['per_event_of'])}"
+            kv[g + "-gap"], kv[g + "-gpool"], kv[g + "-gper"] = f3(x["gap"]), f3(x["gap_pooled"]), f3(x["gap_per_event"])
+            kv[g + "-gpoolabs"], kv[g + "-gperabs"] = f3(abs(x["gap_pooled"])), f3(abs(x["gap_per_event"]))
+    kv["note-evalcheck-exp"] = exp10(max(r["evaluator_min_cell_15"]["abs_diff"] for r in x13["systems"]))
+
+
 def corpus_keys(kv):
     meta = json.load(open("research/prelock/corpora_metadata.json"))
     c = meta["crisislext26"]
@@ -150,12 +199,13 @@ def inventory_keys(kv):
     kv["note-inv-total-files"], kv["note-inv-total-size"] = num(inv["total_files"]), size(inv["total_bytes"])
 
 
-def keys(x9, x10, x11, ids, x12):
+def keys(x9, x10, x11, ids, x12, x13):
     kv = mpa.note_keys(x9, x10, ids)
     kv["note-runs-used"] = num(sum(len(a["seeds"]) * len(x9["per_event"][a["corpus"]]) for a in x9["arms"]))
     kv["note-runs-other"] = num(ids["runs_checked"] - sum(len(a["seeds"]) * len(x9["per_event"][a["corpus"]])
                                                           for a in x9["arms"]))
     x12_keys(kv, x11, x12)
+    x13_keys(kv, x11, x13)
     inventory_keys(kv)
     n_msgs = corpus_keys(kv)
     cf_dev, sk_dev, ndisc = 0.0, 0.0, 0
@@ -244,48 +294,59 @@ def keys(x9, x10, x11, ids, x12):
 def table_results(x11):
     rows = []
     for corpus in CORPORA:
-        rows.append(f"\\multicolumn{{8}}{{@{{}}l}}{{\\textit{{{CNAME[CORP[corpus]]}}}}} \\\\")
+        rows.append(f"\\multicolumn{{7}}{{@{{}}l}}{{\\textit{{{CNAME[CORP[corpus]]}}}}} \\\\")
         for sid, r in systems(x11, corpus):
-            a, j = r["A"], r["jackknife"]
-            rows.append(f"{SNAME[sid]} & {len(r['seeds'])} & {f3(r['per_event']['P'])} & {f3(r['pooled']['P'])} & "
-                        f"{f3(a['P']['mean'])} [{f3(a['P']['ci95'][0])}, {f3(a['P']['ci95'][1])}] & "
-                        f"{f3(j['min'])} to {f3(j['max'])} & {f3(a['D']['mean'])} & {f3(a['O']['mean'])} \\\\")
+            a = r["A"]
+            rows.append(f"{SNAME[sid]} & {sid} & {len(r['seeds'])} & {f3(r['per_event']['P'])} & "
+                        f"{f3(r['pooled']['P'])} & {ci_inline(a['P'])} & {f3(a['D']['mean'])} & "
+                        f"{f3(a['O']['mean'])} \\\\")
         if corpus == CORPORA[0]:
             rows.append("\\midrule")
     return "\n".join([
         "\\begin{table}[tbp]", "\\centering",
         "\\caption{Whole-event LOEO scores of every reference system. Per event and pooled are present-class (P) "
         "macro-F1 averaged over seeds. $A^P$, $A^D$ and $A^O$ are pooled minus per-event macro-F1 of the same "
-        "predictions under the present-class, scikit-learn default and full-ontology label lists. The interval "
-        "is a 95\\% bootstrap interval over events and seeds, over events only for one-seed systems; the "
-        "jackknife column gives the range of $A^P$ when each event is left out in turn. ep.: training epochs; "
-        "large sample: 80\\% of the corpus from the training events; LR: logistic regression.}",
-        "\\label{tab:note-results}", "\\footnotesize", "\\setlength{\\tabcolsep}{2pt}",
-        "\\begin{tabular}{@{}lcrrcccc@{}}", "\\toprule",
-        "System & Seeds & Per event & Pooled & $A^P$ [95\\% interval] & Jackknife & $A^D$ & $A^O$ \\\\",
+        "predictions under the present-class, scikit-learn default and full-ontology label lists, with a 95\\% "
+        "bootstrap interval over events and seeds (events only for one-seed systems). ep.: training epochs; large "
+        "sample: 80\\% of the corpus, drawn from the training events; LR: logistic regression.}",
+        "\\label{tab:note-results}", "\\footnotesize", "\\setlength{\\tabcolsep}{3pt}",
+        "\\begin{tabular}{@{}llcrrcrr@{}}", "\\toprule",
+        "System & Code & Seeds & Per event & Pooled & $A^P$ [95\\% interval] & $A^D$ & $A^O$ \\\\",
         "\\midrule", *rows, "\\bottomrule", "\\end{tabular}", "\\end{table}"])
 
 
-def table_terms(x11):
+def ci_inline(blk):
+    return f"{f3(blk['mean'])} [{f3(blk['ci95'][0])}, {f3(blk['ci95'][1])}]"
+
+
+def table_terms(x11, x13):
     rows = []
+    null = {(r["corpus"], sid_of(r["system"])): r for r in x13["systems"]}
     for corpus in CORPORA:
-        rows.append(f"\\multicolumn{{8}}{{@{{}}l}}{{\\textit{{{CNAME[CORP[corpus]]}}}}} \\\\")
+        rows.append(f"\\multicolumn{{10}}{{@{{}}l}}{{\\textit{{{CNAME[CORP[corpus]]}}}}} \\\\")
         for sid, r in systems(x11, corpus):
-            t = r["terms"]
-            rows.append(f"{SNAME[sid]} & {f3(r['A']['P']['mean'])} & " +
-                        " & ".join(stk(t[k]) for k in TERMS[:4]) + " & " +
-                        " & ".join(f3(t[k]["mean"]) for k in TERMS[4:]) + " \\\\[1pt]")
+            t, n = r["terms"], null[corpus, sid]
+            cells = [f3(r["A"]["P"]["mean"]), f3(t["T1"]["mean"]), f3(t["T2"]["mean"]), f3(t["T3"]["mean"]),
+                     f3(t["T4"]["mean"]), f3(n["composition_first"]["T3c"]["mean"]),
+                     f3(n["composition_first"]["T4c"]["mean"]), f3(n["null"]["A_P"]["mean"]),
+                     ci_inline(n["observed_minus_null"])]
+            rows.append(f"{sid} & " + " & ".join(cells) + " \\\\")
         if corpus == CORPORA[0]:
             rows.append("\\midrule")
     return "\n".join([
         "\\begin{table}[tbp]", "\\centering",
-        "\\caption{Split of $A^P$ (seed means, with 95\\% bootstrap intervals for $T_1$ to $T_4$): $T_1$, false "
-        "positives in events that lack the class; $T_2$, non-additivity of F1 over events; $T_3$, support "
-        "weighting; $T_4$, class composition (Section~\\ref{sec:method}). $T_2'$ and $T_3'$ are the "
-        "non-additivity and support terms when the two steps are taken in the other order.}",
-        "\\label{tab:note-terms}", "\\scriptsize", "\\setlength{\\tabcolsep}{2pt}",
-        "\\begin{tabular}{@{}lrccccrr@{}}", "\\toprule",
-        "System & $A^P$ & $T_1$ & $T_2$ & $T_3$ & $T_4$ & $T_2'$ & $T_3'$ \\\\",
+        "\\caption{Where $A^P$ comes from (seed means). Split of Eq.~(\\ref{eq:split}): $T_1$, false positives in "
+        "events that lack the class; $T_2$, non-additivity of F1; $T_3$, support weighting; $T_4$, class "
+        "composition. $T_3^c$ and $T_4^c$: support and composition terms with the class weights applied first. "
+        "$A^P_0$: mean $A^P$ of 200 replicates in which every class keeps its pooled recall and false-positive rate "
+        "in every event; the last column has a 95\\% bootstrap interval. System codes as in "
+        "Table~\\ref{tab:note-results}; Online Resource~1 gives intervals for every term.}",
+        "\\label{tab:note-terms}", "\\footnotesize", "\\setlength{\\tabcolsep}{3.5pt}",
+        "\\begin{tabular}{@{}lrrrrrrrrc@{}}", "\\toprule",
+        "& & \\multicolumn{4}{c}{Split of $A^P$} & \\multicolumn{2}{c}{Other order} & "
+        "\\multicolumn{2}{c}{Fixed-rate model} \\\\",
+        "\\cmidrule(lr){3-6}\\cmidrule(lr){7-8}\\cmidrule(l){9-10}",
+        "Code & $A^P$ & $T_1$ & $T_2$ & $T_3$ & $T_4$ & $T_3^c$ & $T_4^c$ & $A^P_0$ & $A^P-A^P_0$ \\\\",
         "\\midrule", *rows, "\\bottomrule", "\\end{tabular}", "\\end{table}"])
 
 
@@ -293,42 +354,47 @@ COLOURS = {"D2": "#1f77b4", "R2": "#d62728", "D4": "#17becf", "R4": "#ff7f0e", "
            "Z": "#7f7f7f"}
 
 
+MARKERS = {"D2": "o", "R2": "s", "D4": "^", "R4": "v", "T": "D", "L": "P", "Z": "X"}
+
+
 def fig_cells(x9, x11, path):
-    fig, axes = plt.subplots(1, 3, figsize=(6.6, 2.55), gridspec_kw={"width_ratios": [1, 1, 1.05]})
+    fig, axes = plt.subplots(1, 3, figsize=(5.15, 2.6), gridspec_kw={"width_ratios": [1, 1, 1.15]})
     for ax, corpus in zip(axes[:2], CORPORA):
         cells = x9["cells"][corpus]["roberta-base"]
         s = np.array([c["support"] for c in cells])
         f = np.array([c["f1"] for c in cells])
         small = s < mpa.MIN_CELL
-        ax.scatter(s[~small], f[~small], s=8, color="#1b6ca8", alpha=0.7, linewidths=0)
-        ax.scatter(s[small], f[small], s=13, color="#c0392b", marker="^", linewidths=0)
+        ax.scatter(s[~small], f[~small], s=7, color="#1b6ca8", alpha=0.7, linewidths=0)
+        ax.scatter(s[small], f[small], s=12, color="#c0392b", marker="^", linewidths=0)
         ax.axvline(mpa.MIN_CELL, color="0.4", lw=0.8, ls="--")
         ax.set_xscale("log")
         ax.set_ylim(-0.03, 1.0)
-        ax.set_title(f"({'ab'[CORPORA.index(corpus)]}) {CNAME[CORP[corpus]]} cells", fontsize=8)
-        ax.set_xlabel("messages of the class in the event", fontsize=7)
+        ax.set_title(f"({'ab'[CORPORA.index(corpus)]}) {CNAME[CORP[corpus]]}", fontsize=8)
+        ax.set_xlabel("messages in cell", fontsize=7.5)
         ax.tick_params(labelsize=7)
         ax.spines[["top", "right"]].set_visible(False)
-    axes[0].set_ylabel("per-class F1", fontsize=7)
+    axes[0].set_ylabel("per-class F1", fontsize=7.5)
     ax = axes[2]
     xs = [0] + [int(t) for t in THRESHOLDS]
-    for corpus, ls in (("crisislext26", "-"), ("humaid19", "--")):
+    for corpus, ls, fill in (("crisislext26", "-", True), ("humaid19", "--", False)):
         for sid, r in systems(x11, corpus):
             ys = [r["A"]["P"]["mean"]] + [r["thresholds"][t]["mean"] for t in THRESHOLDS]
-            ax.plot(xs, ys, ls=ls, color=COLOURS[sid], lw=0.9, marker="o", ms=2)
+            ax.plot(xs, ys, ls=ls, color=COLOURS[sid], lw=0.8, marker=MARKERS[sid], ms=3.2,
+                    mfc=COLOURS[sid] if fill else "white", mew=0.7)
     ax.axhline(0, color="0.5", lw=0.6)
     ax.set_xticks(xs)
     ax.set_title("(c) $A^P$ without small cells", fontsize=8)
-    ax.set_xlabel("threshold $t$ (messages per cell)", fontsize=7)
-    ax.set_ylabel("$A^P$", fontsize=7)
+    ax.set_xlabel("threshold $t$", fontsize=7.5)
+    ax.set_ylabel("$A^P$", fontsize=7.5)
     ax.tick_params(labelsize=7)
     ax.spines[["top", "right"]].set_visible(False)
-    handles = [plt.Line2D([], [], color=COLOURS[s], lw=1.2, label=SNAME[s]) for s in COLOURS]
-    handles += [plt.Line2D([], [], color="0.2", ls="-", lw=0.9, label="CrisisLexT26 (c)"),
-                plt.Line2D([], [], color="0.2", ls="--", lw=0.9, label="HumAID (c)")]
-    fig.legend(handles=handles, loc="lower center", ncol=5, fontsize=6, frameon=False, handlelength=2.2,
-               columnspacing=1.2)
-    fig.tight_layout(w_pad=0.6, rect=(0, 0.17, 1, 1))
+    handles = [plt.Line2D([], [], color=COLOURS[s], lw=0.8, marker=MARKERS[s], ms=3.5, label=s) for s in COLOURS]
+    handles += [plt.Line2D([], [], color="0.2", ls="-", lw=0.8, marker="o", ms=3.5, label="CrisisLexT26"),
+                plt.Line2D([], [], color="0.2", ls="--", lw=0.8, marker="o", ms=3.5, mfc="white",
+                           label="HumAID")]
+    fig.legend(handles=handles, loc="lower center", ncol=9, fontsize=7, frameon=False, handlelength=1.8,
+               columnspacing=0.9, handletextpad=0.4)
+    fig.tight_layout(w_pad=0.5, rect=(0, 0.09, 1, 1))
     fig.savefig(path)
     plt.close(fig)
 
@@ -387,14 +453,81 @@ def esm_conventions(x11):
         "mean & max & D & O \\\\", rows, 13)
 
 
-def esm_terms(x11):
+def esm_terms(x11, x13):
+    comp = {(r["corpus"], sid_of(r["system"])): r["composition_first"] for r in x13["systems"]}
+
+    main_keys, alt_keys = TERMS[:4], [k for k in TERMS if k not in TERMS[:4]]
+
     def rows(corpus):
-        return [f"{SNAME[sid]} & " + " & ".join(stk(r["terms"][k]) for k in TERMS) + " \\\\"
+        return [f"{sid} & " + " & ".join(stk(r["terms"][k]) for k in main_keys) + " \\\\"
                 for sid, r in systems(x11, corpus)]
+
+    def alt_rows(corpus):
+        return [f"{sid} & " + " & ".join(stk(r["terms"][k]) for k in alt_keys) + " & " +
+                " & ".join(stk(comp[corpus, sid][k]) for k in ("T3c", "T4c")) + " \\\\"
+                for sid, r in systems(x11, corpus)]
+    first = esm_table(
+        "tab:esm-terms", "The split of $A^P$ (Eq.~(\\ref{eq:split}) of the note), with 95\\% bootstrap intervals "
+        "from the same draws as the interval of $A^P$ in Table~\\ref{tab:note-results} of the note. System codes "
+        "as in that table.",
+        "@{}lcccc@{}", "Code & $T_1$ & $T_2$ & $T_3$ & $T_4$ \\\\", rows, 5)
+    second = esm_table(
+        "tab:esm-terms-alt", "The other two orderings of the split, with 95\\% bootstrap intervals: $T_2'$ and "
+        "$T_3'$ take support weighting before non-additivity; $T_3^c$ and $T_4^c$ apply the class weights of the "
+        "per-event mean before its within-class weights. $T_1$ is the same in every ordering "
+        "(Table~\\ref{tab:esm-terms}).",
+        "@{}lcccc@{}", "Code & $T_2'$ & $T_3'$ & $T_3^c$ & $T_4^c$ \\\\", alt_rows, 5)
+    return first + "\n" + second
+
+
+def esm_null(x13):
+    def rows(corpus):
+        out = []
+        for r in x13["systems"]:
+            if r["corpus"] != corpus:
+                continue
+            n = r["null"]
+            rep = {"mean": n["A_P"]["mean"], "ci95": [n["A_P"]["q025"], n["A_P"]["q975"]]}
+            out.append(f"{sid_of(r['system'])} & {f3(r['A_P'])} & {stk(rep)} & " +
+                       " & ".join(f3(n[k]["mean"]) for k in ("T1", "T2", "T3", "T4")) +
+                       f" & {stk(r['observed_minus_null'])} & {f3(r['null_t15']['A_P_observed'])} & "
+                       f"{f3(r['null_t15']['A_P']['mean'])} \\\\")
+        return out
     return esm_table(
-        "tab:esm-terms", "The split of $A^P$ with 95\\% bootstrap intervals, from the same draws as the interval "
-        "of $A^P$ in Table~\\ref{tab:note-results} of the note.",
-        "@{}lcccccc@{}", "System & $T_1$ & $T_2$ & $T_3$ & $T_4$ & $T_2'$ & $T_3'$ \\\\", rows, 7)
+        "tab:esm-null",
+        "Fixed-rate model. $A^P_0$ and its terms are means over 200 replicates in which every event--class cell "
+        "keeps its support and draws its true positives with the class's pooled recall and its false positives "
+        "with the class's pooled false-positive rate; the bracket gives the 2.5 and 97.5 percentiles over "
+        "replicates. $A^P-A^P_0$ has a 95\\% bootstrap interval in which every draw recomputes the rates from the "
+        "drawn events (20 replicates per draw). The last two columns repeat $A^P$ and $A^P_0$ after removing cells "
+        "below 15 messages.",
+        "@{}lrcrrrrcrr@{}",
+        "Code & $A^P$ & $A^P_0$ [replicates] & $T_1$ & $T_2$ & $T_3$ & $T_4$ & $A^P-A^P_0$ [95\\%] & "
+        "$A^P_{15}$ & $A^P_{0,15}$ \\\\", rows, 10)
+
+
+def esm_mixed(x13):
+    body = []
+    for corpus in CORPORA:
+        m = x13["mixed"][corpus]
+        body.append(f"\\multicolumn{{5}}{{@{{}}l}}{{\\textit{{{CNAME[CORP[corpus]]}}}: {m['n_reversed']} of "
+                    f"{m['n']} comparisons reversed}} \\\\")
+        for x in m["comparisons"]:
+            if x["reversed"]:
+                body.append(f"{sid_of(x['pooled_of'])} & {sid_of(x['per_event_of'])} & {f3(x['gap_pooled'])} & "
+                            f"{f3(x['gap_per_event'])} & {f3(x['gap'])} \\\\")
+        if corpus == CORPORA[0]:
+            body.append("\\midrule")
+    return "\n".join([
+        "\\begin{table}[htbp]", "\\centering",
+        "\\caption{Comparisons across summaries. For every pair of systems whose pooled and per-event orders agree "
+        "(P label list), the pooled score of one is set beside the per-event mean of the other, in both "
+        "directions; listed are the comparisons whose order is the reverse of the order under either summary: "
+        "the gap between the two systems when both are pooled, when both are averaged per event, and when the "
+        "first is pooled and the second averaged per event.}",
+        "\\label{tab:esm-mixed}", "\\scriptsize", "\\begin{tabular}{@{}llrrr@{}}", "\\toprule",
+        "Pooled & Per event & both pooled & both per event & mixed \\\\", "\\midrule", *body, "\\bottomrule",
+        "\\end{tabular}", "\\end{table}"])
 
 
 def esm_thresholds(x11):
@@ -573,30 +706,31 @@ def esm_seeds(x9):
         "System & Seeds & $A^P$ per seed \\\\", "\\midrule", *rows, "\\bottomrule", "\\end{tabular}", "\\end{table}"])
 
 
-def tables(x9, x10, x11, x12):
-    return {"note_results": table_results(x11), "note_terms": table_terms(x11),
+def tables(x9, x10, x11, x12, x13):
+    return {"note_results": table_results(x11), "note_terms": table_terms(x11, x13),
             "tab_note_events": mpa.table_note_events(x9), "note_usage": usage_example(),
-            "esm_conventions": esm_conventions(x11), "esm_terms": esm_terms(x11),
+            "esm_conventions": esm_conventions(x11), "esm_terms": esm_terms(x11, x13),
             "esm_thresholds": esm_thresholds(x11), "esm_small": esm_small(x11),
             "esm_withinclass": esm_withinclass(x11, x12), "esm_jackknife": esm_jackknife(x11),
             "esm_seeds": esm_seeds(x9), "esm_pairs": esm_pairs(x12), "esm_bias": esm_bias(x12),
-            "esm_withindup": esm_withindup(x12), "esm_zero": esm_zero(x12)}
+            "esm_withindup": esm_withindup(x12), "esm_zero": esm_zero(x12), "esm_null": esm_null(x13),
+            "esm_mixed": esm_mixed(x13)}
 
 
 def current():
-    x9, x10, x11, ids, x12 = load()
-    out = keys(x9, x10, x11, ids, x12)
-    out.update({f"table:{k}": v for k, v in tables(x9, x10, x11, x12).items()})
+    x9, x10, x11, ids, x12, x13 = load()
+    out = keys(x9, x10, x11, ids, x12, x13)
+    out.update({f"table:{k}": v for k, v in tables(x9, x10, x11, x12, x13).items()})
     return out
 
 
 def main(out="paper"):
-    x9, x10, x11, ids, x12 = load()
+    x9, x10, x11, ids, x12, x13 = load()
     gen = os.path.join(out, "generated")
-    for name, body in tables(x9, x10, x11, x12).items():
+    for name, body in tables(x9, x10, x11, x12, x13).items():
         open(os.path.join(gen, name + ".tex"), "w").write(body + "\n")
     fig_cells(x9, x11, os.path.join(out, "figures", "fig_note_cells.pdf"))
-    return keys(x9, x10, x11, ids, x12)
+    return keys(x9, x10, x11, ids, x12, x13)
 
 
 if __name__ == "__main__":

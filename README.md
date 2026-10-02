@@ -1,15 +1,20 @@
 # Evaluation companion for event-held-out HumAID and CrisisLexT26 (Online Resource 2)
 
 Companion to "A Reproducible Evaluation Companion for Event-Held-Out Crisis-Message Classification" (Sharma and
-Prasad, Language Resources and Evaluation, Project Note). Version 1.1.0. It contains no tweet text.
+Prasad, Language Resources and Evaluation, Project Note). Version 1.2.0. It contains no tweet text.
 
 ## What it is for
 Leave-one-event-out (LOEO) results can be summarised as one macro-F1 over all held-out messages (pooled) or as
 the mean of per-event macro-F1, and per-event scores depend on which classes enter each event's average (the
-label list). The evaluator scores a set of predictions under a label list that must be named, reports both
-summaries, their difference A and its split, and prints a signature that records the convention, for example
+label list). The evaluator scores a set of predictions under a label list that must be named, optionally after
+removing event-class cells below a size threshold, reports both summaries, their difference A and its split, and
+prints a signature for each of the three scores, for example
 
-    loeo-macro-f1|labels:P|zero-division:0|events:26|meta:7d042873c1f4|v:1.1.0
+    loeo-macro-f1|summary:pooled|labels:P|zero-div:0|events:26|min-cell:0|meta:7d042873c1f4|v:1.2.0
+    loeo-macro-f1|summary:per-event|labels:P|zero-div:0|events:26|min-cell:0|meta:7d042873c1f4|v:1.2.0
+    loeo-macro-f1|summary:difference|labels:P|zero-div:0|events:26|min-cell:0|meta:7d042873c1f4|v:1.2.0
+
+`zero-div:0` records that an empty class (no messages and no predictions of it) scores 0.
 
 Label lists: P, the classes present in the event; D, the classes in the true labels or the predictions
 (scikit-learn's default); O, every class of the corpus.
@@ -33,7 +38,8 @@ Label lists: P, the classes present in the event; D, the classes in the true lab
   `companion_inventory.json` counts the files and bytes of each part.
 - `code/`: `companion_eval.py` (evaluator), `test_companion_eval.py` (tests), `verify_training_ids.py` (rebuilds
   every training sample from the metadata and checks its hash), `systems_index.py`, the analyses
-  (`revision_x9.py`, `revision_x11.py`, `revision_x12.py`, `run_zeroshot.py score`), `check_note_values.py`
+  (`revision_x9.py`, `revision_x11.py`, `revision_x12.py`, `revision_x13.py`, `run_zeroshot.py score`),
+  `check_note_values.py`
   (compares recomputed values with `note_values.json`, the values printed in the note), and the scripts that
   rebuild the corpora from the providers (`fetch_*.py`, `prepare_*.py`) and train the reference systems
   (`run_protocol.py`, `run_tfidf.py`, `run_zeroshot.py predict`).
@@ -56,9 +62,12 @@ A new system: write one prediction file per held-out event (or one file for all)
 
 The evaluator rejects duplicated or unknown identifiers, events or true labels that disagree with the metadata,
 predictions outside the corpus classes, and incomplete events; files covering only some events need
-`--partial`, and the output is then marked partial. Outputs: `scores.json` (pooled and per-event macro-F1, A,
-the split of A^P into T1 to T4, the label-list shift, per-event values, the signature and a hash of the inputs)
-and `event_class_counts.tsv` (TP, FP, FN, support, precision, recall and F1 per event and class), from which any
+`--partial`, and the output is then marked partial. With `--min-cell 15`, the messages of every event-class
+cell with fewer than 15 messages are removed before scoring (predictions of a removed class for other messages
+still count as its false positives), and the threshold is recorded in the signatures. Outputs: `scores.json`
+(pooled and per-event macro-F1, A, the split of A^P into T1 to T4 and its other orderings T2alt/T3alt and
+T3c/T4c, the label-list shift, per-event values, the signatures and a hash of the inputs) and
+`event_class_counts.tsv` (TP, FP, FN, support, precision, recall and F1 per event and class), from which any
 other label list or summary can be computed. To add a reference system to the index, add its runs under
 `experiments/runs` and a row to `experiments/systems.tsv`.
 
@@ -70,10 +79,11 @@ Other multi-event corpora can be scored in the same way: write a metadata file w
     sh regenerate.sh                        # recompute every number of the note and compare
 
 The tests check the three label lists against hand-computed values and scikit-learn, the closed-form shifts
-between them, that T1 + T2 + T3 + T4 = A^P, the input validation and the signature.
+between them, that T1 + T2 + T3 + T4 = A^P in every ordering, cell removal, the input validation and the
+signatures.
 
 ## Versions and maintenance
-Releases are tagged (`v1.0.0`, `v1.1.0`) and archived in Software Heritage. A changed number in a release is
+Releases are tagged (`v1.0.0`, `v1.1.0`, `v1.2.0`) and archived in Software Heritage. A changed number in a release is
 recorded in `CHANGELOG.md`; the evaluator version is printed in every signature. Problems can be reported
 through the issue tracker of https://github.com/akssha74/crisis-loeo-eval-companion, which the first author
 maintains.
