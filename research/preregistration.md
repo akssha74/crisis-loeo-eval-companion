@@ -342,6 +342,40 @@ All added arms are reported whether or not they change a conclusion.
   companion's prediction-file format and scored only through `code/companion_eval.py` under P, D and O, with A
   and an event-bootstrap 95% interval (2,000 draws, seed 20261001) under each convention. No prompt, template or
   label wording is tuned. Reported as exploratory, whatever it shows.
+- X11 (written at 2026-10-02T07:20Z, before any X11 quantity was computed, and pushed to the public companion
+  repository before computation; after reading LRE referee round 7). Evaluation-time analyses of the existing
+  whole-event LOEO predictions of every X9 arm and of the X10 system; no model is trained (`code/revision_x11.py`).
+  Notation: C_e classes present in event e, k_e classes absent from e but predicted for at least one of its
+  messages, s_ec support of class c in e, E_c the events containing c. All intervals use the X7 crossed bootstrap
+  (2,000 draws, seed 20261001; events only for one-seed arms and X10).
+  (a) Closed forms. With per-class F1 set to 0 when its denominator is 0, F_e^O = (|C_e|/|C|) F_e^P and
+  F_e^D = |C_e|/(|C_e|+k_e) F_e^P, so, when every class occurs in the pooled data, A^O = A^P + mean_e (1-|C_e|/|C|)
+  F_e^P and A^D = A^P + mean_e k_e/(|C_e|+k_e) F_e^P. Checked numerically for every arm and seed (maximum absolute
+  deviation reported); k_e summarised per arm; A^O of a perfect classifier, mean_e (1-|C_e|/|C|), reported per
+  corpus. A^D and A^O reported for every arm and X10 with intervals. scikit-learn `f1_score` with labels = O and
+  `zero_division=np.nan` compared with convention D per event.
+  (b) Four-term split of A^P, every arm and X10, with intervals: T1 (false positives in events lacking the class)
+  = mean_c F_c(all events) - mean_c F_c(E_c), where F_c(S) is F1 of counts summed over events S; T2 (non-additivity)
+  = mean_c F_c(E_c) - mean_c sum_{e in E_c} (s_ec / sum s) F_ec; T3 (support weighting) = mean_c of the
+  support-weighted mean minus mean_c of the equal-weighted mean of F_ec over E_c; T4 (class composition) =
+  mean_c equal-weighted mean over E_c - mean_e F_e^P. A^P = T1+T2+T3+T4. Second ordering: T3' = mean_c F_c(E_c) -
+  mean_c F_c^eq(E_c), where F_c^eq pools the counts of each event in E_c weighted by 1/s_ec, and T2' = mean_c
+  F_c^eq(E_c) - mean_c equal-weighted mean; T1 and T4 unchanged. W and N of X9 are kept for continuity only.
+  (c) Ranking agreement. Per corpus and convention, the systems (X9 arms by seed mean, and X10) ordered by pooled
+  macro-F1 and by per-event mean; Kendall tau between the two orders and every pair whose order differs.
+  (d) Small-cell threshold. A^P after removing every test message whose event-class cell holds fewer than t
+  messages, t in {5, 10, 15, 20, 30}, every arm and X10, both corpora, with cells and messages removed.
+  (e) Small cells. Event, class and support of every cell below 15 messages, with seed-mean per-class F1 of the
+  two-epoch arms.
+  (f) Within-class association. For each two-epoch arm, Spearman correlation between s_ec and seed-mean F_ec
+  across the events containing c, per class, with the median over classes; the X9(d) pooled values labelled by
+  arm.
+  (g) Event jackknife. A^P of every arm and X10 with each event left out in turn (range, and the event whose
+  removal moves A^P most); bootstrap quantiles 2.5, 25, 50, 75 and 97.5 of A^P; the share of bootstrap draws
+  in which some class is absent from all drawn events.
+  (h) Cross-event duplicates. Messages whose normalised text (`text_norm`) occurs in another event of the same
+  corpus, counted per corpus; A^P of the two-epoch arms after removing those messages from the scored events.
+  Reported as exploratory, whatever it shows.
 
 ## Deviations log
 
